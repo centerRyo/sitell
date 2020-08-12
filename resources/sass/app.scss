@@ -1,8 +1,177 @@
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+// ==================================
+// 変数
+// ==================================
+$font-color_default: #000;
+$color_corp: #12157b;
 
-// Variables
-@import 'variables';
+$font-size_s: 12px;
+$font-size_m: 14px;
+$font-size_default: 16px;
+$font-size_l: 20px;
+$font-size_xl: 24px;
+$font-size_xxl: 30px;
+$font-size_3l: 36px;
 
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
+$space_s: 5px;
+$space_m: 10px;
+$space_l: 15px;
+$space_xl: 20px;
+$space_xxl: 30px;
+$space_3l: 40px;
+
+// =====================================
+// base
+// =====================================
+html, body {
+  width: 100%;
+  font-size: $font-size_default;
+  line-height: 1.6;
+  font-family: "Noto Sans JP", sans-serif;
+  letter-spacing: 2px;
+}
+
+a {
+  color: $font-color_default;
+  transition: .2s;
+}
+
+a:hover {
+  transition: .2s
+}
+
+.container_wrapper {
+  background: #f6f5f5;
+  width: 100%;
+  overflow: hidden;
+}
+
+.site-width {
+  width: 980px;
+  margin:0 auto;
+  padding: $space_3l;
+}
+
+.area-msg {
+  color: #d70808;
+  padding-bottom: $space_l;
+}
+
+// ===================================
+// ヘッダー
+// ===================================
+.header {
+  width: 100%;
+  height: 80px;
+  box-sizing: border-box;
+  padding-right: $space_xl;
+  padding-left: $space_xl;
+  display: flex;
+  background: $color_corp;
+  .site-width {
+    width: 980px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__title {
+    width: 100px;
+    height: 70px;
+    img {
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+    }
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+    a {
+      color: #fff;
+      padding: 10px 15px;
+      font-weight: bold;
+      font-size: $font-size_default;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// ========================================
+// フォーム
+// ========================================
+.form {
+  width: 500px;
+  margin: 80px auto;
+  padding: $space_l $space_3l;
+  background: #fff;
+  border-radius: 8px;
+  &__title {
+    text-align: center;
+    font-size: $font-size_xxl;
+    color: $color_corp;
+  }
+  &__container {
+    width: 80%;
+    margin: $space_xl auto;
+    label {
+      display: inline-block;
+      margin-bottom: $space_m;
+    }
+    input[type="text"], input[type="password"] {
+      display: block;
+      width: 100%;
+      height: 50px;
+      font-size: $font-size_default;
+      border: none;
+      border-bottom: 2px solid $color_corp;
+      padding: $space_m;
+      margin-bottom: $space_l;
+      box-sizing: border-box;
+    }
+    .pass_remind {
+      // text-decoration: underline;
+    }
+    .pass_remind:hover {
+      color: $color_corp;
+    }
+  }
+}
+
+// ========================================
+// フッター
+// ========================================
+.footer {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $color_corp;
+  color: #fff;
+  font-size: $font-size_s;
+  padding: $space_s;
+}
+
+// ========================================
+// ボタン
+// ========================================
+.btn-container {
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: $space_m;
+  .btn {
+    display: block;
+    font-size: $font-size_l;
+    color: #fff;
+    border: none;
+    background: $color_corp;
+    border-radius: 3px;
+    padding: $space_m;
+    margin-top: $space_l;
+    &--right {
+      float: right;
+    }
+  }
+}
