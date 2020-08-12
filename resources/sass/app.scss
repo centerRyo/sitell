@@ -30,6 +30,12 @@ html, body {
   letter-spacing: 2px;
 }
 
+#app {
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
+
 a {
   color: $font-color_default;
   transition: .2s;
@@ -43,6 +49,7 @@ a:hover {
   background: #f6f5f5;
   width: 100%;
   overflow: hidden;
+  flex: 1;
 }
 
 .site-width {
@@ -102,7 +109,7 @@ a:hover {
 // フォーム
 // ========================================
 .form {
-  width: 500px;
+  width: 400px;
   margin: 80px auto;
   padding: $space_l $space_3l;
   background: #fff;
@@ -144,7 +151,7 @@ a:hover {
 // ========================================
 .footer {
   width: 100%;
-  height: 50px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -168,7 +175,7 @@ a:hover {
     border: none;
     background: $color_corp;
     border-radius: 3px;
-    padding: $space_m;
+    padding: $space_m $space_l;
     margin-top: $space_l;
     &--right {
       float: right;
