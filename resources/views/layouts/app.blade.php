@@ -64,5 +64,8 @@
             @yield('content')
         </main>
     </div>
+    <footer class="footer">
+        Copyright - Sitell 2020, All Right Reserved.
+  </footer>
 </body>
 </html>

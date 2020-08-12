@@ -140,6 +140,21 @@ a:hover {
 }
 
 // ========================================
+// フッター
+// ========================================
+.footer {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $color_corp;
+  color: #fff;
+  font-size: $font-size_s;
+  padding: $space_s;
+}
+
+// ========================================
 // ボタン
 // ========================================
 .btn-container {
