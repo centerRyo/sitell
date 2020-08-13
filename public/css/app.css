@@ -101,7 +101,7 @@ a:hover {
 
 .form__container {
   width: 80%;
-  margin: 20px auto;
+  margin: 30px auto 20px;
 }
 
 .form__container label {
