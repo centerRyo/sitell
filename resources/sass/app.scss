@@ -121,7 +121,7 @@ a:hover {
   }
   &__container {
     width: 80%;
-    margin: $space_xl auto;
+    margin: $space_xxl auto $space_xl;
     label {
       display: inline-block;
       margin-bottom: $space_m;
