@@ -33,12 +33,6 @@ html, body {
   letter-spacing: 2px;
 }
 
-// #app {
-//   display: flex;
-//   flex-flow: column;
-//   min-height: 100vh;
-// }
-
 a {
   color: $font-color_default;
   transition: .2s;
@@ -149,9 +143,6 @@ a:hover {
       margin-bottom: $space_l;
       box-sizing: border-box;
     }
-    .pass_remind {
-      // text-decoration: underline;
-    }
     .pass_remind:hover {
       color: $color_corp;
     }
@@ -169,11 +160,11 @@ a:hover {
   width: 700px;
   float: left;
   &__container {
-    margin-bottom: $space_xl;
+    margin-bottom: $space_xxl;
   }
   &__label {
     font-weight: bold;
-    margin-bottom: $space_l;
+    margin-bottom: $space_m;
     &--must {
       background: #fe8a8b;
       border-radius: 2px;
@@ -251,4 +242,18 @@ a:hover {
       float: right;
     }
   }
+}
+
+// ========================================
+// サクセスメッセージ
+// ========================================
+.msgSlide {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 40px;
+  background: rgba(122, 206, 230, 0.6);
+  text-align: center;
+  font-size: $font-size_default;
+  line-height: 40px;
 }
