@@ -7,7 +7,7 @@
     <form class="form__container" action="{{ route('login') }}" method="post">
         @csrf
         <label for="email">{{ __('E-Mail Address') }}</label>
-        <input id="email" type="text" name="email" class="@error('email') is-invalid @enderror" value="{{ old('email') }}" required autocomplete="email" autofocus>
+        <input id="email" type="text" name="email" class="@error('email') is-invalid @enderror" value="{{ old('email') }}" required autocomplete="email">
 
         @error('email')
             <div class="area-msg">
