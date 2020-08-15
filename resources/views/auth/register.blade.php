@@ -28,7 +28,7 @@
         <label for="password-confirm">{{ __('Confirm Password') }}</label>
         <input type="password" id="password-confirm" name="password_confirmation" required autocomplete="new-password">
 
-        <div class="btn-container">
+        <div class="btnContainer">
             <button type="submit" class="btn btn--right">{{ __('Register') }}</button>
         </div>
     </form>

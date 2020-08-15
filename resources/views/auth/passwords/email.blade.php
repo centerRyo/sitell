@@ -22,7 +22,7 @@
             </div>
         @enderror
 
-        <div class="btn-container">
+        <div class="btnContainer">
             <button type="submit" class="btn btn--right">{{ __('Send Password Reset Link') }}</button>
         </div>
     </form>

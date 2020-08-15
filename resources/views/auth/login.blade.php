@@ -27,7 +27,7 @@
         <input type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
         <label for="remember">{{ __('Remember Me') }}</label>
 
-        <div class="btn-container">
+        <div class="btnContainer">
             <button type="submit" class="btn btn--right">{{ __('Login') }}</button>
         </div>
 
