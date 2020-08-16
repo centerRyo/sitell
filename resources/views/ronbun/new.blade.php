@@ -20,11 +20,11 @@
 
       <div class="postForm__container">
         <div class="postForm__label">
-          {{ Form::label('category', __('Category')) }}
+          {{ Form::label('category_id', __('Category')) }}
           <span class="postForm__label--must">{{ __('Required') }}</span>
         </div>
-        {{ Form::select('category', ['選択してください', '医学', '法律', 'ビジネス'], '選択してください', ['class' => 'postForm__select']) }}
-        @error('category')
+        {{ Form::select('category_id', $category_names, null, ['class' => 'postForm__select', 'placeholder' => '選択してください']) }}
+        @error('category_id')
           <div class="area-msg">
             {{ $message }}
           </div>
@@ -61,7 +61,7 @@
           {{ Form::label('abstract', __('Abstract')) }}
           <span class="postForm__label--must">{{ __('Required') }}</span>
         </div>
-        {{ Form::textarea('abstract', old('abstract'), ['class' => 'postForm__textarea'])}}
+        {{ Form::textarea('abstract', old('abstract'), ['id' => 'ckeditor', 'class' => 'postForm__textarea'])}}
         @error('abstract')
           <div class="area-msg">
             {{ $message }}
@@ -73,7 +73,7 @@
         <div class="postForm__label">
           {{ Form::label('url', __('Original URL')) }}
         </div>
-        {{ Form::input('text', 'url', old('year'), ['class' => 'postForm__input']) }}
+        {{ Form::input('text', 'url', old('url'), ['class' => 'postForm__input']) }}
         @error('url')
           <div class="area-msg">
             {{ $message }}
@@ -98,4 +98,7 @@
       </div>
     {{ Form::close() }}
   </div>
+  <script>
+        CKEDITOR.replace('ckeditor');
+    </script>
 @endsection

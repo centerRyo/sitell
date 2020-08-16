@@ -10,7 +10,8 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>                                            
+    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/ckeditor/ckeditor.js') }}"></script>                                         
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -59,6 +60,12 @@
             </nav>
         </div>
     </header>
+
+    @if (session('flash_message'))
+        <div class="msgSlide">
+            {{ session('flash_message') }}
+        </div>
+    @endif
     <main class="container_wrapper">
         @yield('content')
     </main>
