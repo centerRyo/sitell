@@ -1,0 +1,21 @@
+{
+  "Login": "ログイン",
+  "Logout": "ログアウト",
+  "E-Mail Address": "メールアドレス",
+  "Password": "パスワード",
+  "Remember Me": "次回から自動でログインする",
+  "Forgot Your Password?": "パスワードをお忘れの方はこちら",
+  "Register": "新規登録",
+  "Confirm Password": "パスワード(再入力)",
+  "Reset Password": "パスワード再発行",
+  "Send Password Reset Link": "パスワード再発行リンクを送信",
+  "Register Ronbun": "論文を投稿する",
+  "Title": "タイトル",
+  "Category": "カテゴリー",
+  "Author": "著者",
+  "Year": "発行年",
+  "Abstract": "要約",
+  "Original URL": "オリジナルURL",
+  "Thumbnail": "サムネイル画像",
+  "Required": "必須"
+}

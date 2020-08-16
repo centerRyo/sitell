@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddColumnToUsers extends Migration
+class AddColumnThumbnailToRonbuns extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,8 @@ class AddColumnToUsers extends Migration
      */
     public function up()
     {
-        Schema::table('users', function (Blueprint $table) {
-            //
+        Schema::table('ronbuns', function (Blueprint $table) {
+            $table->string('thumbnail')->nullable()->after('user_id')->comment('サムネイル画像');
         });
     }
 
@@ -25,8 +25,8 @@ class AddColumnToUsers extends Migration
      */
     public function down()
     {
-        Schema::table('users', function (Blueprint $table) {
-            //
+        Schema::table('ronbuns', function (Blueprint $table) {
+            $table->dropColumn('thumbnail');
         });
     }
 }

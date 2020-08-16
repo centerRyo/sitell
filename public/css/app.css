@@ -1,16 +1,13 @@
 html,
 body {
   width: 100%;
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
   font-size: 16px;
   line-height: 1.6;
   font-family: "Noto Sans JP", sans-serif;
   letter-spacing: 2px;
-}
-
-#app {
-  display: flex;
-  flex-flow: column;
-  min-height: 100vh;
 }
 
 a {
@@ -33,11 +30,20 @@ a:hover {
   width: 980px;
   margin: 0 auto;
   padding: 40px;
+  overflow: hidden;
 }
 
 .area-msg {
   color: #d70808;
   padding-bottom: 15px;
+  margin-top: 10px;
+}
+
+.title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #12157b;
 }
 
 .header {
@@ -126,6 +132,68 @@ a:hover {
   color: #12157b;
 }
 
+.postForm {
+  border: 3px solid #12157b;
+  box-sizing: border-box;
+  padding: 20px 40px;
+  background: #fff;
+  width: 700px;
+  float: left;
+}
+
+.postForm__container {
+  margin-bottom: 30px;
+}
+
+.postForm__label {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.postForm__label--must {
+  background: #fe8a8b;
+  border-radius: 2px;
+  color: #fff;
+  padding: 3px 5px;
+  font-size: 10px;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+.postForm__input {
+  width: 100%;
+  height: 45px;
+  padding: 5px 10px;
+  border: none;
+  background: #f6f5f5;
+  box-sizing: border-box;
+}
+
+.postForm__input--number {
+  width: 35%;
+  height: 40px;
+  font-size: 14px;
+  padding: 5px;
+  border: none;
+  background: #f6f5f5;
+  box-sizing: border-box;
+}
+
+.postForm__textarea {
+  width: 100%;
+  padding: 5px 10px;
+  border: none;
+  background: #f6f5f5;
+  box-sizing: border-box;
+}
+
+.postForm__select {
+  padding: 5px;
+  border: none;
+  background: #f6f5f5;
+  box-sizing: border-box;
+}
+
 .footer {
   width: 100%;
   height: 40px;
@@ -138,13 +206,13 @@ a:hover {
   padding: 5px;
 }
 
-.btn-container {
+.btnContainer {
   overflow: hidden;
   text-align: center;
   margin-bottom: 10px;
 }
 
-.btn-container .btn {
+.btnContainer .btn {
   display: block;
   font-size: 20px;
   color: #fff;
@@ -155,7 +223,18 @@ a:hover {
   margin-top: 15px;
 }
 
-.btn-container .btn--right {
+.btnContainer .btn--right {
   float: right;
+}
+
+.msgSlide {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 40px;
+  background: rgba(122, 206, 230, 0.6);
+  text-align: center;
+  font-size: 16px;
+  line-height: 40px;
 }
 
