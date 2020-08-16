@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Category;
 use App\Ronbun;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class RonbunController extends Controller
 {
@@ -28,7 +29,9 @@ class RonbunController extends Controller
         ]);
 
         $ronbun = new Ronbun();
-        $ronbun->fill($request->all())->save();
+        $ronbun->fill($request->all());
+        $ronbun->user_id = Auth::user()->id;
+        $ronbun->save();
 
         return redirect('/mypage')->with('flash_message', __('Registered!'));
     }
