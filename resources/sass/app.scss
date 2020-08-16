@@ -119,6 +119,49 @@ a:hover {
 }
 
 // ========================================
+// 論文
+// ========================================
+.contents {
+  box-sizing: border-box;
+  width: 100%;
+  margin: $space_3l 0;
+  &__title {
+    color: $color_corp;
+    font-size: $font-size_l;
+    border-bottom: 1px solid $color_corp;
+    padding-bottom: $space_s;
+  }
+  &__container {
+    display: flex;
+    margin-top: $space_m;
+    .content {
+      width: 32%;
+      background: #fff;
+      min-height: 260px;
+      padding: $space_m;
+      box-sizing: border-box;
+      margin-right: 2%;
+      margin-top: $space_m;
+      transition: all .3s;
+      a {
+        display: block;
+      }
+      p {
+        height: 50px;
+      }
+    }
+    .content:nth-child(3n) {
+      margin-right: 0;
+    }
+    .content:hover {
+      transition: all .3s;
+      transform: translateY(-3px);
+      box-shadow: 0 0 10px 0 #ddd;
+    }
+  }
+}
+
+// ========================================
 // フォーム
 // ========================================
 .form {

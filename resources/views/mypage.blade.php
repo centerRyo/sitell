@@ -32,7 +32,7 @@
             </section>
 
             <section class="contents">
-                <h2 class="contents_title">お気に入り登録一覧</h2>
+                <h2 class="contents__title">お気に入り登録一覧</h2>
                 <div class="contents__container">
                     <div class="content">
                         <a href="">

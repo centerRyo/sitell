@@ -98,6 +98,53 @@ a:hover {
   text-decoration: underline;
 }
 
+.contents {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 40px 0;
+}
+
+.contents__title {
+  color: #12157b;
+  font-size: 20px;
+  border-bottom: 1px solid #12157b;
+  padding-bottom: 5px;
+}
+
+.contents__container {
+  display: flex;
+  margin-top: 10px;
+}
+
+.contents__container .content {
+  width: 32%;
+  background: #fff;
+  min-height: 260px;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-right: 2%;
+  margin-top: 10px;
+  transition: all 0.3s;
+}
+
+.contents__container .content a {
+  display: block;
+}
+
+.contents__container .content p {
+  height: 50px;
+}
+
+.contents__container .content:nth-child(3n) {
+  margin-right: 0;
+}
+
+.contents__container .content:hover {
+  transition: all 0.3s;
+  transform: translateY(-3px);
+  box-shadow: 0 0 10px 0 #ddd;
+}
+
 .form {
   width: 400px;
   margin: 80px auto;
