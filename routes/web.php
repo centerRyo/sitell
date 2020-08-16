@@ -21,3 +21,4 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/ronbun/new', 'RonbunController@new')->name('ronbun.new');
+Route::post('/ronbun/new', 'RonbunController@create');
