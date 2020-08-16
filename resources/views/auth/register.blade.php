@@ -12,7 +12,7 @@
 
         @error('email')
             <div class="area-msg">
-                {{ message }}
+                {{ $message }}
             </div>
         @enderror
 
@@ -21,7 +21,7 @@
 
         @error('password')
             <div class="area-msg">
-                {{ message }}
+                {{ $message }}
             </div>
         @enderror
 
