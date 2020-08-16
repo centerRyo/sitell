@@ -4,7 +4,7 @@
   <div class="site-width">
     <h1 class="title">{{__('Register Ronbun')}}</h1>
 
-    {{ Form::open(['route' => 'ronbun.new', 'class' => 'postForm']) }}
+    {{ Form::open(['route' => 'ronbun.new', 'class' => 'postForm mainContainer']) }}
       <div class="postForm__container">
         <div class="postForm__label">
           {{ Form::label('title', __('Title'))}}

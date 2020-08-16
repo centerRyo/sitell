@@ -69,6 +69,13 @@ a:hover {
   color: $color_corp;
 }
 
+.mainContainer {
+  box-sizing: border-box;
+  padding: $space_xl $space_3l;
+  width: 700px;
+  float: left;
+}
+
 // ===================================
 // ヘッダー
 // ===================================
@@ -154,11 +161,7 @@ a:hover {
 // ========================================
 .postForm {
   border: 3px solid $color_corp;
-  box-sizing: border-box;
-  padding: $space_xl $space_3l;
   background: #fff;
-  width: 700px;
-  float: left;
   &__container {
     margin-bottom: $space_xxl;
   }
