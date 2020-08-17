@@ -6,7 +6,7 @@
             <section class="profile">
                 <div class="profile__img"></div>
                 <div class="profile__info">
-                    <h2 class="profile__name"></h2>
+                    <h2 class="profile__name">{{ $user->name}}</h2>
                     <div class="sns">
                         <a href=""><i class="fab fa-facebook-square"></i></a>
                         <a href=""><i class="fab fa-twitter-square"></i></a>
