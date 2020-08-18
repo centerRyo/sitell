@@ -19,6 +19,6 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/mypage', 'UserController@mypage')->name('mypage');
 Route::get('/ronbun/new', 'RonbunController@new')->name('ronbun.new');
 Route::post('/ronbun/new', 'RonbunController@create');

@@ -69,6 +69,13 @@ a:hover {
   color: $color_corp;
 }
 
+.mainContainer {
+  box-sizing: border-box;
+  padding: $space_xl $space_3l;
+  width: 700px;
+  float: left;
+}
+
 // ===================================
 // ヘッダー
 // ===================================
@@ -107,6 +114,49 @@ a:hover {
     }
     a:hover {
       text-decoration: underline;
+    }
+  }
+}
+
+// ========================================
+// 論文
+// ========================================
+.contents {
+  box-sizing: border-box;
+  width: 100%;
+  margin: $space_3l 0;
+  &__title {
+    color: $color_corp;
+    font-size: $font-size_l;
+    border-bottom: 1px solid $color_corp;
+    padding-bottom: $space_s;
+  }
+  &__container {
+    display: flex;
+    margin-top: $space_m;
+    .content {
+      width: 32%;
+      background: #fff;
+      min-height: 260px;
+      padding: $space_m;
+      box-sizing: border-box;
+      margin-right: 2%;
+      margin-top: $space_m;
+      transition: all .3s;
+      a {
+        display: block;
+      }
+      p {
+        height: 50px;
+      }
+    }
+    .content:nth-child(3n) {
+      margin-right: 0;
+    }
+    .content:hover {
+      transition: all .3s;
+      transform: translateY(-3px);
+      box-shadow: 0 0 10px 0 #ddd;
     }
   }
 }
@@ -154,11 +204,7 @@ a:hover {
 // ========================================
 .postForm {
   border: 3px solid $color_corp;
-  box-sizing: border-box;
-  padding: $space_xl $space_3l;
   background: #fff;
-  width: 700px;
-  float: left;
   &__container {
     margin-bottom: $space_xxl;
   }
@@ -208,6 +254,54 @@ a:hover {
 }
 
 // ========================================
+// プロフィール
+// ========================================
+.profileContainer {
+  width: 100%;
+  background: linear-gradient(#ebefef, #545556);
+  .profile {
+    display: flex;
+    &__img {
+      width: 150px;
+      height: 150px;
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+    }
+    &__info {
+      margin-left: $space_xxl;
+    }
+    &__name {
+      font-size: $font-size_xl;
+      margin-bottom: $space_xl;
+      color: $color_corp;
+    }
+  }
+}
+
+// ========================================
+// サイドバー(マイページ)
+// ========================================
+.sidebarMypage {
+  float: left;
+  width: 280px;
+  min-height: 400px;
+  padding: $space_l;
+  background: #fff;
+  box-sizing: border-box;
+  a {
+    display: block;
+    margin-bottom: $space_xxl;
+    color: $color_corp;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+// ========================================
 // フッター
 // ========================================
 .footer {
@@ -242,6 +336,10 @@ a:hover {
       float: right;
     }
   }
+}
+
+.sns {
+  font-size: $font-size_xl;
 }
 
 // ========================================
