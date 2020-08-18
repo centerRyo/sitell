@@ -274,6 +274,25 @@ a:hover {
   color: #12157b;
 }
 
+.sidebarMypage {
+  float: left;
+  width: 280px;
+  min-height: 400px;
+  padding: 15px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.sidebarMypage a {
+  display: block;
+  margin-bottom: 30px;
+  color: #12157b;
+}
+
+.sidebarMypage a:hover {
+  text-decoration: underline;
+}
+
 .footer {
   width: 100%;
   height: 40px;

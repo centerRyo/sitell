@@ -282,6 +282,26 @@ a:hover {
 }
 
 // ========================================
+// サイドバー(マイページ)
+// ========================================
+.sidebarMypage {
+  float: left;
+  width: 280px;
+  min-height: 400px;
+  padding: $space_l;
+  background: #fff;
+  box-sizing: border-box;
+  a {
+    display: block;
+    margin-bottom: $space_xxl;
+    color: $color_corp;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+// ========================================
 // フッター
 // ========================================
 .footer {

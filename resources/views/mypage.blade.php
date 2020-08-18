@@ -43,5 +43,6 @@
                 </div>
             </section>
         </section>
+        @include('sidebar_mypage')
     </div>
 @endsection
