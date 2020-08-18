@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
@@ -23,6 +23,7 @@ class UserController extends Controller
      */
     public function mypage()
     {
-        return view('mypage');
+        $ronbuns = Auth::user()->ronbuns()->get();
+        return view('mypage', compact('ronbuns'));
     }
 }

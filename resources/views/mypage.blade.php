@@ -4,7 +4,13 @@
     <section class="profileContainer">
         <div class="site-width">
             <section class="profile">
-                <div class="profile__img"></div>
+                <div class="profile__img">
+                    @if (isset($user->pic))
+                        <img src="{{ $user->pic }}" alt="">
+                    @else
+                        <img src="{{ asset('/img/user_default.png') }}" alt="">
+                    @endif
+                </div>
                 <div class="profile__info">
                     <h2 class="profile__name">{{ $user->name}}</h2>
                     <div class="sns">
@@ -22,12 +28,14 @@
             <section class="contents">
                 <h2 class="contents__title">登録論文一覧</h2>
                 <div class="contents__container">
+                    @foreach ($ronbuns as $ronbun)
                     <div class="content">
                         <a href="">
                             <img src="" alt="">
-                            <p></p>
+                            <p>{{ $ronbun->title }}</p>
                         </a>
                     </div>
+                    @endforeach
                 </div>
             </section>
 
