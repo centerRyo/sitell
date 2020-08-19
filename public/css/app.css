@@ -87,15 +87,21 @@ a:hover {
   align-items: center;
 }
 
-.header .menu a {
+.header .menu__item_link {
   color: #fff;
   padding: 10px 15px;
   font-weight: bold;
   font-size: 16px;
 }
 
-.header .menu a:hover {
+.header .menu__item_link:hover {
   text-decoration: underline;
+}
+
+.header .menu__item_img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
 }
 
 .contents {
