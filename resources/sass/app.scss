@@ -71,8 +71,7 @@ a:hover {
 
 .mainContainer {
   box-sizing: border-box;
-  padding: $space_xl $space_3l;
-  width: 700px;
+  width: 680px;
   float: left;
 }
 
@@ -210,6 +209,7 @@ a:hover {
 .postForm {
   border: 3px solid $color_corp;
   background: #fff;
+  padding: $space_xl $space_3l;
   &__container {
     margin-bottom: $space_xxl;
   }
@@ -291,11 +291,12 @@ a:hover {
 // ========================================
 .sidebarMypage {
   float: left;
-  width: 280px;
+  width: 240px;
   min-height: 400px;
   padding: $space_l;
   background: #fff;
   box-sizing: border-box;
+  margin-left: 40px;
   a {
     display: block;
     margin-bottom: $space_xxl;
