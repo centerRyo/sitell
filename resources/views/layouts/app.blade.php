@@ -41,9 +41,13 @@
                     @else
                         <li class="menu__item">
                             @if (isset($user->pic))
-                                <img class="menu__item_img" src="{{ $user->pic }}" alt="">
+                                <a href="{{ route('mypage') }}">
+                                    <img class="menu__item_img" src="{{ $user->pic }}" alt="">
+                                </a>
                             @else
-                                <img class="menu__item_img" src="{{ asset('/img/user_default.png')}}" alt="">
+                                <a href="{{ route('mypage') }}">
+                                    <img class="menu__item_img" src="{{ asset('/img/user_default.png')}}" alt="">
+                                </a>
                             @endif
                         </li>
                         <li class="menu__item">
