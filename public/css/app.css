@@ -48,8 +48,7 @@ a:hover {
 
 .mainContainer {
   box-sizing: border-box;
-  padding: 20px 40px;
-  width: 700px;
+  width: 680px;
   float: left;
 }
 
@@ -87,15 +86,21 @@ a:hover {
   align-items: center;
 }
 
-.header .menu a {
+.header .menu__item_link {
   color: #fff;
   padding: 10px 15px;
   font-weight: bold;
   font-size: 16px;
 }
 
-.header .menu a:hover {
+.header .menu__item_link:hover {
   text-decoration: underline;
+}
+
+.header .menu__item_img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
 }
 
 .contents {
@@ -189,6 +194,7 @@ a:hover {
 .postForm {
   border: 3px solid #12157b;
   background: #fff;
+  padding: 20px 40px;
 }
 
 .postForm__container {
@@ -276,11 +282,12 @@ a:hover {
 
 .sidebarMypage {
   float: left;
-  width: 280px;
+  width: 240px;
   min-height: 400px;
   padding: 15px;
   background: #fff;
   box-sizing: border-box;
+  margin-left: 40px;
 }
 
 .sidebarMypage a {

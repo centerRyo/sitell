@@ -39,22 +39,23 @@
                             </li>
                         @endif
                     @else
-                        <li class="nav-item dropdown">
-                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                              {{-- $user->name --}} <span class="caret"></span>
-                            </a>
-
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="{{ route('logout') }}"
-                                    onclick="event.preventDefault();
-                                                    document.getElementById('logout-form').submit();">
-                                    {{ __('Logout') }}
+                        <li class="menu__item">
+                            @if (isset($user->pic))
+                                <a href="{{ route('mypage') }}">
+                                    <img class="menu__item_img" src="{{ $user->pic }}" alt="">
                                 </a>
+                            @else
+                                <a href="{{ route('mypage') }}">
+                                    <img class="menu__item_img" src="{{ asset('/img/user_default.png')}}" alt="">
+                                </a>
+                            @endif
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__item_link" href="{{ route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">{{ __('Logout') }}</a>
 
-                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                    @csrf
-                                </form>
-                            </div>
+                            <form action="{{ route('logout') }}" method="post" style="display: none;" id="logout-form">
+                                @csrf
+                            </form>
                         </li>
                     @endguest 
                 </ul>
