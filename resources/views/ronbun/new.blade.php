@@ -97,6 +97,7 @@
         {{ Form::button( __('Register'), ['type' => 'submit', 'class' => 'btn btn--right']) }}
       </div>
     {{ Form::close() }}
+    @include('sidebar_mypage')
   </div>
   <script>
         CKEDITOR.replace('ckeditor');
