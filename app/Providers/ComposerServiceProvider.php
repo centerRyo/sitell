@@ -26,7 +26,7 @@ class ComposerServiceProvider extends ServiceProvider
     public function boot()
     {
         View::composers([
-            UserComposer::class => 'mypage' // 本当はlayouts配下にしたいがマイページ等に値が渡せないので一時的にこうする
+            UserComposer::class => '*'
         ]);
     }
 }
