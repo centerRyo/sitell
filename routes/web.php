@@ -22,3 +22,5 @@ Auth::routes();
 Route::get('/mypage', 'UserController@mypage')->name('mypage');
 Route::get('/ronbun/new', 'RonbunController@new')->name('ronbun.new');
 Route::post('/ronbun/new', 'RonbunController@create');
+Route::get('/withdraw', 'UserController@withdraw')->name('withdraw');
+Route::post('/withdraw', 'UserController@delete')->name('user.delete');
