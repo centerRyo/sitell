@@ -319,7 +319,7 @@ a:hover {
 }
 
 .btnContainer .btn {
-  display: block;
+  display: inline-block;
   font-size: 20px;
   color: #fff;
   border: none;
@@ -333,8 +333,22 @@ a:hover {
   float: right;
 }
 
+.btnContainer .bth:hover {
+  cursor: pointer;
+}
+
 .sns {
   font-size: 24px;
+}
+
+.mypageLink {
+  display: inline-block;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 3px;
+  padding: 15px;
+  background: #ea9906;
+  margin-left: 15px;
 }
 
 .msgSlide {
@@ -346,5 +360,19 @@ a:hover {
   text-align: center;
   font-size: 16px;
   line-height: 40px;
+}
+
+.withdrawMsg {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.withdrawMsg p {
+  margin-bottom: 15px;
+}
+
+.textRed {
+  color: #d70808;
 }
 
