@@ -330,7 +330,7 @@ a:hover {
   text-align: center;
   margin-bottom: $space_m;
   .btn {
-    display: block;
+    display: inline-block;
     font-size: $font-size_l;
     color: #fff;
     border: none;
@@ -342,10 +342,23 @@ a:hover {
       float: right;
     }
   }
+  .btn:hover {
+    cursor: pointer;
+  }
 }
 
 .sns {
   font-size: $font-size_xl;
+}
+
+.mypageLink {
+  display: inline-block;
+  font-size: $font-size_l;
+  color: #fff;
+  border-radius: 3px;
+  padding: $space_l;
+  background: #ea9906;
+  margin-left: $space_l;
 }
 
 // ========================================
@@ -360,4 +373,20 @@ a:hover {
   text-align: center;
   font-size: $font-size_default;
   line-height: 40px;
+}
+
+// ========================================
+// テキスト
+// ========================================
+.withdrawMsg {
+  text-align: center;
+  font-size: $font-size_l;
+  margin-bottom: $space_xxl;
+  p {
+    margin-bottom: $space_l;
+  }
+}
+
+.textRed {
+  color: #d70808;
 }

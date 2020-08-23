@@ -26,4 +26,16 @@ class UserController extends Controller
         $ronbuns = Auth::user()->ronbuns()->get();
         return view('mypage', compact('ronbuns'));
     }
+
+    public function withdraw()
+    {
+        return view('withdraw');
+    }
+
+    public function delete()
+    {
+        Auth::user()->delete();
+
+        return redirect('/login');
+    }
 }
