@@ -14,7 +14,8 @@ class Kernel extends ConsoleKernel
      */
     protected $commands = [
         Commands\CreateCategories::class,
-        Commands\CreateJobs::class
+        Commands\CreateJobs::class,
+        Commands\CreateRoles::class,
     ];
 
     /**
