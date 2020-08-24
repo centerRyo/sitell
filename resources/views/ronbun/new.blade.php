@@ -100,6 +100,6 @@
     @include('sidebar_mypage')
   </div>
   <script>
-        CKEDITOR.replace('ckeditor');
-    </script>
+    CKEDITOR.replace('ckeditor');
+  </script>
 @endsection
