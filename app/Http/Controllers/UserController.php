@@ -54,6 +54,6 @@ class UserController extends Controller
     {
         Auth::user()->delete();
 
-        return redirect('/login');
+        return redirect('/register');
     }
 }
