@@ -251,7 +251,8 @@ a:hover {
     box-sizing: border-box;
   }
   &__select {
-    padding: $space_s;
+    font-size: $font-size_m;
+    padding: $space_m;
     border: none;
     background: #f6f5f5;
     box-sizing: border-box;
