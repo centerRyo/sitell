@@ -18,5 +18,11 @@
   "Original URL": "オリジナルURL",
   "Thumbnail": "サムネイル画像",
   "Required": "必須",
-  "Registered!": "投稿しました！"
+  "Registered!": "投稿しました！",
+  "Edit Profile": "プロフィールを編集する",
+  "gender": "性別",
+  "Age": "年齢",
+  "Job": "職業",
+  "Role": "職種",
+  "Update": "更新する"
 }
