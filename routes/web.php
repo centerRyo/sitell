@@ -25,3 +25,4 @@ Route::post('/ronbun/new', 'RonbunController@create');
 Route::get('/withdraw', 'UserController@withdraw')->name('withdraw');
 Route::post('/withdraw', 'UserController@delete')->name('user.delete');
 Route::get('/user/edit', 'UserController@edit')->name('user.edit');
+Route::post('/user/edit', 'UserController@update')->name('user.update');

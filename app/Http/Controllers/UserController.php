@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Job;
 use App\Role;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
@@ -43,6 +44,15 @@ class UserController extends Controller
             $role_names[] = $role->name;
         }
         return view('user.edit', compact('job_names', 'role_names'));
+    }
+
+    public function update(Request $request)
+    {
+        $user = Auth::user();
+        
+        $user->fill($request->all())->save();
+
+        return redirect('/mypage')->with('flash_message', __('Updated!'));
     }
 
     public function withdraw()
