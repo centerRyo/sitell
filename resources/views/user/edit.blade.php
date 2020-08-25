@@ -4,7 +4,7 @@
   <div class="site-width">
     <h1 class="title">{{__('Edit Profile')}}</h1>
 
-    {{ Form::open(['route' => 'user.update', 'class' => 'postForm mainContainer']) }}
+    {{ Form::open(['route' => 'user.update', 'class' => 'postForm mainContainer', 'enctype' => 'multipart/form-data']) }}
       <div class="postForm__container">
         <div class="postForm__label">
           {{ Form::label('pic', 'アイコン画像')}}
