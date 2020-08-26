@@ -42,7 +42,7 @@
                         <li class="menu__item">
                             @if (isset($user->pic))
                                 <a href="{{ route('mypage') }}">
-                                    <img class="menu__item_img" src="{{ $user->pic }}" alt="">
+                                    <img class="menu__item_img" src="/uploads/{{ $user->pic }}" alt="">
                                 </a>
                             @else
                                 <a href="{{ route('mypage') }}">
