@@ -260,6 +260,38 @@ a:hover {
 }
 
 // ========================================
+// 画像アップロード
+// ========================================
+.areaDrop {
+  width: 30%;
+  height: 180px;
+  background: #f6f5f5;
+  border-radius: 50%;
+  color: #ccc;
+  text-align: center;
+  line-height: 180px;
+  position: relative;
+  &__inputFile {
+    border-radius: 50%;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+  &__prevImg {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+// ========================================
 // プロフィール
 // ========================================
 .profileContainer {

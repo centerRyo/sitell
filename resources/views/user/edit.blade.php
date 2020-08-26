@@ -9,7 +9,13 @@
         <div class="postForm__label">
           {{ Form::label('pic', 'アイコン画像')}}
         </div>
-        {{ Form::file('pic')}}
+        <div class="areaDrop">
+          {{ Form::hidden('MAX_IMAGE_SIZE', '3145728')}}
+          {{ Form::file('pic', ['class' => 'areaDrop__inputFile'])}}
+          @if (isset($user->pic))
+            <img src="/uploads/{{ $user->pic }}" alt="" class="areaDrop__prevImg">
+          @endif
+        </div>
         @error('pic')
           <div class="area-msg">
             {{ $message }}
