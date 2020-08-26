@@ -6,7 +6,7 @@
             <section class="profile">
                 <div class="profile__img">
                     @if (isset($user->pic))
-                        <img src="{{ $user->pic }}" alt="">
+                        <img src="/uploads/{{ $user->pic }}" alt="">
                     @else
                         <img src="{{ asset('/img/user_default.png') }}" alt="">
                     @endif
