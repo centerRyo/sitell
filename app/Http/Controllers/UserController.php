@@ -49,18 +49,21 @@ class UserController extends Controller
     public function update(Request $request)
     {
         $request->validate([
+            'name' => 'max:255',
             'pic' => 'file|mimes:jpeg,png,jpg|max:2048'
         ]);
 
         $user = Auth::user();
-
-        $file = $request->pic;
-        $fileName = time() . '.' . $file->getClientOriginalExtension();
-        $target_path = public_path('/uploads/');
-        $file->move($target_path, $fileName);
-
         $user->fill($request->all())->save();
-        $user->fill(['pic' => $fileName])->save();
+
+        // 画像データは別で上書き保存する
+        if (isset($request->pic)) {
+            $file = $request->pic;
+            $fileName = time() . '.' . $file->getClientOriginalExtension();
+            $target_path = public_path('/uploads/');
+            $file->move($target_path, $fileName);
+            $user->fill(['pic' => $fileName])->save();
+        }
 
         return redirect('/mypage')->with('flash_message', __('Updated!'));
     }
