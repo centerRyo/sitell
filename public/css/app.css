@@ -408,3 +408,7 @@ a:hover {
   color: #d70808;
 }
 
+.ck-editor__editable {
+  min-height: 300px;
+}
+
