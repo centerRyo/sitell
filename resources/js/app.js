@@ -5,8 +5,9 @@
  */
 
 require('./bootstrap');
-
+require('@ckeditor/ckeditor5-build-classic/build/translations/ja');
 window.Vue = require('vue');
+window.CKEditor = require('@ckeditor/ckeditor5-vue');
 
 /**
  * The following block of code may be used to automatically register your
@@ -19,6 +20,8 @@ window.Vue = require('vue');
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
+Vue.use(CKEditor);
+Vue.component('ckeditor-component', require('./components/CKEditorComponent.vue').default);
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 
 /**
