@@ -11,7 +11,6 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
-    <script src="{{ asset('js/ckeditor/ckeditor.js') }}"></script>                                         
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -23,56 +22,60 @@
     <link href="{{ asset('css/reset.css') }}" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <div class="site-width">
-            <h1 class="header__title"><a href=""><img src="{{ asset('/img/logo3.png') }}" alt=""></a></h1>
+    <div id="app">
+        <div id="main">
+            <header class="header">
+                <div class="site-width">
+                    <h1 class="header__title"><a href=""><img src="{{ asset('/img/logo3.png') }}" alt=""></a></h1>
 
-            <nav>
-                <ul class="menu">
-                    @guest
-                        <li class="menu__item">
-                            <a class="menu__item_link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                        </li>
-                        @if (Route::has('register'))
-                            <li class="menu__item">
-                                <a class="menu__item_link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                            </li>
-                        @endif
-                    @else
-                        <li class="menu__item">
-                            @if (isset($user->pic))
-                                <a href="{{ route('mypage') }}">
-                                    <img class="menu__item_img" src="/uploads/{{ $user->pic }}" alt="">
-                                </a>
+                    <nav>
+                        <ul class="menu">
+                            @guest
+                                <li class="menu__item">
+                                    <a class="menu__item_link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                </li>
+                                @if (Route::has('register'))
+                                    <li class="menu__item">
+                                        <a class="menu__item_link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    </li>
+                                @endif
                             @else
-                                <a href="{{ route('mypage') }}">
-                                    <img class="menu__item_img" src="{{ asset('/img/user_default.png')}}" alt="">
-                                </a>
-                            @endif
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__item_link" href="{{ route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">{{ __('Logout') }}</a>
+                                <li class="menu__item">
+                                    @if (isset($user->pic))
+                                        <a href="{{ route('mypage') }}">
+                                            <img class="menu__item_img" src="/uploads/{{ $user->pic }}" alt="">
+                                        </a>
+                                    @else
+                                        <a href="{{ route('mypage') }}">
+                                            <img class="menu__item_img" src="{{ asset('/img/user_default.png')}}" alt="">
+                                        </a>
+                                    @endif
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__item_link" href="{{ route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">{{ __('Logout') }}</a>
 
-                            <form action="{{ route('logout') }}" method="post" style="display: none;" id="logout-form">
-                                @csrf
-                            </form>
-                        </li>
-                    @endguest 
-                </ul>
-            </nav>
-        </div>
-    </header>
+                                    <form action="{{ route('logout') }}" method="post" style="display: none;" id="logout-form">
+                                        @csrf
+                                    </form>
+                                </li>
+                            @endguest 
+                        </ul>
+                    </nav>
+                </div>
+            </header>
 
-    @if (session('flash_message'))
-        <div class="msgSlide">
-            {{ session('flash_message') }}
+            @if (session('flash_message'))
+                <div class="msgSlide">
+                    {{ session('flash_message') }}
+                </div>
+            @endif
+            <main class="container_wrapper">
+                @yield('content')
+            </main>
+            <footer class="footer">
+                Copyright - Sitell 2020, All Right Reserved.
+            </footer>
         </div>
-    @endif
-    <main class="container_wrapper">
-        @yield('content')
-    </main>
-    <footer class="footer">
-        Copyright - Sitell 2020, All Right Reserved.
-    </footer>
+    </div>
 </body>
 </html>
