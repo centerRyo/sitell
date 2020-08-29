@@ -11,10 +11,7 @@
         </div>
         <div class="areaDrop">
           {{ Form::hidden('MAX_IMAGE_SIZE', '3145728')}}
-          {{ Form::file('pic', ['class' => 'areaDrop__inputFile'])}}
-          @if (isset($user->pic))
-            <img src="/uploads/{{ $user->pic }}" alt="" class="areaDrop__prevImg">
-          @endif
+          <imagepreview-component pic_path="/uploads/{{ $user->pic }}" pic="{{ $user->pic }}"></imagepreview-component>
         </div>
         @error('pic')
           <div class="area-msg">
