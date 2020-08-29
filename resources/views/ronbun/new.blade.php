@@ -61,7 +61,7 @@
           {{ Form::label('abstract', __('Abstract')) }}
           <span class="postForm__label--must">{{ __('Required') }}</span>
         </div>
-        {{ Form::textarea('abstract', old('abstract'), ['id' => 'ckeditor', 'class' => 'postForm__textarea'])}}
+        <ckeditor-component content="{{ old('abstract') }}"></ckeditor-component>
         @error('abstract')
           <div class="area-msg">
             {{ $message }}
@@ -99,7 +99,4 @@
     {{ Form::close() }}
     @include('sidebar_mypage')
   </div>
-  <script>
-        CKEDITOR.replace('ckeditor');
-    </script>
 @endsection
