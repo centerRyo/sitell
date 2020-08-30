@@ -11,7 +11,7 @@
         </div>
         <div class="areaDrop">
           {{ Form::hidden('MAX_IMAGE_SIZE', '3145728')}}
-          <imagepreview-component pic_path="/uploads/{{ $user->pic }}" pic="{{ $user->pic }}"></imagepreview-component>
+          <imagepreview-component name="pic" pic_path="/uploads/{{ $user->pic }}" pic="{{ $user->pic }}"></imagepreview-component>
         </div>
         @error('pic')
           <div class="area-msg">

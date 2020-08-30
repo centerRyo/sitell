@@ -1991,7 +1991,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: ['pic', 'pic_path'],
+  props: ['name', 'pic', 'pic_path'],
   data: function data() {
     return {
       imageData: ''
@@ -37642,7 +37642,7 @@ var render = function() {
   return _c("div", [
     _c("input", {
       staticClass: "areaDrop__inputFile",
-      attrs: { type: "file", name: "pic" },
+      attrs: { type: "file", name: _vm.name },
       on: {
         change: function($event) {
           return _vm.onFileChange($event)
