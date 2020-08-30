@@ -85,7 +85,10 @@
         <div class="postForm__label">
           {{ Form::label('thumbnail', __('Thumbnail')) }}
         </div>
-        {{ Form::file('thumbnail') }}
+        <div class="areaDrop">
+          {{ Form::hidden('MAX_IMAGE_SIZE', '3145728')}}
+          <imagepreview-component name="thumbnail"></imagepreview-component>
+        </div>
         @error('thumbnail')
           <div class="area-msg">
             {{ $message }}
