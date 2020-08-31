@@ -33,6 +33,15 @@ class RonbunController extends Controller
         $ronbun->fill($request->all());
         $ronbun->user_id = Auth::user()->id;
         $ronbun->save();
+        
+        // 画像データは別で上書き保存する
+        if (isset($request->thumbnail)) {
+            $file = $request->thumbnail;
+            $fileName = time() . '.' . $file->getClientOriginalExtension();
+            $target_path = public_path('/uploads/');
+            $file->move($target_path, $fileName);
+            $ronbun->fill(['pic' => $fileName])->save();
+        }
 
         return redirect('/mypage')->with('flash_message', __('Registered!'));
     }
