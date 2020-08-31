@@ -26,6 +26,7 @@ class RonbunController extends Controller
             'category_id' => 'required',
             'author' => 'required|string|max:255',
             'abstract' => 'required',
+            'thumbnail' => 'file|mimes:jpeg,png,jpg|max:2048',
         ]);
 
         $ronbun = new Ronbun();
