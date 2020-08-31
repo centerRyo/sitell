@@ -50,7 +50,7 @@ class UserController extends Controller
     {
         $request->validate([
             'name' => 'max:255',
-            'pic' => 'file|mimes:jpeg,png,jpg|max:2048'
+            'pic' => 'file|mimes:jpeg,png,jpg|max:2048',
         ]);
 
         $user = Auth::user();
