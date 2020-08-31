@@ -137,6 +137,7 @@ a:hover {
   }
   &__container {
     display: flex;
+    flex-wrap: wrap;
     margin-top: $space_m;
     .content {
       width: 32%;
