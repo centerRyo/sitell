@@ -40,7 +40,7 @@ class RonbunController extends Controller
             $fileName = time() . '.' . $file->getClientOriginalExtension();
             $target_path = public_path('/uploads/');
             $file->move($target_path, $fileName);
-            $ronbun->fill(['pic' => $fileName])->save();
+            $ronbun->fill(['thumbnail' => $fileName])->save();
         }
 
         return redirect('/mypage')->with('flash_message', __('Registered!'));
