@@ -1966,7 +1966,8 @@ __webpack_require__.r(__webpack_exports__);
       editor: _ckeditor_ckeditor5_build_classic__WEBPACK_IMPORTED_MODULE_0___default.a,
       editorConfig: {
         language: 'ja'
-      }
+      },
+      val: this.content
     };
   }
 });
@@ -37609,11 +37610,11 @@ var render = function() {
       config: _vm.editorConfig
     },
     model: {
-      value: _vm.content,
+      value: _vm.val,
       callback: function($$v) {
-        _vm.content = $$v
+        _vm.val = $$v
       },
-      expression: "content"
+      expression: "val"
     }
   })
 }

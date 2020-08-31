@@ -1,5 +1,5 @@
 <template>
-  <ckeditor tag-name="textarea" name="abstract" :editor="editor" v-model="content" :config="editorConfig"></ckeditor>
+  <ckeditor tag-name="textarea" name="abstract" :editor="editor" v-model="val" :config="editorConfig"></ckeditor>
 </template>
 
 <script>
@@ -14,6 +14,7 @@ export default {
       editorConfig: {
         language: 'ja',
       },
+      val: this.content
     };
   }  
 }
