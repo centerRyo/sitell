@@ -138,7 +138,7 @@ a:hover {
 }
 
 .contents__container .content p {
-  height: 50px;
+  margin-top: 10px;
 }
 
 .contents__container .content__image {

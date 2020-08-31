@@ -31,7 +31,11 @@
                     @foreach ($ronbuns as $ronbun)
                     <div class="content">
                         <a href="">
-                            <img src="" alt="">
+                            @if (isset($ronbun->thumbnail))
+                            <img src="/uploads/{{ $ronbun->thumbnail }}" class="content__image">
+                            @else
+                            <img src="{{ asset('/img/no_image.png') }}" class="content__image">
+                            @endif
                             <p>{{ $ronbun->title }}</p>
                         </a>
                     </div>
