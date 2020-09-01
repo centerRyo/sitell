@@ -41,8 +41,9 @@
                         <span class="content__category"></span>
                         <div class="content__button">
                             <a href=""><i class="fas fa-pencil-alt content__button--edit"></i></a>
-                            <form method="post" action="" name="delete_post" id="delete_post">
-                                <a href="javascript:delete_post:submit()"><i class="fas fa-trash-alt content__button--trash"></i></a>
+                            <form method="post" action="{{ route('ronbun.delete', $ronbun->id) }}">
+                                @csrf
+                                <button type="submit" onclick="return confirm('本当に削除してもよろしいですか？');"><i class="fas fa-trash-alt content__button--trash"></i></button>
                             </form>
                         </div>
                     </div>
