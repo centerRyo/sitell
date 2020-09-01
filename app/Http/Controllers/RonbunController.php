@@ -26,13 +26,34 @@ class RonbunController extends Controller
             'category_id' => 'required',
             'author' => 'required|string|max:255',
             'abstract' => 'required',
+            'thumbnail' => 'file|mimes:jpeg,png,jpg|max:2048',
         ]);
 
         $ronbun = new Ronbun();
         $ronbun->fill($request->all());
         $ronbun->user_id = Auth::user()->id;
         $ronbun->save();
+        
+        // 画像データは別で上書き保存する
+        if (isset($request->thumbnail)) {
+            $file = $request->thumbnail;
+            $fileName = time() . '.' . $file->getClientOriginalExtension();
+            $target_path = public_path('/uploads/');
+            $file->move($target_path, $fileName);
+            $ronbun->fill(['thumbnail' => $fileName])->save();
+        }
 
         return redirect('/mypage')->with('flash_message', __('Registered!'));
+    }
+
+    public function destroy($id)
+    {
+        if (!ctype_digit($id)) {
+            return redirect('/mypage')->with('flash_message', __('Invalid operation was performed.'));
+        }
+
+        Ronbun::find($id)->delete();
+
+        return redirect('/mypage')->with('flash_message', __('Deleted.'));
     }
 }

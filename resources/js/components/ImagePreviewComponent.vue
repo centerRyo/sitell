@@ -1,6 +1,6 @@
 <template>
     <div>
-        <input type="file" name="pic" class="areaDrop__inputFile" @change="onFileChange($event)">
+        <input type="file" :name="name" class="areaDrop__inputFile" @change="onFileChange($event)">
         <img :src="imageData" v-if="imageData" class="areaDrop__prevImg">
         <img :src="pic_path" v-else-if="pic" class="areaDrop__prevImg">
     </div>
@@ -8,7 +8,7 @@
 
 <script>
     export default {
-        props: ['pic', 'pic_path'],
+        props: ['name', 'pic', 'pic_path'],
         data: function() {
             return {
                 imageData: ''

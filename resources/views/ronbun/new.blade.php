@@ -4,7 +4,7 @@
   <div class="site-width">
     <h1 class="title">{{__('Register Ronbun')}}</h1>
 
-    {{ Form::open(['route' => 'ronbun.new', 'class' => 'postForm mainContainer']) }}
+    {{ Form::open(['route' => 'ronbun.new', 'class' => 'postForm mainContainer', 'enctype' => 'multipart/form-data']) }}
       <div class="postForm__container">
         <div class="postForm__label">
           {{ Form::label('title', __('Title'))}}
@@ -85,7 +85,10 @@
         <div class="postForm__label">
           {{ Form::label('thumbnail', __('Thumbnail')) }}
         </div>
-        {{ Form::file('thumbnail') }}
+        <div class="areaDrop">
+          {{ Form::hidden('MAX_IMAGE_SIZE', '3145728')}}
+          <imagepreview-component name="thumbnail"></imagepreview-component>
+        </div>
         @error('thumbnail')
           <div class="area-msg">
             {{ $message }}
