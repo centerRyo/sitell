@@ -45,4 +45,15 @@ class RonbunController extends Controller
 
         return redirect('/mypage')->with('flash_message', __('Registered!'));
     }
+
+    public function destroy($id)
+    {
+        if (!ctype_digit($id)) {
+            return redirect('/mypage')->with('flash_message', __('Invalid operation was performed.'));
+        }
+
+        Ronbun::find($id)->delete();
+
+        return redirect('/mypage')->with('flash_message', __('Deleted.'));
+    }
 }
