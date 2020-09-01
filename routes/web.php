@@ -27,3 +27,4 @@ Route::post('/withdraw', 'UserController@delete')->name('user.delete');
 Route::get('/user/edit', 'UserController@edit')->name('user.edit');
 Route::post('/user/edit', 'UserController@update')->name('user.update');
 Route::post('/ronbun/{id}/delete', 'RonbunController@destroy')->name('ronbun.delete');
+Route::get('/ronbun/{id}/edit', 'RonbunController@edit')->name('ronbun.edit');
