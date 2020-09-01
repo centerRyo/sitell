@@ -166,17 +166,13 @@ a:hover {
   margin-right: 10px;
 }
 
-.contents__container .content__button--edit:hover {
-  cursor: pointer;
-}
-
 .contents__container .content__button--trash {
   color: #e41a1a;
   font-size: 20px;
 }
 
-.contents__container .content__button--trash:hover {
-  cursor: pointer;
+.contents__container .content__button form {
+  display: inline;
 }
 
 .contents__container .content:nth-child(3n) {

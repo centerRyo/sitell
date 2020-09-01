@@ -40,8 +40,10 @@
                         </a>
                         <span class="content__category"></span>
                         <div class="content__button">
-                            <i class="fas fa-pencil-alt content__button--edit"></i>
-                            <i class="fas fa-trash-alt content__button--trash"></i>
+                            <a href=""><i class="fas fa-pencil-alt content__button--edit"></i></a>
+                            <form method="post" action="" name="delete_post" id="delete_post">
+                                <a href="javascript:delete_post:submit()"><i class="fas fa-trash-alt content__button--trash"></i></a>
+                            </form>
                         </div>
                     </div>
                     @endforeach

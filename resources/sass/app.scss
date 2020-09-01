@@ -174,15 +174,12 @@ a:hover {
           font-size: $font-size_l;
           margin-right: $space_m;
         }
-        &--edit:hover {
-          cursor: pointer;
-        }
         &--trash {
           color: #e41a1a;
           font-size: $font-size_l;
         }
-        &--trash:hover {
-          cursor: pointer;
+        form {
+          display: inline;
         }
       }
     }
