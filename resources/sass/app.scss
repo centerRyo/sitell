@@ -148,15 +148,42 @@ a:hover {
       margin-right: 2%;
       margin-top: $space_m;
       transition: all .3s;
-      a {
+      &__link {
         display: block;
       }
-      p {
+      &__title {
         margin-top: $space_m;
       }
       &__image {
         width:  100%;
         height: 178px;
+      }
+      &__category {
+        display: inline-block;
+        background: #28b8f3;
+        font-size: $font-size_s;
+        border-radius: 3px;
+        padding: $space_s;
+        color: #fff;
+        margin: $space_m 0;
+      }
+      &__button {
+        text-align: right;
+        &--edit {
+          color: #04a904;
+          font-size: $font-size_l;
+          margin-right: $space_m;
+        }
+        &--edit:hover {
+          cursor: pointer;
+        }
+        &--trash {
+          color: #e41a1a;
+          font-size: $font-size_l;
+        }
+        &--trash:hover {
+          cursor: pointer;
+        }
       }
     }
     .content:nth-child(3n) {
