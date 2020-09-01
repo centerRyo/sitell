@@ -15,13 +15,13 @@
       退会しますか？
     </p>
     </div>
-    {{ Form::open(['route' => 'user.delete', 'class' => '']) }}
+    {{ Form::open(['route' => 'user.delete']) }}
+      @csrf
       <div class="btnContainer">
-        <!-- {{ Form::button( 'はい、退会します', ['type' => 'submit', 'class' => 'btn']) }} -->
         <button type="submit" class="btn" onclick="return check()">はい、退会します</button>
         <a class="mypageLink" href="{{ route('mypage')}}">いいえ、退会しません</a>
       </div>
-        {{ Form::close() }}
+    {{ Form::close() }}
   </div>
 
   <script>
