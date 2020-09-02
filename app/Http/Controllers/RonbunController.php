@@ -67,7 +67,7 @@ class RonbunController extends Controller
             return redirect('/mypage')->with('flash_message', __('Invalid operation was performed.'));
         }
 
-        $ronbun = new Ronbun();
+        $ronbun = Ronbun::find($id);
         $ronbun->fill($request->all());
         $ronbun->user_id = Auth::user()->id;
         $ronbun->save();
@@ -81,7 +81,7 @@ class RonbunController extends Controller
             $ronbun->fill(['thumbnail' => $fileName])->save();
         }
 
-        return redirect('/mypage')->with('flash_message', __('Registered!'));
+        return redirect('/mypage')->with('flash_message', __('Updated!'));
     }
 
     public function destroy($id)
