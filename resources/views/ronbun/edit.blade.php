@@ -4,7 +4,8 @@
   <div class="site-width">
     <h1 class="title">{{__('Edit Ronbun')}}</h1>
 
-    {{ Form::open(['route' => 'ronbun.update', 'class' => 'postForm mainContainer', 'enctype' => 'multipart/form-data']) }}
+    <form action="{{ route('ronbun.update', $ronbun->id) }}" method="post" enctype="multipart/form-data" class="postForm mainContainer">
+      @csrf
       <div class="postForm__container">
         <div class="postForm__label">
           {{ Form::label('title', __('Title'))}}
@@ -23,7 +24,7 @@
           {{ Form::label('category_id', __('Category')) }}
           <span class="postForm__label--must">{{ __('Required') }}</span>
         </div>
-        {{ Form::select('category_id', null, ['class' => 'postForm__select', 'placeholder' => '選択してください']) }}
+        {{ Form::select('category_id', $category_names, $ronbun->category_id, ['class' => 'postForm__select', 'placeholder' => '選択してください']) }}
         @error('category_id')
           <div class="area-msg">
             {{ $message }}
@@ -99,7 +100,7 @@
       <div class="btnContainer">
         {{ Form::button( __('Update'), ['type' => 'submit', 'class' => 'btn btn--right']) }}
       </div>
-    {{ Form::close() }}
+    </form>
     @include('sidebar_mypage')
   </div>
 @endsection
