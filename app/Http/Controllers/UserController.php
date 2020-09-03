@@ -32,16 +32,16 @@ class UserController extends Controller
 
     public function edit()
     {
-        $jobs = Job::select('name')->get()->all();
+        $jobs = Job::select('id', 'name')->get()->all();
         $job_names = [];
         foreach ($jobs as $job) {
-            $job_names[] = $job->name;
+            $job_names[$job->id] = $job->name;
         }
 
-        $roles = Role::select('name')->get()->all();
+        $roles = Role::select('id', 'name')->get()->all();
         $role_names = [];
         foreach ($roles as $role) {
-            $role_names[] = $role->name;
+            $role_names[$role->id] = $role->name;
         }
         return view('user.edit', compact('job_names', 'role_names'));
     }
