@@ -9,6 +9,11 @@ use Illuminate\Support\Facades\Auth;
 
 class RonbunController extends Controller
 {
+    public function index()
+    {
+        return view('ronbun.index');
+    }
+
     public function new()
     {
         $categories = Category::select('name')->get()->all();
