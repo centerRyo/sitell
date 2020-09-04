@@ -33,6 +33,12 @@ html, body {
   letter-spacing: 2px;
 }
 
+#app {
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
+
 a {
   color: $font-color_default;
   transition: .2s;

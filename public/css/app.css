@@ -10,6 +10,12 @@ body {
   letter-spacing: 2px;
 }
 
+#app {
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
+
 a {
   color: #000;
   transition: 0.2s;
