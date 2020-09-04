@@ -13,12 +13,9 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Auth::routes();
 
+Route::get('/', 'RonbunController@index')->name('ronbun.index');
 Route::get('/mypage', 'UserController@mypage')->name('mypage');
 Route::get('/ronbun/new', 'RonbunController@new')->name('ronbun.new');
 Route::post('/ronbun/new', 'RonbunController@create');
