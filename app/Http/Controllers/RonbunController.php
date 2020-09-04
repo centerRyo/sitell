@@ -6,12 +6,21 @@ use App\Category;
 use App\Ronbun;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class RonbunController extends Controller
 {
     public function index()
     {
-        return view('ronbun.index');
+        $ronbuns = DB::table('ronbuns')
+                        ->leftJoin('categories', 'ronbuns.category_id', '=', 'categories.id')
+                        ->select('ronbuns.*', 'categories.name as category_name')
+                        ->limit(12)
+                        ->orderBy('ronbuns.updated_at', 'desc')
+                        ->get();
+        foreach ($ronbuns as $ronbun) {
+        }
+        return view('ronbun.index', compact('ronbuns'));
     }
 
     public function new()
