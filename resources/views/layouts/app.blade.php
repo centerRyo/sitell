@@ -25,7 +25,7 @@
     <div id="app">
         <header class="header">
             <div class="site-width">
-                <h1 class="header__title"><a href=""><img src="{{ asset('/img/logo3.png') }}" alt=""></a></h1>
+                <h1 class="header__title"><a href="{{ route('ronbun.index') }}"><img src="{{ asset('/img/logo3.png') }}" alt=""></a></h1>
 
                 <nav>
                     <ul class="menu">
