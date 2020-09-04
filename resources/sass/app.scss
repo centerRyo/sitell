@@ -145,6 +145,7 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     margin-top: $space_m;
+    margin-bottom: $space_3l;
     .content {
       width: 32%;
       background: #fff;
@@ -427,6 +428,17 @@ a:hover {
   padding: $space_l;
   background: #ea9906;
   margin-left: $space_l;
+}
+
+.leadLink {
+  color: $color_corp;
+  display: block;
+  font-size: $font-size_l;
+  text-align: center;
+}
+
+.leadLink:hover {
+  text-decoration: underline;
 }
 
 // ========================================

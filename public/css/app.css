@@ -126,6 +126,7 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   margin-top: 10px;
+  margin-bottom: 40px;
 }
 
 .contents__container .content {
@@ -422,6 +423,17 @@ a:hover {
   padding: 15px;
   background: #ea9906;
   margin-left: 15px;
+}
+
+.leadLink {
+  color: #12157b;
+  display: block;
+  font-size: 20px;
+  text-align: center;
+}
+
+.leadLink:hover {
+  text-decoration: underline;
 }
 
 .msgSlide {
