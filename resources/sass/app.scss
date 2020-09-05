@@ -390,6 +390,29 @@ a:hover {
   }
 }
 
+.category {
+  background: #fff;
+  margin-top: $space_l;
+  padding: $space_l;
+  box-sizing: border-box;
+  &__title {
+    color: $color_corp;
+  }
+  &__container {
+    width: 100%;
+  }
+  &__item {
+    margin-top: $space_m;
+    a {
+      display: block;
+      padding: $space_m;
+    }
+    a:hover {
+      background: #efefef; 
+    }
+  }
+}
+
 // ========================================
 // サイドバー(マイページ)
 // ========================================

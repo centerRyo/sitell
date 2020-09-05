@@ -14,4 +14,15 @@
     </a>
     @endforeach
   </section>
+
+  <section class="category">
+    <h2 class="category__title">カテゴリー一覧</h2>
+    <ul class="category__container">
+      @foreach ($categories as $category)
+        <li class="category__item">
+          <a href="">{{ $category->name }}</a>
+        </li>
+      @endforeach
+    </ul>
+  </section>
 </section>
