@@ -36,7 +36,15 @@ class RonbunController extends Controller
 
         $ronbun = Ronbun::find($id);
 
-        return view('ronbun.show', compact('ronbun'));
+        // TODO: お気に入りテーブルとjoinをしてお気に入り件数が高いもの5件を表示するようにする
+        $pickup_ronbuns = DB::table('ronbuns')
+                                ->limit(5)
+                                ->orderBy('updated_at', 'desc')
+                                ->get();
+
+        $categories = Category::all();
+
+        return view('ronbun.show', compact('ronbun', 'pickup_ronbuns', 'categories'));
     }
 
     public function new()
