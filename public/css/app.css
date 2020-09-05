@@ -10,6 +10,12 @@ body {
   letter-spacing: 2px;
 }
 
+#app {
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
+
 a {
   color: #000;
   transition: 0.2s;
@@ -120,6 +126,7 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   margin-top: 10px;
+  margin-bottom: 40px;
 }
 
 .contents__container .content {
@@ -347,6 +354,70 @@ a:hover {
   color: #12157b;
 }
 
+.sidebar {
+  float: left;
+  width: 280px;
+  margin-top: 30px;
+  margin-left: 20px;
+  box-sizing: border-box;
+}
+
+.pickup {
+  background: #fff;
+  padding: 15px;
+}
+
+.pickup__title {
+  color: #12157b;
+}
+
+.pickup__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+  width: 100%;
+  height: 100%;
+}
+
+.pickup__content img {
+  width: 25%;
+  height: 60px;
+  margin-right: 15px;
+}
+
+.pickup__content--title {
+  width: 200px;
+}
+
+.category {
+  background: #fff;
+  margin-top: 15px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.category__title {
+  color: #12157b;
+}
+
+.category__container {
+  width: 100%;
+}
+
+.category__item {
+  margin-top: 10px;
+}
+
+.category__item a {
+  display: block;
+  padding: 10px;
+}
+
+.category__item a:hover {
+  background: #efefef;
+}
+
 .sidebarMypage {
   float: left;
   width: 240px;
@@ -416,6 +487,17 @@ a:hover {
   padding: 15px;
   background: #ea9906;
   margin-left: 15px;
+}
+
+.leadLink {
+  color: #12157b;
+  display: block;
+  font-size: 20px;
+  text-align: center;
+}
+
+.leadLink:hover {
+  text-decoration: underline;
 }
 
 .msgSlide {

@@ -6,9 +6,29 @@ use App\Category;
 use App\Ronbun;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class RonbunController extends Controller
 {
+    public function index()
+    {
+        $ronbuns = DB::table('ronbuns')
+                        ->leftJoin('categories', 'ronbuns.category_id', '=', 'categories.id')
+                        ->select('ronbuns.*', 'categories.name as category_name')
+                        ->limit(12)
+                        ->orderBy('ronbuns.updated_at', 'desc')
+                        ->get();
+
+        // TODO: お気に入りテーブルとjoinをしてお気に入り件数が高いもの5件を表示するようにする
+        $pickup_ronbuns = DB::table('ronbuns')
+                                ->limit(5)
+                                ->orderBy('updated_at', 'desc')
+                                ->get();
+
+        $categories = Category::all();
+        return view('ronbun.index', compact('ronbuns', 'pickup_ronbuns', 'categories'));
+    }
+
     public function new()
     {
         $categories = Category::select('name')->get()->all();
