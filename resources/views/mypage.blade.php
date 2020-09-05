@@ -30,7 +30,7 @@
                 <div class="contents__container">
                     @foreach ($ronbuns as $ronbun)
                     <div class="content">
-                        <a href="" class="content__link">
+                        <a href="{{ route('ronbun.show', $ronbun->id) }}" class="content__link">
                             @if (isset($ronbun->thumbnail))
                             <img src="/uploads/{{ $ronbun->thumbnail }}" class="content__image">
                             @else
