@@ -24,7 +24,9 @@ class RonbunController extends Controller
                                 ->limit(5)
                                 ->orderBy('updated_at', 'desc')
                                 ->get();
-        return view('ronbun.index', compact('ronbuns', 'pickup_ronbuns'));
+
+        $categories = Category::all();
+        return view('ronbun.index', compact('ronbuns', 'pickup_ronbuns', 'categories'));
     }
 
     public function new()
