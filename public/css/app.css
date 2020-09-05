@@ -354,6 +354,42 @@ a:hover {
   color: #12157b;
 }
 
+.sidebar {
+  float: left;
+  width: 280px;
+  margin-top: 30px;
+  margin-left: 20px;
+  box-sizing: border-box;
+}
+
+.pickup {
+  background: #fff;
+  padding: 15px;
+}
+
+.pickup__title {
+  color: #12157b;
+}
+
+.pickup__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+  width: 100%;
+  height: 100%;
+}
+
+.pickup__content img {
+  width: 25%;
+  height: 60px;
+  margin-right: 15px;
+}
+
+.pickup__content--title {
+  width: 200px;
+}
+
 .sidebarMypage {
   float: left;
   width: 240px;

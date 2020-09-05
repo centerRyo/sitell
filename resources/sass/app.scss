@@ -356,6 +356,41 @@ a:hover {
 }
 
 // ========================================
+// サイドバー
+// ========================================
+.sidebar {
+  float: left;
+  width: 280px;
+  margin-top: $space_xxl;
+  margin-left: $space_xl;
+  box-sizing: border-box;
+}
+
+.pickup {
+  background: #fff;
+  padding: $space_l;
+  &__title {
+    color: $color_corp;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: $space_l 0;
+    width: 100%;
+    height: 100%;
+    img {
+      width: 25%;
+      height: 60px;
+      margin-right: $space_l;
+    }
+    &--title {
+      width: 200px;
+    }
+  }
+}
+
+// ========================================
 // サイドバー(マイページ)
 // ========================================
 .sidebarMypage {
