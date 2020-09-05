@@ -18,9 +18,13 @@ class RonbunController extends Controller
                         ->limit(12)
                         ->orderBy('ronbuns.updated_at', 'desc')
                         ->get();
-        foreach ($ronbuns as $ronbun) {
-        }
-        return view('ronbun.index', compact('ronbuns'));
+
+        // TODO: お気に入りテーブルとjoinをしてお気に入り件数が高いもの5件を表示するようにする
+        $pickup_ronbuns = DB::table('ronbuns')
+                                ->limit(5)
+                                ->orderBy('updated_at', 'desc')
+                                ->get();
+        return view('ronbun.index', compact('ronbuns', 'pickup_ronbuns'));
     }
 
     public function new()
