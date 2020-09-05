@@ -29,7 +29,28 @@ class RonbunController extends Controller
         return view('ronbun.index', compact('ronbuns', 'pickup_ronbuns', 'categories'));
     }
 
-    public function show($id) {
+    public function latest()
+    {       
+        $ronbuns = DB::table('ronbuns')
+                        ->leftJoin('categories', 'ronbuns.category_id', '=', 'categories.id')
+                        ->select('ronbuns.*', 'categories.name as category_name')
+                        ->orderBy('ronbuns.updated_at', 'desc')
+                        ->paginate(24);
+                        // ->get();
+        
+        // TODO: お気に入りテーブルとjoinをしてお気に入り件数が高いもの5件を表示するようにする
+        $pickup_ronbuns = DB::table('ronbuns')
+                                ->limit(5)
+                                ->orderBy('updated_at', 'desc')
+                                ->get();
+
+        $categories = Category::all();
+
+        return view('ronbun.latest', compact('ronbuns', 'pickup_ronbuns', 'categories'));
+    }
+
+    public function show($id)
+    {
         if (!ctype_digit($id)) {
             return redirect('/')->with('flash_message', __('Invalid operation was performed.'));
         }

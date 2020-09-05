@@ -8,7 +8,7 @@
 
     <section class="mainContainer">
       <section class="contents">
-        <h2 class="contents__title">新着論文</h2>
+        <h2 class="contents__title">新着論文一覧</h2>
         <div class="contents__container">
           @foreach ($ronbuns as $ronbun)
           <div class="content">
@@ -24,8 +24,7 @@
           </div>
           @endforeach
         </div>
-
-        <a href="" class="leadLink">新着論文一覧を見る</a>
+        {{ $ronbuns->links() }}
       </section>
     </section>
 
