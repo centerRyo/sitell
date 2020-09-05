@@ -2,7 +2,7 @@
   <section class="pickup">
     <h2 class="pickup__title">注目記事</h2>
     @foreach ($pickup_ronbuns as $pickup_ronbun)
-    <a href="">
+    <a href="{{ route('ronbun.show', $pickup_ronbun->id) }}">
       <div class="pickup__content">
         @if (isset($pickup_ronbun->thumbnail))
           <img src="/uploads/{{ $pickup_ronbun->thumbnail }}">
