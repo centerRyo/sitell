@@ -20,7 +20,7 @@
     <ul class="category__container">
       @foreach ($categories as $category)
         <li class="category__item">
-          <a href="">{{ $category->name }}</a>
+          <a href="{{ route('ronbun.category', $category->id) }}">{{ $category->name }}</a>
         </li>
       @endforeach
     </ul>
