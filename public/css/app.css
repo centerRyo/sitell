@@ -192,6 +192,68 @@ a:hover {
   box-shadow: 0 0 10px 0 #ddd;
 }
 
+.ronbunBlock {
+  display: flex;
+  margin: 40px 0;
+}
+
+.ronbunBlock__thumbnail {
+  width: 40%;
+  margin-right: 15px;
+}
+
+.ronbunBlock__thumbnail img {
+  width: 100%;
+}
+
+.ronbunBlock__info {
+  width: 60%;
+  border-collapse: collapse;
+}
+
+.ronbunBlock__info tr {
+  border-bottom: solid 4px #f6f5f5;
+}
+
+.ronbunBlock__info tr:last-child {
+  border-bottom: none;
+}
+
+.ronbunBlock__info th {
+  color: #12157b;
+  position: relative;
+  text-align: left;
+  width: 30%;
+  height: 50px;
+  line-height: 50px;
+  background-color: #eee;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.ronbunBlock__info th:after {
+  display: block;
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top: calc(50% - 10px);
+  right: -10px;
+  border-left: 10px solid #eee;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+.ronbunBlock__info td {
+  text-align: left;
+  width: 70%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #fff;
+  padding: 10px 0;
+}
+
 .form {
   width: 400px;
   margin: 80px auto;
@@ -405,10 +467,6 @@ a:hover {
   width: 100%;
 }
 
-.category__item {
-  margin-top: 10px;
-}
-
 .category__item a {
   display: block;
   padding: 10px;
@@ -416,6 +474,17 @@ a:hover {
 
 .category__item a:hover {
   background: #efefef;
+}
+
+.abstract {
+  margin-bottom: 20px;
+}
+
+.abstract__title {
+  display: inline-block;
+  font-size: 30px;
+  box-shadow: 0 -9px 0 0 #9698e2 inset;
+  margin-bottom: 15px;
 }
 
 .sidebarMypage {
