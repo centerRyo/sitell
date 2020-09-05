@@ -29,6 +29,16 @@ class RonbunController extends Controller
         return view('ronbun.index', compact('ronbuns', 'pickup_ronbuns', 'categories'));
     }
 
+    public function show($id) {
+        if (!ctype_digit($id)) {
+            return redirect('/')->with('flash_message', __('Invalid operation was performed.'));
+        }
+
+        $ronbun = Ronbun::find($id);
+
+        return view('ronbun.show', compact('ronbun'));
+    }
+
     public function new()
     {
         $categories = Category::select('name')->get()->all();
