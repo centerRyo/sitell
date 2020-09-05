@@ -29,7 +29,8 @@ class RonbunController extends Controller
         return view('ronbun.index', compact('ronbuns', 'pickup_ronbuns', 'categories'));
     }
 
-    public function show($id) {
+    public function show($id)
+    {
         if (!ctype_digit($id)) {
             return redirect('/')->with('flash_message', __('Invalid operation was performed.'));
         }
