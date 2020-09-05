@@ -16,8 +16,8 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::get('/', 'RonbunController@index')->name('ronbun.index');
+Route::get('/latest', 'RonbunController@latest')->name('ronbun.latest');
 Route::get('/ronbun/{id}', 'RonbunController@show')->name('ronbun.show');
-Route::get('/ronbun/latest', 'RonbunController@latest')->name('ronbun.latest');
 Route::get('/mypage', 'UserController@mypage')->name('mypage');
 Route::get('/ronbun/new', 'RonbunController@new')->name('ronbun.new');
 Route::post('/ronbun/new', 'RonbunController@create');
