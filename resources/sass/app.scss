@@ -516,6 +516,44 @@ a:hover {
 }
 
 // ========================================
+// ページネーション
+// ========================================
+.pagination {
+  position: relative;
+  left: 50%;
+  margin-top: $space_m;
+  overflow: hidden;
+  display: flex;
+  padding-left: 0;
+}
+
+.page-item {
+  font-size: $font-size_l;
+  position: relative;
+  &.active {
+    .page-link {
+      background: $color_corp;
+      color: #fff;
+    }
+  }
+}
+
+.page-item:last-child {
+  margin-right: 0;
+}
+
+.page-link {
+  background: #fff;
+  display: block;
+  padding: $space_s $space_m;
+}
+
+.page-link:hover {
+  background: $color_corp;
+  color: #fff;
+}
+
+// ========================================
 // ボタン
 // ========================================
 .btnContainer {
