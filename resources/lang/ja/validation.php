@@ -143,6 +143,20 @@ return [
     |
     */
 
-    'attributes' => [],
+    'attributes' => [
+        'email' => 'メールアドレス',
+        'password' => 'パスワード',
+        'gender' => '性別',
+        'age' => '年齢',
+        'job' => '職業',
+        'role' => '職種',
+        'pic' => 'アイコン画像',
+        'title' => 'タイトル',
+        'author' => '著者',
+        'year' => '出版年',
+        'abstract' => '要約',
+        'url' => 'オリジナルURL',
+        'thumbnail' => 'サムネイル画像'
+    ],
 
 ];

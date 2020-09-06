@@ -93,10 +93,10 @@ class RonbunController extends Controller
 
     public function new()
     {
-        $categories = Category::select('name')->get()->all();
+        $categories = Category::select('id', 'name')->get()->all();
         $category_names = [];
         foreach ($categories as $category) {
-            $category_names[] = $category->name;
+            $category_names[$category->id] = $category->name;
         }
         return view('ronbun.new', compact('category_names'));
     }
