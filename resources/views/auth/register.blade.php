@@ -16,7 +16,7 @@
             </div>
         @enderror
 
-        <label for="password">{{ __('Password') }}</label>
+        <label for="password">{{ __('Password') }}</label><span class="addtional">(※8文字以上)</span>
         <input type="password" id="password" class="@error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
 
         @error('password')
