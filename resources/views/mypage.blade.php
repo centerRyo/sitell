@@ -38,7 +38,7 @@
                             @endif
                             <p class="content__title">{{ $ronbun->title }}</p>
                         </a>
-                        <span class="content__category">{{$ronbun->category->name}}</span>
+                        <span class="content__category">{{ $ronbun->category->name }}</span>
                         <div class="content__button">
                             <a href="{{ route('ronbun.edit', $ronbun->id) }}"><i class="fas fa-pencil-alt content__button--edit"></i></a>
                             <form method="post" action="{{ route('ronbun.delete', $ronbun->id) }}">
