@@ -23,7 +23,7 @@
 </head>
 <body>
     <div id="app">
-        <header class="header">
+        <!-- <header class="header">
             <div class="site-width">
                 <h1 class="header__title"><a href="{{ route('ronbun.index') }}"><img src="{{ asset('/img/logo3.png') }}" alt=""></a></h1>
 
@@ -73,7 +73,7 @@
         </main>
         <footer class="footer">
             Copyright - Sitell 2020, All Right Reserved.
-        </footer>
+        </footer> -->
     </div>
 </body>
 </html>
