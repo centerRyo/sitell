@@ -66,6 +66,7 @@ class CreateCategories extends Command
             ['name' => '経済学・経営学', 'created_at' => $now, 'updated_at' => $now],
             ['name' => '社会学', 'created_at' => $now, 'updated_at' => $now],
             ['name' => '心理学・教育学', 'created_at' => $now, 'updated_at' => $now],
+            ['name' => '新型コロナ', 'created_at' => $now, 'updated_at' => $now],
         ];
 
         DB::table('categories')->insert($data);
