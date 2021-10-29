@@ -1,0 +1,14 @@
+@import '../../../../../sass/app.scss';
+@import 'dup-button-default.m.scss';
+
+:local {
+  .root {
+    @extend .root;
+    background: $color_main;
+  }
+
+  .text {
+    @extend .text;
+    color: #fff;
+  }
+}
