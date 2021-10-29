@@ -53,16 +53,16 @@
   width: 23px;
   height: 25px;
   @include mq($breakpoint: sm) {
-    width: 26px;
-    height: 28px;
+    width: 22px;
+    height: 32px;
   }
   @include mq($breakpoint: md) {
-    width: 31px;
-    height: 33px;
+    width: 28px;
+    height: 35px;
   }
   @include mq($breakpoint: lg) {
-    width: 37px;
-    height: 39px;
+    width: 30px;
+    height: 40px;
   }
 }
 
@@ -83,19 +83,19 @@
 }
 
 .button {
-  width: 73px;
-  height: 25px;
+  width: 80px;
+  height: 30px;
   @include mq($breakpoint: sm) {
-    width: 81px;
-    height: 28px;
+    width: 90px;
+    height: 32px;
   }
   @include mq($breakpoint: md) {
-    width: 85px;
-    height: 33px;
+    width: 110px;
+    height: 35px;
   }
   @include mq($breakpoint: lg) {
-    width: 105px;
-    height: 39px;
+    width: 150px;
+    height: 40px;
   }
 }
 

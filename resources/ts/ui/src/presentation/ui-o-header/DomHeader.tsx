@@ -1,6 +1,7 @@
 import React from 'react'
 import { BsSearch } from 'react-icons/bs'
 import { Logo } from '../../assets/Logo'
+import { DupButton, DupButtonTypes } from '../ui-a-button/DupButton'
 import './dup-header-default.m.scss'
 
 export const DomHeader: React.FC = () => {
@@ -16,10 +17,10 @@ export const DomHeader: React.FC = () => {
           </div>
           <ul className="lead">
             <li className="button">
-              <button>新規登録</button>
+              <DupButton type={DupButtonTypes.Register} />
             </li>
             <li className="button">
-              <button>ログイン</button>
+              <DupButton type={DupButtonTypes.Login} />
             </li>
           </ul>
         </div>
