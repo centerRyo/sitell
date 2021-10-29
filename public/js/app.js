@@ -194,10 +194,18 @@ exports = module.exports = __webpack_require__(/*! ../../../../../../node_module
 
 
 // module
-exports.push([module.i, "html, body {\n  background: #eee;\n  box-sizing: border-box;\n  width: 100%;\n  display: flex;\n  flex-flow: column;\n  min-height: 100vh;\n  font-size: 16px;\n  line-height: 1.6;\n  font-family: \"Noto Sans JP\", sans-serif;\n  letter-spacing: 2px;\n}\n\n.header {\n  background: #fff;\n}\n\n.root {\n  box-sizing: border-box;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  max-width: 1194px;\n  margin: 0 auto;\n  padding: 5vw 3.3333333333vw;\n}\n@media screen and (min-width: 561px) {\n  .root {\n    padding: 2.6737967914vw 3.5650623886vw;\n  }\n}\n@media screen and (min-width: 769px) {\n  .root {\n    padding: 3.2509752926vw 3.9011703511vw;\n  }\n}\n@media screen and (min-width: 1194px) {\n  .root {\n    padding: 1.675041876vw 2.5125628141vw;\n  }\n}\n\n.logo {\n  display: flex;\n  align-items: center;\n  width: 70px;\n  height: auto;\n}\n@media screen and (min-width: 561px) {\n  .logo {\n    width: 95px;\n  }\n}\n@media screen and (min-width: 769px) {\n  .logo {\n    width: 120px;\n  }\n}\n@media screen and (min-width: 1194px) {\n  .logo {\n    width: 147px;\n  }\n}\n\n.logo svg {\n  width: 100%;\n  height: 100%;\n}\n\n.nav {\n  display: flex;\n  align-items: center;\n}\n\n.icon {\n  width: 23px;\n  height: 25px;\n}\n@media screen and (min-width: 561px) {\n  .icon {\n    width: 22px;\n    height: 32px;\n  }\n}\n@media screen and (min-width: 769px) {\n  .icon {\n    width: 28px;\n    height: 35px;\n  }\n}\n@media screen and (min-width: 1194px) {\n  .icon {\n    width: 30px;\n    height: 40px;\n  }\n}\n\n.icon > svg {\n  width: 100%;\n  height: 100%;\n}\n\n.lead {\n  display: flex;\n  margin-left: 10px;\n}\n@media screen and (min-width: 561px) {\n  .lead {\n    margin-left: 25px;\n  }\n}\n@media screen and (min-width: 1194px) {\n  .lead {\n    margin-left: 40px;\n  }\n}\n\n.button {\n  width: 80px;\n  height: 30px;\n}\n@media screen and (min-width: 561px) {\n  .button {\n    width: 90px;\n    height: 32px;\n  }\n}\n@media screen and (min-width: 769px) {\n  .button {\n    width: 110px;\n    height: 35px;\n  }\n}\n@media screen and (min-width: 1194px) {\n  .button {\n    width: 150px;\n    height: 40px;\n  }\n}\n\n.button + .button {\n  margin-left: 10px;\n}\n@media screen and (min-width: 561px) {\n  .button + .button {\n    margin-left: 15px;\n  }\n}\n@media screen and (min-width: 769px) {\n  .button + .button {\n    margin-left: 20px;\n  }\n}\n@media screen and (min-width: 1194px) {\n  .button + .button {\n    margin-left: 30px;\n  }\n}", ""]);
+exports.push([module.i, "html, body {\n  background: #eee;\n  box-sizing: border-box;\n  width: 100%;\n  display: flex;\n  flex-flow: column;\n  min-height: 100vh;\n  font-size: 16px;\n  line-height: 1.6;\n  font-family: \"Noto Sans JP\", sans-serif;\n  letter-spacing: 2px;\n}\n\n._2s4h9gN4usUHb90XH4gliX {\n  background: #fff;\n}\n._3RFD3OFHT2DUg8zPqQu7yc {\n  box-sizing: border-box;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  max-width: 1194px;\n  margin: 0 auto;\n  padding: 5vw 3.3333333333vw;\n}\n@media screen and (min-width: 561px) {\n  ._3RFD3OFHT2DUg8zPqQu7yc {\n    padding: 2.6737967914vw 3.5650623886vw;\n  }\n}\n@media screen and (min-width: 769px) {\n  ._3RFD3OFHT2DUg8zPqQu7yc {\n    padding: 3.2509752926vw 3.9011703511vw;\n  }\n}\n@media screen and (min-width: 1194px) {\n  ._3RFD3OFHT2DUg8zPqQu7yc {\n    padding: 1.675041876vw 2.5125628141vw;\n  }\n}\n._2cJ2TLKGrfHtQnWbHCuJhZ {\n  display: flex;\n  align-items: center;\n  width: 70px;\n  height: auto;\n}\n@media screen and (min-width: 561px) {\n  ._2cJ2TLKGrfHtQnWbHCuJhZ {\n    width: 95px;\n  }\n}\n@media screen and (min-width: 769px) {\n  ._2cJ2TLKGrfHtQnWbHCuJhZ {\n    width: 120px;\n  }\n}\n@media screen and (min-width: 1194px) {\n  ._2cJ2TLKGrfHtQnWbHCuJhZ {\n    width: 147px;\n  }\n}\n._2cJ2TLKGrfHtQnWbHCuJhZ svg {\n  width: 100%;\n  height: 100%;\n}\n._1lTubYju_PNq6O5f0k0vNx {\n  display: flex;\n  align-items: center;\n}\n._1OD3YgyH20a19fQHuY1Pg3 {\n  width: 23px;\n  height: 25px;\n}\n@media screen and (min-width: 561px) {\n  ._1OD3YgyH20a19fQHuY1Pg3 {\n    width: 22px;\n    height: 32px;\n  }\n}\n@media screen and (min-width: 769px) {\n  ._1OD3YgyH20a19fQHuY1Pg3 {\n    width: 28px;\n    height: 35px;\n  }\n}\n@media screen and (min-width: 1194px) {\n  ._1OD3YgyH20a19fQHuY1Pg3 {\n    width: 30px;\n    height: 40px;\n  }\n}\n._1OD3YgyH20a19fQHuY1Pg3 > svg {\n  width: 100%;\n  height: 100%;\n}\n.IFSc4f09cTrjtGirWTNU6 {\n  display: flex;\n  margin-left: 10px;\n}\n@media screen and (min-width: 561px) {\n  .IFSc4f09cTrjtGirWTNU6 {\n    margin-left: 25px;\n  }\n}\n@media screen and (min-width: 1194px) {\n  .IFSc4f09cTrjtGirWTNU6 {\n    margin-left: 40px;\n  }\n}\n._10KIu2BoHXT6N-S5sX6dm_ {\n  width: 80px;\n  height: 30px;\n}\n@media screen and (min-width: 561px) {\n  ._10KIu2BoHXT6N-S5sX6dm_ {\n    width: 90px;\n    height: 32px;\n  }\n}\n@media screen and (min-width: 769px) {\n  ._10KIu2BoHXT6N-S5sX6dm_ {\n    width: 110px;\n    height: 35px;\n  }\n}\n@media screen and (min-width: 1194px) {\n  ._10KIu2BoHXT6N-S5sX6dm_ {\n    width: 150px;\n    height: 40px;\n  }\n}\n._10KIu2BoHXT6N-S5sX6dm_ + ._10KIu2BoHXT6N-S5sX6dm_ {\n  margin-left: 10px;\n}\n@media screen and (min-width: 561px) {\n  ._10KIu2BoHXT6N-S5sX6dm_ + ._10KIu2BoHXT6N-S5sX6dm_ {\n    margin-left: 15px;\n  }\n}\n@media screen and (min-width: 769px) {\n  ._10KIu2BoHXT6N-S5sX6dm_ + ._10KIu2BoHXT6N-S5sX6dm_ {\n    margin-left: 20px;\n  }\n}\n@media screen and (min-width: 1194px) {\n  ._10KIu2BoHXT6N-S5sX6dm_ + ._10KIu2BoHXT6N-S5sX6dm_ {\n    margin-left: 30px;\n  }\n}", ""]);
 
 // exports
-
+exports.locals = {
+	"header": "_2s4h9gN4usUHb90XH4gliX",
+	"root": "_3RFD3OFHT2DUg8zPqQu7yc",
+	"logo": "_2cJ2TLKGrfHtQnWbHCuJhZ",
+	"nav": "_1lTubYju_PNq6O5f0k0vNx",
+	"icon": "_1OD3YgyH20a19fQHuY1Pg3",
+	"lead": "IFSc4f09cTrjtGirWTNU6",
+	"button": "_10KIu2BoHXT6N-S5sX6dm_"
+};
 
 /***/ }),
 
@@ -41452,18 +41460,19 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const DomHeader = () => {
-    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", { className: "header" },
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: "root" },
-            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", { className: "logo" },
+const DomHeader = ({ classNames }) => {
+    const styles = classNames || _dup_header_default_m_scss__WEBPACK_IMPORTED_MODULE_4___default.a;
+    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", { className: styles.header },
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.root },
+            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", { className: styles.logo },
                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_assets_Logo__WEBPACK_IMPORTED_MODULE_2__["Logo"], null)),
-            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: "nav" },
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: "icon" },
+            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.nav },
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.icon },
                     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_icons_bs__WEBPACK_IMPORTED_MODULE_1__["BsSearch"], null)),
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", { className: "lead" },
-                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", { className: "button" },
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", { className: styles.lead },
+                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", { className: styles.button },
                         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_button_DupButton__WEBPACK_IMPORTED_MODULE_3__["DupButton"], { type: _ui_a_button_DupButton__WEBPACK_IMPORTED_MODULE_3__["DupButtonTypes"].Register })),
-                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", { className: "button" },
+                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", { className: styles.button },
                         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_button_DupButton__WEBPACK_IMPORTED_MODULE_3__["DupButton"], { type: _ui_a_button_DupButton__WEBPACK_IMPORTED_MODULE_3__["DupButtonTypes"].Login })))))));
 };
 

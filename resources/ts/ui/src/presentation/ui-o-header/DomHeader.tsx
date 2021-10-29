@@ -2,24 +2,30 @@ import React from 'react'
 import { BsSearch } from 'react-icons/bs'
 import { Logo } from '../../assets/Logo'
 import { DupButton, DupButtonTypes } from '../ui-a-button/DupButton'
-import './dup-header-default.m.scss'
+import defaultClassNames from './dup-header-default.m.scss'
 
-export const DomHeader: React.FC = () => {
+type Props = {
+  classNames?: string
+}
+
+export const DomHeader: React.FC<Props> = ({ classNames }) => {
+  const styles = classNames || defaultClassNames
+
   return (
-    <header className="header">
-      <div className="root">
-        <a className="logo">
+    <header className={styles.header}>
+      <div className={styles.root}>
+        <a className={styles.logo}>
           <Logo />
         </a>
-        <div className="nav">
-          <div className="icon">
+        <div className={styles.nav}>
+          <div className={styles.icon}>
             <BsSearch />
           </div>
-          <ul className="lead">
-            <li className="button">
+          <ul className={styles.lead}>
+            <li className={styles.button}>
               <DupButton type={DupButtonTypes.Register} />
             </li>
-            <li className="button">
+            <li className={styles.button}>
               <DupButton type={DupButtonTypes.Login} />
             </li>
           </ul>

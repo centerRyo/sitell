@@ -1,113 +1,116 @@
 @import '../../../../../sass/app.scss';
 
-.header {
-  background: #fff;
+:local {
+  .header {
+    background: #fff;
+  }
+  
+  .root {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1194px;
+    margin: 0 auto;
+    padding: vw(15, 300) vw(10, 300);
+    @include mq($breakpoint: sm) {
+      padding: vw(15, 561) vw(20, 561);
+    }
+    @include mq($breakpoint: md) {
+      padding: vw(25, 769) vw(30, 769);
+    }
+    @include mq($breakpoint: lg) {
+      padding: vw(20, 1194) vw(30, 1194);
+    }
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    width: 70px;
+    height: auto;
+    @include mq($breakpoint: sm) {
+      width: 95px;
+    }
+    @include mq($breakpoint: md) {
+      width: 120px;
+    }
+    @include mq($breakpoint: lg) {
+      width: 147px;
+    }
+  }
+
+  .logo svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .icon {
+    width: 23px;
+    height: 25px;
+    @include mq($breakpoint: sm) {
+      width: 22px;
+      height: 32px;
+    }
+    @include mq($breakpoint: md) {
+      width: 28px;
+      height: 35px;
+    }
+    @include mq($breakpoint: lg) {
+      width: 30px;
+      height: 40px;
+    }
+  }
+
+  .icon > svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .lead {
+    display: flex;
+    margin-left: 10px;
+    @include mq($breakpoint: sm) {
+      margin-left: 25px;
+    }
+    @include mq($breakpoint: lg) {
+      margin-left: 40px;
+    }
+  }
+  
+  .button {
+    width: 80px;
+    height: 30px;
+    @include mq($breakpoint: sm) {
+      width: 90px;
+      height: 32px;
+    }
+    @include mq($breakpoint: md) {
+      width: 110px;
+      height: 35px;
+    }
+    @include mq($breakpoint: lg) {
+      width: 150px;
+      height: 40px;
+    }
+  }
+  
+  .button + .button {
+    margin-left: 10px;
+    @include mq($breakpoint: sm) {
+      margin-left: 15px;
+    }
+    @include mq($breakpoint: md) {
+      margin-left: 20px;
+    }
+    @include mq($breakpoint: lg) {
+      margin-left: 30px;
+    }
+  }
 }
 
-.root {
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1194px;
-  margin: 0 auto;
-  padding: vw(15, 300) vw(10, 300);
-  @include mq($breakpoint: sm) {
-    padding: vw(15, 561) vw(20, 561);
-  }
-  @include mq($breakpoint: md) {
-    padding: vw(25, 769) vw(30, 769);
-  }
-  @include mq($breakpoint: lg) {
-    padding: vw(20, 1194) vw(30, 1194);
-  }
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  width: 70px;
-  height: auto;
-  @include mq($breakpoint: sm) {
-    width: 95px;
-  }
-  @include mq($breakpoint: md) {
-    width: 120px;
-  }
-  @include mq($breakpoint: lg) {
-    width: 147px;
-  }
-}
-
-.logo svg {
-  width: 100%;
-  height: 100%;
-}
-
-.nav {
-  display: flex;
-  align-items: center;
-}
-
-.icon {
-  width: 23px;
-  height: 25px;
-  @include mq($breakpoint: sm) {
-    width: 22px;
-    height: 32px;
-  }
-  @include mq($breakpoint: md) {
-    width: 28px;
-    height: 35px;
-  }
-  @include mq($breakpoint: lg) {
-    width: 30px;
-    height: 40px;
-  }
-}
-
-.icon > svg {
-  width: 100%;
-  height: 100%;
-}
-
-.lead {
-  display: flex;
-  margin-left: 10px;
-  @include mq($breakpoint: sm) {
-    margin-left: 25px;
-  }
-  @include mq($breakpoint: lg) {
-    margin-left: 40px;
-  }
-}
-
-.button {
-  width: 80px;
-  height: 30px;
-  @include mq($breakpoint: sm) {
-    width: 90px;
-    height: 32px;
-  }
-  @include mq($breakpoint: md) {
-    width: 110px;
-    height: 35px;
-  }
-  @include mq($breakpoint: lg) {
-    width: 150px;
-    height: 40px;
-  }
-}
-
-.button + .button {
-  margin-left: 10px;
-  @include mq($breakpoint: sm) {
-    margin-left: 15px;
-  }
-  @include mq($breakpoint: md) {
-    margin-left: 20px;
-  }
-  @include mq($breakpoint: lg) {
-    margin-left: 30px;
-  }
-}
