@@ -1,4 +1,5 @@
 import React from 'react'
+import { DupLabelCard } from '../ui-a-label/DupLabelCard'
 import { DupLabelCategory } from '../ui-a-label/DupLabelCategory'
 import { DupTitle, DupTitleTypes } from '../ui-c-title/DupTitle'
 import { DupFooter } from '../ui-o-footer/DupFooter'
@@ -10,6 +11,7 @@ export const Top: React.FC = () => {
       <DomHeader />
       <DupTitle type={DupTitleTypes.MasterPiece} />
       <DupLabelCategory text="数学" />
+      <DupLabelCard text="農学・食品科学" />
       <DupFooter />
     </>
   )
