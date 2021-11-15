@@ -3,7 +3,7 @@ import defaultClassNames from './dup-badge-default.m.scss'
 
 type Props = {
   number: number,
-  classNames?: string,
+  classNames: string,
 }
 
 export const DomBadge: React.FC<Props> = ({

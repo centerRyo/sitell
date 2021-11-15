@@ -1,5 +1,5 @@
 import React from 'react'
-import { DupBadge } from '../ui-a-badge/DupBadge'
+import { DupBadge, DupBadgeTypes } from '../ui-a-badge/DupBadge'
 import { DupLabelCard } from '../ui-a-label/DupLabelCard'
 import { DupLabelCategory } from '../ui-a-label/DupLabelCategory'
 import { DupTitle, DupTitleTypes } from '../ui-c-title/DupTitle'
@@ -13,7 +13,7 @@ export const Top: React.FC = () => {
       <DupTitle type={DupTitleTypes.MasterPiece} />
       <DupLabelCategory text="数学" />
       <DupLabelCard text="農学・食品科学" />
-      <DupBadge number={1} />
+      <DupBadge number={1} type={DupBadgeTypes.Other} />
       <DupFooter />
     </>
   )
