@@ -116,6 +116,98 @@ function _extends() {
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/ts/ui/src/presentation/ui-a-badge/dup-badge-bronze.m.scss":
+/*!****************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/postcss-loader/src??ref--8-2!./node_modules/sass-loader/dist/cjs.js??ref--8-3!./resources/ts/ui/src/presentation/ui-a-badge/dup-badge-bronze.m.scss ***!
+  \****************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "html, body {\n  background: #eee;\n  box-sizing: border-box;\n  width: 100%;\n  display: flex;\n  flex-flow: column;\n  min-height: 100vh;\n  font-size: 16px;\n  line-height: 1.6;\n  font-family: \"Noto Sans JP\", sans-serif;\n  letter-spacing: 2px;\n}\n\nhtml, body {\n  background: #eee;\n  box-sizing: border-box;\n  width: 100%;\n  display: flex;\n  flex-flow: column;\n  min-height: 100vh;\n  font-size: 16px;\n  line-height: 1.6;\n  font-family: \"Noto Sans JP\", sans-serif;\n  letter-spacing: 2px;\n}\n\n._3-UuIZiYPNUdci_8h0wqAw {\n  height: 8.3333333333vw;\n  width: 8.3333333333vw;\n  margin-bottom: 100px;\n  position: relative;\n}\n@media screen and (min-width: 561px) {\n  ._3-UuIZiYPNUdci_8h0wqAw {\n    height: 5.3475935829vw;\n    width: 5.3475935829vw;\n  }\n}\n@media screen and (min-width: 769px) {\n  ._3-UuIZiYPNUdci_8h0wqAw {\n    height: 3.9011703511vw;\n    width: 3.9011703511vw;\n  }\n}\n@media screen and (min-width: 1194px) {\n  ._3-UuIZiYPNUdci_8h0wqAw {\n    height: 2.9313232831vw;\n    width: 2.9313232831vw;\n  }\n}\n@media screen and (min-width: 1350px) {\n  ._3-UuIZiYPNUdci_8h0wqAw {\n    height: 2.5925925926vw;\n    width: 2.5925925926vw;\n  }\n}\n@media screen and (min-width: 1900px) {\n  ._3-UuIZiYPNUdci_8h0wqAw {\n    height: 1.8421052632vw;\n    width: 1.8421052632vw;\n  }\n}\n._1xFy5Nkn322M6ViPVX22As {\n  background: #29663e;\n  border-radius: 50%;\n  box-sizing: border-box;\n  color: #fff;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-size: 4.6666666667vw;\n  position: relative;\n  height: 100%;\n  width: 100%;\n  z-index: 1;\n}\n@media screen and (min-width: 561px) {\n  ._1xFy5Nkn322M6ViPVX22As {\n    font-size: 2.495543672vw;\n  }\n}\n@media screen and (min-width: 769px) {\n  ._1xFy5Nkn322M6ViPVX22As {\n    font-size: 2.0806241873vw;\n  }\n}\n@media screen and (min-width: 1194px) {\n  ._1xFy5Nkn322M6ViPVX22As {\n    font-size: 1.5075376884vw;\n  }\n}\n@media screen and (min-width: 1350px) {\n  ._1xFy5Nkn322M6ViPVX22As {\n    font-size: 1.3333333333vw;\n  }\n}\n@media screen and (min-width: 1900px) {\n  ._1xFy5Nkn322M6ViPVX22As {\n    font-size: 0.9473684211vw;\n  }\n}\n._102XhfS319UTF-Yh7cBMDn {\n  background: #b82c2c;\n  display: inline-block;\n  position: absolute;\n  top: calc(100% / 2);\n  left: calc(100% / 4);\n  margin: 0;\n  padding: 3.3333333333vw 0;\n  width: calc(100% / 2);\n  z-index: 0;\n}\n@media screen and (min-width: 561px) {\n  ._102XhfS319UTF-Yh7cBMDn {\n    padding: 2.1390374332vw 0;\n  }\n}\n@media screen and (min-width: 769px) {\n  ._102XhfS319UTF-Yh7cBMDn {\n    padding: 1.5604681404vw 0;\n  }\n}\n@media screen and (min-width: 1194px) {\n  ._102XhfS319UTF-Yh7cBMDn {\n    padding: 1.256281407vw 0;\n  }\n}\n@media screen and (min-width: 1350px) {\n  ._102XhfS319UTF-Yh7cBMDn {\n    padding: 1.1111111111vw 0;\n  }\n}\n@media screen and (min-width: 1900px) {\n  ._102XhfS319UTF-Yh7cBMDn {\n    padding: 0.7894736842vw 0;\n  }\n}\n._102XhfS319UTF-Yh7cBMDn::after {\n  content: \"\";\n  position: absolute;\n  left: 0;\n  top: 100%;\n  height: 0;\n  width: 0;\n  border-left: 2.0833333333vw solid #b82c2c;\n  border-right: 2.0833333333vw solid #b82c2c;\n  border-bottom: 1.0416666667vw solid transparent;\n}\n@media screen and (min-width: 561px) {\n  ._102XhfS319UTF-Yh7cBMDn::after {\n    border-left: 1.3368983957vw solid #b82c2c;\n    border-right: 1.3368983957vw solid #b82c2c;\n    border-bottom: 0.6684491979vw solid transparent;\n  }\n}\n@media screen and (min-width: 769px) {\n  ._102XhfS319UTF-Yh7cBMDn::after {\n    border-left: 0.9752925878vw solid #b82c2c;\n    border-right: 0.9752925878vw solid #b82c2c;\n    border-bottom: 0.4876462939vw solid transparent;\n  }\n}\n@media screen and (min-width: 1194px) {\n  ._102XhfS319UTF-Yh7cBMDn::after {\n    border-left: 0.7328308208vw solid #b82c2c;\n    border-right: 0.7328308208vw solid #b82c2c;\n    border-bottom: 0.3664154104vw solid transparent;\n  }\n}\n@media screen and (min-width: 1350px) {\n  ._102XhfS319UTF-Yh7cBMDn::after {\n    border-left: 0.6481481481vw solid #b82c2c;\n    border-right: 0.6481481481vw solid #b82c2c;\n    border-bottom: 0.3240740741vw solid transparent;\n  }\n}\n@media screen and (min-width: 1900px) {\n  ._102XhfS319UTF-Yh7cBMDn::after {\n    border-left: 0.4605263158vw solid #b82c2c;\n    border-right: 0.4605263158vw solid #b82c2c;\n    border-bottom: 0.2302631579vw solid transparent;\n  }\n}\n\n._1xFy5Nkn322M6ViPVX22As {\n  background: #c47022;\n}", ""]);
+
+// exports
+exports.locals = {
+	"root": "_3-UuIZiYPNUdci_8h0wqAw",
+	"number": "_1xFy5Nkn322M6ViPVX22As",
+	"ribbon": "_102XhfS319UTF-Yh7cBMDn"
+};
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/ts/ui/src/presentation/ui-a-badge/dup-badge-default.m.scss":
+/*!*****************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/postcss-loader/src??ref--8-2!./node_modules/sass-loader/dist/cjs.js??ref--8-3!./resources/ts/ui/src/presentation/ui-a-badge/dup-badge-default.m.scss ***!
+  \*****************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "html, body {\n  background: #eee;\n  box-sizing: border-box;\n  width: 100%;\n  display: flex;\n  flex-flow: column;\n  min-height: 100vh;\n  font-size: 16px;\n  line-height: 1.6;\n  font-family: \"Noto Sans JP\", sans-serif;\n  letter-spacing: 2px;\n}\n\n._18tSm2Ory99OkaipjbFtcD {\n  height: 8.3333333333vw;\n  width: 8.3333333333vw;\n  margin-bottom: 100px;\n  position: relative;\n}\n@media screen and (min-width: 561px) {\n  ._18tSm2Ory99OkaipjbFtcD {\n    height: 5.3475935829vw;\n    width: 5.3475935829vw;\n  }\n}\n@media screen and (min-width: 769px) {\n  ._18tSm2Ory99OkaipjbFtcD {\n    height: 3.9011703511vw;\n    width: 3.9011703511vw;\n  }\n}\n@media screen and (min-width: 1194px) {\n  ._18tSm2Ory99OkaipjbFtcD {\n    height: 2.9313232831vw;\n    width: 2.9313232831vw;\n  }\n}\n@media screen and (min-width: 1350px) {\n  ._18tSm2Ory99OkaipjbFtcD {\n    height: 2.5925925926vw;\n    width: 2.5925925926vw;\n  }\n}\n@media screen and (min-width: 1900px) {\n  ._18tSm2Ory99OkaipjbFtcD {\n    height: 1.8421052632vw;\n    width: 1.8421052632vw;\n  }\n}\n._10rr3rpmj1E2yoCeXVSQPs {\n  background: #29663e;\n  border-radius: 50%;\n  box-sizing: border-box;\n  color: #fff;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-size: 4.6666666667vw;\n  position: relative;\n  height: 100%;\n  width: 100%;\n  z-index: 1;\n}\n@media screen and (min-width: 561px) {\n  ._10rr3rpmj1E2yoCeXVSQPs {\n    font-size: 2.495543672vw;\n  }\n}\n@media screen and (min-width: 769px) {\n  ._10rr3rpmj1E2yoCeXVSQPs {\n    font-size: 2.0806241873vw;\n  }\n}\n@media screen and (min-width: 1194px) {\n  ._10rr3rpmj1E2yoCeXVSQPs {\n    font-size: 1.5075376884vw;\n  }\n}\n@media screen and (min-width: 1350px) {\n  ._10rr3rpmj1E2yoCeXVSQPs {\n    font-size: 1.3333333333vw;\n  }\n}\n@media screen and (min-width: 1900px) {\n  ._10rr3rpmj1E2yoCeXVSQPs {\n    font-size: 0.9473684211vw;\n  }\n}\n.mwwkKn75M3SfgJ4RL3FCM {\n  background: #b82c2c;\n  display: inline-block;\n  position: absolute;\n  top: calc(100% / 2);\n  left: calc(100% / 4);\n  margin: 0;\n  padding: 3.3333333333vw 0;\n  width: calc(100% / 2);\n  z-index: 0;\n}\n@media screen and (min-width: 561px) {\n  .mwwkKn75M3SfgJ4RL3FCM {\n    padding: 2.1390374332vw 0;\n  }\n}\n@media screen and (min-width: 769px) {\n  .mwwkKn75M3SfgJ4RL3FCM {\n    padding: 1.5604681404vw 0;\n  }\n}\n@media screen and (min-width: 1194px) {\n  .mwwkKn75M3SfgJ4RL3FCM {\n    padding: 1.256281407vw 0;\n  }\n}\n@media screen and (min-width: 1350px) {\n  .mwwkKn75M3SfgJ4RL3FCM {\n    padding: 1.1111111111vw 0;\n  }\n}\n@media screen and (min-width: 1900px) {\n  .mwwkKn75M3SfgJ4RL3FCM {\n    padding: 0.7894736842vw 0;\n  }\n}\n.mwwkKn75M3SfgJ4RL3FCM::after {\n  content: \"\";\n  position: absolute;\n  left: 0;\n  top: 100%;\n  height: 0;\n  width: 0;\n  border-left: 2.0833333333vw solid #b82c2c;\n  border-right: 2.0833333333vw solid #b82c2c;\n  border-bottom: 1.0416666667vw solid transparent;\n}\n@media screen and (min-width: 561px) {\n  .mwwkKn75M3SfgJ4RL3FCM::after {\n    border-left: 1.3368983957vw solid #b82c2c;\n    border-right: 1.3368983957vw solid #b82c2c;\n    border-bottom: 0.6684491979vw solid transparent;\n  }\n}\n@media screen and (min-width: 769px) {\n  .mwwkKn75M3SfgJ4RL3FCM::after {\n    border-left: 0.9752925878vw solid #b82c2c;\n    border-right: 0.9752925878vw solid #b82c2c;\n    border-bottom: 0.4876462939vw solid transparent;\n  }\n}\n@media screen and (min-width: 1194px) {\n  .mwwkKn75M3SfgJ4RL3FCM::after {\n    border-left: 0.7328308208vw solid #b82c2c;\n    border-right: 0.7328308208vw solid #b82c2c;\n    border-bottom: 0.3664154104vw solid transparent;\n  }\n}\n@media screen and (min-width: 1350px) {\n  .mwwkKn75M3SfgJ4RL3FCM::after {\n    border-left: 0.6481481481vw solid #b82c2c;\n    border-right: 0.6481481481vw solid #b82c2c;\n    border-bottom: 0.3240740741vw solid transparent;\n  }\n}\n@media screen and (min-width: 1900px) {\n  .mwwkKn75M3SfgJ4RL3FCM::after {\n    border-left: 0.4605263158vw solid #b82c2c;\n    border-right: 0.4605263158vw solid #b82c2c;\n    border-bottom: 0.2302631579vw solid transparent;\n  }\n}", ""]);
+
+// exports
+exports.locals = {
+	"root": "_18tSm2Ory99OkaipjbFtcD",
+	"number": "_10rr3rpmj1E2yoCeXVSQPs",
+	"ribbon": "mwwkKn75M3SfgJ4RL3FCM"
+};
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/ts/ui/src/presentation/ui-a-badge/dup-badge-gold.m.scss":
+/*!**************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/postcss-loader/src??ref--8-2!./node_modules/sass-loader/dist/cjs.js??ref--8-3!./resources/ts/ui/src/presentation/ui-a-badge/dup-badge-gold.m.scss ***!
+  \**************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "html, body {\n  background: #eee;\n  box-sizing: border-box;\n  width: 100%;\n  display: flex;\n  flex-flow: column;\n  min-height: 100vh;\n  font-size: 16px;\n  line-height: 1.6;\n  font-family: \"Noto Sans JP\", sans-serif;\n  letter-spacing: 2px;\n}\n\nhtml, body {\n  background: #eee;\n  box-sizing: border-box;\n  width: 100%;\n  display: flex;\n  flex-flow: column;\n  min-height: 100vh;\n  font-size: 16px;\n  line-height: 1.6;\n  font-family: \"Noto Sans JP\", sans-serif;\n  letter-spacing: 2px;\n}\n\n._27QZTE8Vby9mXv_fsoJUZQ {\n  height: 8.3333333333vw;\n  width: 8.3333333333vw;\n  margin-bottom: 100px;\n  position: relative;\n}\n@media screen and (min-width: 561px) {\n  ._27QZTE8Vby9mXv_fsoJUZQ {\n    height: 5.3475935829vw;\n    width: 5.3475935829vw;\n  }\n}\n@media screen and (min-width: 769px) {\n  ._27QZTE8Vby9mXv_fsoJUZQ {\n    height: 3.9011703511vw;\n    width: 3.9011703511vw;\n  }\n}\n@media screen and (min-width: 1194px) {\n  ._27QZTE8Vby9mXv_fsoJUZQ {\n    height: 2.9313232831vw;\n    width: 2.9313232831vw;\n  }\n}\n@media screen and (min-width: 1350px) {\n  ._27QZTE8Vby9mXv_fsoJUZQ {\n    height: 2.5925925926vw;\n    width: 2.5925925926vw;\n  }\n}\n@media screen and (min-width: 1900px) {\n  ._27QZTE8Vby9mXv_fsoJUZQ {\n    height: 1.8421052632vw;\n    width: 1.8421052632vw;\n  }\n}\n._1faqeDtg398nRixbOsaFTf {\n  background: #29663e;\n  border-radius: 50%;\n  box-sizing: border-box;\n  color: #fff;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-size: 4.6666666667vw;\n  position: relative;\n  height: 100%;\n  width: 100%;\n  z-index: 1;\n}\n@media screen and (min-width: 561px) {\n  ._1faqeDtg398nRixbOsaFTf {\n    font-size: 2.495543672vw;\n  }\n}\n@media screen and (min-width: 769px) {\n  ._1faqeDtg398nRixbOsaFTf {\n    font-size: 2.0806241873vw;\n  }\n}\n@media screen and (min-width: 1194px) {\n  ._1faqeDtg398nRixbOsaFTf {\n    font-size: 1.5075376884vw;\n  }\n}\n@media screen and (min-width: 1350px) {\n  ._1faqeDtg398nRixbOsaFTf {\n    font-size: 1.3333333333vw;\n  }\n}\n@media screen and (min-width: 1900px) {\n  ._1faqeDtg398nRixbOsaFTf {\n    font-size: 0.9473684211vw;\n  }\n}\n._1kTQheffyc9QHlcZ2sPzX8 {\n  background: #b82c2c;\n  display: inline-block;\n  position: absolute;\n  top: calc(100% / 2);\n  left: calc(100% / 4);\n  margin: 0;\n  padding: 3.3333333333vw 0;\n  width: calc(100% / 2);\n  z-index: 0;\n}\n@media screen and (min-width: 561px) {\n  ._1kTQheffyc9QHlcZ2sPzX8 {\n    padding: 2.1390374332vw 0;\n  }\n}\n@media screen and (min-width: 769px) {\n  ._1kTQheffyc9QHlcZ2sPzX8 {\n    padding: 1.5604681404vw 0;\n  }\n}\n@media screen and (min-width: 1194px) {\n  ._1kTQheffyc9QHlcZ2sPzX8 {\n    padding: 1.256281407vw 0;\n  }\n}\n@media screen and (min-width: 1350px) {\n  ._1kTQheffyc9QHlcZ2sPzX8 {\n    padding: 1.1111111111vw 0;\n  }\n}\n@media screen and (min-width: 1900px) {\n  ._1kTQheffyc9QHlcZ2sPzX8 {\n    padding: 0.7894736842vw 0;\n  }\n}\n._1kTQheffyc9QHlcZ2sPzX8::after {\n  content: \"\";\n  position: absolute;\n  left: 0;\n  top: 100%;\n  height: 0;\n  width: 0;\n  border-left: 2.0833333333vw solid #b82c2c;\n  border-right: 2.0833333333vw solid #b82c2c;\n  border-bottom: 1.0416666667vw solid transparent;\n}\n@media screen and (min-width: 561px) {\n  ._1kTQheffyc9QHlcZ2sPzX8::after {\n    border-left: 1.3368983957vw solid #b82c2c;\n    border-right: 1.3368983957vw solid #b82c2c;\n    border-bottom: 0.6684491979vw solid transparent;\n  }\n}\n@media screen and (min-width: 769px) {\n  ._1kTQheffyc9QHlcZ2sPzX8::after {\n    border-left: 0.9752925878vw solid #b82c2c;\n    border-right: 0.9752925878vw solid #b82c2c;\n    border-bottom: 0.4876462939vw solid transparent;\n  }\n}\n@media screen and (min-width: 1194px) {\n  ._1kTQheffyc9QHlcZ2sPzX8::after {\n    border-left: 0.7328308208vw solid #b82c2c;\n    border-right: 0.7328308208vw solid #b82c2c;\n    border-bottom: 0.3664154104vw solid transparent;\n  }\n}\n@media screen and (min-width: 1350px) {\n  ._1kTQheffyc9QHlcZ2sPzX8::after {\n    border-left: 0.6481481481vw solid #b82c2c;\n    border-right: 0.6481481481vw solid #b82c2c;\n    border-bottom: 0.3240740741vw solid transparent;\n  }\n}\n@media screen and (min-width: 1900px) {\n  ._1kTQheffyc9QHlcZ2sPzX8::after {\n    border-left: 0.4605263158vw solid #b82c2c;\n    border-right: 0.4605263158vw solid #b82c2c;\n    border-bottom: 0.2302631579vw solid transparent;\n  }\n}\n\n._1faqeDtg398nRixbOsaFTf {\n  background: #dbb400;\n}", ""]);
+
+// exports
+exports.locals = {
+	"root": "_27QZTE8Vby9mXv_fsoJUZQ",
+	"number": "_1faqeDtg398nRixbOsaFTf",
+	"ribbon": "_1kTQheffyc9QHlcZ2sPzX8"
+};
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/ts/ui/src/presentation/ui-a-badge/dup-badge-silver.m.scss":
+/*!****************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/postcss-loader/src??ref--8-2!./node_modules/sass-loader/dist/cjs.js??ref--8-3!./resources/ts/ui/src/presentation/ui-a-badge/dup-badge-silver.m.scss ***!
+  \****************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "html, body {\n  background: #eee;\n  box-sizing: border-box;\n  width: 100%;\n  display: flex;\n  flex-flow: column;\n  min-height: 100vh;\n  font-size: 16px;\n  line-height: 1.6;\n  font-family: \"Noto Sans JP\", sans-serif;\n  letter-spacing: 2px;\n}\n\nhtml, body {\n  background: #eee;\n  box-sizing: border-box;\n  width: 100%;\n  display: flex;\n  flex-flow: column;\n  min-height: 100vh;\n  font-size: 16px;\n  line-height: 1.6;\n  font-family: \"Noto Sans JP\", sans-serif;\n  letter-spacing: 2px;\n}\n\n._W-w-f1Yu4u127FljfzQ3 {\n  height: 8.3333333333vw;\n  width: 8.3333333333vw;\n  margin-bottom: 100px;\n  position: relative;\n}\n@media screen and (min-width: 561px) {\n  ._W-w-f1Yu4u127FljfzQ3 {\n    height: 5.3475935829vw;\n    width: 5.3475935829vw;\n  }\n}\n@media screen and (min-width: 769px) {\n  ._W-w-f1Yu4u127FljfzQ3 {\n    height: 3.9011703511vw;\n    width: 3.9011703511vw;\n  }\n}\n@media screen and (min-width: 1194px) {\n  ._W-w-f1Yu4u127FljfzQ3 {\n    height: 2.9313232831vw;\n    width: 2.9313232831vw;\n  }\n}\n@media screen and (min-width: 1350px) {\n  ._W-w-f1Yu4u127FljfzQ3 {\n    height: 2.5925925926vw;\n    width: 2.5925925926vw;\n  }\n}\n@media screen and (min-width: 1900px) {\n  ._W-w-f1Yu4u127FljfzQ3 {\n    height: 1.8421052632vw;\n    width: 1.8421052632vw;\n  }\n}\n._2uuzBz1N3ZK8_7oD5zOk-m {\n  background: #29663e;\n  border-radius: 50%;\n  box-sizing: border-box;\n  color: #fff;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-size: 4.6666666667vw;\n  position: relative;\n  height: 100%;\n  width: 100%;\n  z-index: 1;\n}\n@media screen and (min-width: 561px) {\n  ._2uuzBz1N3ZK8_7oD5zOk-m {\n    font-size: 2.495543672vw;\n  }\n}\n@media screen and (min-width: 769px) {\n  ._2uuzBz1N3ZK8_7oD5zOk-m {\n    font-size: 2.0806241873vw;\n  }\n}\n@media screen and (min-width: 1194px) {\n  ._2uuzBz1N3ZK8_7oD5zOk-m {\n    font-size: 1.5075376884vw;\n  }\n}\n@media screen and (min-width: 1350px) {\n  ._2uuzBz1N3ZK8_7oD5zOk-m {\n    font-size: 1.3333333333vw;\n  }\n}\n@media screen and (min-width: 1900px) {\n  ._2uuzBz1N3ZK8_7oD5zOk-m {\n    font-size: 0.9473684211vw;\n  }\n}\n._3ne0ESczdy_tpBSSTF6C_w {\n  background: #b82c2c;\n  display: inline-block;\n  position: absolute;\n  top: calc(100% / 2);\n  left: calc(100% / 4);\n  margin: 0;\n  padding: 3.3333333333vw 0;\n  width: calc(100% / 2);\n  z-index: 0;\n}\n@media screen and (min-width: 561px) {\n  ._3ne0ESczdy_tpBSSTF6C_w {\n    padding: 2.1390374332vw 0;\n  }\n}\n@media screen and (min-width: 769px) {\n  ._3ne0ESczdy_tpBSSTF6C_w {\n    padding: 1.5604681404vw 0;\n  }\n}\n@media screen and (min-width: 1194px) {\n  ._3ne0ESczdy_tpBSSTF6C_w {\n    padding: 1.256281407vw 0;\n  }\n}\n@media screen and (min-width: 1350px) {\n  ._3ne0ESczdy_tpBSSTF6C_w {\n    padding: 1.1111111111vw 0;\n  }\n}\n@media screen and (min-width: 1900px) {\n  ._3ne0ESczdy_tpBSSTF6C_w {\n    padding: 0.7894736842vw 0;\n  }\n}\n._3ne0ESczdy_tpBSSTF6C_w::after {\n  content: \"\";\n  position: absolute;\n  left: 0;\n  top: 100%;\n  height: 0;\n  width: 0;\n  border-left: 2.0833333333vw solid #b82c2c;\n  border-right: 2.0833333333vw solid #b82c2c;\n  border-bottom: 1.0416666667vw solid transparent;\n}\n@media screen and (min-width: 561px) {\n  ._3ne0ESczdy_tpBSSTF6C_w::after {\n    border-left: 1.3368983957vw solid #b82c2c;\n    border-right: 1.3368983957vw solid #b82c2c;\n    border-bottom: 0.6684491979vw solid transparent;\n  }\n}\n@media screen and (min-width: 769px) {\n  ._3ne0ESczdy_tpBSSTF6C_w::after {\n    border-left: 0.9752925878vw solid #b82c2c;\n    border-right: 0.9752925878vw solid #b82c2c;\n    border-bottom: 0.4876462939vw solid transparent;\n  }\n}\n@media screen and (min-width: 1194px) {\n  ._3ne0ESczdy_tpBSSTF6C_w::after {\n    border-left: 0.7328308208vw solid #b82c2c;\n    border-right: 0.7328308208vw solid #b82c2c;\n    border-bottom: 0.3664154104vw solid transparent;\n  }\n}\n@media screen and (min-width: 1350px) {\n  ._3ne0ESczdy_tpBSSTF6C_w::after {\n    border-left: 0.6481481481vw solid #b82c2c;\n    border-right: 0.6481481481vw solid #b82c2c;\n    border-bottom: 0.3240740741vw solid transparent;\n  }\n}\n@media screen and (min-width: 1900px) {\n  ._3ne0ESczdy_tpBSSTF6C_w::after {\n    border-left: 0.4605263158vw solid #b82c2c;\n    border-right: 0.4605263158vw solid #b82c2c;\n    border-bottom: 0.2302631579vw solid transparent;\n  }\n}\n\n._2uuzBz1N3ZK8_7oD5zOk-m {\n  background: #c9caca;\n}", ""]);
+
+// exports
+exports.locals = {
+	"root": "_W-w-f1Yu4u127FljfzQ3",
+	"number": "_2uuzBz1N3ZK8_7oD5zOk-m",
+	"ribbon": "_3ne0ESczdy_tpBSSTF6C_w"
+};
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/ts/ui/src/presentation/ui-a-button/dup-button-default.m.scss":
 /*!*******************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader!./node_modules/postcss-loader/src??ref--8-2!./node_modules/sass-loader/dist/cjs.js??ref--8-3!./resources/ts/ui/src/presentation/ui-a-button/dup-button-default.m.scss ***!
@@ -41504,6 +41596,213 @@ const LogoInverted = () => {
 
 /***/ }),
 
+/***/ "./resources/ts/ui/src/presentation/ui-a-badge/DomBadge.tsx":
+/*!******************************************************************!*\
+  !*** ./resources/ts/ui/src/presentation/ui-a-badge/DomBadge.tsx ***!
+  \******************************************************************/
+/*! exports provided: DomBadge */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DomBadge", function() { return DomBadge; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _dup_badge_default_m_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./dup-badge-default.m.scss */ "./resources/ts/ui/src/presentation/ui-a-badge/dup-badge-default.m.scss");
+/* harmony import */ var _dup_badge_default_m_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_dup_badge_default_m_scss__WEBPACK_IMPORTED_MODULE_1__);
+
+
+const DomBadge = ({ number, classNames, }) => {
+    const styles = classNames || _dup_badge_default_m_scss__WEBPACK_IMPORTED_MODULE_1___default.a;
+    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.root },
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.number }, number),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", { className: styles.ribbon })));
+};
+
+
+/***/ }),
+
+/***/ "./resources/ts/ui/src/presentation/ui-a-badge/DupBadge.tsx":
+/*!******************************************************************!*\
+  !*** ./resources/ts/ui/src/presentation/ui-a-badge/DupBadge.tsx ***!
+  \******************************************************************/
+/*! exports provided: DupBadgeTypes, DupBadge */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DupBadgeTypes", function() { return DupBadgeTypes; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DupBadge", function() { return DupBadge; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _DomBadge__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./DomBadge */ "./resources/ts/ui/src/presentation/ui-a-badge/DomBadge.tsx");
+/* harmony import */ var _dup_badge_default_m_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./dup-badge-default.m.scss */ "./resources/ts/ui/src/presentation/ui-a-badge/dup-badge-default.m.scss");
+/* harmony import */ var _dup_badge_default_m_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_dup_badge_default_m_scss__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _dup_badge_gold_m_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./dup-badge-gold.m.scss */ "./resources/ts/ui/src/presentation/ui-a-badge/dup-badge-gold.m.scss");
+/* harmony import */ var _dup_badge_gold_m_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_dup_badge_gold_m_scss__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _dup_badge_silver_m_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./dup-badge-silver.m.scss */ "./resources/ts/ui/src/presentation/ui-a-badge/dup-badge-silver.m.scss");
+/* harmony import */ var _dup_badge_silver_m_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_dup_badge_silver_m_scss__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _dup_badge_bronze_m_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./dup-badge-bronze.m.scss */ "./resources/ts/ui/src/presentation/ui-a-badge/dup-badge-bronze.m.scss");
+/* harmony import */ var _dup_badge_bronze_m_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_dup_badge_bronze_m_scss__WEBPACK_IMPORTED_MODULE_5__);
+
+
+
+
+
+
+const DupBadgeTypes = {
+    Gold: 'gold',
+    Silver: 'silver',
+    Bronze: 'bronze',
+    Other: 'other',
+};
+const DupBadge = ({ type, number }) => {
+    // TODO: 実装がダサい。要リファクタリング
+    const targets = [
+        {
+            type: DupBadgeTypes.Gold,
+            className: _dup_badge_gold_m_scss__WEBPACK_IMPORTED_MODULE_3___default.a,
+        },
+        {
+            type: DupBadgeTypes.Silver,
+            className: _dup_badge_silver_m_scss__WEBPACK_IMPORTED_MODULE_4___default.a,
+        },
+        {
+            type: DupBadgeTypes.Bronze,
+            className: _dup_badge_bronze_m_scss__WEBPACK_IMPORTED_MODULE_5___default.a,
+        },
+        {
+            type: DupBadgeTypes.Other,
+            className: _dup_badge_default_m_scss__WEBPACK_IMPORTED_MODULE_2___default.a,
+        },
+    ];
+    const target = targets.filter((t) => t.type === type);
+    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_DomBadge__WEBPACK_IMPORTED_MODULE_1__["DomBadge"], { number: number, classNames: target[0].className }));
+};
+
+
+/***/ }),
+
+/***/ "./resources/ts/ui/src/presentation/ui-a-badge/dup-badge-bronze.m.scss":
+/*!*****************************************************************************!*\
+  !*** ./resources/ts/ui/src/presentation/ui-a-badge/dup-badge-bronze.m.scss ***!
+  \*****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../../../node_modules/css-loader!../../../../../../node_modules/postcss-loader/src??ref--8-2!../../../../../../node_modules/sass-loader/dist/cjs.js??ref--8-3!./dup-badge-bronze.m.scss */ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/ts/ui/src/presentation/ui-a-badge/dup-badge-bronze.m.scss");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./resources/ts/ui/src/presentation/ui-a-badge/dup-badge-default.m.scss":
+/*!******************************************************************************!*\
+  !*** ./resources/ts/ui/src/presentation/ui-a-badge/dup-badge-default.m.scss ***!
+  \******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../../../node_modules/css-loader!../../../../../../node_modules/postcss-loader/src??ref--8-2!../../../../../../node_modules/sass-loader/dist/cjs.js??ref--8-3!./dup-badge-default.m.scss */ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/ts/ui/src/presentation/ui-a-badge/dup-badge-default.m.scss");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./resources/ts/ui/src/presentation/ui-a-badge/dup-badge-gold.m.scss":
+/*!***************************************************************************!*\
+  !*** ./resources/ts/ui/src/presentation/ui-a-badge/dup-badge-gold.m.scss ***!
+  \***************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../../../node_modules/css-loader!../../../../../../node_modules/postcss-loader/src??ref--8-2!../../../../../../node_modules/sass-loader/dist/cjs.js??ref--8-3!./dup-badge-gold.m.scss */ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/ts/ui/src/presentation/ui-a-badge/dup-badge-gold.m.scss");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./resources/ts/ui/src/presentation/ui-a-badge/dup-badge-silver.m.scss":
+/*!*****************************************************************************!*\
+  !*** ./resources/ts/ui/src/presentation/ui-a-badge/dup-badge-silver.m.scss ***!
+  \*****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../../../node_modules/css-loader!../../../../../../node_modules/postcss-loader/src??ref--8-2!../../../../../../node_modules/sass-loader/dist/cjs.js??ref--8-3!./dup-badge-silver.m.scss */ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/ts/ui/src/presentation/ui-a-badge/dup-badge-silver.m.scss");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./resources/ts/ui/src/presentation/ui-a-button/DomButton.tsx":
 /*!********************************************************************!*\
   !*** ./resources/ts/ui/src/presentation/ui-a-button/DomButton.tsx ***!
@@ -42403,11 +42702,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Top", function() { return Top; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../ui-a-label/DupLabelCard */ "./resources/ts/ui/src/presentation/ui-a-label/DupLabelCard.tsx");
-/* harmony import */ var _ui_a_label_DupLabelCategory__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../ui-a-label/DupLabelCategory */ "./resources/ts/ui/src/presentation/ui-a-label/DupLabelCategory.tsx");
-/* harmony import */ var _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../ui-c-title/DupTitle */ "./resources/ts/ui/src/presentation/ui-c-title/DupTitle.tsx");
-/* harmony import */ var _ui_o_footer_DupFooter__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../ui-o-footer/DupFooter */ "./resources/ts/ui/src/presentation/ui-o-footer/DupFooter.tsx");
-/* harmony import */ var _ui_o_header_DomHeader__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../ui-o-header/DomHeader */ "./resources/ts/ui/src/presentation/ui-o-header/DomHeader.tsx");
+/* harmony import */ var _ui_a_badge_DupBadge__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../ui-a-badge/DupBadge */ "./resources/ts/ui/src/presentation/ui-a-badge/DupBadge.tsx");
+/* harmony import */ var _ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../ui-a-label/DupLabelCard */ "./resources/ts/ui/src/presentation/ui-a-label/DupLabelCard.tsx");
+/* harmony import */ var _ui_a_label_DupLabelCategory__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../ui-a-label/DupLabelCategory */ "./resources/ts/ui/src/presentation/ui-a-label/DupLabelCategory.tsx");
+/* harmony import */ var _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../ui-c-title/DupTitle */ "./resources/ts/ui/src/presentation/ui-c-title/DupTitle.tsx");
+/* harmony import */ var _ui_o_footer_DupFooter__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../ui-o-footer/DupFooter */ "./resources/ts/ui/src/presentation/ui-o-footer/DupFooter.tsx");
+/* harmony import */ var _ui_o_header_DomHeader__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../ui-o-header/DomHeader */ "./resources/ts/ui/src/presentation/ui-o-header/DomHeader.tsx");
+
 
 
 
@@ -42416,11 +42717,12 @@ __webpack_require__.r(__webpack_exports__);
 
 const Top = () => {
     return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null,
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_header_DomHeader__WEBPACK_IMPORTED_MODULE_5__["DomHeader"], null),
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_3__["DupTitle"], { type: _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_3__["DupTitleTypes"].MasterPiece }),
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCategory__WEBPACK_IMPORTED_MODULE_2__["DupLabelCategory"], { text: "\u6570\u5B66" }),
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_1__["DupLabelCard"], { text: "\u8FB2\u5B66\u30FB\u98DF\u54C1\u79D1\u5B66" }),
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_footer_DupFooter__WEBPACK_IMPORTED_MODULE_4__["DupFooter"], null)));
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_header_DomHeader__WEBPACK_IMPORTED_MODULE_6__["DomHeader"], null),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_4__["DupTitle"], { type: _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_4__["DupTitleTypes"].MasterPiece }),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCategory__WEBPACK_IMPORTED_MODULE_3__["DupLabelCategory"], { text: "\u6570\u5B66" }),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_2__["DupLabelCard"], { text: "\u8FB2\u5B66\u30FB\u98DF\u54C1\u79D1\u5B66" }),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_badge_DupBadge__WEBPACK_IMPORTED_MODULE_1__["DupBadge"], { number: 1, type: _ui_a_badge_DupBadge__WEBPACK_IMPORTED_MODULE_1__["DupBadgeTypes"].Other }),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_footer_DupFooter__WEBPACK_IMPORTED_MODULE_5__["DupFooter"], null)));
 };
 
 
