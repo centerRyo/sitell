@@ -1,0 +1,38 @@
+@import '../../../../../sass/app.scss';
+
+:local {
+  .root {
+    padding: vw(4, 300);
+
+    @include mq($breakpoint: sm) {
+      padding: vw(4, 561);
+    }
+
+    @include mq($breakpoint: md) {
+      padding: vw(8, 769);
+    }
+
+    @include mq($breakpoint: lg) {
+      padding: vw(8, 1194);
+    }
+
+    @include mq($breakpoint: xl) {
+      padding: vw(8, 1350);
+    }
+
+    @include mq($breakpoint: xxl) {
+      padding: vw(8, 1900);
+    }
+  }
+
+  .list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .item {
+    text-align: center;
+    flex: 1 1 0%;
+  }
+}
