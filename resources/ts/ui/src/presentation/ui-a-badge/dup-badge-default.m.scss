@@ -2,38 +2,9 @@
 
 :local {
   .root {
-    height: vw(25, 300);
-    width: vw(25, 300);
-    margin-bottom: 100px;
-    // こちらのheightとwidthを使う
-    // height: 100%;
-    // width: 100%;
+    height: 100%;
+    width: 100%;
     position: relative;
-
-    @include mq($breakpoint: sm) {
-      height: vw(30, 561);
-      width: vw(30, 561);
-    }
-
-    @include mq($breakpoint: md) {
-      height: vw(30, 769);
-      width: vw(30, 769);
-    }
-
-    @include mq($breakpoint: lg) {
-      height: vw(35, 1194);
-      width: vw(35, 1194);
-    }
-
-    @include mq($breakpoint: xl) {
-      height: vw(35, 1350);
-      width: vw(35, 1350);
-    }
-
-    @include mq($breakpoint: xxl) {
-      height: vw(35, 1900);
-      width: vw(35, 1900);
-    }
   }
 
   .number {
