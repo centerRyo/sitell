@@ -4,8 +4,8 @@ import { DomTab } from './DomTab'
 
 export const DupTab: React.FC = () => {
   const buttons = [
-    <DupButton type={DupButtonTypes.Register} />,
-    <DupButton type={DupButtonTypes.Login} />,
+    <DupButton type={DupButtonTypes.Weekly} />,
+    <DupButton type={DupButtonTypes.Monthly} />,
   ]
   return (
     <DomTab
