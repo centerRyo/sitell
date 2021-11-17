@@ -522,6 +522,32 @@ exports.locals = {
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/ts/ui/src/presentation/ui-m-card/dup-card-grid.m.scss":
+/*!************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/postcss-loader/src??ref--8-2!./node_modules/sass-loader/dist/cjs.js??ref--8-3!./resources/ts/ui/src/presentation/ui-m-card/dup-card-grid.m.scss ***!
+  \************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "html, body {\n  background: #eee;\n  box-sizing: border-box;\n  width: 100%;\n  display: flex;\n  flex-flow: column;\n  min-height: 100vh;\n  font-size: 16px;\n  line-height: 1.6;\n  font-family: \"Noto Sans JP\", sans-serif;\n  letter-spacing: 2px;\n}\n\nhtml, body {\n  background: #eee;\n  box-sizing: border-box;\n  width: 100%;\n  display: flex;\n  flex-flow: column;\n  min-height: 100vh;\n  font-size: 16px;\n  line-height: 1.6;\n  font-family: \"Noto Sans JP\", sans-serif;\n  letter-spacing: 2px;\n}\n\n._2SPXxaHJcgNvijRENruSB_ {\n  background: #fff;\n  box-sizing: border-box;\n  display: flex;\n  flex-direction: column;\n  width: 100%;\n  padding: 3.3333333333vw;\n  position: relative;\n}\n@media screen and (min-width: 561px) {\n  ._2SPXxaHJcgNvijRENruSB_ {\n    padding: 2.6737967914vw;\n  }\n}\n@media screen and (min-width: 769px) {\n  ._2SPXxaHJcgNvijRENruSB_ {\n    padding: 1.300390117vw;\n  }\n}\n@media screen and (min-width: 1194px) {\n  ._2SPXxaHJcgNvijRENruSB_ {\n    padding: 1.675041876vw;\n  }\n}\n@media screen and (min-width: 1350px) {\n  ._2SPXxaHJcgNvijRENruSB_ {\n    padding: 1.4814814815vw;\n  }\n}\n@media screen and (min-width: 1900px) {\n  ._2SPXxaHJcgNvijRENruSB_ {\n    padding: 1.0526315789vw;\n  }\n}\n._1NskRkTSz2s1Gc6C6GiyGG {\n  height: 8.3333333333vw;\n  width: 8.3333333333vw;\n  position: absolute;\n  top: 0;\n  left: 0;\n}\n@media screen and (min-width: 561px) {\n  ._1NskRkTSz2s1Gc6C6GiyGG {\n    height: 5.3475935829vw;\n    width: 5.3475935829vw;\n  }\n}\n@media screen and (min-width: 769px) {\n  ._1NskRkTSz2s1Gc6C6GiyGG {\n    height: 3.9011703511vw;\n    width: 3.9011703511vw;\n  }\n}\n@media screen and (min-width: 1194px) {\n  ._1NskRkTSz2s1Gc6C6GiyGG {\n    height: 2.9313232831vw;\n    width: 2.9313232831vw;\n  }\n}\n@media screen and (min-width: 1350px) {\n  ._1NskRkTSz2s1Gc6C6GiyGG {\n    height: 2.5925925926vw;\n    width: 2.5925925926vw;\n  }\n}\n@media screen and (min-width: 1900px) {\n  ._1NskRkTSz2s1Gc6C6GiyGG {\n    height: 1.8421052632vw;\n    width: 1.8421052632vw;\n  }\n}\n._3WD7xmGn1amLJPMjyJjwFl {\n  margin-bottom: 3.3333333333vw;\n  width: 100%;\n}\n@media screen and (min-width: 561px) {\n  ._3WD7xmGn1amLJPMjyJjwFl {\n    margin-bottom: 2.1390374332vw;\n  }\n}\n@media screen and (min-width: 769px) {\n  ._3WD7xmGn1amLJPMjyJjwFl {\n    margin-bottom: 1.5604681404vw;\n  }\n}\n@media screen and (min-width: 1194px) {\n  ._3WD7xmGn1amLJPMjyJjwFl {\n    margin-bottom: 1.256281407vw;\n  }\n}\n@media screen and (min-width: 1350px) {\n  ._3WD7xmGn1amLJPMjyJjwFl {\n    margin-bottom: 1.1111111111vw;\n  }\n}\n@media screen and (min-width: 1900px) {\n  ._3WD7xmGn1amLJPMjyJjwFl {\n    margin-bottom: 0.7894736842vw;\n  }\n}\n._3WD7xmGn1amLJPMjyJjwFl img {\n  width: 100%;\n}\n._2hLccJ605PVUp1yiYO98R0 {\n  margin-bottom: 1.6666666667vw;\n}\n@media screen and (min-width: 561px) {\n  ._2hLccJ605PVUp1yiYO98R0 {\n    margin-bottom: 1.0695187166vw;\n  }\n}\n@media screen and (min-width: 769px) {\n  ._2hLccJ605PVUp1yiYO98R0 {\n    margin-bottom: 1.0403120936vw;\n  }\n}\n@media screen and (min-width: 1194px) {\n  ._2hLccJ605PVUp1yiYO98R0 {\n    margin-bottom: 1.0050251256vw;\n  }\n}\n@media screen and (min-width: 1350px) {\n  ._2hLccJ605PVUp1yiYO98R0 {\n    margin-bottom: 0.8888888889vw;\n  }\n}\n@media screen and (min-width: 1900px) {\n  ._2hLccJ605PVUp1yiYO98R0 {\n    margin-bottom: 0.6315789474vw;\n  }\n}\n._3Haebmk0LOjwPcwaGQ720a {\n  font-size: 4vw;\n  font-weight: bold;\n}\n@media screen and (min-width: 561px) {\n  ._3Haebmk0LOjwPcwaGQ720a {\n    font-size: 2.495543672vw;\n  }\n}\n@media screen and (min-width: 769px) {\n  ._3Haebmk0LOjwPcwaGQ720a {\n    font-size: 2.0806241873vw;\n  }\n}\n@media screen and (min-width: 1194px) {\n  ._3Haebmk0LOjwPcwaGQ720a {\n    font-size: 1.5075376884vw;\n  }\n}\n@media screen and (min-width: 1350px) {\n  ._3Haebmk0LOjwPcwaGQ720a {\n    font-size: 1.3333333333vw;\n  }\n}\n@media screen and (min-width: 1900px) {\n  ._3Haebmk0LOjwPcwaGQ720a {\n    font-size: 0.9473684211vw;\n  }\n}\n\n._2SPXxaHJcgNvijRENruSB_ {\n  flex-direction: row;\n}\n._3WD7xmGn1amLJPMjyJjwFl {\n  margin-bottom: 0;\n  width: 30%;\n}\n.pRW1CDvEHz8Pg6fMzyygF {\n  margin-left: 3.3333333333vw;\n}\n@media screen and (min-width: 561px) {\n  .pRW1CDvEHz8Pg6fMzyygF {\n    margin-left: 3.5650623886vw;\n  }\n}\n@media screen and (min-width: 769px) {\n  .pRW1CDvEHz8Pg6fMzyygF {\n    margin-left: 1.9505851756vw;\n  }\n}\n@media screen and (min-width: 1194px) {\n  .pRW1CDvEHz8Pg6fMzyygF {\n    margin-left: 1.675041876vw;\n  }\n}\n@media screen and (min-width: 1350px) {\n  .pRW1CDvEHz8Pg6fMzyygF {\n    margin-left: 1.4814814815vw;\n  }\n}\n@media screen and (min-width: 1900px) {\n  .pRW1CDvEHz8Pg6fMzyygF {\n    margin-left: 1.0526315789vw;\n  }\n}\n._2hLccJ605PVUp1yiYO98R0 {\n  margin-bottom: 1.6666666667vw;\n}\n@media screen and (min-width: 561px) {\n  ._2hLccJ605PVUp1yiYO98R0 {\n    margin-bottom: 1.7825311943vw;\n  }\n}\n@media screen and (min-width: 769px) {\n  ._2hLccJ605PVUp1yiYO98R0 {\n    margin-bottom: 0.6501950585vw;\n  }\n}\n@media screen and (min-width: 1194px) {\n  ._2hLccJ605PVUp1yiYO98R0 {\n    margin-bottom: 0.837520938vw;\n  }\n}\n@media screen and (min-width: 1350px) {\n  ._2hLccJ605PVUp1yiYO98R0 {\n    margin-bottom: 0.7407407407vw;\n  }\n}\n@media screen and (min-width: 1900px) {\n  ._2hLccJ605PVUp1yiYO98R0 {\n    margin-bottom: 0.5263157895vw;\n  }\n}", ""]);
+
+// exports
+exports.locals = {
+	"root": "_2SPXxaHJcgNvijRENruSB_",
+	"badge": "_1NskRkTSz2s1Gc6C6GiyGG",
+	"image": "_3WD7xmGn1amLJPMjyJjwFl",
+	"label": "_2hLccJ605PVUp1yiYO98R0",
+	"text": "_3Haebmk0LOjwPcwaGQ720a",
+	"wrapper": "pRW1CDvEHz8Pg6fMzyygF"
+};
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/ts/ui/src/presentation/ui-o-footer/dup-footer-default.m.scss":
 /*!*******************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader!./node_modules/postcss-loader/src??ref--8-2!./node_modules/sass-loader/dist/cjs.js??ref--8-3!./resources/ts/ui/src/presentation/ui-o-footer/dup-footer-default.m.scss ***!
@@ -42756,6 +42782,35 @@ const DomCard = ({ badge, image, label, text, classNames }) => {
 
 /***/ }),
 
+/***/ "./resources/ts/ui/src/presentation/ui-m-card/DomCardGrid.tsx":
+/*!********************************************************************!*\
+  !*** ./resources/ts/ui/src/presentation/ui-m-card/DomCardGrid.tsx ***!
+  \********************************************************************/
+/*! exports provided: DomCardGrid */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DomCardGrid", function() { return DomCardGrid; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _dup_card_grid_m_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./dup-card-grid.m.scss */ "./resources/ts/ui/src/presentation/ui-m-card/dup-card-grid.m.scss");
+/* harmony import */ var _dup_card_grid_m_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_dup_card_grid_m_scss__WEBPACK_IMPORTED_MODULE_1__);
+
+
+const DomCardGrid = ({ image, label, text, classNames }) => {
+    const styles = classNames || _dup_card_grid_m_scss__WEBPACK_IMPORTED_MODULE_1___default.a;
+    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", { className: styles.root },
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.image },
+            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", { src: image, alt: "" })),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.wrapper },
+            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.label }, label.render()),
+            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.text }, text))));
+};
+
+
+/***/ }),
+
 /***/ "./resources/ts/ui/src/presentation/ui-m-card/dup-card-default.m.scss":
 /*!****************************************************************************!*\
   !*** ./resources/ts/ui/src/presentation/ui-m-card/dup-card-default.m.scss ***!
@@ -42765,6 +42820,36 @@ const DomCard = ({ badge, image, label, text, classNames }) => {
 
 
 var content = __webpack_require__(/*! !../../../../../../node_modules/css-loader!../../../../../../node_modules/postcss-loader/src??ref--8-2!../../../../../../node_modules/sass-loader/dist/cjs.js??ref--8-3!./dup-card-default.m.scss */ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/ts/ui/src/presentation/ui-m-card/dup-card-default.m.scss");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./resources/ts/ui/src/presentation/ui-m-card/dup-card-grid.m.scss":
+/*!*************************************************************************!*\
+  !*** ./resources/ts/ui/src/presentation/ui-m-card/dup-card-grid.m.scss ***!
+  \*************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../../../node_modules/css-loader!../../../../../../node_modules/postcss-loader/src??ref--8-2!../../../../../../node_modules/sass-loader/dist/cjs.js??ref--8-3!./dup-card-grid.m.scss */ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/ts/ui/src/presentation/ui-m-card/dup-card-grid.m.scss");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -43024,8 +43109,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ui_c_tab_DupTab__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../ui-c-tab/DupTab */ "./resources/ts/ui/src/presentation/ui-c-tab/DupTab.tsx");
 /* harmony import */ var _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../ui-c-title/DupTitle */ "./resources/ts/ui/src/presentation/ui-c-title/DupTitle.tsx");
 /* harmony import */ var _ui_m_card_DomCard__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../ui-m-card/DomCard */ "./resources/ts/ui/src/presentation/ui-m-card/DomCard.tsx");
-/* harmony import */ var _ui_o_footer_DupFooter__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../ui-o-footer/DupFooter */ "./resources/ts/ui/src/presentation/ui-o-footer/DupFooter.tsx");
-/* harmony import */ var _ui_o_header_DomHeader__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../ui-o-header/DomHeader */ "./resources/ts/ui/src/presentation/ui-o-header/DomHeader.tsx");
+/* harmony import */ var _ui_m_card_DomCardGrid__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../ui-m-card/DomCardGrid */ "./resources/ts/ui/src/presentation/ui-m-card/DomCardGrid.tsx");
+/* harmony import */ var _ui_o_footer_DupFooter__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../ui-o-footer/DupFooter */ "./resources/ts/ui/src/presentation/ui-o-footer/DupFooter.tsx");
+/* harmony import */ var _ui_o_header_DomHeader__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../ui-o-header/DomHeader */ "./resources/ts/ui/src/presentation/ui-o-header/DomHeader.tsx");
+
 
 
 
@@ -43037,7 +43124,7 @@ __webpack_require__.r(__webpack_exports__);
 
 const Top = () => {
     return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null,
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_header_DomHeader__WEBPACK_IMPORTED_MODULE_8__["DomHeader"], null),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_header_DomHeader__WEBPACK_IMPORTED_MODULE_9__["DomHeader"], null),
         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_5__["DupTitle"], { type: _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_5__["DupTitleTypes"].MasterPiece }),
         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCategory__WEBPACK_IMPORTED_MODULE_3__["DupLabelCategory"], { text: "\u6570\u5B66" }),
         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_c_tab_DupTab__WEBPACK_IMPORTED_MODULE_4__["DupTab"], null),
@@ -43046,7 +43133,10 @@ const Top = () => {
             }, image: "https://www.gstatic.com/webp/gallery3/1.png", label: {
                 render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_2__["DupLabelCard"], { text: "\u6570\u5B66" })
             }, text: "\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB" }),
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_footer_DupFooter__WEBPACK_IMPORTED_MODULE_7__["DupFooter"], null)));
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_card_DomCardGrid__WEBPACK_IMPORTED_MODULE_7__["DomCardGrid"], { image: "https://www.gstatic.com/webp/gallery3/1.png", label: {
+                render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_2__["DupLabelCard"], { text: "\u6570\u5B66" })
+            }, text: "\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB" }),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_footer_DupFooter__WEBPACK_IMPORTED_MODULE_8__["DupFooter"], null)));
 };
 
 
