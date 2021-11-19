@@ -1,9 +1,11 @@
 import React from 'react'
 import { DomLink } from './DomLink'
 import footerClassNames from './dup-link-footer.m.scss'
+import topClassNames from './dup-link-top.m.scss'
 
 type Props = {
-  type: string
+  type: string,
+  href?: string,
 }
 
 export const DupLinkTypes = {
@@ -13,9 +15,13 @@ export const DupLinkTypes = {
   FAQ: 'faq',
   TermsOfUse: 'terms-of-use',
   PrivacyPolicy: 'privacy-policy',
+  More: 'more',
 }
 
-export const DupLink: React.FC<Props> = ({ type }) => {
+export const DupLink: React.FC<Props> = ({
+  type,
+  href,
+}) => {
   // TODO: 実装がダサい。要リファクタリング
   const targets = [
     {
@@ -53,6 +59,12 @@ export const DupLink: React.FC<Props> = ({ type }) => {
       text: 'プライバシーポリシー',
       href: '/privacy',
       classNames: footerClassNames,
+    },
+    {
+      type: DupLinkTypes.More,
+      text: 'すべて見る',
+      href: href,
+      classNames: topClassNames,
     },
   ]
   const target = targets.filter(t => t.type === type)
