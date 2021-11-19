@@ -12,3 +12,7 @@ body {
   letter-spacing: 2px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
