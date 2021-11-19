@@ -230,6 +230,28 @@ exports.locals = {
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/ts/ui/src/presentation/ui-a-label/dup-label-category.m.scss":
+/*!******************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/postcss-loader/src??ref--8-2!./node_modules/sass-loader/dist/cjs.js??ref--8-3!./resources/ts/ui/src/presentation/ui-a-label/dup-label-category.m.scss ***!
+  \******************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "html, body {\n  background: #eee;\n  box-sizing: border-box;\n  width: 100%;\n  display: flex;\n  flex-flow: column;\n  min-height: 100vh;\n  font-size: 16px;\n  line-height: 1.6;\n  font-family: \"Noto Sans JP\", sans-serif;\n  letter-spacing: 2px;\n}\n\n* {\n  box-sizing: border-box;\n}\n\nhtml, body {\n  background: #eee;\n  box-sizing: border-box;\n  width: 100%;\n  display: flex;\n  flex-flow: column;\n  min-height: 100vh;\n  font-size: 16px;\n  line-height: 1.6;\n  font-family: \"Noto Sans JP\", sans-serif;\n  letter-spacing: 2px;\n}\n\n* {\n  box-sizing: border-box;\n}\n\n._2mI06G4GY8o3XRsPIUNPYg {\n  display: inline-flex;\n  justify-content: center;\n  align-items: center;\n}\n._3ntismAOmwcNkafRJjPEqW {\n  text-align: center;\n}\n\n._2mI06G4GY8o3XRsPIUNPYg {\n  background: #29663e;\n  border-radius: 4px;\n  padding: 1vw;\n}\n@media screen and (min-width: 561px) {\n  ._2mI06G4GY8o3XRsPIUNPYg {\n    padding: 0.5347593583vw 0.8912655971vw;\n  }\n}\n@media screen and (min-width: 769px) {\n  ._2mI06G4GY8o3XRsPIUNPYg {\n    padding: 0.6501950585vw 1.0403120936vw;\n  }\n}\n@media screen and (min-width: 1194px) {\n  ._2mI06G4GY8o3XRsPIUNPYg {\n    padding: 0.6700167504vw 0.837520938vw;\n  }\n}\n@media screen and (min-width: 1350px) {\n  ._2mI06G4GY8o3XRsPIUNPYg {\n    padding: 0.5925925926vw 0.7407407407vw;\n  }\n}\n@media screen and (min-width: 1900px) {\n  ._2mI06G4GY8o3XRsPIUNPYg {\n    padding: 0.4210526316vw 0.5263157895vw;\n  }\n}\n._3ntismAOmwcNkafRJjPEqW {\n  color: #fff;\n  font-size: 3.3333333333vw;\n  font-weight: bold;\n}\n@media screen and (min-width: 561px) {\n  ._3ntismAOmwcNkafRJjPEqW {\n    font-size: 2.1390374332vw;\n  }\n}\n@media screen and (min-width: 769px) {\n  ._3ntismAOmwcNkafRJjPEqW {\n    font-size: 1.8205461638vw;\n  }\n}\n@media screen and (min-width: 1194px) {\n  ._3ntismAOmwcNkafRJjPEqW {\n    font-size: 1.3400335008vw;\n  }\n}\n@media screen and (min-width: 1350px) {\n  ._3ntismAOmwcNkafRJjPEqW {\n    font-size: 1.1851851852vw;\n  }\n}\n@media screen and (min-width: 1900px) {\n  ._3ntismAOmwcNkafRJjPEqW {\n    font-size: 0.8421052632vw;\n  }\n}", ""]);
+
+// exports
+exports.locals = {
+	"root": "_2mI06G4GY8o3XRsPIUNPYg",
+	"text": "_3ntismAOmwcNkafRJjPEqW"
+};
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/ts/ui/src/presentation/ui-a-label/dup-label-default.m.scss":
 /*!*****************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader!./node_modules/postcss-loader/src??ref--8-2!./node_modules/sass-loader/dist/cjs.js??ref--8-3!./resources/ts/ui/src/presentation/ui-a-label/dup-label-default.m.scss ***!
@@ -463,6 +485,32 @@ exports.locals = {
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/ts/ui/src/presentation/ui-o-group/dup-group-category.m.scss":
+/*!******************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/postcss-loader/src??ref--8-2!./node_modules/sass-loader/dist/cjs.js??ref--8-3!./resources/ts/ui/src/presentation/ui-o-group/dup-group-category.m.scss ***!
+  \******************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "html, body {\n  background: #eee;\n  box-sizing: border-box;\n  width: 100%;\n  display: flex;\n  flex-flow: column;\n  min-height: 100vh;\n  font-size: 16px;\n  line-height: 1.6;\n  font-family: \"Noto Sans JP\", sans-serif;\n  letter-spacing: 2px;\n}\n\n* {\n  box-sizing: border-box;\n}\n\nhtml, body {\n  background: #eee;\n  box-sizing: border-box;\n  width: 100%;\n  display: flex;\n  flex-flow: column;\n  min-height: 100vh;\n  font-size: 16px;\n  line-height: 1.6;\n  font-family: \"Noto Sans JP\", sans-serif;\n  letter-spacing: 2px;\n}\n\n* {\n  box-sizing: border-box;\n}\n\n._3vrOxM4JkZMPVegYa3ptW6 {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  margin-bottom: 6.6666666667vw;\n}\n@media screen and (min-width: 561px) {\n  ._3vrOxM4JkZMPVegYa3ptW6 {\n    margin-bottom: 4.4563279857vw;\n  }\n}\n@media screen and (min-width: 769px) {\n  ._3vrOxM4JkZMPVegYa3ptW6 {\n    margin-bottom: 3.9011703511vw;\n  }\n}\n@media screen and (min-width: 1194px) {\n  ._3vrOxM4JkZMPVegYa3ptW6 {\n    margin-bottom: 3.3500837521vw;\n  }\n}\n@media screen and (min-width: 1350px) {\n  ._3vrOxM4JkZMPVegYa3ptW6 {\n    margin-bottom: 2.962962963vw;\n  }\n}\n@media screen and (min-width: 1900px) {\n  ._3vrOxM4JkZMPVegYa3ptW6 {\n    margin-bottom: 2.1052631579vw;\n  }\n}\n._3uYKl73vR7EdnyHUAzGfpr {\n  display: flex;\n  align-items: center;\n  flex-wrap: wrap;\n  margin-bottom: 6.6666666667vw;\n}\n@media screen and (min-width: 561px) {\n  ._3uYKl73vR7EdnyHUAzGfpr {\n    margin-bottom: 4.4563279857vw;\n  }\n}\n@media screen and (min-width: 769px) {\n  ._3uYKl73vR7EdnyHUAzGfpr {\n    margin-bottom: 3.9011703511vw;\n  }\n}\n@media screen and (min-width: 1194px) {\n  ._3uYKl73vR7EdnyHUAzGfpr {\n    margin-bottom: 3.3500837521vw;\n  }\n}\n@media screen and (min-width: 1350px) {\n  ._3uYKl73vR7EdnyHUAzGfpr {\n    margin-bottom: 2.962962963vw;\n  }\n}\n@media screen and (min-width: 1900px) {\n  ._3uYKl73vR7EdnyHUAzGfpr {\n    margin-bottom: 2.1052631579vw;\n  }\n}\n.pJwneIkgGJyvKQhmYxLKH {\n  padding: 1vw;\n  width: calc(100% / 2);\n}\n@media screen and (min-width: 561px) {\n  .pJwneIkgGJyvKQhmYxLKH {\n    padding: 0.623885918vw;\n  }\n}\n@media screen and (min-width: 769px) {\n  .pJwneIkgGJyvKQhmYxLKH {\n    padding: 0.6501950585vw;\n    width: calc(100% / 3);\n  }\n}\n@media screen and (min-width: 1194px) {\n  .pJwneIkgGJyvKQhmYxLKH {\n    padding: 0.6281407035vw;\n  }\n}\n@media screen and (min-width: 1350px) {\n  .pJwneIkgGJyvKQhmYxLKH {\n    padding: 0.5555555556vw;\n  }\n}\n@media screen and (min-width: 1900px) {\n  .pJwneIkgGJyvKQhmYxLKH {\n    padding: 0.3947368421vw;\n  }\n}\n._3_C53HURCzLlhyZ9ZTzcSj {\n  display: flex;\n  justify-content: flex-end;\n}\n\n.p8DeBwnSLQrvJUZwhrrGF {\n  display: flex;\n  align-items: center;\n  flex-wrap: wrap;\n}\n._1E3e3Mk6L8U8SPs8Qk55un {\n  padding: 1.6666666667vw;\n}\n@media screen and (min-width: 561px) {\n  ._1E3e3Mk6L8U8SPs8Qk55un {\n    padding: 1.3368983957vw;\n  }\n}\n@media screen and (min-width: 769px) {\n  ._1E3e3Mk6L8U8SPs8Qk55un {\n    padding: 1.300390117vw;\n  }\n}\n@media screen and (min-width: 1194px) {\n  ._1E3e3Mk6L8U8SPs8Qk55un {\n    padding: 1.0469011725vw;\n  }\n}\n@media screen and (min-width: 1350px) {\n  ._1E3e3Mk6L8U8SPs8Qk55un {\n    padding: 0.9259259259vw;\n  }\n}\n@media screen and (min-width: 1900px) {\n  ._1E3e3Mk6L8U8SPs8Qk55un {\n    padding: 0.6578947368vw;\n  }\n}", ""]);
+
+// exports
+exports.locals = {
+	"title": "_3vrOxM4JkZMPVegYa3ptW6",
+	"cards": "_3uYKl73vR7EdnyHUAzGfpr",
+	"card": "pJwneIkgGJyvKQhmYxLKH",
+	"link": "_3_C53HURCzLlhyZ9ZTzcSj",
+	"categories": "p8DeBwnSLQrvJUZwhrrGF",
+	"category": "_1E3e3Mk6L8U8SPs8Qk55un"
+};
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/ts/ui/src/presentation/ui-o-group/dup-group-items-grid.m.scss":
 /*!********************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader!./node_modules/postcss-loader/src??ref--8-2!./node_modules/sass-loader/dist/cjs.js??ref--8-3!./resources/ts/ui/src/presentation/ui-o-group/dup-group-items-grid.m.scss ***!
@@ -550,13 +598,13 @@ exports = module.exports = __webpack_require__(/*! ../../../../../../node_module
 
 
 // module
-exports.push([module.i, "html, body {\n  background: #eee;\n  box-sizing: border-box;\n  width: 100%;\n  display: flex;\n  flex-flow: column;\n  min-height: 100vh;\n  font-size: 16px;\n  line-height: 1.6;\n  font-family: \"Noto Sans JP\", sans-serif;\n  letter-spacing: 2px;\n}\n\n* {\n  box-sizing: border-box;\n}\n\n._3NWXMzr0Dx3xY_VhrW2dwF {\n  width: 100%;\n}\n.wceLF09LaD8h6GgQpJDMa {\n  padding: 0 3.3333333333vw;\n  margin: 0 auto 16.6666666667vw;\n  max-width: 1194px;\n}\n@media screen and (min-width: 561px) {\n  .wceLF09LaD8h6GgQpJDMa {\n    padding: 0 3.5650623886vw;\n    margin: 0 auto 10.6951871658vw;\n  }\n}\n@media screen and (min-width: 769px) {\n  .wceLF09LaD8h6GgQpJDMa {\n    padding: 0 3.9011703511vw;\n    margin: 0 auto 9.1027308192vw;\n  }\n}\n@media screen and (min-width: 1194px) {\n  .wceLF09LaD8h6GgQpJDMa {\n    padding: 0 2.5125628141vw;\n    margin: 0 auto 6.7001675042vw;\n  }\n}\n@media screen and (min-width: 1350px) {\n  .wceLF09LaD8h6GgQpJDMa {\n    padding: 0 2.2222222222vw;\n    margin: 0 auto 5.9259259259vw;\n  }\n}\n@media screen and (min-width: 1900px) {\n  .wceLF09LaD8h6GgQpJDMa {\n    padding: 0 1.5789473684vw;\n    margin: 0 auto 4.2105263158vw;\n  }\n}\n._YcDiNnU_xKTjLNO1j0lG {\n  margin-top: 16.6666666667vw;\n}\n@media screen and (min-width: 561px) {\n  ._YcDiNnU_xKTjLNO1j0lG {\n    margin-top: 10.6951871658vw;\n  }\n}\n@media screen and (min-width: 769px) {\n  ._YcDiNnU_xKTjLNO1j0lG {\n    margin-top: 9.1027308192vw;\n  }\n}\n@media screen and (min-width: 1194px) {\n  ._YcDiNnU_xKTjLNO1j0lG {\n    margin-top: 6.7001675042vw;\n  }\n}\n@media screen and (min-width: 1350px) {\n  ._YcDiNnU_xKTjLNO1j0lG {\n    margin-top: 5.9259259259vw;\n  }\n}\n@media screen and (min-width: 1900px) {\n  ._YcDiNnU_xKTjLNO1j0lG {\n    margin-top: 4.2105263158vw;\n  }\n}", ""]);
+exports.push([module.i, "html, body {\n  background: #eee;\n  box-sizing: border-box;\n  width: 100%;\n  display: flex;\n  flex-flow: column;\n  min-height: 100vh;\n  font-size: 16px;\n  line-height: 1.6;\n  font-family: \"Noto Sans JP\", sans-serif;\n  letter-spacing: 2px;\n}\n\n* {\n  box-sizing: border-box;\n}\n\n._3NWXMzr0Dx3xY_VhrW2dwF {\n  width: 100%;\n}\n.wceLF09LaD8h6GgQpJDMa {\n  padding: 0 3.3333333333vw;\n  margin: 0 auto 16.6666666667vw;\n  max-width: 1194px;\n}\n@media screen and (min-width: 561px) {\n  .wceLF09LaD8h6GgQpJDMa {\n    padding: 0 3.5650623886vw;\n    margin: 0 auto 10.6951871658vw;\n  }\n}\n@media screen and (min-width: 769px) {\n  .wceLF09LaD8h6GgQpJDMa {\n    padding: 0 3.9011703511vw;\n    margin: 0 auto 9.1027308192vw;\n  }\n}\n@media screen and (min-width: 1194px) {\n  .wceLF09LaD8h6GgQpJDMa {\n    padding: 0 2.5125628141vw;\n    margin: 0 auto 6.7001675042vw;\n  }\n}\n@media screen and (min-width: 1350px) {\n  .wceLF09LaD8h6GgQpJDMa {\n    padding: 0 2.2222222222vw;\n    margin: 0 auto 5.9259259259vw;\n  }\n}\n@media screen and (min-width: 1900px) {\n  .wceLF09LaD8h6GgQpJDMa {\n    padding: 0 1.5789473684vw;\n    margin: 0 auto 4.2105263158vw;\n  }\n}\n._3SgeFjkp_RNujOmhgt43fh {\n  margin-top: 16.6666666667vw;\n}\n@media screen and (min-width: 561px) {\n  ._3SgeFjkp_RNujOmhgt43fh {\n    margin-top: 10.6951871658vw;\n  }\n}\n@media screen and (min-width: 769px) {\n  ._3SgeFjkp_RNujOmhgt43fh {\n    margin-top: 9.1027308192vw;\n  }\n}\n@media screen and (min-width: 1194px) {\n  ._3SgeFjkp_RNujOmhgt43fh {\n    margin-top: 6.7001675042vw;\n  }\n}\n@media screen and (min-width: 1350px) {\n  ._3SgeFjkp_RNujOmhgt43fh {\n    margin-top: 5.9259259259vw;\n  }\n}\n@media screen and (min-width: 1900px) {\n  ._3SgeFjkp_RNujOmhgt43fh {\n    margin-top: 4.2105263158vw;\n  }\n}", ""]);
 
 // exports
 exports.locals = {
 	"topic": "_3NWXMzr0Dx3xY_VhrW2dwF",
 	"container": "wceLF09LaD8h6GgQpJDMa",
-	"categories": "_YcDiNnU_xKTjLNO1j0lG"
+	"group": "_3SgeFjkp_RNujOmhgt43fh"
 };
 
 /***/ }),
@@ -41965,6 +42013,31 @@ const DupLabelCard = ({ text }) => {
 
 /***/ }),
 
+/***/ "./resources/ts/ui/src/presentation/ui-a-label/DupLabelCategory.tsx":
+/*!**************************************************************************!*\
+  !*** ./resources/ts/ui/src/presentation/ui-a-label/DupLabelCategory.tsx ***!
+  \**************************************************************************/
+/*! exports provided: DupLabelCategory */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DupLabelCategory", function() { return DupLabelCategory; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _DomLabel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./DomLabel */ "./resources/ts/ui/src/presentation/ui-a-label/DomLabel.tsx");
+/* harmony import */ var _dup_label_category_m_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./dup-label-category.m.scss */ "./resources/ts/ui/src/presentation/ui-a-label/dup-label-category.m.scss");
+/* harmony import */ var _dup_label_category_m_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_dup_label_category_m_scss__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+const DupLabelCategory = ({ text }) => {
+    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_DomLabel__WEBPACK_IMPORTED_MODULE_1__["DomLabel"], { text: text, classNames: _dup_label_category_m_scss__WEBPACK_IMPORTED_MODULE_2___default.a }));
+};
+
+
+/***/ }),
+
 /***/ "./resources/ts/ui/src/presentation/ui-a-label/dup-label-card.m.scss":
 /*!***************************************************************************!*\
   !*** ./resources/ts/ui/src/presentation/ui-a-label/dup-label-card.m.scss ***!
@@ -41974,6 +42047,36 @@ const DupLabelCard = ({ text }) => {
 
 
 var content = __webpack_require__(/*! !../../../../../../node_modules/css-loader!../../../../../../node_modules/postcss-loader/src??ref--8-2!../../../../../../node_modules/sass-loader/dist/cjs.js??ref--8-3!./dup-label-card.m.scss */ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/ts/ui/src/presentation/ui-a-label/dup-label-card.m.scss");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./resources/ts/ui/src/presentation/ui-a-label/dup-label-category.m.scss":
+/*!*******************************************************************************!*\
+  !*** ./resources/ts/ui/src/presentation/ui-a-label/dup-label-category.m.scss ***!
+  \*******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../../../node_modules/css-loader!../../../../../../node_modules/postcss-loader/src??ref--8-2!../../../../../../node_modules/sass-loader/dist/cjs.js??ref--8-3!./dup-label-category.m.scss */ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/ts/ui/src/presentation/ui-a-label/dup-label-category.m.scss");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -42630,6 +42733,32 @@ if(false) {}
 
 /***/ }),
 
+/***/ "./resources/ts/ui/src/presentation/ui-o-group/DomGroupCategory.tsx":
+/*!**************************************************************************!*\
+  !*** ./resources/ts/ui/src/presentation/ui-o-group/DomGroupCategory.tsx ***!
+  \**************************************************************************/
+/*! exports provided: DomGroupCategory */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DomGroupCategory", function() { return DomGroupCategory; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _dup_group_category_m_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./dup-group-category.m.scss */ "./resources/ts/ui/src/presentation/ui-o-group/dup-group-category.m.scss");
+/* harmony import */ var _dup_group_category_m_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_dup_group_category_m_scss__WEBPACK_IMPORTED_MODULE_1__);
+
+
+const DomGroupCategory = ({ title, categories, classNames, }) => {
+    const styles = classNames || _dup_group_category_m_scss__WEBPACK_IMPORTED_MODULE_1___default.a;
+    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.root },
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.title }, title.render()),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.categories }, categories.map((category, index) => (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", { key: index, className: styles.category }, category))))));
+};
+
+
+/***/ }),
+
 /***/ "./resources/ts/ui/src/presentation/ui-o-group/DomGroupItems.tsx":
 /*!***********************************************************************!*\
   !*** ./resources/ts/ui/src/presentation/ui-o-group/DomGroupItems.tsx ***!
@@ -42679,6 +42808,36 @@ const DupGroupItemsGrid = ({ title, cards, link, }) => {
     return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_DomGroupItems__WEBPACK_IMPORTED_MODULE_1__["DomGroupItems"], { title: title, cards: cards, link: link, classNames: _dup_group_items_grid_m_scss__WEBPACK_IMPORTED_MODULE_2___default.a }));
 };
 
+
+/***/ }),
+
+/***/ "./resources/ts/ui/src/presentation/ui-o-group/dup-group-category.m.scss":
+/*!*******************************************************************************!*\
+  !*** ./resources/ts/ui/src/presentation/ui-o-group/dup-group-category.m.scss ***!
+  \*******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../../../node_modules/css-loader!../../../../../../node_modules/postcss-loader/src??ref--8-2!../../../../../../node_modules/sass-loader/dist/cjs.js??ref--8-3!./dup-group-category.m.scss */ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/ts/ui/src/presentation/ui-o-group/dup-group-category.m.scss");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
 
 /***/ }),
 
@@ -42829,13 +42988,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _dup_page_top_m_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_dup_page_top_m_scss__WEBPACK_IMPORTED_MODULE_1__);
 
 
-const DomPageTop = ({ header, topic, categories, footer, classNames, }) => {
+const DomPageTop = ({ header, topic, groups, footer, classNames, }) => {
     const styles = classNames || _dup_page_top_m_scss__WEBPACK_IMPORTED_MODULE_1___default.a;
     return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null,
         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.header }, header.render()),
         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("main", { className: styles.main },
             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.topic }, topic),
-            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.container }, categories.map((category, index) => (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", { key: index, className: styles.categories }, category))))),
+            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.container }, groups.map((group, index) => (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", { key: index, className: styles.group }, group))))),
         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.footer }, footer.render())));
 };
 
@@ -42855,15 +43014,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../ui-a-label/DupLabelCard */ "./resources/ts/ui/src/presentation/ui-a-label/DupLabelCard.tsx");
-/* harmony import */ var _ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../ui-a-link/DupLink */ "./resources/ts/ui/src/presentation/ui-a-link/DupLink.tsx");
-/* harmony import */ var _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../ui-c-title/DupTitle */ "./resources/ts/ui/src/presentation/ui-c-title/DupTitle.tsx");
-/* harmony import */ var _ui_m_card_DomCard__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../ui-m-card/DomCard */ "./resources/ts/ui/src/presentation/ui-m-card/DomCard.tsx");
-/* harmony import */ var _ui_m_card_DomCardGrid__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../ui-m-card/DomCardGrid */ "./resources/ts/ui/src/presentation/ui-m-card/DomCardGrid.tsx");
-/* harmony import */ var _ui_o_footer_DupFooter__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../ui-o-footer/DupFooter */ "./resources/ts/ui/src/presentation/ui-o-footer/DupFooter.tsx");
-/* harmony import */ var _ui_o_group_DomGroupItems__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../ui-o-group/DomGroupItems */ "./resources/ts/ui/src/presentation/ui-o-group/DomGroupItems.tsx");
-/* harmony import */ var _ui_o_group_DupGroupItemsGrid__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../ui-o-group/DupGroupItemsGrid */ "./resources/ts/ui/src/presentation/ui-o-group/DupGroupItemsGrid.tsx");
-/* harmony import */ var _ui_o_header_DomHeader__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../ui-o-header/DomHeader */ "./resources/ts/ui/src/presentation/ui-o-header/DomHeader.tsx");
-/* harmony import */ var _DomPageTop__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./DomPageTop */ "./resources/ts/ui/src/presentation/ui-p-top/DomPageTop.tsx");
+/* harmony import */ var _ui_a_label_DupLabelCategory__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../ui-a-label/DupLabelCategory */ "./resources/ts/ui/src/presentation/ui-a-label/DupLabelCategory.tsx");
+/* harmony import */ var _ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../ui-a-link/DupLink */ "./resources/ts/ui/src/presentation/ui-a-link/DupLink.tsx");
+/* harmony import */ var _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../ui-c-title/DupTitle */ "./resources/ts/ui/src/presentation/ui-c-title/DupTitle.tsx");
+/* harmony import */ var _ui_m_card_DomCard__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../ui-m-card/DomCard */ "./resources/ts/ui/src/presentation/ui-m-card/DomCard.tsx");
+/* harmony import */ var _ui_m_card_DomCardGrid__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../ui-m-card/DomCardGrid */ "./resources/ts/ui/src/presentation/ui-m-card/DomCardGrid.tsx");
+/* harmony import */ var _ui_o_footer_DupFooter__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../ui-o-footer/DupFooter */ "./resources/ts/ui/src/presentation/ui-o-footer/DupFooter.tsx");
+/* harmony import */ var _ui_o_group_DomGroupCategory__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../ui-o-group/DomGroupCategory */ "./resources/ts/ui/src/presentation/ui-o-group/DomGroupCategory.tsx");
+/* harmony import */ var _ui_o_group_DomGroupItems__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../ui-o-group/DomGroupItems */ "./resources/ts/ui/src/presentation/ui-o-group/DomGroupItems.tsx");
+/* harmony import */ var _ui_o_group_DupGroupItemsGrid__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../ui-o-group/DupGroupItemsGrid */ "./resources/ts/ui/src/presentation/ui-o-group/DupGroupItemsGrid.tsx");
+/* harmony import */ var _ui_o_header_DomHeader__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../ui-o-header/DomHeader */ "./resources/ts/ui/src/presentation/ui-o-header/DomHeader.tsx");
+/* harmony import */ var _DomPageTop__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./DomPageTop */ "./resources/ts/ui/src/presentation/ui-p-top/DomPageTop.tsx");
+
+
 
 
 
@@ -42876,47 +43039,63 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const DupPageTop = () => {
-    const categories = [
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_group_DomGroupItems__WEBPACK_IMPORTED_MODULE_7__["DomGroupItems"], { title: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_3__["DupTitle"], { type: _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_3__["DupTitleTypes"].MasterPiece }) }, cards: [
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_card_DomCard__WEBPACK_IMPORTED_MODULE_4__["DomCard"], { image: "https://www.gstatic.com/webp/gallery3/1.png", label: {
+    const groups = [
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_group_DomGroupItems__WEBPACK_IMPORTED_MODULE_9__["DomGroupItems"], { title: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_4__["DupTitle"], { type: _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_4__["DupTitleTypes"].MasterPiece }) }, cards: [
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_card_DomCard__WEBPACK_IMPORTED_MODULE_5__["DomCard"], { image: "https://www.gstatic.com/webp/gallery3/1.png", label: {
                         render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_1__["DupLabelCard"], { text: "\u6570\u5B66" })
                     }, text: "\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB" }),
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_card_DomCard__WEBPACK_IMPORTED_MODULE_4__["DomCard"], { image: "https://www.gstatic.com/webp/gallery3/1.png", label: {
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_card_DomCard__WEBPACK_IMPORTED_MODULE_5__["DomCard"], { image: "https://www.gstatic.com/webp/gallery3/1.png", label: {
                         render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_1__["DupLabelCard"], { text: "\u65B0\u578B\u30B3\u30ED\u30CA" })
                     }, text: "\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB" }),
-            ], link: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_2__["DupLink"], { type: _ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_2__["DupLinkTypes"].More, href: "/masterpiece" }) } }),
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_group_DupGroupItemsGrid__WEBPACK_IMPORTED_MODULE_8__["DupGroupItemsGrid"], { title: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_3__["DupTitle"], { type: _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_3__["DupTitleTypes"].Weekly }) }, cards: [
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_card_DomCardGrid__WEBPACK_IMPORTED_MODULE_5__["DomCardGrid"], { image: "https://www.gstatic.com/webp/gallery3/1.png", label: {
+            ], link: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_3__["DupLink"], { type: _ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_3__["DupLinkTypes"].More, href: "/masterpiece" }) } }),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_group_DupGroupItemsGrid__WEBPACK_IMPORTED_MODULE_10__["DupGroupItemsGrid"], { title: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_4__["DupTitle"], { type: _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_4__["DupTitleTypes"].Weekly }) }, cards: [
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_card_DomCardGrid__WEBPACK_IMPORTED_MODULE_6__["DomCardGrid"], { image: "https://www.gstatic.com/webp/gallery3/1.png", label: {
                         render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_1__["DupLabelCard"], { text: "\u6570\u5B66" })
                     }, text: "\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB" }),
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_card_DomCardGrid__WEBPACK_IMPORTED_MODULE_5__["DomCardGrid"], { image: "https://www.gstatic.com/webp/gallery3/1.png", label: {
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_card_DomCardGrid__WEBPACK_IMPORTED_MODULE_6__["DomCardGrid"], { image: "https://www.gstatic.com/webp/gallery3/1.png", label: {
                         render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_1__["DupLabelCard"], { text: "\u8FB2\u5B66\u30FB\u98DF\u54C1\u79D1\u5B66" })
                     }, text: "\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB" }),
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_card_DomCardGrid__WEBPACK_IMPORTED_MODULE_5__["DomCardGrid"], { image: "https://www.gstatic.com/webp/gallery3/1.png", label: {
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_card_DomCardGrid__WEBPACK_IMPORTED_MODULE_6__["DomCardGrid"], { image: "https://www.gstatic.com/webp/gallery3/1.png", label: {
                         render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_1__["DupLabelCard"], { text: "\u6570\u5B66" })
                     }, text: "\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB" }),
-            ], link: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_2__["DupLink"], { type: _ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_2__["DupLinkTypes"].More, href: "/rankings" }) } }),
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_group_DomGroupItems__WEBPACK_IMPORTED_MODULE_7__["DomGroupItems"], { title: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_3__["DupTitle"], { type: _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_3__["DupTitleTypes"].Monthly }) }, cards: [
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_card_DomCard__WEBPACK_IMPORTED_MODULE_4__["DomCard"], { image: "https://www.gstatic.com/webp/gallery3/1.png", label: {
+            ], link: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_3__["DupLink"], { type: _ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_3__["DupLinkTypes"].More, href: "/rankings" }) } }),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_group_DomGroupItems__WEBPACK_IMPORTED_MODULE_9__["DomGroupItems"], { title: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_4__["DupTitle"], { type: _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_4__["DupTitleTypes"].Monthly }) }, cards: [
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_card_DomCard__WEBPACK_IMPORTED_MODULE_5__["DomCard"], { image: "https://www.gstatic.com/webp/gallery3/1.png", label: {
                         render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_1__["DupLabelCard"], { text: "\u6570\u5B66" })
                     }, text: "\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB" }),
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_card_DomCard__WEBPACK_IMPORTED_MODULE_4__["DomCard"], { image: "https://www.gstatic.com/webp/gallery3/1.png", label: {
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_card_DomCard__WEBPACK_IMPORTED_MODULE_5__["DomCard"], { image: "https://www.gstatic.com/webp/gallery3/1.png", label: {
                         render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_1__["DupLabelCard"], { text: "\u8FB2\u5B66\u30FB\u98DF\u54C1\u79D1\u5B66" })
                     }, text: "\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB" }),
-            ], link: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_2__["DupLink"], { type: _ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_2__["DupLinkTypes"].More, href: "/rankings" }) } }),
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_group_DupGroupItemsGrid__WEBPACK_IMPORTED_MODULE_8__["DupGroupItemsGrid"], { title: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_3__["DupTitle"], { type: _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_3__["DupTitleTypes"].Latest }) }, cards: [
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_card_DomCardGrid__WEBPACK_IMPORTED_MODULE_5__["DomCardGrid"], { image: "https://www.gstatic.com/webp/gallery3/1.png", label: {
+            ], link: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_3__["DupLink"], { type: _ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_3__["DupLinkTypes"].More, href: "/rankings" }) } }),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_group_DupGroupItemsGrid__WEBPACK_IMPORTED_MODULE_10__["DupGroupItemsGrid"], { title: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_4__["DupTitle"], { type: _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_4__["DupTitleTypes"].Latest }) }, cards: [
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_card_DomCardGrid__WEBPACK_IMPORTED_MODULE_6__["DomCardGrid"], { image: "https://www.gstatic.com/webp/gallery3/1.png", label: {
                         render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_1__["DupLabelCard"], { text: "\u6570\u5B66" })
                     }, text: "\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB" }),
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_card_DomCardGrid__WEBPACK_IMPORTED_MODULE_5__["DomCardGrid"], { image: "https://www.gstatic.com/webp/gallery3/1.png", label: {
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_card_DomCardGrid__WEBPACK_IMPORTED_MODULE_6__["DomCardGrid"], { image: "https://www.gstatic.com/webp/gallery3/1.png", label: {
                         render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_1__["DupLabelCard"], { text: "\u65B0\u578B\u30B3\u30ED\u30CA" })
                     }, text: "\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB" }),
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_card_DomCardGrid__WEBPACK_IMPORTED_MODULE_5__["DomCardGrid"], { image: "https://www.gstatic.com/webp/gallery3/1.png", label: {
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_card_DomCardGrid__WEBPACK_IMPORTED_MODULE_6__["DomCardGrid"], { image: "https://www.gstatic.com/webp/gallery3/1.png", label: {
                         render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_1__["DupLabelCard"], { text: "\u8FB2\u5B66\u30FB\u98DF\u54C1\u79D1\u5B66" })
                     }, text: "\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB" }),
-            ], link: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_2__["DupLink"], { type: _ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_2__["DupLinkTypes"].More, href: "latest" }) } }),
+            ], link: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_3__["DupLink"], { type: _ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_3__["DupLinkTypes"].More, href: "latest" }) } }),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_group_DomGroupCategory__WEBPACK_IMPORTED_MODULE_8__["DomGroupCategory"], { title: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_4__["DupTitle"], { type: _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_4__["DupTitleTypes"].Category }) }, categories: [
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCategory__WEBPACK_IMPORTED_MODULE_2__["DupLabelCategory"], { text: "\u6570\u5B66" }),
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCategory__WEBPACK_IMPORTED_MODULE_2__["DupLabelCategory"], { text: "\u7269\u7406\u5B66" }),
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCategory__WEBPACK_IMPORTED_MODULE_2__["DupLabelCategory"], { text: "\u5316\u5B66" }),
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCategory__WEBPACK_IMPORTED_MODULE_2__["DupLabelCategory"], { text: "\u5730\u7403\u79D1\u5B66\u30FB\u5929\u6587\u5B66" }),
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCategory__WEBPACK_IMPORTED_MODULE_2__["DupLabelCategory"], { text: "\u751F\u7269\u5B66\u30FB\u751F\u547D\u79D1\u5B66\u30FB\u57FA\u790E\u533B\u5B66" }),
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCategory__WEBPACK_IMPORTED_MODULE_2__["DupLabelCategory"], { text: "\u6B6F\u5B66" }),
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCategory__WEBPACK_IMPORTED_MODULE_2__["DupLabelCategory"], { text: "\u8FB2\u5B66\u30FB\u98DF\u54C1\u79D1\u5B66" }),
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCategory__WEBPACK_IMPORTED_MODULE_2__["DupLabelCategory"], { text: "\u4E00\u822C\u533B\u5B66\u30FB\u793E\u4F1A\u533B\u5B66\u30FB\u770B\u8B77\u5B66" }),
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCategory__WEBPACK_IMPORTED_MODULE_2__["DupLabelCategory"], { text: "\u81E8\u5E8A\u533B\u5B66" }),
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCategory__WEBPACK_IMPORTED_MODULE_2__["DupLabelCategory"], { text: "\u85AC\u5B66" }),
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCategory__WEBPACK_IMPORTED_MODULE_2__["DupLabelCategory"], { text: "\u4E00\u822C\u5DE5\u5B66\u30FB\u7DCF\u5408\u5DE5\u5B66" }),
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCategory__WEBPACK_IMPORTED_MODULE_2__["DupLabelCategory"], { text: "\u30CA\u30CE\u30FB\u6750\u6599\u79D1\u5B66" }),
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCategory__WEBPACK_IMPORTED_MODULE_2__["DupLabelCategory"], { text: "\u5EFA\u7BC9\u5B66\u30FB\u571F\u6728\u5DE5\u5B66" }),
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCategory__WEBPACK_IMPORTED_MODULE_2__["DupLabelCategory"], { text: "\u6A5F\u68B0\u5DE5\u5B66" }),
+            ] })
     ];
-    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_DomPageTop__WEBPACK_IMPORTED_MODULE_10__["DomPageTop"], { header: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_header_DomHeader__WEBPACK_IMPORTED_MODULE_9__["DomHeader"], null) }, categories: categories, footer: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_footer_DupFooter__WEBPACK_IMPORTED_MODULE_6__["DupFooter"], null) } }));
+    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_DomPageTop__WEBPACK_IMPORTED_MODULE_12__["DomPageTop"], { header: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_header_DomHeader__WEBPACK_IMPORTED_MODULE_11__["DomHeader"], null) }, groups: groups, footer: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_footer_DupFooter__WEBPACK_IMPORTED_MODULE_7__["DupFooter"], null) } }));
 };
 
 

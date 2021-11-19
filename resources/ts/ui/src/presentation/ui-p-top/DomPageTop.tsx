@@ -4,7 +4,7 @@ import topClassNames from './dup-page-top.m.scss'
 type Props = {
   header: { render: () => ReactNode },
   topic?: { render: () => ReactNode },
-  categories: Array<ReactNode>,
+  groups: Array<ReactNode>,
   footer: { render: () => ReactNode },
   classNames?: string,
 }
@@ -12,7 +12,7 @@ type Props = {
 export const DomPageTop: React.FC<Props> = ({
   header,
   topic,
-  categories,
+  groups,
   footer,
   classNames,
 }) => {
@@ -28,9 +28,9 @@ export const DomPageTop: React.FC<Props> = ({
           {topic}
         </div>
         <div className={styles.container}>
-          {categories.map((category, index) => (
-            <section key={index} className={styles.categories}>
-              {category}
+          {groups.map((group, index) => (
+            <section key={index} className={styles.group}>
+              {group}
             </section>
           ))}
         </div>

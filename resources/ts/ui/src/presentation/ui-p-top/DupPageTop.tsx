@@ -6,13 +6,14 @@ import { DupTitle, DupTitleTypes } from '../ui-c-title/DupTitle'
 import { DomCard } from '../ui-m-card/DomCard'
 import { DomCardGrid } from '../ui-m-card/DomCardGrid'
 import { DupFooter } from '../ui-o-footer/DupFooter'
+import { DomGroupCategory } from '../ui-o-group/DomGroupCategory'
 import { DomGroupItems } from '../ui-o-group/DomGroupItems'
 import { DupGroupItemsGrid } from '../ui-o-group/DupGroupItemsGrid'
 import { DomHeader } from '../ui-o-header/DomHeader'
 import { DomPageTop } from './DomPageTop'
 
 export const DupPageTop: React.FC = () => {
-  const categories = [
+  const groups = [
     <DomGroupItems
       title={{ render: () => <DupTitle type={DupTitleTypes.MasterPiece} /> }}
       cards={[
@@ -107,11 +108,58 @@ export const DupPageTop: React.FC = () => {
       ]}
       link={{render: () => <DupLink type={DupLinkTypes.More} href="latest" /> }}
     />,
+    <DomGroupCategory
+      title={{ render: () => <DupTitle type={DupTitleTypes.Category} /> }}
+      categories={[
+        <DupLabelCategory
+          text="数学"
+        />,
+        <DupLabelCategory
+          text="物理学"
+        />,
+        <DupLabelCategory
+          text="化学"
+        />,
+        <DupLabelCategory
+          text="地球科学・天文学"
+        />,
+        <DupLabelCategory
+          text="生物学・生命科学・基礎医学"
+        />,
+        <DupLabelCategory
+          text="歯学"
+        />,
+        <DupLabelCategory
+          text="農学・食品科学"
+        />,
+        <DupLabelCategory
+          text="一般医学・社会医学・看護学"
+        />,
+        <DupLabelCategory
+          text="臨床医学"
+        />,
+        <DupLabelCategory
+          text="薬学"
+        />,
+        <DupLabelCategory
+          text="一般工学・総合工学"
+        />,
+        <DupLabelCategory
+          text="ナノ・材料科学"
+        />,
+        <DupLabelCategory
+          text="建築学・土木工学"
+        />,
+        <DupLabelCategory
+          text="機械工学"
+        />,
+      ]}
+    />
   ]
   return (
     <DomPageTop
       header={{ render: () => <DomHeader /> }}
-      categories={categories}
+      groups={groups}
       footer={{ render: () => <DupFooter /> }}
     />
   )
