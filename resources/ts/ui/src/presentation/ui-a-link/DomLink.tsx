@@ -3,7 +3,7 @@ import defaultClassNames from './dup-link-default.m.scss'
 
 type Props = {
   text: string
-  href: string
+  href: string | undefined
   classNames?: string
 }
 
