@@ -8,7 +8,7 @@ body {
   min-height: 100vh;
   font-size: 16px;
   line-height: 1.6;
-  font-family: "Lora", serif;
+  font-family: "BlinkMacSystemFont", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif, "Segoe UI Emoji";
   letter-spacing: 2px;
 }
 
