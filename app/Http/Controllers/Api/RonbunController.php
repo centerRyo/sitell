@@ -7,6 +7,13 @@ use App\Ronbun;
 
 class RonbunController extends Controller
 {
+  public function index()
+  {
+    $ronbuns = $this->getLatestRonbuns();
+
+    return response()->json($ronbuns);
+  }
+
   public function getLatestRonbuns()
   {
     $ronbuns = new Ronbun;
