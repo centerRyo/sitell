@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import { Latest } from './ui/src/presentation/ui-p-top/Latest'
-import { NotFound } from './ui/src/presentation/ui-p-top/NotFound'
-import { DupPageTop } from './ui/src/presentation/ui-p-top/DupPageTop'
+import { Latest } from './ui/src/presentation/ui-p-page/Latest'
+import { NotFound } from './ui/src/presentation/ui-p-page/NotFound'
+import { DupPageTop } from './ui/src/presentation/ui-p-page/DupPageTop'
 
 const App: React.FC = () => {
   return (
