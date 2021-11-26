@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import { Latest } from './ui/src/presentation/ui-p-page/Latest'
+import { DupPageLatest } from './ui/src/presentation/ui-p-page/DupPageLatest'
 import { NotFound } from './ui/src/presentation/ui-p-page/NotFound'
 import { DupPageTop } from './ui/src/presentation/ui-p-page/DupPageTop'
 
@@ -10,7 +10,7 @@ const App: React.FC = () => {
     <Router>
       <Switch>
         <Route exact path="/" component={DupPageTop} />
-        <Route path="/latest" component={Latest} />
+        <Route path="/latest" component={DupPageLatest} />
         <Route component={NotFound} />
       </Switch>
     </Router>
