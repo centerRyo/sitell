@@ -13,6 +13,7 @@ export const DupTitleTypes = {
   Monthly: 'monthly',
   Latest: 'latest',
   Category: 'category',
+  Ranking: 'ranking',
 }
 
 export const DupTitle: React.FC<Props> = ({ type }) => {
@@ -41,6 +42,11 @@ export const DupTitle: React.FC<Props> = ({ type }) => {
     {
       type: DupTitleTypes.Category,
       text: 'カテゴリー一覧',
+      classNames: MainClassNames,
+    },
+    {
+      type: DupTitleTypes.Ranking,
+      text: '要約ランキング',
       classNames: MainClassNames,
     },
   ]

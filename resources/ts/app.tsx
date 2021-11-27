@@ -5,6 +5,7 @@ import { DupPageLatest } from './ui/src/presentation/ui-p-page/DupPageLatest'
 import { NotFound } from './ui/src/presentation/ui-p-page/NotFound'
 import { DupPageTop } from './ui/src/presentation/ui-p-page/DupPageTop'
 import { DupPageMasterpiece } from './ui/src/presentation/ui-p-page/DupPageMasterpiece'
+import { DupPageRanking } from './ui/src/presentation/ui-p-page/DupPageRanking'
 
 const App: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ const App: React.FC = () => {
         <Route exact path="/" component={DupPageTop} />
         <Route path="/latest" component={DupPageLatest} />
         <Route path="/masterpiece" component={DupPageMasterpiece} />
+        <Route path="/rankings" component={DupPageRanking} />
         <Route component={NotFound} />
       </Switch>
     </Router>
