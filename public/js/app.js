@@ -598,12 +598,13 @@ exports = module.exports = __webpack_require__(/*! ../../../../../../node_module
 
 
 // module
-exports.push([module.i, "html, body {\n  background: #eee;\n  box-sizing: border-box;\n  width: 100%;\n  display: flex;\n  flex-flow: column;\n  min-height: 100vh;\n  font-size: 16px;\n  line-height: 1.6;\n  font-family: \"BlinkMacSystemFont\", \"Hiragino Kaku Gothic ProN\", \"Hiragino Sans\", Meiryo, sans-serif, \"Segoe UI Emoji\";\n  letter-spacing: 2px;\n}\n\n* {\n  box-sizing: border-box;\n}\n\n._3x3x1RjXxUm_eBxqSxmwVU {\n  padding: 16.6666666667vw 3.3333333333vw;\n  margin: 0 auto;\n  max-width: 1194px;\n}\n@media screen and (min-width: 561px) {\n  ._3x3x1RjXxUm_eBxqSxmwVU {\n    padding: 10.6951871658vw 3.5650623886vw;\n    margin: 0 auto 10.6951871658vw;\n  }\n}\n@media screen and (min-width: 769px) {\n  ._3x3x1RjXxUm_eBxqSxmwVU {\n    padding: 9.1027308192vw 3.9011703511vw;\n    margin: 0 auto 9.1027308192vw;\n  }\n}\n@media screen and (min-width: 1194px) {\n  ._3x3x1RjXxUm_eBxqSxmwVU {\n    padding: 6.7001675042vw 2.5125628141vw;\n    margin: 0 auto 6.7001675042vw;\n  }\n}\n@media screen and (min-width: 1350px) {\n  ._3x3x1RjXxUm_eBxqSxmwVU {\n    padding: 5.9259259259vw 2.2222222222vw;\n    margin: 0 auto 5.9259259259vw;\n  }\n}\n@media screen and (min-width: 1900px) {\n  ._3x3x1RjXxUm_eBxqSxmwVU {\n    padding: 4.2105263158vw 1.5789473684vw;\n    margin: 0 auto 4.2105263158vw;\n  }\n}\n.SSgZg3lB96-BjugFgt8zp {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  margin-bottom: 6.6666666667vw;\n}\n@media screen and (min-width: 561px) {\n  .SSgZg3lB96-BjugFgt8zp {\n    margin-bottom: 4.4563279857vw;\n  }\n}\n@media screen and (min-width: 769px) {\n  .SSgZg3lB96-BjugFgt8zp {\n    margin-bottom: 3.9011703511vw;\n  }\n}\n@media screen and (min-width: 1194px) {\n  .SSgZg3lB96-BjugFgt8zp {\n    margin-bottom: 3.3500837521vw;\n  }\n}\n@media screen and (min-width: 1350px) {\n  .SSgZg3lB96-BjugFgt8zp {\n    margin-bottom: 2.962962963vw;\n  }\n}\n@media screen and (min-width: 1900px) {\n  .SSgZg3lB96-BjugFgt8zp {\n    margin-bottom: 2.1052631579vw;\n  }\n}\n.OEJeqXbOIT8z_oz5gdGnz {\n  display: flex;\n  align-items: center;\n  flex-wrap: wrap;\n}\n.rpggI28IHXS29xveGWk0f {\n  padding: 1vw;\n  width: calc(100% / 2);\n}\n@media screen and (min-width: 561px) {\n  .rpggI28IHXS29xveGWk0f {\n    padding: 0.623885918vw;\n  }\n}\n@media screen and (min-width: 769px) {\n  .rpggI28IHXS29xveGWk0f {\n    padding: 0.6501950585vw;\n    width: calc(100% / 3);\n  }\n}\n@media screen and (min-width: 1194px) {\n  .rpggI28IHXS29xveGWk0f {\n    padding: 0.6281407035vw;\n  }\n}\n@media screen and (min-width: 1350px) {\n  .rpggI28IHXS29xveGWk0f {\n    padding: 0.5555555556vw;\n  }\n}\n@media screen and (min-width: 1900px) {\n  .rpggI28IHXS29xveGWk0f {\n    padding: 0.3947368421vw;\n  }\n}", ""]);
+exports.push([module.i, "html, body {\n  background: #eee;\n  box-sizing: border-box;\n  width: 100%;\n  display: flex;\n  flex-flow: column;\n  min-height: 100vh;\n  font-size: 16px;\n  line-height: 1.6;\n  font-family: \"BlinkMacSystemFont\", \"Hiragino Kaku Gothic ProN\", \"Hiragino Sans\", Meiryo, sans-serif, \"Segoe UI Emoji\";\n  letter-spacing: 2px;\n}\n\n* {\n  box-sizing: border-box;\n}\n\n._3x3x1RjXxUm_eBxqSxmwVU {\n  padding: 16.6666666667vw 3.3333333333vw;\n  margin: 0 auto;\n  max-width: 1194px;\n}\n@media screen and (min-width: 561px) {\n  ._3x3x1RjXxUm_eBxqSxmwVU {\n    padding: 10.6951871658vw 3.5650623886vw;\n    margin: 0 auto 10.6951871658vw;\n  }\n}\n@media screen and (min-width: 769px) {\n  ._3x3x1RjXxUm_eBxqSxmwVU {\n    padding: 9.1027308192vw 3.9011703511vw;\n    margin: 0 auto 9.1027308192vw;\n  }\n}\n@media screen and (min-width: 1194px) {\n  ._3x3x1RjXxUm_eBxqSxmwVU {\n    padding: 6.7001675042vw 2.5125628141vw;\n    margin: 0 auto 6.7001675042vw;\n  }\n}\n@media screen and (min-width: 1350px) {\n  ._3x3x1RjXxUm_eBxqSxmwVU {\n    padding: 5.9259259259vw 2.2222222222vw;\n    margin: 0 auto 5.9259259259vw;\n  }\n}\n@media screen and (min-width: 1900px) {\n  ._3x3x1RjXxUm_eBxqSxmwVU {\n    padding: 4.2105263158vw 1.5789473684vw;\n    margin: 0 auto 4.2105263158vw;\n  }\n}\n.SSgZg3lB96-BjugFgt8zp {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  margin-bottom: 6.6666666667vw;\n}\n@media screen and (min-width: 561px) {\n  .SSgZg3lB96-BjugFgt8zp {\n    margin-bottom: 4.4563279857vw;\n  }\n}\n@media screen and (min-width: 769px) {\n  .SSgZg3lB96-BjugFgt8zp {\n    margin-bottom: 3.9011703511vw;\n  }\n}\n@media screen and (min-width: 1194px) {\n  .SSgZg3lB96-BjugFgt8zp {\n    margin-bottom: 3.3500837521vw;\n  }\n}\n@media screen and (min-width: 1350px) {\n  .SSgZg3lB96-BjugFgt8zp {\n    margin-bottom: 2.962962963vw;\n  }\n}\n@media screen and (min-width: 1900px) {\n  .SSgZg3lB96-BjugFgt8zp {\n    margin-bottom: 2.1052631579vw;\n  }\n}\n._14-Iw_sxytZGX7Auh8uhJA {\n  font-size: 4.6666666667vw;\n  margin-bottom: 6.6666666667vw;\n}\n@media screen and (min-width: 561px) {\n  ._14-Iw_sxytZGX7Auh8uhJA {\n    font-size: 2.495543672vw;\n    margin-bottom: 4.4563279857vw;\n  }\n}\n@media screen and (min-width: 769px) {\n  ._14-Iw_sxytZGX7Auh8uhJA {\n    font-size: 2.0806241873vw;\n    margin-bottom: 3.9011703511vw;\n  }\n}\n@media screen and (min-width: 1194px) {\n  ._14-Iw_sxytZGX7Auh8uhJA {\n    font-size: 1.5075376884vw;\n    margin-bottom: 3.3500837521vw;\n  }\n}\n@media screen and (min-width: 1350px) {\n  ._14-Iw_sxytZGX7Auh8uhJA {\n    font-size: 1.3333333333vw;\n    margin-bottom: 2.962962963vw;\n  }\n}\n@media screen and (min-width: 1900px) {\n  ._14-Iw_sxytZGX7Auh8uhJA {\n    font-size: 0.9473684211vw;\n    margin-bottom: 2.1052631579vw;\n  }\n}\n.OEJeqXbOIT8z_oz5gdGnz {\n  display: flex;\n  align-items: center;\n  flex-wrap: wrap;\n}\n.rpggI28IHXS29xveGWk0f {\n  padding: 1vw;\n  width: calc(100% / 2);\n}\n@media screen and (min-width: 561px) {\n  .rpggI28IHXS29xveGWk0f {\n    padding: 0.623885918vw;\n  }\n}\n@media screen and (min-width: 769px) {\n  .rpggI28IHXS29xveGWk0f {\n    padding: 0.6501950585vw;\n    width: calc(100% / 3);\n  }\n}\n@media screen and (min-width: 1194px) {\n  .rpggI28IHXS29xveGWk0f {\n    padding: 0.6281407035vw;\n  }\n}\n@media screen and (min-width: 1350px) {\n  .rpggI28IHXS29xveGWk0f {\n    padding: 0.5555555556vw;\n  }\n}\n@media screen and (min-width: 1900px) {\n  .rpggI28IHXS29xveGWk0f {\n    padding: 0.3947368421vw;\n  }\n}", ""]);
 
 // exports
 exports.locals = {
 	"main": "_3x3x1RjXxUm_eBxqSxmwVU",
 	"title": "SSgZg3lB96-BjugFgt8zp",
+	"topic": "_14-Iw_sxytZGX7Auh8uhJA",
 	"contents": "OEJeqXbOIT8z_oz5gdGnz",
 	"content": "rpggI28IHXS29xveGWk0f"
 };
@@ -41655,6 +41656,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ui_src_presentation_ui_p_page_DupPageLatest__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ui/src/presentation/ui-p-page/DupPageLatest */ "./resources/ts/ui/src/presentation/ui-p-page/DupPageLatest.tsx");
 /* harmony import */ var _ui_src_presentation_ui_p_page_NotFound__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ui/src/presentation/ui-p-page/NotFound */ "./resources/ts/ui/src/presentation/ui-p-page/NotFound.tsx");
 /* harmony import */ var _ui_src_presentation_ui_p_page_DupPageTop__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./ui/src/presentation/ui-p-page/DupPageTop */ "./resources/ts/ui/src/presentation/ui-p-page/DupPageTop.tsx");
+/* harmony import */ var _ui_src_presentation_ui_p_page_DupPageMasterpiece__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./ui/src/presentation/ui-p-page/DupPageMasterpiece */ "./resources/ts/ui/src/presentation/ui-p-page/DupPageMasterpiece.tsx");
+
 
 
 
@@ -41666,6 +41669,7 @@ const App = () => {
         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Switch"], null,
             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], { exact: true, path: "/", component: _ui_src_presentation_ui_p_page_DupPageTop__WEBPACK_IMPORTED_MODULE_5__["DupPageTop"] }),
             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], { path: "/latest", component: _ui_src_presentation_ui_p_page_DupPageLatest__WEBPACK_IMPORTED_MODULE_3__["DupPageLatest"] }),
+            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], { path: "/masterpiece", component: _ui_src_presentation_ui_p_page_DupPageMasterpiece__WEBPACK_IMPORTED_MODULE_6__["DupPageMasterpiece"] }),
             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], { component: _ui_src_presentation_ui_p_page_NotFound__WEBPACK_IMPORTED_MODULE_4__["NotFound"] }))));
 };
 react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(App, null), document.getElementById('app'));
@@ -43092,6 +43096,47 @@ const DupPageLatest = () => {
             }, text: "\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB" }),
     ];
     return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_DomPageItems__WEBPACK_IMPORTED_MODULE_6__["DomPageItems"], { header: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_header_DomHeader__WEBPACK_IMPORTED_MODULE_5__["DomHeader"], null) }, title: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_2__["DupTitle"], { type: _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_2__["DupTitleTypes"].Latest }) }, contents: contents, footer: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_footer_DupFooter__WEBPACK_IMPORTED_MODULE_4__["DupFooter"], null) } }));
+};
+
+
+/***/ }),
+
+/***/ "./resources/ts/ui/src/presentation/ui-p-page/DupPageMasterpiece.tsx":
+/*!***************************************************************************!*\
+  !*** ./resources/ts/ui/src/presentation/ui-p-page/DupPageMasterpiece.tsx ***!
+  \***************************************************************************/
+/*! exports provided: DupPageMasterpiece */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DupPageMasterpiece", function() { return DupPageMasterpiece; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../ui-a-label/DupLabelCard */ "./resources/ts/ui/src/presentation/ui-a-label/DupLabelCard.tsx");
+/* harmony import */ var _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../ui-c-title/DupTitle */ "./resources/ts/ui/src/presentation/ui-c-title/DupTitle.tsx");
+/* harmony import */ var _ui_m_card_DomCard__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../ui-m-card/DomCard */ "./resources/ts/ui/src/presentation/ui-m-card/DomCard.tsx");
+/* harmony import */ var _ui_o_footer_DupFooter__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../ui-o-footer/DupFooter */ "./resources/ts/ui/src/presentation/ui-o-footer/DupFooter.tsx");
+/* harmony import */ var _ui_o_header_DomHeader__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../ui-o-header/DomHeader */ "./resources/ts/ui/src/presentation/ui-o-header/DomHeader.tsx");
+/* harmony import */ var _DomPageItems__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./DomPageItems */ "./resources/ts/ui/src/presentation/ui-p-page/DomPageItems.tsx");
+
+
+
+
+
+
+
+const DupPageMasterpiece = () => {
+    const contents = [
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_card_DomCard__WEBPACK_IMPORTED_MODULE_3__["DomCard"], { image: "https://www.gstatic.com/webp/gallery3/1.png", label: {
+                render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_1__["DupLabelCard"], { text: "\u6570\u5B66" })
+            }, text: "\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB" }),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_card_DomCard__WEBPACK_IMPORTED_MODULE_3__["DomCard"], { image: "https://www.gstatic.com/webp/gallery3/1.png", label: {
+                render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_1__["DupLabelCard"], { text: "\u8FB2\u5B66\u30FB\u98DF\u54C1\u79D1\u5B66" })
+            }, text: "\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB" }),
+    ];
+    const topic = 'sitell登録後の今だからこそ読んでおきたい厳選の論文10本をご用意しました。どの論文の要約を読もうか迷ったらぜひこの10本をご覧ください。';
+    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_DomPageItems__WEBPACK_IMPORTED_MODULE_6__["DomPageItems"], { header: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_header_DomHeader__WEBPACK_IMPORTED_MODULE_5__["DomHeader"], null) }, title: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_2__["DupTitle"], { type: _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_2__["DupTitleTypes"].MasterPiece }) }, topic: topic, contents: contents, footer: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_footer_DupFooter__WEBPACK_IMPORTED_MODULE_4__["DupFooter"], null) } }));
 };
 
 
