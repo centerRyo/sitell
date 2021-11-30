@@ -1,0 +1,157 @@
+@import '../../../../../sass/app.scss';
+
+:local {
+  .header {}
+
+  .main {
+    padding: vw(50, 300) vw(10, 300);
+    margin: 0 auto;
+    max-width: 1194px;
+
+    @include mq($breakpoint: sm) {
+      padding: vw(60, 561) vw(20, 561);
+      margin: 0 auto vw(60, 561);
+    }
+
+    @include mq($breakpoint: md) {
+      padding: vw(70, 769) vw(30, 769);
+      margin: 0 auto vw(70, 769);
+    }
+
+    @include mq($breakpoint: lg) {
+      padding: vw(80, 1194) vw(30, 1194);
+      margin: 0 auto vw(80, 1194);
+    }
+
+    @include mq($breakpoint: xl) {
+      padding: vw(80, 1350) vw(30, 1350);
+      margin: 0 auto vw(80, 1350);
+    }
+
+    @include mq($breakpoint: xxl) {
+      padding: vw(80, 1900) vw(30, 1900);
+      margin: 0 auto vw(80, 1900);
+    }
+  }
+
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: vw(20, 300);
+
+    @include mq($breakpoint: sm) {
+      margin-bottom: vw(25, 561);
+    }
+
+    @include mq($breakpoint: md) {
+      margin-bottom: vw(30, 769);
+    }
+
+    @include mq($breakpoint: lg) {
+      margin-bottom: vw(40, 1194);
+    }
+
+    @include mq($breakpoint: xl) {
+      margin-bottom: vw(40, 1350);
+    }
+
+    @include mq($breakpoint: xxl) {
+      margin-bottom: vw(40, 1900);
+    }
+  }
+
+  .topic {
+    font-size: vw(14, 300);
+    margin-bottom: vw(20, 300);
+
+    @include mq($breakpoint: sm) {
+      font-size: vw(14, 561);
+      margin-bottom: vw(25, 561);
+    }
+
+    @include mq($breakpoint: md) {
+      font-size: vw(16, 769);
+      margin-bottom: vw(30, 769);
+    }
+
+    @include mq($breakpoint: lg) {
+      font-size: vw(18, 1194);
+      margin-bottom: vw(40, 1194);
+    }
+
+    @include mq($breakpoint: xl) {
+      font-size: vw(18, 1350);
+      margin-bottom: vw(40, 1350);
+    }
+
+    @include mq($breakpoint: xxl) {
+      font-size: vw(18, 1900);
+      margin-bottom: vw(40, 1900);
+    }
+  }
+
+  .tab {
+    background: #fff;
+    border-radius: 100px;
+    box-shadow: rgba($color_main, 50%) 0 8px 20px 0;
+    margin: 0 auto vw(20, 300);
+
+    @include mq($breakpoint: sm) {
+      margin-bottom: vw(25, 561);
+      width: vw(400, 561);
+    }
+
+    @include mq($breakpoint: md) {
+      margin-bottom: vw(30, 769);
+      width: vw(600, 769);
+    }
+
+    @include mq($breakpoint: lg) {
+      margin-bottom: vw(40, 1194);
+      width: vw(900, 1194);
+    }
+
+    @include mq($breakpoint: xl) {
+      margin-bottom: vw(40, 1350);
+      width: vw(900, 1350);
+    }
+
+    @include mq($breakpoint: xxl) {
+      margin-bottom: vw(40, 1900);
+      width: vw(900, 1900);
+    }
+  }
+
+  .contents {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .content {
+    padding: vw(3, 300);
+    width: calc(100% / 2);
+
+    @include mq($breakpoint: sm) {
+      padding: vw(3.5, 561);
+    }
+
+    @include mq($breakpoint: md) {
+      padding: vw(5, 769);
+      width: calc(100% / 3);
+    }
+
+    @include mq($breakpoint: lg) {
+      padding: vw(7.5, 1194);
+    }
+
+    @include mq($breakpoint: xl) {
+      padding: vw(7.5, 1350);
+    }
+
+    @include mq($breakpoint: xxl) {
+      padding: vw(7.5, 1900);
+    }
+  }
+}

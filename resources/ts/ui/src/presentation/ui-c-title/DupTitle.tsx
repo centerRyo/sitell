@@ -5,6 +5,7 @@ import SubClassNames from './dup-title-sub.m.scss'
 
 type Props = {
   type: string,
+  text?: string,
 }
 
 export const DupTitleTypes = {
@@ -12,10 +13,15 @@ export const DupTitleTypes = {
   Weekly: 'weekly',
   Monthly: 'monthly',
   Latest: 'latest',
+  Categories: 'categories',
+  Ranking: 'ranking',
   Category: 'category',
 }
 
-export const DupTitle: React.FC<Props> = ({ type }) => {
+export const DupTitle: React.FC<Props> = ({
+  type,
+  text,
+}) => {
   // TODO: 実装がダサい。要リファクタリング
   const targets = [
     {
@@ -39,8 +45,18 @@ export const DupTitle: React.FC<Props> = ({ type }) => {
       classNames: SubClassNames,
     },
     {
-      type: DupTitleTypes.Category,
+      type: DupTitleTypes.Categories,
       text: 'カテゴリー一覧',
+      classNames: MainClassNames,
+    },
+    {
+      type: DupTitleTypes.Ranking,
+      text: '要約ランキング',
+      classNames: MainClassNames,
+    },
+    {
+      type: DupTitleTypes.Category,
+      text: text,
       classNames: MainClassNames,
     },
   ]

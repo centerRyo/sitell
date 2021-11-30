@@ -109,7 +109,7 @@ export const DupPageTop: React.FC = () => {
       link={{render: () => <DupLink type={DupLinkTypes.More} href="latest" /> }}
     />,
     <DomGroupCategory
-      title={{ render: () => <DupTitle type={DupTitleTypes.Category} /> }}
+      title={{ render: () => <DupTitle type={DupTitleTypes.Categories} /> }}
       categories={[
         <DupLabelCategory
           text="数学"

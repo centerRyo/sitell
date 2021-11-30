@@ -1,16 +1,22 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import { Latest } from './ui/src/presentation/ui-p-top/Latest'
-import { NotFound } from './ui/src/presentation/ui-p-top/NotFound'
-import { DupPageTop } from './ui/src/presentation/ui-p-top/DupPageTop'
+import { DupPageLatest } from './ui/src/presentation/ui-p-page/DupPageLatest'
+import { NotFound } from './ui/src/presentation/ui-p-page/NotFound'
+import { DupPageTop } from './ui/src/presentation/ui-p-page/DupPageTop'
+import { DupPageMasterpiece } from './ui/src/presentation/ui-p-page/DupPageMasterpiece'
+import { DupPageRanking } from './ui/src/presentation/ui-p-page/DupPageRanking'
+import { DupPageCategory } from './ui/src/presentation/ui-p-page/DupPageCategory'
 
 const App: React.FC = () => {
   return (
     <Router>
       <Switch>
         <Route exact path="/" component={DupPageTop} />
-        <Route path="/latest" component={Latest} />
+        <Route path="/latest" component={DupPageLatest} />
+        <Route path="/masterpiece" component={DupPageMasterpiece} />
+        <Route path="/rankings" component={DupPageRanking} />
+        <Route path="/category" component={DupPageCategory} />
         <Route component={NotFound} />
       </Switch>
     </Router>

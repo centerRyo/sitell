@@ -6,14 +6,14 @@
     @extend .root;
     background: $color_main;
     border-radius: 10000px;
-    padding: vw(10, 300) 0;
+    padding: vw(7, 300) 0;
 
     @include mq($breakpoint: sm) {
       padding: vw(10, 561) 0;
     }
 
     @include mq($breakpoint: md) {
-      padding: vw(15, 769) 0;
+      padding: vw(12, 769) 0;
     }
 
     @include mq($breakpoint: lg) {
