@@ -2,7 +2,7 @@ import React from 'react'
 import defaultClassNames from './dup-title-default.m.scss'
 
 type Props = {
-  text: string
+  text?: string
   classNames?: string
 }
 
