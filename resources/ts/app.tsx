@@ -6,6 +6,7 @@ import { NotFound } from './ui/src/presentation/ui-p-page/NotFound'
 import { DupPageTop } from './ui/src/presentation/ui-p-page/DupPageTop'
 import { DupPageMasterpiece } from './ui/src/presentation/ui-p-page/DupPageMasterpiece'
 import { DupPageRanking } from './ui/src/presentation/ui-p-page/DupPageRanking'
+import { DupPageCategory } from './ui/src/presentation/ui-p-page/DupPageCategory'
 
 const App: React.FC = () => {
   return (
@@ -15,6 +16,7 @@ const App: React.FC = () => {
         <Route path="/latest" component={DupPageLatest} />
         <Route path="/masterpiece" component={DupPageMasterpiece} />
         <Route path="/rankings" component={DupPageRanking} />
+        <Route path="/category" component={DupPageCategory} />
         <Route component={NotFound} />
       </Switch>
     </Router>

@@ -41774,6 +41774,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ui_src_presentation_ui_p_page_DupPageTop__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./ui/src/presentation/ui-p-page/DupPageTop */ "./resources/ts/ui/src/presentation/ui-p-page/DupPageTop.tsx");
 /* harmony import */ var _ui_src_presentation_ui_p_page_DupPageMasterpiece__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./ui/src/presentation/ui-p-page/DupPageMasterpiece */ "./resources/ts/ui/src/presentation/ui-p-page/DupPageMasterpiece.tsx");
 /* harmony import */ var _ui_src_presentation_ui_p_page_DupPageRanking__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./ui/src/presentation/ui-p-page/DupPageRanking */ "./resources/ts/ui/src/presentation/ui-p-page/DupPageRanking.tsx");
+/* harmony import */ var _ui_src_presentation_ui_p_page_DupPageCategory__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./ui/src/presentation/ui-p-page/DupPageCategory */ "./resources/ts/ui/src/presentation/ui-p-page/DupPageCategory.tsx");
+
 
 
 
@@ -41789,6 +41791,7 @@ const App = () => {
             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], { path: "/latest", component: _ui_src_presentation_ui_p_page_DupPageLatest__WEBPACK_IMPORTED_MODULE_3__["DupPageLatest"] }),
             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], { path: "/masterpiece", component: _ui_src_presentation_ui_p_page_DupPageMasterpiece__WEBPACK_IMPORTED_MODULE_6__["DupPageMasterpiece"] }),
             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], { path: "/rankings", component: _ui_src_presentation_ui_p_page_DupPageRanking__WEBPACK_IMPORTED_MODULE_7__["DupPageRanking"] }),
+            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], { path: "/category", component: _ui_src_presentation_ui_p_page_DupPageCategory__WEBPACK_IMPORTED_MODULE_8__["DupPageCategory"] }),
             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], { component: _ui_src_presentation_ui_p_page_NotFound__WEBPACK_IMPORTED_MODULE_4__["NotFound"] }))));
 };
 react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(App, null), document.getElementById('app'));
@@ -42815,10 +42818,11 @@ const DupTitleTypes = {
     Weekly: 'weekly',
     Monthly: 'monthly',
     Latest: 'latest',
-    Category: 'category',
+    Categories: 'categories',
     Ranking: 'ranking',
+    Category: 'category',
 };
-const DupTitle = ({ type }) => {
+const DupTitle = ({ type, text, }) => {
     // TODO: 実装がダサい。要リファクタリング
     const targets = [
         {
@@ -42842,13 +42846,18 @@ const DupTitle = ({ type }) => {
             classNames: _dup_title_sub_m_scss__WEBPACK_IMPORTED_MODULE_3___default.a,
         },
         {
-            type: DupTitleTypes.Category,
+            type: DupTitleTypes.Categories,
             text: 'カテゴリー一覧',
             classNames: _dup_title_main_m_scss__WEBPACK_IMPORTED_MODULE_2___default.a,
         },
         {
             type: DupTitleTypes.Ranking,
             text: '要約ランキング',
+            classNames: _dup_title_main_m_scss__WEBPACK_IMPORTED_MODULE_2___default.a,
+        },
+        {
+            type: DupTitleTypes.Category,
+            text: text,
             classNames: _dup_title_main_m_scss__WEBPACK_IMPORTED_MODULE_2___default.a,
         },
     ];
@@ -43476,6 +43485,47 @@ const DomPageTop = ({ header, topic, groups, footer, classNames, }) => {
 
 /***/ }),
 
+/***/ "./resources/ts/ui/src/presentation/ui-p-page/DupPageCategory.tsx":
+/*!************************************************************************!*\
+  !*** ./resources/ts/ui/src/presentation/ui-p-page/DupPageCategory.tsx ***!
+  \************************************************************************/
+/*! exports provided: DupPageCategory */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DupPageCategory", function() { return DupPageCategory; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../ui-a-label/DupLabelCard */ "./resources/ts/ui/src/presentation/ui-a-label/DupLabelCard.tsx");
+/* harmony import */ var _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../ui-c-title/DupTitle */ "./resources/ts/ui/src/presentation/ui-c-title/DupTitle.tsx");
+/* harmony import */ var _ui_m_card_DomCard__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../ui-m-card/DomCard */ "./resources/ts/ui/src/presentation/ui-m-card/DomCard.tsx");
+/* harmony import */ var _ui_o_footer_DupFooter__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../ui-o-footer/DupFooter */ "./resources/ts/ui/src/presentation/ui-o-footer/DupFooter.tsx");
+/* harmony import */ var _ui_o_header_DomHeader__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../ui-o-header/DomHeader */ "./resources/ts/ui/src/presentation/ui-o-header/DomHeader.tsx");
+/* harmony import */ var _DomPageItems__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./DomPageItems */ "./resources/ts/ui/src/presentation/ui-p-page/DomPageItems.tsx");
+
+
+
+
+
+
+
+const DupPageCategory = () => {
+    const contents = [
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_card_DomCard__WEBPACK_IMPORTED_MODULE_3__["DomCard"], { image: "https://www.gstatic.com/webp/gallery3/1.png", label: {
+                render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_1__["DupLabelCard"], { text: "\u6570\u5B66" })
+            }, text: "\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB" }),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_card_DomCard__WEBPACK_IMPORTED_MODULE_3__["DomCard"], { image: "https://www.gstatic.com/webp/gallery3/1.png", label: {
+                render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_1__["DupLabelCard"], { text: "\u8FB2\u5B66\u30FB\u98DF\u54C1\u79D1\u5B66" })
+            }, text: "\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB" }),
+    ];
+    const topic = 'sitell登録後の今だからこそ読んでおきたい厳選の論文10本をご用意しました。どの論文の要約を読もうか迷ったらぜひこの10本をご覧ください。';
+    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_DomPageItems__WEBPACK_IMPORTED_MODULE_6__["DomPageItems"], { header: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_header_DomHeader__WEBPACK_IMPORTED_MODULE_5__["DomHeader"], null) }, title: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_2__["DupTitle"], { type: _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_2__["DupTitleTypes"].Category, text: "\u6570\u5B66" }) }, contents: contents, footer: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_footer_DupFooter__WEBPACK_IMPORTED_MODULE_4__["DupFooter"], null) } }));
+};
+
+
+/***/ }),
+
 /***/ "./resources/ts/ui/src/presentation/ui-p-page/DupPageLatest.tsx":
 /*!**********************************************************************!*\
   !*** ./resources/ts/ui/src/presentation/ui-p-page/DupPageLatest.tsx ***!
@@ -43678,7 +43728,7 @@ const DupPageTop = () => {
                         render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_1__["DupLabelCard"], { text: "\u8FB2\u5B66\u30FB\u98DF\u54C1\u79D1\u5B66" })
                     }, text: "\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB" }),
             ], link: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_3__["DupLink"], { type: _ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_3__["DupLinkTypes"].More, href: "latest" }) } }),
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_group_DomGroupCategory__WEBPACK_IMPORTED_MODULE_8__["DomGroupCategory"], { title: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_4__["DupTitle"], { type: _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_4__["DupTitleTypes"].Category }) }, categories: [
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_group_DomGroupCategory__WEBPACK_IMPORTED_MODULE_8__["DomGroupCategory"], { title: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_4__["DupTitle"], { type: _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_4__["DupTitleTypes"].Categories }) }, categories: [
                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCategory__WEBPACK_IMPORTED_MODULE_2__["DupLabelCategory"], { text: "\u6570\u5B66" }),
                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCategory__WEBPACK_IMPORTED_MODULE_2__["DupLabelCategory"], { text: "\u7269\u7406\u5B66" }),
                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCategory__WEBPACK_IMPORTED_MODULE_2__["DupLabelCategory"], { text: "\u5316\u5B66" }),
