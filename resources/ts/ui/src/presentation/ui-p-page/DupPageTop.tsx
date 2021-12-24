@@ -1,5 +1,6 @@
 import React, { ReactElement, useEffect, useState } from 'react'
 import { categoryListResponse, getCategoryList } from '../../api/getCategoryList'
+import { getTopLatestRonbunList, topLatestRonbunListResponse } from '../../api/getTopLatestRonbunList'
 import { DupLabelCard } from '../ui-a-label/DupLabelCard'
 import { DupLabelCategory } from '../ui-a-label/DupLabelCategory'
 import { DupLink, DupLinkTypes } from '../ui-a-link/DupLink'
@@ -15,9 +16,15 @@ import { DomPageTop } from './DomPageTop'
 
 export const DupPageTop: React.FC = () => {
   const [categories, setCategories] = useState<Array<categoryListResponse>>([])
+  const [latests, setLatests] = useState<Array<topLatestRonbunListResponse>>([])
+
   useEffect(() => {
     const f = async (): Promise<void> => {
+      const latests = await getTopLatestRonbunList()
       const categories = await getCategoryList()
+      if (latests.error === null && latests.response !== null) {
+        setLatests(latests.response)
+      }
       if (categories.error === null && categories.response !== null) {
         setCategories(categories.response)
       }
@@ -95,29 +102,9 @@ export const DupPageTop: React.FC = () => {
     />,
     <DupGroupItemsGrid
       title={{ render: () => <DupTitle type={DupTitleTypes.Latest} /> }}
-      cards={[
-        <DomCardGrid
-          image="https://www.gstatic.com/webp/gallery3/1.png"
-          label={{
-            render: () => <DupLabelCard text="数学" />
-          }}
-          text="サンプルタイトルサンプルタイトルサンプルタイトル"
-        />,
-        <DomCardGrid
-          image="https://www.gstatic.com/webp/gallery3/1.png"
-          label={{
-            render: () => <DupLabelCard text="新型コロナ" />
-          }}
-          text="サンプルタイトルサンプルタイトルサンプルタイトル"
-        />,
-        <DomCardGrid
-          image="https://www.gstatic.com/webp/gallery3/1.png"
-          label={{
-            render: () => <DupLabelCard text="農学・食品科学" />
-          }}
-          text="サンプルタイトルサンプルタイトルサンプルタイトル"
-        />,
-      ]}
+      cards={latests.map(latest => {
+        return <DomCardGrid image={latest.thumbnail} label={{ render: () => <DupLabelCard text="新型コロナ" /> }} text={latest.title} />
+      })}
       link={{render: () => <DupLink type={DupLinkTypes.More} href="latest" /> }}
     />,
     <DomGroupCategory

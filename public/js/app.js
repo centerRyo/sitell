@@ -44112,6 +44112,47 @@ function getCategoryList() {
 
 /***/ }),
 
+/***/ "./resources/ts/ui/src/api/getTopLatestRonbunList.ts":
+/*!***********************************************************!*\
+  !*** ./resources/ts/ui/src/api/getTopLatestRonbunList.ts ***!
+  \***********************************************************/
+/*! exports provided: getTopLatestRonbunList */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getTopLatestRonbunList", function() { return getTopLatestRonbunList; });
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
+var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+
+function getTopLatestRonbunList() {
+    return __awaiter(this, void 0, void 0, function* () {
+        const url = '/api/ronbun/ronbunList';
+        const result = yield axios__WEBPACK_IMPORTED_MODULE_0___default.a
+            .get(url)
+            .then((response) => {
+            const ret = response.data;
+            return { error: null, response: ret };
+        })
+            .catch(err => {
+            return { error: err, response: null };
+        });
+        return result;
+    });
+}
+
+
+/***/ }),
+
 /***/ "./resources/ts/ui/src/assets/CalendarMonthly.tsx":
 /*!********************************************************!*\
   !*** ./resources/ts/ui/src/assets/CalendarMonthly.tsx ***!
@@ -45977,18 +46018,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _api_getCategoryList__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../api/getCategoryList */ "./resources/ts/ui/src/api/getCategoryList.ts");
-/* harmony import */ var _ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../ui-a-label/DupLabelCard */ "./resources/ts/ui/src/presentation/ui-a-label/DupLabelCard.tsx");
-/* harmony import */ var _ui_a_label_DupLabelCategory__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../ui-a-label/DupLabelCategory */ "./resources/ts/ui/src/presentation/ui-a-label/DupLabelCategory.tsx");
-/* harmony import */ var _ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../ui-a-link/DupLink */ "./resources/ts/ui/src/presentation/ui-a-link/DupLink.tsx");
-/* harmony import */ var _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../ui-c-title/DupTitle */ "./resources/ts/ui/src/presentation/ui-c-title/DupTitle.tsx");
-/* harmony import */ var _ui_m_card_DomCard__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../ui-m-card/DomCard */ "./resources/ts/ui/src/presentation/ui-m-card/DomCard.tsx");
-/* harmony import */ var _ui_m_card_DomCardGrid__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../ui-m-card/DomCardGrid */ "./resources/ts/ui/src/presentation/ui-m-card/DomCardGrid.tsx");
-/* harmony import */ var _ui_o_footer_DupFooter__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../ui-o-footer/DupFooter */ "./resources/ts/ui/src/presentation/ui-o-footer/DupFooter.tsx");
-/* harmony import */ var _ui_o_group_DomGroupCategory__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../ui-o-group/DomGroupCategory */ "./resources/ts/ui/src/presentation/ui-o-group/DomGroupCategory.tsx");
-/* harmony import */ var _ui_o_group_DomGroupItems__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../ui-o-group/DomGroupItems */ "./resources/ts/ui/src/presentation/ui-o-group/DomGroupItems.tsx");
-/* harmony import */ var _ui_o_group_DupGroupItemsGrid__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../ui-o-group/DupGroupItemsGrid */ "./resources/ts/ui/src/presentation/ui-o-group/DupGroupItemsGrid.tsx");
-/* harmony import */ var _ui_o_header_DomHeader__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../ui-o-header/DomHeader */ "./resources/ts/ui/src/presentation/ui-o-header/DomHeader.tsx");
-/* harmony import */ var _DomPageTop__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./DomPageTop */ "./resources/ts/ui/src/presentation/ui-p-page/DomPageTop.tsx");
+/* harmony import */ var _api_getTopLatestRonbunList__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../api/getTopLatestRonbunList */ "./resources/ts/ui/src/api/getTopLatestRonbunList.ts");
+/* harmony import */ var _ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../ui-a-label/DupLabelCard */ "./resources/ts/ui/src/presentation/ui-a-label/DupLabelCard.tsx");
+/* harmony import */ var _ui_a_label_DupLabelCategory__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../ui-a-label/DupLabelCategory */ "./resources/ts/ui/src/presentation/ui-a-label/DupLabelCategory.tsx");
+/* harmony import */ var _ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../ui-a-link/DupLink */ "./resources/ts/ui/src/presentation/ui-a-link/DupLink.tsx");
+/* harmony import */ var _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../ui-c-title/DupTitle */ "./resources/ts/ui/src/presentation/ui-c-title/DupTitle.tsx");
+/* harmony import */ var _ui_m_card_DomCard__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../ui-m-card/DomCard */ "./resources/ts/ui/src/presentation/ui-m-card/DomCard.tsx");
+/* harmony import */ var _ui_m_card_DomCardGrid__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../ui-m-card/DomCardGrid */ "./resources/ts/ui/src/presentation/ui-m-card/DomCardGrid.tsx");
+/* harmony import */ var _ui_o_footer_DupFooter__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../ui-o-footer/DupFooter */ "./resources/ts/ui/src/presentation/ui-o-footer/DupFooter.tsx");
+/* harmony import */ var _ui_o_group_DomGroupCategory__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../ui-o-group/DomGroupCategory */ "./resources/ts/ui/src/presentation/ui-o-group/DomGroupCategory.tsx");
+/* harmony import */ var _ui_o_group_DomGroupItems__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../ui-o-group/DomGroupItems */ "./resources/ts/ui/src/presentation/ui-o-group/DomGroupItems.tsx");
+/* harmony import */ var _ui_o_group_DupGroupItemsGrid__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../ui-o-group/DupGroupItemsGrid */ "./resources/ts/ui/src/presentation/ui-o-group/DupGroupItemsGrid.tsx");
+/* harmony import */ var _ui_o_header_DomHeader__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../ui-o-header/DomHeader */ "./resources/ts/ui/src/presentation/ui-o-header/DomHeader.tsx");
+/* harmony import */ var _DomPageTop__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./DomPageTop */ "./resources/ts/ui/src/presentation/ui-p-page/DomPageTop.tsx");
 var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -46012,11 +46054,17 @@ var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _argume
 
 
 
+
 const DupPageTop = () => {
     const [categories, setCategories] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
+    const [latests, setLatests] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
     Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
         const f = () => __awaiter(void 0, void 0, void 0, function* () {
+            const latests = yield Object(_api_getTopLatestRonbunList__WEBPACK_IMPORTED_MODULE_2__["getTopLatestRonbunList"])();
             const categories = yield Object(_api_getCategoryList__WEBPACK_IMPORTED_MODULE_1__["getCategoryList"])();
+            if (latests.error === null && latests.response !== null) {
+                setLatests(latests.response);
+            }
             if (categories.error === null && categories.response !== null) {
                 setCategories(categories.response);
             }
@@ -46024,49 +46072,41 @@ const DupPageTop = () => {
         f().catch(err => console.log(err));
     }, []);
     const groups = [
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_group_DomGroupItems__WEBPACK_IMPORTED_MODULE_10__["DomGroupItems"], { title: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_5__["DupTitle"], { type: _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_5__["DupTitleTypes"].MasterPiece }) }, cards: [
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_card_DomCard__WEBPACK_IMPORTED_MODULE_6__["DomCard"], { image: "https://www.gstatic.com/webp/gallery3/1.png", label: {
-                        render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_2__["DupLabelCard"], { text: "\u6570\u5B66" })
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_group_DomGroupItems__WEBPACK_IMPORTED_MODULE_11__["DomGroupItems"], { title: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_6__["DupTitle"], { type: _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_6__["DupTitleTypes"].MasterPiece }) }, cards: [
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_card_DomCard__WEBPACK_IMPORTED_MODULE_7__["DomCard"], { image: "https://www.gstatic.com/webp/gallery3/1.png", label: {
+                        render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_3__["DupLabelCard"], { text: "\u6570\u5B66" })
                     }, text: "\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB" }),
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_card_DomCard__WEBPACK_IMPORTED_MODULE_6__["DomCard"], { image: "https://www.gstatic.com/webp/gallery3/1.png", label: {
-                        render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_2__["DupLabelCard"], { text: "\u65B0\u578B\u30B3\u30ED\u30CA" })
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_card_DomCard__WEBPACK_IMPORTED_MODULE_7__["DomCard"], { image: "https://www.gstatic.com/webp/gallery3/1.png", label: {
+                        render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_3__["DupLabelCard"], { text: "\u65B0\u578B\u30B3\u30ED\u30CA" })
                     }, text: "\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB" }),
-            ], link: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_4__["DupLink"], { type: _ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_4__["DupLinkTypes"].More, href: "/masterpiece" }) } }),
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_group_DupGroupItemsGrid__WEBPACK_IMPORTED_MODULE_11__["DupGroupItemsGrid"], { title: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_5__["DupTitle"], { type: _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_5__["DupTitleTypes"].Weekly }) }, cards: [
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_card_DomCardGrid__WEBPACK_IMPORTED_MODULE_7__["DomCardGrid"], { image: "https://www.gstatic.com/webp/gallery3/1.png", label: {
-                        render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_2__["DupLabelCard"], { text: "\u6570\u5B66" })
+            ], link: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_5__["DupLink"], { type: _ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_5__["DupLinkTypes"].More, href: "/masterpiece" }) } }),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_group_DupGroupItemsGrid__WEBPACK_IMPORTED_MODULE_12__["DupGroupItemsGrid"], { title: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_6__["DupTitle"], { type: _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_6__["DupTitleTypes"].Weekly }) }, cards: [
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_card_DomCardGrid__WEBPACK_IMPORTED_MODULE_8__["DomCardGrid"], { image: "https://www.gstatic.com/webp/gallery3/1.png", label: {
+                        render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_3__["DupLabelCard"], { text: "\u6570\u5B66" })
                     }, text: "\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB" }),
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_card_DomCardGrid__WEBPACK_IMPORTED_MODULE_7__["DomCardGrid"], { image: "https://www.gstatic.com/webp/gallery3/1.png", label: {
-                        render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_2__["DupLabelCard"], { text: "\u8FB2\u5B66\u30FB\u98DF\u54C1\u79D1\u5B66" })
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_card_DomCardGrid__WEBPACK_IMPORTED_MODULE_8__["DomCardGrid"], { image: "https://www.gstatic.com/webp/gallery3/1.png", label: {
+                        render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_3__["DupLabelCard"], { text: "\u8FB2\u5B66\u30FB\u98DF\u54C1\u79D1\u5B66" })
                     }, text: "\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB" }),
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_card_DomCardGrid__WEBPACK_IMPORTED_MODULE_7__["DomCardGrid"], { image: "https://www.gstatic.com/webp/gallery3/1.png", label: {
-                        render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_2__["DupLabelCard"], { text: "\u6570\u5B66" })
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_card_DomCardGrid__WEBPACK_IMPORTED_MODULE_8__["DomCardGrid"], { image: "https://www.gstatic.com/webp/gallery3/1.png", label: {
+                        render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_3__["DupLabelCard"], { text: "\u6570\u5B66" })
                     }, text: "\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB" }),
-            ], link: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_4__["DupLink"], { type: _ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_4__["DupLinkTypes"].More, href: "/rankings" }) } }),
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_group_DomGroupItems__WEBPACK_IMPORTED_MODULE_10__["DomGroupItems"], { title: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_5__["DupTitle"], { type: _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_5__["DupTitleTypes"].Monthly }) }, cards: [
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_card_DomCard__WEBPACK_IMPORTED_MODULE_6__["DomCard"], { image: "https://www.gstatic.com/webp/gallery3/1.png", label: {
-                        render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_2__["DupLabelCard"], { text: "\u6570\u5B66" })
+            ], link: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_5__["DupLink"], { type: _ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_5__["DupLinkTypes"].More, href: "/rankings" }) } }),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_group_DomGroupItems__WEBPACK_IMPORTED_MODULE_11__["DomGroupItems"], { title: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_6__["DupTitle"], { type: _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_6__["DupTitleTypes"].Monthly }) }, cards: [
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_card_DomCard__WEBPACK_IMPORTED_MODULE_7__["DomCard"], { image: "https://www.gstatic.com/webp/gallery3/1.png", label: {
+                        render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_3__["DupLabelCard"], { text: "\u6570\u5B66" })
                     }, text: "\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB" }),
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_card_DomCard__WEBPACK_IMPORTED_MODULE_6__["DomCard"], { image: "https://www.gstatic.com/webp/gallery3/1.png", label: {
-                        render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_2__["DupLabelCard"], { text: "\u8FB2\u5B66\u30FB\u98DF\u54C1\u79D1\u5B66" })
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_card_DomCard__WEBPACK_IMPORTED_MODULE_7__["DomCard"], { image: "https://www.gstatic.com/webp/gallery3/1.png", label: {
+                        render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_3__["DupLabelCard"], { text: "\u8FB2\u5B66\u30FB\u98DF\u54C1\u79D1\u5B66" })
                     }, text: "\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB" }),
-            ], link: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_4__["DupLink"], { type: _ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_4__["DupLinkTypes"].More, href: "/rankings" }) } }),
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_group_DupGroupItemsGrid__WEBPACK_IMPORTED_MODULE_11__["DupGroupItemsGrid"], { title: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_5__["DupTitle"], { type: _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_5__["DupTitleTypes"].Latest }) }, cards: [
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_card_DomCardGrid__WEBPACK_IMPORTED_MODULE_7__["DomCardGrid"], { image: "https://www.gstatic.com/webp/gallery3/1.png", label: {
-                        render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_2__["DupLabelCard"], { text: "\u6570\u5B66" })
-                    }, text: "\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB" }),
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_card_DomCardGrid__WEBPACK_IMPORTED_MODULE_7__["DomCardGrid"], { image: "https://www.gstatic.com/webp/gallery3/1.png", label: {
-                        render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_2__["DupLabelCard"], { text: "\u65B0\u578B\u30B3\u30ED\u30CA" })
-                    }, text: "\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB" }),
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_card_DomCardGrid__WEBPACK_IMPORTED_MODULE_7__["DomCardGrid"], { image: "https://www.gstatic.com/webp/gallery3/1.png", label: {
-                        render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_2__["DupLabelCard"], { text: "\u8FB2\u5B66\u30FB\u98DF\u54C1\u79D1\u5B66" })
-                    }, text: "\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB" }),
-            ], link: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_4__["DupLink"], { type: _ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_4__["DupLinkTypes"].More, href: "latest" }) } }),
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_group_DomGroupCategory__WEBPACK_IMPORTED_MODULE_9__["DomGroupCategory"], { title: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_5__["DupTitle"], { type: _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_5__["DupTitleTypes"].Categories }) }, categories: categories.map(category => {
-                return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCategory__WEBPACK_IMPORTED_MODULE_3__["DupLabelCategory"], { text: category.name });
+            ], link: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_5__["DupLink"], { type: _ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_5__["DupLinkTypes"].More, href: "/rankings" }) } }),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_group_DupGroupItemsGrid__WEBPACK_IMPORTED_MODULE_12__["DupGroupItemsGrid"], { title: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_6__["DupTitle"], { type: _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_6__["DupTitleTypes"].Latest }) }, cards: latests.map(latest => {
+                return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_card_DomCardGrid__WEBPACK_IMPORTED_MODULE_8__["DomCardGrid"], { image: latest.thumbnail, label: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_3__["DupLabelCard"], { text: "\u65B0\u578B\u30B3\u30ED\u30CA" }) }, text: latest.title });
+            }), link: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_5__["DupLink"], { type: _ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_5__["DupLinkTypes"].More, href: "latest" }) } }),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_group_DomGroupCategory__WEBPACK_IMPORTED_MODULE_10__["DomGroupCategory"], { title: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_6__["DupTitle"], { type: _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_6__["DupTitleTypes"].Categories }) }, categories: categories.map(category => {
+                return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCategory__WEBPACK_IMPORTED_MODULE_4__["DupLabelCategory"], { text: category.name });
             }) })
     ];
-    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_DomPageTop__WEBPACK_IMPORTED_MODULE_13__["DomPageTop"], { header: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_header_DomHeader__WEBPACK_IMPORTED_MODULE_12__["DomHeader"], null) }, groups: groups, footer: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_footer_DupFooter__WEBPACK_IMPORTED_MODULE_8__["DupFooter"], null) } }));
+    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_DomPageTop__WEBPACK_IMPORTED_MODULE_14__["DomPageTop"], { header: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_header_DomHeader__WEBPACK_IMPORTED_MODULE_13__["DomHeader"], null) }, groups: groups, footer: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_footer_DupFooter__WEBPACK_IMPORTED_MODULE_9__["DupFooter"], null) } }));
 };
 
 
