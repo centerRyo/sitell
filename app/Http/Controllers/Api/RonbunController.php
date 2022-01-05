@@ -17,9 +17,6 @@ class RonbunController extends Controller
 
   public function getLatestRonbuns()
   {
-    // $ronbuns = new Ronbun;
-    // $latest_ronbuns = $ronbuns->orderBy('updated_at', 'desc')->limit(4)->get();
-
     $latest_ronbuns = DB::table('ronbuns')
                           ->leftJoin('categories', 'ronbuns.category_id', '=', 'categories.id')
                           ->select('ronbuns.*', 'categories.name as category_name')
