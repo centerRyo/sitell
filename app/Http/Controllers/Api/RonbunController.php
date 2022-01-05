@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
-use App\Ronbun;
 use Illuminate\Support\Facades\DB;
 
 class RonbunController extends Controller
