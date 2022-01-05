@@ -12,6 +12,7 @@ export interface topLatestRonbunListResponse {
   year: number
   created_at: string
   updated_at: string
+  category_name: string
 }
 
 export async function getTopLatestRonbunList(): Promise<{

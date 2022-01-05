@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
-use App\Ronbun;
+use Illuminate\Support\Facades\DB;
 
 class RonbunController extends Controller
 {
@@ -16,8 +16,12 @@ class RonbunController extends Controller
 
   public function getLatestRonbuns()
   {
-    $ronbuns = new Ronbun;
-    $latest_ronbuns = $ronbuns->orderBy('updated_at', 'desc')->limit(4)->get();
+    $latest_ronbuns = DB::table('ronbuns')
+                          ->leftJoin('categories', 'ronbuns.category_id', '=', 'categories.id')
+                          ->select('ronbuns.*', 'categories.name as category_name')
+                          ->orderBy('ronbuns.updated_at', 'desc')
+                          ->limit(4)
+                          ->get();
 
     return $latest_ronbuns;
   }
