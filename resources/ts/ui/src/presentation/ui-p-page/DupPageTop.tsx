@@ -103,7 +103,7 @@ export const DupPageTop: React.FC = () => {
     <DupGroupItemsGrid
       title={{ render: () => <DupTitle type={DupTitleTypes.Latest} /> }}
       cards={latests.map(latest => {
-        return <DomCardGrid image={latest.thumbnail} label={{ render: () => <DupLabelCard text="新型コロナ" /> }} text={latest.title} />
+        return <DomCardGrid image={latest.thumbnail} label={{ render: () => <DupLabelCard text={latest.category_name} /> }} text={latest.title} />
       })}
       link={{render: () => <DupLink type={DupLinkTypes.More} href="latest" /> }}
     />,
