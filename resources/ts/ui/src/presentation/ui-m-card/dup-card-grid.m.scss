@@ -15,6 +15,7 @@
 
   .wrapper {
     margin-left: vw(10, 300);
+    width: 70%;
 
     @include mq($breakpoint: sm) {
       margin-left: vw(20, 561);
