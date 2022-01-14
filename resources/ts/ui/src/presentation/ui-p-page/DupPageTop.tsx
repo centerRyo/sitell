@@ -91,11 +91,11 @@ export const DupPageTop: React.FC = () => {
           text="サンプルタイトルサンプルタイトルサンプルタイトル"
         />,
         <DomCard
-          image="https://www.gstatic.com/webp/gallery3/1.png"
+          image="https://tk.ismcdn.jp/mwimgs/b/f/1140/img_bf687219033dbe7e1576a59e1f14495a225863.jpg"
           label={{
             render: () => <DupLabelCard text="農学・食品科学" />
           }}
-          text="サンプルタイトルサンプルタイトルサンプルタイトル"
+          text="サンプルタイトルサンプル"
         />,
       ]}
       link={{ render: () => <DupLink type={DupLinkTypes.More} href="/rankings" /> }}
