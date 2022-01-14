@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react'
 import { BsTwitter, BsFacebook, BsYoutube } from 'react-icons/bs'
+import { Link } from 'react-router-dom'
 import { LogoInverted } from '../../assets/LogoInverted'
 import defaultClassNames from './dup-footer-default.m.scss'
 
@@ -20,9 +21,9 @@ export const DomFooter: React.FC<Props> = ({
     <footer className={styles.footer}>
       <div className={styles.root}>
         <div className={styles.container}>
-          <a className={styles.icon} href="/">
+          <Link to="/" className={styles.icon}>
             <LogoInverted />
-          </a>
+          </Link>
           <div className={styles.links}>
             <ul className={styles.items}>
               {linksLeft.map((link, index) => (

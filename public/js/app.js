@@ -45443,20 +45443,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_icons_bs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-icons/bs */ "./node_modules/react-icons/bs/index.esm.js");
-/* harmony import */ var _assets_LogoInverted__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/LogoInverted */ "./resources/ts/ui/src/assets/LogoInverted.tsx");
-/* harmony import */ var _dup_footer_default_m_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./dup-footer-default.m.scss */ "./resources/ts/ui/src/presentation/ui-o-footer/dup-footer-default.m.scss");
-/* harmony import */ var _dup_footer_default_m_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_dup_footer_default_m_scss__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _assets_LogoInverted__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/LogoInverted */ "./resources/ts/ui/src/assets/LogoInverted.tsx");
+/* harmony import */ var _dup_footer_default_m_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./dup-footer-default.m.scss */ "./resources/ts/ui/src/presentation/ui-o-footer/dup-footer-default.m.scss");
+/* harmony import */ var _dup_footer_default_m_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_dup_footer_default_m_scss__WEBPACK_IMPORTED_MODULE_4__);
+
 
 
 
 
 const DomFooter = ({ linksLeft, linksRight, classNames }) => {
-    const styles = classNames || _dup_footer_default_m_scss__WEBPACK_IMPORTED_MODULE_3___default.a;
+    const styles = classNames || _dup_footer_default_m_scss__WEBPACK_IMPORTED_MODULE_4___default.a;
     return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", { className: styles.footer },
         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.root },
             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.container },
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", { className: styles.icon, href: "/" },
-                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_assets_LogoInverted__WEBPACK_IMPORTED_MODULE_2__["LogoInverted"], null)),
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], { to: "/", className: styles.icon },
+                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_assets_LogoInverted__WEBPACK_IMPORTED_MODULE_3__["LogoInverted"], null)),
                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.links },
                     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", { className: styles.items }, linksLeft.map((link, index) => (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", { className: styles.item, key: index }, link)))),
                     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", { className: styles.items }, linksRight.map((link, index) => (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", { className: styles.item, key: index }, link)))))),
@@ -45720,29 +45722,31 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_icons_bs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-icons/bs */ "./node_modules/react-icons/bs/index.esm.js");
-/* harmony import */ var _assets_Logo__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/Logo */ "./resources/ts/ui/src/assets/Logo.tsx");
-/* harmony import */ var _ui_a_button_DupButton__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../ui-a-button/DupButton */ "./resources/ts/ui/src/presentation/ui-a-button/DupButton.tsx");
-/* harmony import */ var _dup_header_default_m_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./dup-header-default.m.scss */ "./resources/ts/ui/src/presentation/ui-o-header/dup-header-default.m.scss");
-/* harmony import */ var _dup_header_default_m_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_dup_header_default_m_scss__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _assets_Logo__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/Logo */ "./resources/ts/ui/src/assets/Logo.tsx");
+/* harmony import */ var _ui_a_button_DupButton__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../ui-a-button/DupButton */ "./resources/ts/ui/src/presentation/ui-a-button/DupButton.tsx");
+/* harmony import */ var _dup_header_default_m_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./dup-header-default.m.scss */ "./resources/ts/ui/src/presentation/ui-o-header/dup-header-default.m.scss");
+/* harmony import */ var _dup_header_default_m_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_dup_header_default_m_scss__WEBPACK_IMPORTED_MODULE_5__);
+
 
 
 
 
 
 const DomHeader = ({ classNames }) => {
-    const styles = classNames || _dup_header_default_m_scss__WEBPACK_IMPORTED_MODULE_4___default.a;
+    const styles = classNames || _dup_header_default_m_scss__WEBPACK_IMPORTED_MODULE_5___default.a;
     return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", { className: styles.header },
         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.root },
-            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", { className: styles.logo },
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_assets_Logo__WEBPACK_IMPORTED_MODULE_2__["Logo"], null)),
+            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], { to: '/', className: styles.logo },
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_assets_Logo__WEBPACK_IMPORTED_MODULE_3__["Logo"], null)),
             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.nav },
                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.icon },
                     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_icons_bs__WEBPACK_IMPORTED_MODULE_1__["BsSearch"], null)),
                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", { className: styles.lead },
                     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", { className: styles.button },
-                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_button_DupButton__WEBPACK_IMPORTED_MODULE_3__["DupButton"], { type: _ui_a_button_DupButton__WEBPACK_IMPORTED_MODULE_3__["DupButtonTypes"].Register })),
+                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_button_DupButton__WEBPACK_IMPORTED_MODULE_4__["DupButton"], { type: _ui_a_button_DupButton__WEBPACK_IMPORTED_MODULE_4__["DupButtonTypes"].Register })),
                     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", { className: styles.button },
-                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_button_DupButton__WEBPACK_IMPORTED_MODULE_3__["DupButton"], { type: _ui_a_button_DupButton__WEBPACK_IMPORTED_MODULE_3__["DupButtonTypes"].Login })))))));
+                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_button_DupButton__WEBPACK_IMPORTED_MODULE_4__["DupButton"], { type: _ui_a_button_DupButton__WEBPACK_IMPORTED_MODULE_4__["DupButtonTypes"].Login })))))));
 };
 
 
