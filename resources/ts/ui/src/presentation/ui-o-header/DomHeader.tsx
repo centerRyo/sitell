@@ -1,5 +1,6 @@
 import React from 'react'
 import { BsSearch } from 'react-icons/bs'
+import { Link } from 'react-router-dom'
 import { Logo } from '../../assets/Logo'
 import { DupButton, DupButtonTypes } from '../ui-a-button/DupButton'
 import defaultClassNames from './dup-header-default.m.scss'
@@ -14,9 +15,9 @@ export const DomHeader: React.FC<Props> = ({ classNames }) => {
   return (
     <header className={styles.header}>
       <div className={styles.root}>
-        <a className={styles.logo}>
+        <Link to='/' className={styles.logo}>
           <Logo />
-        </a>
+        </Link>
         <div className={styles.nav}>
           <div className={styles.icon}>
             <BsSearch />

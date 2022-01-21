@@ -5,6 +5,7 @@
     background: #fff;
     box-sizing: border-box;
     border-radius: 4px;
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -67,6 +68,9 @@
 
   .image {
     margin-bottom: vw(10, 300);
+    position: relative;
+    overflow: hidden;
+    padding-top: 60%;
     width: 100%;
 
     @include mq($breakpoint: sm) {
@@ -91,6 +95,12 @@
   }
 
   .image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    object-fit: cover;
     width: 100%;
   }
 
@@ -119,8 +129,14 @@
   }
 
   .text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
     font-size: vw(12, 300);
     font-weight: bold;
+    line-height: 1.6rem;
+    height: calc(1.6rem * 3);
+    overflow: hidden;
 
     @include mq($breakpoint: sm) {
       font-size: vw(14, 561);

@@ -10,11 +10,24 @@
   .image {
     @extend .image;
     margin-bottom: 0;
+    position: relative;
+    overflow: hidden;
+    padding-top: 0;
     width: 30%;
+  }
+
+  .image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 100%;
+    object-fit: cover;
   }
 
   .wrapper {
     margin-left: vw(10, 300);
+    width: 70%;
 
     @include mq($breakpoint: sm) {
       margin-left: vw(20, 561);
