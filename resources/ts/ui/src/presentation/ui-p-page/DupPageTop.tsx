@@ -7,6 +7,7 @@ import { DupLink, DupLinkTypes } from '../ui-a-link/DupLink'
 import { DupTitle, DupTitleTypes } from '../ui-c-title/DupTitle'
 import { DomCard } from '../ui-m-card/DomCard'
 import { DomCardGrid } from '../ui-m-card/DomCardGrid'
+import { DomSlider } from '../ui-m-slider/DomSlider'
 import { DupFooter } from '../ui-o-footer/DupFooter'
 import { DomGroupCategory } from '../ui-o-group/DomGroupCategory'
 import { DomGroupItems } from '../ui-o-group/DomGroupItems'
@@ -117,6 +118,7 @@ export const DupPageTop: React.FC = () => {
   return (
     <DomPageTop
       header={{ render: () => <DomHeader /> }}
+      topics={{ render: () => <DomSlider /> }}
       groups={groups}
       footer={{ render: () => <DupFooter /> }}
     />
