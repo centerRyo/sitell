@@ -24,7 +24,7 @@ export const DomPageTop: React.FC<Props> = ({
         {header.render()}
       </div>
       <main className={styles.main}>
-        <div className={styles.topic}>
+        <div className={styles.topics}>
           {topics.render()}
         </div>
         <div className={styles.container}>

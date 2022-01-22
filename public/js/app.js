@@ -59273,7 +59273,7 @@ const DomPageTop = ({ header, topics, groups, footer, classNames, }) => {
     return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null,
         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.header }, header.render()),
         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("main", { className: styles.main },
-            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.topic }, topics.render()),
+            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.topics }, topics.render()),
             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.container }, groups.map((group, index) => (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", { key: index, className: styles.group }, group))))),
         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.footer }, footer.render())));
 };
