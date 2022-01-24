@@ -2838,6 +2838,33 @@ exports.locals = {
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/ts/ui/src/presentation/ui-p-page/dup-page-item.m.scss":
+/*!************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/postcss-loader/src??ref--8-2!./node_modules/sass-loader/dist/cjs.js??ref--8-3!./resources/ts/ui/src/presentation/ui-p-page/dup-page-item.m.scss ***!
+  \************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "html, body {\n  background: #eee;\n  box-sizing: border-box;\n  width: 100%;\n  display: flex;\n  flex-flow: column;\n  min-height: 100vh;\n  font-size: 16px;\n  line-height: 1.6;\n  font-family: \"BlinkMacSystemFont\", \"Hiragino Kaku Gothic ProN\", \"Hiragino Sans\", Meiryo, sans-serif, \"Segoe UI Emoji\";\n  letter-spacing: 2px;\n}\n\n* {\n  box-sizing: border-box;\n}\n\n._3rcWibJzTse-3m2zNIImps {\n  margin: 5vw auto;\n  max-width: 1194px;\n  padding: 0 3.3333333333vw;\n}\n@media screen and (min-width: 561px) {\n  ._3rcWibJzTse-3m2zNIImps {\n    margin: 3.5650623886vw auto;\n    padding: 0 3.5650623886vw;\n  }\n}\n@media screen and (min-width: 769px) {\n  ._3rcWibJzTse-3m2zNIImps {\n    margin: 3.9011703511vw auto;\n    padding: 0 3.9011703511vw;\n  }\n}\n@media screen and (min-width: 1194px) {\n  ._3rcWibJzTse-3m2zNIImps {\n    margin: 4.1876046901vw auto;\n    padding: 0 2.5125628141vw;\n  }\n}\n@media screen and (min-width: 1350px) {\n  ._3rcWibJzTse-3m2zNIImps {\n    margin: 4.4444444444vw auto;\n    padding: 0 2.2222222222vw;\n  }\n}\n@media screen and (min-width: 1900px) {\n  ._3rcWibJzTse-3m2zNIImps {\n    margin: 3.6842105263vw auto;\n    padding: 0 1.5789473684vw;\n  }\n}\n._2KGBYyeY1oVm3qm6Lm3zym {\n  font-size: 5.3333333333vw;\n  font-weight: bold;\n  margin-top: 5vw;\n}\n@media screen and (min-width: 561px) {\n  ._2KGBYyeY1oVm3qm6Lm3zym {\n    font-size: 3.5650623886vw;\n    margin-top: 3.5650623886vw;\n  }\n}\n@media screen and (min-width: 769px) {\n  ._2KGBYyeY1oVm3qm6Lm3zym {\n    font-size: 3.1209362809vw;\n    margin-top: 3.2509752926vw;\n  }\n}\n@media screen and (min-width: 1194px) {\n  ._2KGBYyeY1oVm3qm6Lm3zym {\n    font-size: 2.3450586265vw;\n    margin-top: 2.5125628141vw;\n  }\n}\n@media screen and (min-width: 1350px) {\n  ._2KGBYyeY1oVm3qm6Lm3zym {\n    font-size: 2.0725388601vw;\n    margin-top: 2.2205773501vw;\n  }\n}\n@media screen and (min-width: 1900px) {\n  ._2KGBYyeY1oVm3qm6Lm3zym {\n    font-size: 1.4736842105vw;\n    margin-top: 1.5789473684vw;\n  }\n}\n._11-P_jCe3KZpyW5uIrDc9b {\n  margin: 10vw auto 0;\n  width: 80%;\n}\n@media screen and (min-width: 561px) {\n  ._11-P_jCe3KZpyW5uIrDc9b {\n    margin: 5.3475935829vw auto 0;\n  }\n}\n@media screen and (min-width: 769px) {\n  ._11-P_jCe3KZpyW5uIrDc9b {\n    margin: 4.5513654096vw auto 0;\n  }\n}\n@media screen and (min-width: 1194px) {\n  ._11-P_jCe3KZpyW5uIrDc9b {\n    margin: 3.3500837521vw auto 0;\n    width: 50%;\n  }\n}\n@media screen and (min-width: 1350px) {\n  ._11-P_jCe3KZpyW5uIrDc9b {\n    margin: 2.962962963vw auto 0;\n  }\n}\n@media screen and (min-width: 1900px) {\n  ._11-P_jCe3KZpyW5uIrDc9b {\n    margin: 2.1052631579vw auto 0;\n  }\n}\n._11-P_jCe3KZpyW5uIrDc9b img {\n  width: 100%;\n}\n.jF1sS2PKOTXCDXKHZxW3Q {\n  font-size: 4.6666666667vw;\n  margin: 6.6666666667vw auto 0;\n  width: 80%;\n}\n@media screen and (min-width: 561px) {\n  .jF1sS2PKOTXCDXKHZxW3Q {\n    font-size: 3.2085561497vw;\n    margin: 5.3475935829vw auto 0;\n  }\n}\n@media screen and (min-width: 769px) {\n  .jF1sS2PKOTXCDXKHZxW3Q {\n    font-size: 2.6007802341vw;\n    margin: 4.5513654096vw auto 0;\n  }\n}\n@media screen and (min-width: 1194px) {\n  .jF1sS2PKOTXCDXKHZxW3Q {\n    font-size: 2.0100502513vw;\n    margin: 3.3500837521vw auto 0;\n  }\n}\n@media screen and (min-width: 1350px) {\n  .jF1sS2PKOTXCDXKHZxW3Q {\n    font-size: 1.7777777778vw;\n    margin: 2.962962963vw auto 0;\n  }\n}\n@media screen and (min-width: 1900px) {\n  .jF1sS2PKOTXCDXKHZxW3Q {\n    font-size: 1.2631578947vw;\n    margin: 2.1052631579vw auto 0;\n  }\n}\n.jF1sS2PKOTXCDXKHZxW3Q th {\n  color: #29663e;\n  vertical-align: middle;\n  width: 30%;\n}\n.jF1sS2PKOTXCDXKHZxW3Q th,\n.jF1sS2PKOTXCDXKHZxW3Q td {\n  padding: 1vw;\n}\n@media screen and (min-width: 561px) {\n  .jF1sS2PKOTXCDXKHZxW3Q th,\n.jF1sS2PKOTXCDXKHZxW3Q td {\n    padding: 0.8912655971vw;\n  }\n}\n@media screen and (min-width: 769px) {\n  .jF1sS2PKOTXCDXKHZxW3Q th,\n.jF1sS2PKOTXCDXKHZxW3Q td {\n    padding: 1.0403120936vw;\n  }\n}\n@media screen and (min-width: 1194px) {\n  .jF1sS2PKOTXCDXKHZxW3Q th,\n.jF1sS2PKOTXCDXKHZxW3Q td {\n    padding: 0.837520938vw;\n  }\n}\n@media screen and (min-width: 1350px) {\n  .jF1sS2PKOTXCDXKHZxW3Q th,\n.jF1sS2PKOTXCDXKHZxW3Q td {\n    padding: 0.7407407407vw;\n  }\n}\n@media screen and (min-width: 1900px) {\n  .jF1sS2PKOTXCDXKHZxW3Q th,\n.jF1sS2PKOTXCDXKHZxW3Q td {\n    padding: 0.5263157895vw;\n  }\n}\n._3r3cSjTXzVVapnYR4cstQf {\n  background: #fff;\n  max-width: 1194px;\n  margin: 0 auto;\n  padding: 10vw 3.3333333333vw;\n}\n@media screen and (min-width: 561px) {\n  ._3r3cSjTXzVVapnYR4cstQf {\n    padding: 7.1301247772vw 3.5650623886vw;\n  }\n}\n@media screen and (min-width: 769px) {\n  ._3r3cSjTXzVVapnYR4cstQf {\n    border-radius: 1.5604681404vw;\n    margin: 0 3.9011703511vw 3.9011703511vw;\n    padding: 6.5019505852vw 3.2509752926vw;\n  }\n}\n@media screen and (min-width: 1194px) {\n  ._3r3cSjTXzVVapnYR4cstQf {\n    border-radius: 1.0050251256vw;\n    margin: 0 auto 4.1876046901vw;\n    padding: 5.0251256281vw 2.5125628141vw;\n  }\n}\n@media screen and (min-width: 1350px) {\n  ._3r3cSjTXzVVapnYR4cstQf {\n    border-radius: 0.8888888889vw;\n    margin: 0 auto 4.4444444444vw;\n    padding: 4.4444444444vw 2.2222222222vw;\n  }\n}\n@media screen and (min-width: 1900px) {\n  ._3r3cSjTXzVVapnYR4cstQf {\n    border-radius: 0.6315789474vw;\n    margin: 0 auto 3.6842105263vw;\n    padding: 3.1578947368vw 1.5789473684vw;\n  }\n}\n._3s1HtGoG_Fc11Zk1_XV4jY {\n  margin-top: 20vw;\n}\n@media screen and (min-width: 561px) {\n  ._3s1HtGoG_Fc11Zk1_XV4jY {\n    margin-top: 12.4777183601vw;\n  }\n}\n@media screen and (min-width: 769px) {\n  ._3s1HtGoG_Fc11Zk1_XV4jY {\n    margin-top: 10.4031209363vw;\n  }\n}\n@media screen and (min-width: 1194px) {\n  ._3s1HtGoG_Fc11Zk1_XV4jY {\n    margin-top: 7.5376884422vw;\n  }\n}\n@media screen and (min-width: 1350px) {\n  ._3s1HtGoG_Fc11Zk1_XV4jY {\n    margin-top: 6.6666666667vw;\n  }\n}\n@media screen and (min-width: 1900px) {\n  ._3s1HtGoG_Fc11Zk1_XV4jY {\n    margin-top: 4.7368421053vw;\n  }\n}\n._3s1HtGoG_Fc11Zk1_XV4jY .vjXLU7vKDZfk5jJrhL9NS {\n  color: #4fb3de;\n  text-decoration: underline;\n}", ""]);
+
+// exports
+exports.locals = {
+	"head": "_3rcWibJzTse-3m2zNIImps",
+	"title": "_2KGBYyeY1oVm3qm6Lm3zym",
+	"image": "_11-P_jCe3KZpyW5uIrDc9b",
+	"table": "jF1sS2PKOTXCDXKHZxW3Q",
+	"content": "_3r3cSjTXzVVapnYR4cstQf",
+	"url": "_3s1HtGoG_Fc11Zk1_XV4jY",
+	"url_link": "vjXLU7vKDZfk5jJrhL9NS"
+};
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/ts/ui/src/presentation/ui-p-page/dup-page-items.m.scss":
 /*!*************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader!./node_modules/postcss-loader/src??ref--8-2!./node_modules/sass-loader/dist/cjs.js??ref--8-3!./resources/ts/ui/src/presentation/ui-p-page/dup-page-items.m.scss ***!
@@ -57394,6 +57421,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ui_src_presentation_ui_p_page_DupPageMasterpiece__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./ui/src/presentation/ui-p-page/DupPageMasterpiece */ "./resources/ts/ui/src/presentation/ui-p-page/DupPageMasterpiece.tsx");
 /* harmony import */ var _ui_src_presentation_ui_p_page_DupPageRanking__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./ui/src/presentation/ui-p-page/DupPageRanking */ "./resources/ts/ui/src/presentation/ui-p-page/DupPageRanking.tsx");
 /* harmony import */ var _ui_src_presentation_ui_p_page_DupPageCategory__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./ui/src/presentation/ui-p-page/DupPageCategory */ "./resources/ts/ui/src/presentation/ui-p-page/DupPageCategory.tsx");
+/* harmony import */ var _ui_src_presentation_ui_p_page_DupPageIitem__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./ui/src/presentation/ui-p-page/DupPageIitem */ "./resources/ts/ui/src/presentation/ui-p-page/DupPageIitem.tsx");
+
 
 
 
@@ -57411,6 +57440,7 @@ const App = () => {
             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], { path: "/masterpiece", component: _ui_src_presentation_ui_p_page_DupPageMasterpiece__WEBPACK_IMPORTED_MODULE_6__["DupPageMasterpiece"] }),
             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], { path: "/rankings", component: _ui_src_presentation_ui_p_page_DupPageRanking__WEBPACK_IMPORTED_MODULE_7__["DupPageRanking"] }),
             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], { path: "/category", component: _ui_src_presentation_ui_p_page_DupPageCategory__WEBPACK_IMPORTED_MODULE_8__["DupPageCategory"] }),
+            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], { path: "/item/:id", component: _ui_src_presentation_ui_p_page_DupPageIitem__WEBPACK_IMPORTED_MODULE_9__["DupPageItem"] }),
             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], { component: _ui_src_presentation_ui_p_page_NotFound__WEBPACK_IMPORTED_MODULE_4__["NotFound"] }))));
 };
 react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(App, null), document.getElementById('app'));
@@ -59220,6 +59250,53 @@ if(false) {}
 
 /***/ }),
 
+/***/ "./resources/ts/ui/src/presentation/ui-p-page/DomPageItem.tsx":
+/*!********************************************************************!*\
+  !*** ./resources/ts/ui/src/presentation/ui-p-page/DomPageItem.tsx ***!
+  \********************************************************************/
+/*! exports provided: DomPageItem */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DomPageItem", function() { return DomPageItem; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _dup_page_item_m_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./dup-page-item.m.scss */ "./resources/ts/ui/src/presentation/ui-p-page/dup-page-item.m.scss");
+/* harmony import */ var _dup_page_item_m_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_dup_page_item_m_scss__WEBPACK_IMPORTED_MODULE_1__);
+
+
+const DomPageItem = ({ header, label, title, image, author, year, abstract, url, footer, classNames, }) => {
+    const styles = classNames || _dup_page_item_m_scss__WEBPACK_IMPORTED_MODULE_1___default.a;
+    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null,
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.header }, header.render()),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.main },
+            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", { className: styles.head },
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.label }, label.render()),
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.title }, title),
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.image },
+                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", { src: image, alt: "" })),
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", { className: styles.table },
+                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null,
+                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "\u8457\u8005"),
+                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, author)),
+                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null,
+                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "\u51FA\u7248\u5E74"),
+                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null,
+                            year,
+                            "\u5E74")))),
+            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", { className: styles.content },
+                abstract,
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.url },
+                    "\u30AA\u30EA\u30B8\u30CA\u30EB\u8AD6\u6587\u306F",
+                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", { href: url, className: styles.url_link }, "\u3053\u3061\u3089"),
+                    "\u304B\u3089"))),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.footer }, footer.render())));
+};
+
+
+/***/ }),
+
 /***/ "./resources/ts/ui/src/presentation/ui-p-page/DomPageItems.tsx":
 /*!*********************************************************************!*\
   !*** ./resources/ts/ui/src/presentation/ui-p-page/DomPageItems.tsx ***!
@@ -59317,6 +59394,34 @@ const DupPageCategory = () => {
     ];
     const topic = 'sitell登録後の今だからこそ読んでおきたい厳選の論文10本をご用意しました。どの論文の要約を読もうか迷ったらぜひこの10本をご覧ください。';
     return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_DomPageItems__WEBPACK_IMPORTED_MODULE_6__["DomPageItems"], { header: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_header_DomHeader__WEBPACK_IMPORTED_MODULE_5__["DomHeader"], null) }, title: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_2__["DupTitle"], { type: _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_2__["DupTitleTypes"].Category, text: "\u6570\u5B66" }) }, contents: contents, footer: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_footer_DupFooter__WEBPACK_IMPORTED_MODULE_4__["DupFooter"], null) } }));
+};
+
+
+/***/ }),
+
+/***/ "./resources/ts/ui/src/presentation/ui-p-page/DupPageIitem.tsx":
+/*!*********************************************************************!*\
+  !*** ./resources/ts/ui/src/presentation/ui-p-page/DupPageIitem.tsx ***!
+  \*********************************************************************/
+/*! exports provided: DupPageItem */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DupPageItem", function() { return DupPageItem; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../ui-a-label/DupLabelCard */ "./resources/ts/ui/src/presentation/ui-a-label/DupLabelCard.tsx");
+/* harmony import */ var _ui_o_footer_DupFooter__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../ui-o-footer/DupFooter */ "./resources/ts/ui/src/presentation/ui-o-footer/DupFooter.tsx");
+/* harmony import */ var _ui_o_header_DomHeader__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../ui-o-header/DomHeader */ "./resources/ts/ui/src/presentation/ui-o-header/DomHeader.tsx");
+/* harmony import */ var _DomPageItem__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./DomPageItem */ "./resources/ts/ui/src/presentation/ui-p-page/DomPageItem.tsx");
+
+
+
+
+
+const DupPageItem = () => {
+    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_DomPageItem__WEBPACK_IMPORTED_MODULE_4__["DomPageItem"], { header: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_header_DomHeader__WEBPACK_IMPORTED_MODULE_3__["DomHeader"], null) }, label: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_1__["DupLabelCard"], { text: "\u6570\u5B66" }) }, title: "\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB", image: "https://www.gstatic.com/webp/gallery3/1.png", author: "\u30C6\u30B9\u30C8\u8457\u8005\u30C6\u30B9\u30C8\u8457\u8005", year: 2020, abstract: "\u3053\u3053\u306B\u8981\u7D04\u304C\u5165\u308A\u307E\u3059\u3053\u3053\u306B\u8981\u7D04\u304C\u5165\u308A\u307E\u3059\u3053\u3053\u306B\u8981\u7D04\u304C\u5165\u308A\u307E\u3059", url: "https://sato.com/dolor-ut-ut-libero-sed-numquam.html", footer: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_footer_DupFooter__WEBPACK_IMPORTED_MODULE_2__["DupFooter"], null) } }));
 };
 
 
@@ -59573,6 +59678,36 @@ const NotFound = () => {
     return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, "Sorry! Not Found"));
 };
 
+
+/***/ }),
+
+/***/ "./resources/ts/ui/src/presentation/ui-p-page/dup-page-item.m.scss":
+/*!*************************************************************************!*\
+  !*** ./resources/ts/ui/src/presentation/ui-p-page/dup-page-item.m.scss ***!
+  \*************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../../../node_modules/css-loader!../../../../../../node_modules/postcss-loader/src??ref--8-2!../../../../../../node_modules/sass-loader/dist/cjs.js??ref--8-3!./dup-page-item.m.scss */ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/ts/ui/src/presentation/ui-p-page/dup-page-item.m.scss");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
 
 /***/ }),
 
