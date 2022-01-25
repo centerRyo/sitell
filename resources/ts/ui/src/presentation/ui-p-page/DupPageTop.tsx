@@ -38,6 +38,7 @@ export const DupPageTop: React.FC = () => {
       title={{ render: () => <DupTitle type={DupTitleTypes.MasterPiece} /> }}
       cards={[
         <DomCard
+          id={1}
           image="https://www.gstatic.com/webp/gallery3/1.png"
           label={{
             render: () => <DupLabelCard text="数学" />
@@ -45,6 +46,7 @@ export const DupPageTop: React.FC = () => {
           text="サンプルタイトルサンプルタイトルサンプルタイトル"
         />,
         <DomCard
+          id={2}
           image="https://www.gstatic.com/webp/gallery3/1.png"
           label={{
             render: () => <DupLabelCard text="新型コロナ" />
@@ -58,6 +60,7 @@ export const DupPageTop: React.FC = () => {
       title={{ render: () => <DupTitle type={DupTitleTypes.Weekly} /> }}
       cards={[
         <DomCardGrid
+          id={1}
           image="https://www.gstatic.com/webp/gallery3/1.png"
           label={{
             render: () => <DupLabelCard text="数学" />
@@ -65,6 +68,7 @@ export const DupPageTop: React.FC = () => {
           text="サンプルタイトルサンプルタイトルサンプルタイトル"
         />,
         <DomCardGrid
+          id={1}
           image="https://www.gstatic.com/webp/gallery3/1.png"
           label={{
             render: () => <DupLabelCard text="農学・食品科学" />
@@ -72,6 +76,7 @@ export const DupPageTop: React.FC = () => {
           text="サンプルタイトルサンプルタイトルサンプルタイトル"
         />,
         <DomCardGrid
+          id={1}
           image="https://www.gstatic.com/webp/gallery3/1.png"
           label={{
             render: () => <DupLabelCard text="数学" />
@@ -85,6 +90,7 @@ export const DupPageTop: React.FC = () => {
       title={{ render: () => <DupTitle type={DupTitleTypes.Monthly} /> }}
       cards={[
         <DomCard
+          id={1}
           image="https://www.gstatic.com/webp/gallery3/1.png"
           label={{
             render: () => <DupLabelCard text="数学" />
@@ -92,6 +98,7 @@ export const DupPageTop: React.FC = () => {
           text="サンプルタイトルサンプルタイトルサンプルタイトル"
         />,
         <DomCard
+          id={1}
           image="https://tk.ismcdn.jp/mwimgs/b/f/1140/img_bf687219033dbe7e1576a59e1f14495a225863.jpg"
           label={{
             render: () => <DupLabelCard text="農学・食品科学" />
@@ -104,7 +111,7 @@ export const DupPageTop: React.FC = () => {
     <DupGroupItemsGrid
       title={{ render: () => <DupTitle type={DupTitleTypes.Latest} /> }}
       cards={latests.map(latest => {
-        return <DomCardGrid image={latest.thumbnail} label={{ render: () => <DupLabelCard text={latest.category_name} /> }} text={latest.title} />
+        return <DomCardGrid id={latest.id} image={latest.thumbnail} label={{ render: () => <DupLabelCard text={latest.category_name} /> }} text={latest.title} />
       })}
       link={{render: () => <DupLink type={DupLinkTypes.More} href="latest" /> }}
     />,

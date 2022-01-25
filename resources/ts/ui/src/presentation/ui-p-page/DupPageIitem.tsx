@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
 import { getRonbun, ronbunResponse } from '../../api/getRonbun'
 import { DupLabelCard } from '../ui-a-label/DupLabelCard'
 import { DupFooter } from '../ui-o-footer/DupFooter'
@@ -21,9 +22,11 @@ export const DupPageItem: React.FC = () => {
     category_name: ''
   })
 
+  const { id } = useParams<{id: string}>()
+
   useEffect(() => {
     const f = async (): Promise<void> => {
-      const ronbun = await getRonbun(23)
+      const ronbun = await getRonbun(Number(id))
       if (ronbun.error === null && ronbun.response !== null) {
         setRonbun(ronbun.response)
       }

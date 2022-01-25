@@ -1,7 +1,10 @@
 import React, { ReactNode } from 'react'
+import { useHistory } from 'react-router-dom'
 import gridClassNames from './dup-card-grid.m.scss'
 
 type Props = {
+  // TODO: idを渡すのイケてない気がする。。。
+  id: number,
   image: string,
   label: { render: () => ReactNode },
   text: string,
@@ -9,6 +12,7 @@ type Props = {
 }
 
 export const DomCardGrid: React.FC<Props> = ({
+  id,
   image,
   label,
   text,
@@ -16,8 +20,14 @@ export const DomCardGrid: React.FC<Props> = ({
 }) => {
   const styles = classNames || gridClassNames
 
+  const history = useHistory()
+
+  const handleClick = () => {
+    history.push(`item/${id}`)
+  }
+
   return (
-    <a className={styles.root}>
+    <a onClick={handleClick} className={styles.root}>
       <div className={styles.image}>
         <img src={image} alt="" />
       </div>
