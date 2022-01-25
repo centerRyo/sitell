@@ -84,6 +84,28 @@ class RonbunControllerTest extends TestCase
     $this->assertEquals('テストカテゴリー', $ronbuns->first()->category_name);
   }
 
+  /** @test */
+  public function 指定したIDの論文情報が取得できる()
+  {
+    $category = $this->createCateogry();
+    $ronbun1 = $this->createRonbun(
+      $title = 'テストタイトル1',
+      $author = 'テスト著者1',
+      $abstract = 'テストテキスト1テストテキスト1テストテキスト1テストテキスト1',
+      $category_id = $category->id,
+    );
+    $ronbun2 = $this->createRonbun(
+      $title = 'テストタイトル2',
+      $author = 'テスト著者2',
+      $abstract = 'テストテキスト2テストテキスト2テストテキスト2テストテキスト2',
+      $category_id = $category->id,
+    );
+
+    $ronbun = (new RonbunController)->show($ronbun1->id);
+
+    $this->assertEquals('テストタイトル1', $ronbun->title);
+  }
+
   private function createRonbun($title, $author, $abstract, $category_id = 1)
   {
     return Ronbun::create([
