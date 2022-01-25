@@ -57489,6 +57489,50 @@ function getCategoryList() {
 
 /***/ }),
 
+/***/ "./resources/ts/ui/src/api/getRonbun.ts":
+/*!**********************************************!*\
+  !*** ./resources/ts/ui/src/api/getRonbun.ts ***!
+  \**********************************************/
+/*! exports provided: getRonbun */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getRonbun", function() { return getRonbun; });
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
+var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+
+function getRonbun(id) {
+    return __awaiter(this, void 0, void 0, function* () {
+        const url = '/api/ronbun/';
+        const postData = {
+            id: id
+        };
+        const result = yield axios__WEBPACK_IMPORTED_MODULE_0___default.a
+            .post(url + postData.id, postData)
+            .then((response) => {
+            const ret = response.data;
+            return { error: null, response: ret };
+        })
+            .catch(err => {
+            return { error: err, response: null };
+        });
+        return result;
+    });
+}
+
+
+/***/ }),
+
 /***/ "./resources/ts/ui/src/api/getTopLatestRonbunList.ts":
 /*!***********************************************************!*\
   !*** ./resources/ts/ui/src/api/getTopLatestRonbunList.ts ***!
@@ -59277,14 +59321,15 @@ const DomPageItem = ({ header, label, title, image, author, year, abstract, url,
                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.image },
                     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", { src: image, alt: "" })),
                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", { className: styles.table },
-                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null,
-                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "\u8457\u8005"),
-                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, author)),
-                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null,
-                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "\u51FA\u7248\u5E74"),
-                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null,
-                            year,
-                            "\u5E74")))),
+                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null,
+                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null,
+                            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "\u8457\u8005"),
+                            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, author)),
+                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null,
+                            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "\u51FA\u7248\u5E74"),
+                            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null,
+                                year,
+                                "\u5E74"))))),
             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", { className: styles.content },
                 abstract,
                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.url },
@@ -59411,17 +59456,51 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DupPageItem", function() { return DupPageItem; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../ui-a-label/DupLabelCard */ "./resources/ts/ui/src/presentation/ui-a-label/DupLabelCard.tsx");
-/* harmony import */ var _ui_o_footer_DupFooter__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../ui-o-footer/DupFooter */ "./resources/ts/ui/src/presentation/ui-o-footer/DupFooter.tsx");
-/* harmony import */ var _ui_o_header_DomHeader__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../ui-o-header/DomHeader */ "./resources/ts/ui/src/presentation/ui-o-header/DomHeader.tsx");
-/* harmony import */ var _DomPageItem__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./DomPageItem */ "./resources/ts/ui/src/presentation/ui-p-page/DomPageItem.tsx");
+/* harmony import */ var _api_getRonbun__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../api/getRonbun */ "./resources/ts/ui/src/api/getRonbun.ts");
+/* harmony import */ var _ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../ui-a-label/DupLabelCard */ "./resources/ts/ui/src/presentation/ui-a-label/DupLabelCard.tsx");
+/* harmony import */ var _ui_o_footer_DupFooter__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../ui-o-footer/DupFooter */ "./resources/ts/ui/src/presentation/ui-o-footer/DupFooter.tsx");
+/* harmony import */ var _ui_o_header_DomHeader__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../ui-o-header/DomHeader */ "./resources/ts/ui/src/presentation/ui-o-header/DomHeader.tsx");
+/* harmony import */ var _DomPageItem__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./DomPageItem */ "./resources/ts/ui/src/presentation/ui-p-page/DomPageItem.tsx");
+var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+
 
 
 
 
 
 const DupPageItem = () => {
-    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_DomPageItem__WEBPACK_IMPORTED_MODULE_4__["DomPageItem"], { header: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_header_DomHeader__WEBPACK_IMPORTED_MODULE_3__["DomHeader"], null) }, label: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_1__["DupLabelCard"], { text: "\u6570\u5B66" }) }, title: "\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB", image: "https://www.gstatic.com/webp/gallery3/1.png", author: "\u30C6\u30B9\u30C8\u8457\u8005\u30C6\u30B9\u30C8\u8457\u8005", year: 2020, abstract: "\u3053\u3053\u306B\u8981\u7D04\u304C\u5165\u308A\u307E\u3059\u3053\u3053\u306B\u8981\u7D04\u304C\u5165\u308A\u307E\u3059\u3053\u3053\u306B\u8981\u7D04\u304C\u5165\u308A\u307E\u3059", url: "https://sato.com/dolor-ut-ut-libero-sed-numquam.html", footer: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_footer_DupFooter__WEBPACK_IMPORTED_MODULE_2__["DupFooter"], null) } }));
+    const [ronbun, setRonbun] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({
+        id: 0,
+        abstract: '',
+        author: '',
+        category_id: 0,
+        thumbnail: '',
+        title: '',
+        url: '',
+        user_id: 0,
+        year: 0,
+        created_at: '',
+        updated_at: '',
+        category_name: ''
+    });
+    Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+        const f = () => __awaiter(void 0, void 0, void 0, function* () {
+            const ronbun = yield Object(_api_getRonbun__WEBPACK_IMPORTED_MODULE_1__["getRonbun"])(23);
+            if (ronbun.error === null && ronbun.response !== null) {
+                setRonbun(ronbun.response);
+            }
+        });
+        f().catch(err => console.log(err));
+    }, []);
+    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_DomPageItem__WEBPACK_IMPORTED_MODULE_5__["DomPageItem"], { header: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_header_DomHeader__WEBPACK_IMPORTED_MODULE_4__["DomHeader"], null) }, label: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_2__["DupLabelCard"], { text: ronbun.category_name }) }, title: ronbun.title, image: ronbun.thumbnail, author: ronbun.author, year: ronbun.year, abstract: ronbun.abstract, url: ronbun.url, footer: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_footer_DupFooter__WEBPACK_IMPORTED_MODULE_3__["DupFooter"], null) } }));
 };
 
 

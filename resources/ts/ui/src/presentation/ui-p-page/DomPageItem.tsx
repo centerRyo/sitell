@@ -45,14 +45,16 @@ export const DomPageItem: React.FC<Props> = ({
             <img src={image} alt="" />
           </div>
           <table className={styles.table}>
-            <tr>
-              <th>著者</th>
-              <td>{author}</td>
-            </tr>
-            <tr>
-              <th>出版年</th>
-              <td>{year}年</td>
-            </tr>
+            <tbody>
+              <tr>
+                <th>著者</th>
+                <td>{author}</td>
+              </tr>
+              <tr>
+                <th>出版年</th>
+                <td>{year}年</td>
+              </tr>
+            </tbody>
           </table>
         </section>
         <section className={styles.content}>
