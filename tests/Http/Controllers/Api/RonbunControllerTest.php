@@ -101,7 +101,7 @@ class RonbunControllerTest extends TestCase
       $category_id = $category->id,
     );
 
-    $ronbun = (new RonbunController)->show($ronbun1->id);
+    $ronbun = (new RonbunController)->getRonbun($ronbun1->id);
 
     $this->assertEquals('テストタイトル1', $ronbun->title);
   }

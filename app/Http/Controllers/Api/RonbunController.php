@@ -17,12 +17,9 @@ class RonbunController extends Controller
 
   public function show($id)
   {
-    $ronbun = Ronbun::find($id)
-                ->join('categories', 'ronbuns.category_id', '=', 'categories.id')
-                ->select('ronbuns.*', 'categories.name as category_name')
-                ->first();
+    $ronbun = $this->getRonbun($id);
 
-    return $ronbun;
+    return response()->json($ronbun);
   }
 
   public function getLatestRonbuns()
@@ -35,5 +32,16 @@ class RonbunController extends Controller
                           ->get();
 
     return $latest_ronbuns;
+  }
+
+  public function getRonbun($id)
+  {
+    $ronbun = DB::table('ronbuns')
+                ->where('ronbuns.id', $id)
+                ->join('categories', 'ronbuns.category_id', '=', 'categories.id')
+                ->select('ronbuns.*', 'categories.name as category_name')
+                ->first();
+
+    return $ronbun;
   }
 }
