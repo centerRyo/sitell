@@ -14,6 +14,13 @@ class RonbunController extends Controller
     return response()->json($ronbuns);
   }
 
+  public function show($id)
+  {
+    $ronbun = $this->getRonbun($id);
+
+    return response()->json($ronbun);
+  }
+
   public function getLatestRonbuns()
   {
     $latest_ronbuns = DB::table('ronbuns')
@@ -24,5 +31,16 @@ class RonbunController extends Controller
                           ->get();
 
     return $latest_ronbuns;
+  }
+
+  public function getRonbun($id)
+  {
+    $ronbun = DB::table('ronbuns')
+                ->where('ronbuns.id', $id)
+                ->join('categories', 'ronbuns.category_id', '=', 'categories.id')
+                ->select('ronbuns.*', 'categories.name as category_name')
+                ->first();
+
+    return $ronbun;
   }
 }
