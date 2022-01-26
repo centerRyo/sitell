@@ -13,6 +13,7 @@ export const DupPageRanking: React.FC = () => {
   const contents = [
     <DomCard
       badge={{ render: () => <DupBadge type={DupBadgeTypes.Gold} number={1} />}}
+      id={1}
       image="https://www.gstatic.com/webp/gallery3/1.png"
       label={{
         render: () => <DupLabelCard text="数学" />
@@ -20,7 +21,8 @@ export const DupPageRanking: React.FC = () => {
       text="サンプルタイトルサンプルタイトルサンプルタイトル"
     />,
     <DomCard
-    badge={{ render: () => <DupBadge type={DupBadgeTypes.Silver} number={2} />}}
+      badge={{ render: () => <DupBadge type={DupBadgeTypes.Silver} number={2} />}}
+      id={1}
       image="https://www.gstatic.com/webp/gallery3/1.png"
       label={{
         render: () => <DupLabelCard text="農学・食品科学" />

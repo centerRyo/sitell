@@ -9,6 +9,7 @@ import { DomPageItems } from './DomPageItems'
 export const DupPageCategory: React.FC = () => {
   const contents = [
     <DomCard
+      id={1}
       image="https://www.gstatic.com/webp/gallery3/1.png"
       label={{
         render: () => <DupLabelCard text="数学" />
@@ -16,6 +17,7 @@ export const DupPageCategory: React.FC = () => {
       text="サンプルタイトルサンプルタイトルサンプルタイトル"
     />,
     <DomCard
+      id={1}
       image="https://www.gstatic.com/webp/gallery3/1.png"
       label={{
         render: () => <DupLabelCard text="農学・食品科学" />

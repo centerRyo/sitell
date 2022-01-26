@@ -8,10 +8,12 @@ import { DupPageMasterpiece } from './ui/src/presentation/ui-p-page/DupPageMaste
 import { DupPageRanking } from './ui/src/presentation/ui-p-page/DupPageRanking'
 import { DupPageCategory } from './ui/src/presentation/ui-p-page/DupPageCategory'
 import { DupPageItem } from './ui/src/presentation/ui-p-page/DupPageIitem'
+import { DupScrollToTop } from './ui/src/presentation/ui-u-location/DupScrollToTop'
 
 const App: React.FC = () => {
   return (
     <Router>
+      <DupScrollToTop />
       <Switch>
         <Route exact path="/" component={DupPageTop} />
         <Route path="/latest" component={DupPageLatest} />

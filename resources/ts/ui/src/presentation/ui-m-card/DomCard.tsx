@@ -1,8 +1,11 @@
 import React, { ReactNode } from 'react'
+import { useHistory } from 'react-router-dom'
 import defaultClassNames from './dup-card-default.m.scss'
 
 type Props = {
-  badge?: { render: () => ReactNode }
+  badge?: { render: () => ReactNode },
+  // TODO: idを渡すのイケてない気がする。。。
+  id: number,
   image: string,
   label: { render: () => ReactNode },
   text: string,
@@ -11,6 +14,7 @@ type Props = {
 
 export const DomCard: React.FC<Props> = ({
   badge,
+  id,
   image,
   label,
   text,
@@ -18,8 +22,14 @@ export const DomCard: React.FC<Props> = ({
 }) => {
   const styles = classNames || defaultClassNames
 
+  const history = useHistory()
+
+  const handleClick = () => {
+    history.push(`item/${id}`)
+  }
+
   return (
-    <a className={styles.root}>
+    <a onClick={handleClick} className={styles.root}>
       {badge && (
         <div className={styles.badge}>
           {badge.render()}
