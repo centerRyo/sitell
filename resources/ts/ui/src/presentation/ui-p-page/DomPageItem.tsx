@@ -1,29 +1,22 @@
 import React, { ReactNode } from 'react'
+import { ronbunResponse } from '../../api/getRonbun'
 import defaultClassNames from './dup-page-item.m.scss'
 
 type Props = {
   header: { render: () => ReactNode },
   label: { render: () => ReactNode },
-  title: string,
-  image: string,
-  author: string,
-  year: number,
-  abstract: string,
-  url: string,
+  ronbun: ronbunResponse,
   footer: { render: () => ReactNode },
+  loading: boolean,
   classNames?: string,
 }
 
 export const DomPageItem: React.FC<Props> = ({
   header,
   label,
-  title,
-  image,
-  author,
-  year,
-  abstract,
-  url,
+  ronbun,
   footer,
+  loading,
   classNames,
 }) => {
   const styles = classNames || defaultClassNames
@@ -31,43 +24,47 @@ export const DomPageItem: React.FC<Props> = ({
   return (
     <>
       <div className={styles.header}>
-        {header.render()}
+        { header.render() }
       </div>
       <div className={styles.main}>
-        <section className={styles.head}>
-          <div className={styles.label}>
-            {label.render()}
-          </div>
-          <div className={styles.title}>
-            {title}
-          </div>
-          <div className={styles.image}>
-            <img src={image} alt="" />
-          </div>
-          <table className={styles.table}>
-            <tbody>
-              <tr>
-                <th>著者</th>
-                <td>{author}</td>
-              </tr>
-              <tr>
-                <th>出版年</th>
-                <td>{year}年</td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
-        <section className={styles.content}>
-          {abstract}
-          <div className={styles.url}>
-            オリジナル論文は
-            <a href={url} className={styles.url_link}>こちら</a>
-            から
-          </div>
-        </section>
+        { !loading ? (
+          <>
+            <section className={styles.head}>
+              <div className={styles.label}>
+                { label.render() }
+              </div>
+              <div className={styles.title}>
+                { ronbun.title }
+              </div>
+              <div className={styles.image}>
+                <img src={ronbun.thumbnail} alt="" />
+              </div>
+              <table className={styles.table}>
+                <tbody>
+                  <tr>
+                    <th>著者</th>
+                    <td>{ ronbun.author }</td>
+                  </tr>
+                  <tr>
+                    <th>出版年</th>
+                    <td>{ ronbun.year }年</td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+            <section className={styles.content}>
+              { ronbun.abstract }
+              <div className={styles.url}>
+                オリジナル論文は
+                <a href={ronbun.url} className={styles.url_link}>こちら</a>
+                から
+              </div>
+            </section>
+          </>
+        ) : <div>Loading...</div>}
       </div>
       <div className={styles.footer}>
-        {footer.render()}
+        { footer.render() }
       </div>
     </>
   )

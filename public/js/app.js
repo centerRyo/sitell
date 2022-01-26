@@ -59325,32 +59325,32 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _dup_page_item_m_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_dup_page_item_m_scss__WEBPACK_IMPORTED_MODULE_1__);
 
 
-const DomPageItem = ({ header, label, title, image, author, year, abstract, url, footer, classNames, }) => {
+const DomPageItem = ({ header, label, ronbun, footer, loading, classNames, }) => {
     const styles = classNames || _dup_page_item_m_scss__WEBPACK_IMPORTED_MODULE_1___default.a;
     return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null,
         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.header }, header.render()),
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.main },
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.main }, !loading ? (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null,
             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", { className: styles.head },
                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.label }, label.render()),
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.title }, title),
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.title }, ronbun.title),
                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.image },
-                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", { src: image, alt: "" })),
+                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", { src: ronbun.thumbnail, alt: "" })),
                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", { className: styles.table },
                     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null,
                         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null,
                             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "\u8457\u8005"),
-                            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, author)),
+                            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, ronbun.author)),
                         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null,
                             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "\u51FA\u7248\u5E74"),
                             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null,
-                                year,
+                                ronbun.year,
                                 "\u5E74"))))),
             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", { className: styles.content },
-                abstract,
+                ronbun.abstract,
                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.url },
                     "\u30AA\u30EA\u30B8\u30CA\u30EB\u8AD6\u6587\u306F",
-                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", { href: url, className: styles.url_link }, "\u3053\u3061\u3089"),
-                    "\u304B\u3089"))),
+                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", { href: ronbun.url, className: styles.url_link }, "\u3053\u3061\u3089"),
+                    "\u304B\u3089")))) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Loading...")),
         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.footer }, footer.render())));
 };
 
@@ -59508,17 +59508,20 @@ const DupPageItem = () => {
         updated_at: '',
         category_name: ''
     });
+    const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
     const { id } = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"])();
     Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+        setLoading(true);
         const f = () => __awaiter(void 0, void 0, void 0, function* () {
             const ronbun = yield Object(_api_getRonbun__WEBPACK_IMPORTED_MODULE_2__["getRonbun"])(Number(id));
             if (ronbun.error === null && ronbun.response !== null) {
                 setRonbun(ronbun.response);
+                setLoading(false);
             }
         });
         f().catch(err => console.log(err));
     }, []);
-    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_DomPageItem__WEBPACK_IMPORTED_MODULE_6__["DomPageItem"], { header: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_header_DomHeader__WEBPACK_IMPORTED_MODULE_5__["DomHeader"], null) }, label: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_3__["DupLabelCard"], { text: ronbun.category_name }) }, title: ronbun.title, image: ronbun.thumbnail, author: ronbun.author, year: ronbun.year, abstract: ronbun.abstract, url: ronbun.url, footer: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_footer_DupFooter__WEBPACK_IMPORTED_MODULE_4__["DupFooter"], null) } }));
+    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_DomPageItem__WEBPACK_IMPORTED_MODULE_6__["DomPageItem"], { header: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_header_DomHeader__WEBPACK_IMPORTED_MODULE_5__["DomHeader"], null) }, label: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_3__["DupLabelCard"], { text: ronbun.category_name }) }, ronbun: ronbun, footer: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_footer_DupFooter__WEBPACK_IMPORTED_MODULE_4__["DupFooter"], null) }, loading: loading }));
 };
 
 
