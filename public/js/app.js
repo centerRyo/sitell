@@ -57422,6 +57422,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ui_src_presentation_ui_p_page_DupPageRanking__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./ui/src/presentation/ui-p-page/DupPageRanking */ "./resources/ts/ui/src/presentation/ui-p-page/DupPageRanking.tsx");
 /* harmony import */ var _ui_src_presentation_ui_p_page_DupPageCategory__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./ui/src/presentation/ui-p-page/DupPageCategory */ "./resources/ts/ui/src/presentation/ui-p-page/DupPageCategory.tsx");
 /* harmony import */ var _ui_src_presentation_ui_p_page_DupPageIitem__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./ui/src/presentation/ui-p-page/DupPageIitem */ "./resources/ts/ui/src/presentation/ui-p-page/DupPageIitem.tsx");
+/* harmony import */ var _ui_src_presentation_ui_u_location_DupScrollToTop__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./ui/src/presentation/ui-u-location/DupScrollToTop */ "./resources/ts/ui/src/presentation/ui-u-location/DupScrollToTop.ts");
+
 
 
 
@@ -57434,6 +57436,7 @@ __webpack_require__.r(__webpack_exports__);
 
 const App = () => {
     return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["BrowserRouter"], null,
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_src_presentation_ui_u_location_DupScrollToTop__WEBPACK_IMPORTED_MODULE_10__["DupScrollToTop"], null),
         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Switch"], null,
             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], { exact: true, path: "/", component: _ui_src_presentation_ui_p_page_DupPageTop__WEBPACK_IMPORTED_MODULE_5__["DupPageTop"] }),
             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], { path: "/latest", component: _ui_src_presentation_ui_p_page_DupPageLatest__WEBPACK_IMPORTED_MODULE_3__["DupPageLatest"] }),
@@ -59862,6 +59865,32 @@ var update = __webpack_require__(/*! ../../../../../../node_modules/style-loader
 if(content.locals) module.exports = content.locals;
 
 if(false) {}
+
+/***/ }),
+
+/***/ "./resources/ts/ui/src/presentation/ui-u-location/DupScrollToTop.ts":
+/*!**************************************************************************!*\
+  !*** ./resources/ts/ui/src/presentation/ui-u-location/DupScrollToTop.ts ***!
+  \**************************************************************************/
+/*! exports provided: DupScrollToTop */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DupScrollToTop", function() { return DupScrollToTop; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+
+
+const DupScrollToTop = () => {
+    const { pathname } = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useLocation"])();
+    Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
+    return null;
+};
+
 
 /***/ }),
 
