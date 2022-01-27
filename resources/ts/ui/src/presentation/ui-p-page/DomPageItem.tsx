@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react'
 import { ronbunResponse } from '../../api/getRonbun'
+import { DomSkeletonItem } from '../ui-m-skeleton/DomSkeletonItem'
 import defaultClassNames from './dup-page-item.m.scss'
 
 type Props = {
@@ -61,7 +62,9 @@ export const DomPageItem: React.FC<Props> = ({
               </div>
             </section>
           </>
-        ) : <div>Loading...</div>}
+        ) : (
+          <DomSkeletonItem />
+        )}
       </div>
       <div className={styles.footer}>
         { footer.render() }
