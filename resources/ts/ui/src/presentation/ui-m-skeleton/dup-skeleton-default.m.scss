@@ -1,0 +1,108 @@
+@import '../../../../../sass/app.scss';
+
+:local {
+  .root {
+    background: #ddd;
+    margin: vw(15, 300) 0;
+    border-radius: 4px;
+
+    @include mq($breakpoint: sm) {
+      margin: vw(20, 561) 0;
+    }
+
+    @include mq($breakpoint: md) {
+      margin: vw(25, 769) 0;
+    }
+
+    @include mq($breakpoint: lg) {
+      margin: vw(25, 1194) 0;
+    }
+
+    @include mq($breakpoint: xl) {
+      margin: vw(25, 1350) 0;
+    }
+
+    @include mq($breakpoint: xxl) {
+      margin: vw(25, 1900) 0;
+    }
+  }
+
+  .root.text {
+    width: 100%;
+    height: vw(12, 300);
+
+    @include mq($breakpoint: sm) {
+      height: vw(14, 561);
+    }
+
+    @include mq($breakpoint: md) {
+      height: vw(16, 769);
+    }
+
+    @include mq($breakpoint: lg) {
+      height: vw(16, 1194);
+    }
+
+    @include mq($breakpoint: xl) {
+      height: vw(16, 1350);
+    }
+
+    @include mq($breakpoint: xxl) {
+      height: vw(16, 1900);
+    }
+  }
+
+  .root.title {
+    width: 100%;
+    height: vw(48, 300);
+
+    @include mq($breakpoint: sm) {
+      height: vw(60, 561);
+    }
+
+    @include mq($breakpoint: md) {
+      height: vw(72, 769);
+    }
+
+    @include mq($breakpoint: lg) {
+      height: vw(84, 1194);
+    }
+
+    @include mq($breakpoint: xl) {
+      height: vw(84, 1350);
+    }
+
+    @include mq($breakpoint: xxl) {
+      height: vw(84, 1900);
+    }
+  }
+
+  .root.thumbnail {
+    width: 80%;
+    padding-top: 60%;
+    position: relative;
+    margin: vw(30, 300) auto;
+
+    @include mq($breakpoint: sm) {
+      margin: vw(35, 561) auto;
+    }
+
+    @include mq($breakpoint: md) {
+      margin: vw(40, 769) auto;
+    }
+
+    @include mq($breakpoint: lg) {
+      margin: vw(45, 1194) auto;
+      width: 50%;
+      padding-top: 40%;
+    }
+
+    @include mq($breakpoint: xl) {
+      margin: vw(45, 1351) auto;
+    }
+
+    @include mq($breakpoint: xxl) {
+      margin: vw(45, 71900) auto;
+    }
+  }
+}
