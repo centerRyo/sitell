@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Ronbun;
 use Illuminate\Support\Facades\DB;
 
 class RonbunController extends Controller
@@ -19,6 +20,13 @@ class RonbunController extends Controller
     $ronbun = $this->getRonbun($id);
 
     return response()->json($ronbun);
+  }
+
+  public function category($category_id)
+  {
+    $ronbunList = $this->getCategoryRonbunList($category_id);
+
+    return response()->json($ronbunList);
   }
 
   public function getLatestRonbuns()
@@ -42,5 +50,12 @@ class RonbunController extends Controller
                 ->first();
 
     return $ronbun;
+  }
+
+  public function getCategoryRonbunList($id)
+  {
+    $ronbunList = Ronbun::where('category_id', $id)->get();
+
+    return $ronbunList;
   }
 }
