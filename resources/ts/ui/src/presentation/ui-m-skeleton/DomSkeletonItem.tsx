@@ -12,17 +12,11 @@ export const DomSkeletonItem: React.FC<Props> = ({ classNames }) => {
 
   return (
     <div className={styles.root}>
-      <DomSkeleton type='title' />
-      <DomSkeleton type='thumbnail' />
-      <DomSkeleton type='text' />
-      <DomSkeleton type='text' />
-      <DomSkeleton type='text' />
-      <DomSkeleton type='text' />
-      <DomSkeleton type='text' />
-      <DomSkeleton type='text' />
-      <DomSkeleton type='text' />
-      <DomSkeleton type='text' />
-
+      <DomSkeleton type='title' className={styles} />
+      <DomSkeleton type='thumbnail' className={styles} />
+      {[1, 2, 3, 4, 5, 6, 7].map(n => (
+        <DomSkeleton key={n} type="text" className={styles} />
+      ))}
       <DomShimmer />
     </div>
   )

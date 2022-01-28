@@ -22,6 +22,6 @@ export const DomSkeleton: React.FC<Props> = ({
                         : ''
 
   return (
-    <div className={classNames(styles.root, classes)}></div>
+    <div className={classNames(styles.skeleton, classes)}></div>
   )
 }
