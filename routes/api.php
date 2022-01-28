@@ -22,4 +22,5 @@ Route::group(['middleware' => ['api']], function() {
     Route::resource('category/categoryList', 'Api\CategoryController', ['except' => ['create', 'edit']]);
     Route::get('ronbun/ronbunList', 'Api\RonbunController@index');
     Route::post('ronbun/{id}', 'Api\RonbunController@show');
+    Route::get('/category/{category_id}/ronbunList', 'Api\RonbunController@category');
 });
