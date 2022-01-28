@@ -21,14 +21,17 @@ export const DupPageItem: React.FC = () => {
     updated_at: '',
     category_name: ''
   })
+  const [loading, setLoading] = useState(false)
 
   const { id } = useParams<{id: string}>()
 
   useEffect(() => {
+    setLoading(true)
     const f = async (): Promise<void> => {
       const ronbun = await getRonbun(Number(id))
       if (ronbun.error === null && ronbun.response !== null) {
         setRonbun(ronbun.response)
+        setLoading(false)
       }
     }
     f().catch(err => console.log(err))
@@ -38,13 +41,9 @@ export const DupPageItem: React.FC = () => {
     <DomPageItem
       header={{ render: () => <DomHeader /> }}
       label={{ render: () => <DupLabelCard text={ronbun.category_name} /> }}
-      title={ronbun.title}
-      image={ronbun.thumbnail}
-      author={ronbun.author}
-      year={ronbun.year}
-      abstract={ronbun.abstract}
-      url={ronbun.url}
+      ronbun={ronbun}
       footer={{ render: () => <DupFooter /> }}
+      loading={loading}
     />
   )
 }

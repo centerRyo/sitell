@@ -1,0 +1,125 @@
+@import '../../../../../sass/app.scss';
+@import './dup-skeleton-default.m.scss';
+
+:local {
+  .root {
+    background: #f2f2f2;
+    border-radius: 4px;
+    padding: vw(10, 300);
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+
+    @include mq($breakpoint: sm) {
+      padding: vw(15, 561);
+    }
+
+    @include mq($breakpoint: md) {
+      padding: vw(10, 769);
+    }
+
+    @include mq($breakpoint: lg) {
+      padding: vw(20, 1194);
+    }
+
+    @include mq($breakpoint: xl) {
+      padding: vw(20, 1350);
+    }
+
+    @include mq($breakpoint: xxl) {
+      padding: vw(20, 1900);
+    }
+  }
+
+  .wrapper {
+    display: flex;
+  }
+
+  .left {
+    width: 30%;
+  }
+
+  .right {
+    margin-left: vw(10, 300);
+    width: 70%;
+
+    @include mq($breakpoint: sm) {
+      margin-left: vw(20, 561);
+    }
+
+    @include mq($breakpoint: md) {
+      margin-left: vw(15, 769);
+    }
+
+    @include mq($breakpoint: lg) {
+      margin-left: vw(20, 1194);
+    }
+
+    @include mq($breakpoint: xl) {
+      margin-left: vw(20, 1350);
+    }
+
+    @include mq($breakpoint: xxl) {
+      margin-left: vw(20, 1900);
+    }
+  }
+
+  .skeleton {
+    @extend .skeleton;
+  }
+
+  .skeleton.title {
+    width: 50%;
+    height: vw(14, 300);
+    margin-bottom: vw(8, 300);
+
+    @include mq($breakpoint: sm) {
+      height: vw(16, 561);
+      margin-bottom: vw(12, 561);
+    }
+
+    @include mq($breakpoint: md) {
+      height: vw(16, 769);
+      margin-bottom: vw(8, 769);
+    }
+
+    @include mq($breakpoint: lg) {
+      height: vw(16, 1194);
+      margin-bottom: vw(12, 1194);
+    }
+
+    @include mq($breakpoint: xl) {
+      height: vw(16, 1350);
+      margin-bottom: vw(12, 1350);
+    }
+
+    @include mq($breakpoint: xxl) {
+      height: vw(16, 1900);
+      margin-bottom: vw(12, 1900);
+    }
+  }
+
+  .skeleton.text {
+    margin-bottom: vw(5, 300);
+
+    @include mq($breakpoint: sm) {
+      margin-bottom: vw(10, 561);
+    }
+
+    @include mq($breakpoint: md) {
+      margin-bottom: vw(5, 769);
+    }
+
+    @include mq($breakpoint: lg) {
+      margin-bottom: vw(10, 1194);
+    }
+
+    @include mq($breakpoint: xl) {
+      margin-bottom: vw(10, 1350);
+    }
+
+    @include mq($breakpoint: xxl) {
+      margin-bottom: vw(10, 1900);
+    }
+  }
+}

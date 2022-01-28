@@ -1,4 +1,4 @@
-import React, { ReactElement, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { categoryListResponse, getCategoryList } from '../../api/getCategoryList'
 import { getTopLatestRonbunList, topLatestRonbunListResponse } from '../../api/getTopLatestRonbunList'
 import { DupLabelCard } from '../ui-a-label/DupLabelCard'
@@ -7,6 +7,8 @@ import { DupLink, DupLinkTypes } from '../ui-a-link/DupLink'
 import { DupTitle, DupTitleTypes } from '../ui-c-title/DupTitle'
 import { DomCard } from '../ui-m-card/DomCard'
 import { DomCardGrid } from '../ui-m-card/DomCardGrid'
+import { DomSkeletonCardGrid } from '../ui-m-skeleton/DomSkeletonCardGrid'
+import { DomSkeletonCategory } from '../ui-m-skeleton/DomSkeletonCategory'
 import { DomSlider } from '../ui-m-slider/DomSlider'
 import { DupFooter } from '../ui-o-footer/DupFooter'
 import { DomGroupCategory } from '../ui-o-group/DomGroupCategory'
@@ -18,8 +20,10 @@ import { DomPageTop } from './DomPageTop'
 export const DupPageTop: React.FC = () => {
   const [categories, setCategories] = useState<Array<categoryListResponse>>([])
   const [latests, setLatests] = useState<Array<topLatestRonbunListResponse>>([])
+  const [loading, setLoading] = useState(false)
 
   useEffect(() => {
+    setLoading(true)
     const f = async (): Promise<void> => {
       const latests = await getTopLatestRonbunList()
       const categories = await getCategoryList()
@@ -29,10 +33,12 @@ export const DupPageTop: React.FC = () => {
       if (categories.error === null && categories.response !== null) {
         setCategories(categories.response)
       }
+      setLoading(false)
     }
     f().catch(err => console.log(err))
   }, [])
 
+  // TODO: !loadingのところ何回も書かないといけないので直したい。。。
   const groups = [
     <DomGroupItems
       title={{ render: () => <DupTitle type={DupTitleTypes.MasterPiece} /> }}
@@ -109,17 +115,27 @@ export const DupPageTop: React.FC = () => {
       link={{ render: () => <DupLink type={DupLinkTypes.More} href="/rankings" /> }}
     />,
     <DupGroupItemsGrid
-      title={{ render: () => <DupTitle type={DupTitleTypes.Latest} /> }}
-      cards={latests.map(latest => {
-        return <DomCardGrid id={latest.id} image={latest.thumbnail} label={{ render: () => <DupLabelCard text={latest.category_name} /> }} text={latest.title} />
-      })}
-      link={{render: () => <DupLink type={DupLinkTypes.More} href="latest" /> }}
+      title={{ render: () => !loading && <DupTitle type={DupTitleTypes.Latest} /> }}
+      cards={!loading
+        ? latests.map(latest => {
+            return <DomCardGrid id={latest.id} image={latest.thumbnail} label={{ render: () => <DupLabelCard text={latest.category_name} /> }} text={latest.title} />
+          })
+        : [1, 2, 3, 4].map(n => {
+          return <DomSkeletonCardGrid />
+        })
+      }
+      link={{render: () => !loading && <DupLink type={DupLinkTypes.More} href="latest" /> }}
     />,
     <DomGroupCategory
-      title={{ render: () => <DupTitle type={DupTitleTypes.Categories} /> }}
-      categories={categories.map(category => {
-        return <DupLabelCategory text={category.name} />
-      })}
+      title={{ render: () => !loading && <DupTitle type={DupTitleTypes.Categories} /> }}
+      categories={!loading
+        ? categories.map(category => {
+            return <DupLabelCategory text={category.name} />
+          })
+        : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map(n => {
+          return <DomSkeletonCategory />
+        })
+      }
     />
   ]
   return (
