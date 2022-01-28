@@ -19,7 +19,7 @@ const App: React.FC = () => {
         <Route path="/latest" component={DupPageLatest} />
         <Route path="/masterpiece" component={DupPageMasterpiece} />
         <Route path="/rankings" component={DupPageRanking} />
-        <Route path="/category" component={DupPageCategory} />
+        <Route path="/category/:id" component={DupPageCategory} />
         <Route path="/item/:id" component={DupPageItem} />
         <Route component={NotFound} />
       </Switch>
