@@ -8,6 +8,7 @@ import { DupTitle, DupTitleTypes } from '../ui-c-title/DupTitle'
 import { DomCard } from '../ui-m-card/DomCard'
 import { DomCardGrid } from '../ui-m-card/DomCardGrid'
 import { DomSkeletonCardGrid } from '../ui-m-skeleton/DomSkeletonCardGrid'
+import { DomSkeletonCategory } from '../ui-m-skeleton/DomSkeletonCategory'
 import { DomSlider } from '../ui-m-slider/DomSlider'
 import { DupFooter } from '../ui-o-footer/DupFooter'
 import { DomGroupCategory } from '../ui-o-group/DomGroupCategory'
@@ -126,10 +127,15 @@ export const DupPageTop: React.FC = () => {
       link={{render: () => !loading && <DupLink type={DupLinkTypes.More} href="latest" /> }}
     />,
     <DomGroupCategory
-      title={{ render: () => <DupTitle type={DupTitleTypes.Categories} /> }}
-      categories={categories.map(category => {
-        return <DupLabelCategory text={category.name} />
-      })}
+      title={{ render: () => !loading && <DupTitle type={DupTitleTypes.Categories} /> }}
+      categories={!loading
+        ? categories.map(category => {
+            return <DupLabelCategory text={category.name} />
+          })
+        : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map(n => {
+          return <DomSkeletonCategory />
+        })
+      }
     />
   ]
   return (

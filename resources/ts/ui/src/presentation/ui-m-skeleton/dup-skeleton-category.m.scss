@@ -1,0 +1,58 @@
+@import '../../../../../sass/app.scss';
+@import './dup-skeleton-default.m.scss';
+
+:local {
+  .root {
+    position: relative;
+    overflow: hidden;
+    width: vw(80, 300);
+
+    @include mq($breakpoint: sm) {
+      width: vw(120, 561);
+    }
+
+    @include mq($breakpoint: md) {
+      width: vw(150, 769)
+    }
+
+    @include mq($breakpoint: lg) {
+      width: vw(200, 1194);
+    }
+
+    @include mq($breakpoint: xl) {
+      width: vw(200, 1350);
+    }
+
+    @include mq($breakpoint: xxl) {
+      width: vw(200, 1900);
+    }
+  }
+
+  .skeleton {
+    @extend .skeleton;
+  }
+
+  .skeleton.title {
+    height: vw(18, 300);
+
+    @include mq($breakpoint: sm) {
+      height: vw(25, 561);
+    }
+
+    @include mq($breakpoint: md) {
+      height: vw(32, 769);
+    }
+
+    @include mq($breakpoint: lg) {
+      height: vw(40, 1194);
+    }
+
+    @include mq($breakpoint: xl) {
+      height: vw(40, 1350);
+    }
+
+    @include mq($breakpoint: xxl) {
+      height: vw(40, 1900);
+    }
+  }
+}
