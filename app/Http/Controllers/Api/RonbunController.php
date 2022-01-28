@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
-use App\Ronbun;
 use Illuminate\Support\Facades\DB;
 
 class RonbunController extends Controller
@@ -54,7 +53,11 @@ class RonbunController extends Controller
 
   public function getCategoryRonbunList($id)
   {
-    $ronbunList = Ronbun::where('category_id', $id)->get();
+    $ronbunList = DB::table('ronbuns')
+                    ->where('ronbuns.category_id', $id)
+                    ->join('categories', 'ronbuns.category_id', '=', 'categories.id')
+                    ->select('ronbuns.*', 'categories.name as category_name')
+                    ->get();
 
     return $ronbunList;
   }
