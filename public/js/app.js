@@ -2517,7 +2517,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../../node_module
 
 
 // module
-exports.push([module.i, "html, body {\n  background: #eee;\n  box-sizing: border-box;\n  width: 100%;\n  display: flex;\n  flex-flow: column;\n  min-height: 100vh;\n  font-size: 16px;\n  line-height: 1.6;\n  font-family: \"BlinkMacSystemFont\", \"Hiragino Kaku Gothic ProN\", \"Hiragino Sans\", Meiryo, sans-serif, \"Segoe UI Emoji\";\n  letter-spacing: 2px;\n}\n\n* {\n  box-sizing: border-box;\n}\n\nhtml, body {\n  background: #eee;\n  box-sizing: border-box;\n  width: 100%;\n  display: flex;\n  flex-flow: column;\n  min-height: 100vh;\n  font-size: 16px;\n  line-height: 1.6;\n  font-family: \"BlinkMacSystemFont\", \"Hiragino Kaku Gothic ProN\", \"Hiragino Sans\", Meiryo, sans-serif, \"Segoe UI Emoji\";\n  letter-spacing: 2px;\n}\n\n* {\n  box-sizing: border-box;\n}\n\n._2mI06G4GY8o3XRsPIUNPYg {\n  display: inline-flex;\n  justify-content: center;\n  align-items: center;\n}\n._3ntismAOmwcNkafRJjPEqW {\n  text-align: center;\n}\n\n._2mI06G4GY8o3XRsPIUNPYg {\n  background: #29663e;\n  border-radius: 4px;\n  padding: 1vw;\n}\n@media screen and (min-width: 561px) {\n  ._2mI06G4GY8o3XRsPIUNPYg {\n    padding: 0.5347593583vw 0.8912655971vw;\n  }\n}\n@media screen and (min-width: 769px) {\n  ._2mI06G4GY8o3XRsPIUNPYg {\n    padding: 0.6501950585vw 1.0403120936vw;\n  }\n}\n@media screen and (min-width: 1194px) {\n  ._2mI06G4GY8o3XRsPIUNPYg {\n    padding: 0.6700167504vw 0.837520938vw;\n  }\n}\n@media screen and (min-width: 1350px) {\n  ._2mI06G4GY8o3XRsPIUNPYg {\n    padding: 0.5925925926vw 0.7407407407vw;\n  }\n}\n@media screen and (min-width: 1900px) {\n  ._2mI06G4GY8o3XRsPIUNPYg {\n    padding: 0.4210526316vw 0.5263157895vw;\n  }\n}\n._3ntismAOmwcNkafRJjPEqW {\n  color: #fff;\n  font-size: 3.3333333333vw;\n  font-weight: bold;\n}\n@media screen and (min-width: 561px) {\n  ._3ntismAOmwcNkafRJjPEqW {\n    font-size: 2.1390374332vw;\n  }\n}\n@media screen and (min-width: 769px) {\n  ._3ntismAOmwcNkafRJjPEqW {\n    font-size: 1.8205461638vw;\n  }\n}\n@media screen and (min-width: 1194px) {\n  ._3ntismAOmwcNkafRJjPEqW {\n    font-size: 1.3400335008vw;\n  }\n}\n@media screen and (min-width: 1350px) {\n  ._3ntismAOmwcNkafRJjPEqW {\n    font-size: 1.1851851852vw;\n  }\n}\n@media screen and (min-width: 1900px) {\n  ._3ntismAOmwcNkafRJjPEqW {\n    font-size: 0.8421052632vw;\n  }\n}", ""]);
+exports.push([module.i, "html, body {\n  background: #eee;\n  box-sizing: border-box;\n  width: 100%;\n  display: flex;\n  flex-flow: column;\n  min-height: 100vh;\n  font-size: 16px;\n  line-height: 1.6;\n  font-family: \"BlinkMacSystemFont\", \"Hiragino Kaku Gothic ProN\", \"Hiragino Sans\", Meiryo, sans-serif, \"Segoe UI Emoji\";\n  letter-spacing: 2px;\n}\n\n* {\n  box-sizing: border-box;\n}\n\nhtml, body {\n  background: #eee;\n  box-sizing: border-box;\n  width: 100%;\n  display: flex;\n  flex-flow: column;\n  min-height: 100vh;\n  font-size: 16px;\n  line-height: 1.6;\n  font-family: \"BlinkMacSystemFont\", \"Hiragino Kaku Gothic ProN\", \"Hiragino Sans\", Meiryo, sans-serif, \"Segoe UI Emoji\";\n  letter-spacing: 2px;\n}\n\n* {\n  box-sizing: border-box;\n}\n\n._2mI06G4GY8o3XRsPIUNPYg {\n  display: inline-flex;\n  justify-content: center;\n  align-items: center;\n}\n._3ntismAOmwcNkafRJjPEqW {\n  text-align: center;\n}\n\n._2mI06G4GY8o3XRsPIUNPYg {\n  background: #29663e;\n  border-radius: 4px;\n  cursor: pointer;\n  padding: 1vw;\n}\n@media screen and (min-width: 561px) {\n  ._2mI06G4GY8o3XRsPIUNPYg {\n    padding: 0.5347593583vw 0.8912655971vw;\n  }\n}\n@media screen and (min-width: 769px) {\n  ._2mI06G4GY8o3XRsPIUNPYg {\n    padding: 0.6501950585vw 1.0403120936vw;\n  }\n}\n@media screen and (min-width: 1194px) {\n  ._2mI06G4GY8o3XRsPIUNPYg {\n    padding: 0.6700167504vw 0.837520938vw;\n  }\n}\n@media screen and (min-width: 1350px) {\n  ._2mI06G4GY8o3XRsPIUNPYg {\n    padding: 0.5925925926vw 0.7407407407vw;\n  }\n}\n@media screen and (min-width: 1900px) {\n  ._2mI06G4GY8o3XRsPIUNPYg {\n    padding: 0.4210526316vw 0.5263157895vw;\n  }\n}\n._3ntismAOmwcNkafRJjPEqW {\n  color: #fff;\n  font-size: 3.3333333333vw;\n  font-weight: bold;\n}\n@media screen and (min-width: 561px) {\n  ._3ntismAOmwcNkafRJjPEqW {\n    font-size: 2.1390374332vw;\n  }\n}\n@media screen and (min-width: 769px) {\n  ._3ntismAOmwcNkafRJjPEqW {\n    font-size: 1.8205461638vw;\n  }\n}\n@media screen and (min-width: 1194px) {\n  ._3ntismAOmwcNkafRJjPEqW {\n    font-size: 1.3400335008vw;\n  }\n}\n@media screen and (min-width: 1350px) {\n  ._3ntismAOmwcNkafRJjPEqW {\n    font-size: 1.1851851852vw;\n  }\n}\n@media screen and (min-width: 1900px) {\n  ._3ntismAOmwcNkafRJjPEqW {\n    font-size: 0.8421052632vw;\n  }\n}", ""]);
 
 // exports
 exports.locals = {
@@ -58376,9 +58376,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _dup_label_default_m_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_dup_label_default_m_scss__WEBPACK_IMPORTED_MODULE_1__);
 
 
-const DomLabel = ({ text, classNames, }) => {
+const DomLabel = ({ text, onClick, classNames, }) => {
     const styles = classNames || _dup_label_default_m_scss__WEBPACK_IMPORTED_MODULE_1___default.a;
-    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.root },
+    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.root, onClick: onClick },
         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", { className: styles.text }, text)));
 };
 
@@ -58422,14 +58422,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DupLabelCategory", function() { return DupLabelCategory; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _DomLabel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./DomLabel */ "./resources/ts/ui/src/presentation/ui-a-label/DomLabel.tsx");
-/* harmony import */ var _dup_label_category_m_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./dup-label-category.m.scss */ "./resources/ts/ui/src/presentation/ui-a-label/dup-label-category.m.scss");
-/* harmony import */ var _dup_label_category_m_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_dup_label_category_m_scss__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _DomLabel__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./DomLabel */ "./resources/ts/ui/src/presentation/ui-a-label/DomLabel.tsx");
+/* harmony import */ var _dup_label_category_m_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./dup-label-category.m.scss */ "./resources/ts/ui/src/presentation/ui-a-label/dup-label-category.m.scss");
+/* harmony import */ var _dup_label_category_m_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_dup_label_category_m_scss__WEBPACK_IMPORTED_MODULE_3__);
 
 
 
-const DupLabelCategory = ({ text }) => {
-    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_DomLabel__WEBPACK_IMPORTED_MODULE_1__["DomLabel"], { text: text, classNames: _dup_label_category_m_scss__WEBPACK_IMPORTED_MODULE_2___default.a }));
+
+const DupLabelCategory = ({ category }) => {
+    const history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useHistory"])();
+    const handleClick = () => {
+        history.push(`/category/${category.id}`);
+    };
+    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_DomLabel__WEBPACK_IMPORTED_MODULE_2__["DomLabel"], { text: category.name, onClick: handleClick, classNames: _dup_label_category_m_scss__WEBPACK_IMPORTED_MODULE_3___default.a }));
 };
 
 
@@ -60424,7 +60430,7 @@ const DupPageTop = () => {
                 }), link: { render: () => !loading && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_5__["DupLink"], { type: _ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_5__["DupLinkTypes"].More, href: "latest" }) } }),
         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_group_DomGroupCategory__WEBPACK_IMPORTED_MODULE_13__["DomGroupCategory"], { title: { render: () => !loading && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_6__["DupTitle"], { type: _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_6__["DupTitleTypes"].Categories }) }, categories: !loading
                 ? categories.map(category => {
-                    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCategory__WEBPACK_IMPORTED_MODULE_4__["DupLabelCategory"], { text: category.name });
+                    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCategory__WEBPACK_IMPORTED_MODULE_4__["DupLabelCategory"], { category: category });
                 })
                 : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map(n => {
                     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_skeleton_DomSkeletonCategory__WEBPACK_IMPORTED_MODULE_10__["DomSkeletonCategory"], null);

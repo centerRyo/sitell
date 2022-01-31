@@ -130,7 +130,7 @@ export const DupPageTop: React.FC = () => {
       title={{ render: () => !loading && <DupTitle type={DupTitleTypes.Categories} /> }}
       categories={!loading
         ? categories.map(category => {
-            return <DupLabelCategory text={category.name} />
+            return <DupLabelCategory category={category} />
           })
         : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map(n => {
           return <DomSkeletonCategory />
