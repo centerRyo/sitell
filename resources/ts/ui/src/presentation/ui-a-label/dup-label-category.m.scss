@@ -6,6 +6,7 @@
     @extend .root;
     background: $color_main;
     border-radius: 4px;
+    cursor: pointer;
     padding: vw(3, 300);
 
     @include mq($breakpoint: sm) {

@@ -25,7 +25,7 @@ export const DomCard: React.FC<Props> = ({
   const history = useHistory()
 
   const handleClick = () => {
-    history.push(`item/${id}`)
+    history.push(`/item/${id}`)
   }
 
   return (
