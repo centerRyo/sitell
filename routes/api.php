@@ -19,10 +19,14 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::group(['middleware' => ['api']], function() {
+  // Top
   Route::prefix('top')->group(function() {
     Route::get('/latestList', 'Api\TopController@latest');
     Route::get('/category/categoryList', 'Api\TopController@category');
   });
+
+  // 一覧
+  Route::get('/latestList', 'Api\RonbunListController@index');
 
   Route::post('/ronbun/{id}', 'Api\RonbunController@index');
   Route::post('/category/{category_id}/ronbunList', 'Api\RonbunListController@category');
