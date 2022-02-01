@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react'
 import { ronbunResponse } from '../../api/getRonbun'
+import { DupParser } from '../ui-a-parser/DupParser'
 import { DomSkeletonItem } from '../ui-m-skeleton/DomSkeletonItem'
 import defaultClassNames from './dup-page-item.m.scss'
 
@@ -54,7 +55,7 @@ export const DomPageItem: React.FC<Props> = ({
               </table>
             </section>
             <section className={styles.content}>
-              { ronbun.abstract }
+              <DupParser dirtyHtml={ronbun.abstract} />
               <div className={styles.url}>
                 オリジナル論文は
                 <a href={ronbun.url} className={styles.url_link}>こちら</a>
