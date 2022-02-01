@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Api;
 
+use App\Category;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
 
@@ -14,18 +15,10 @@ class TopController extends Controller
     return response()->json($ronbuns);
   }
 
-  public function show($id)
+  public function category()
   {
-    $ronbun = $this->getRonbun($id);
-
-    return response()->json($ronbun);
-  }
-
-  public function category($category_id)
-  {
-    $ronbunList = $this->getCategoryRonbunList($category_id);
-
-    return response()->json($ronbunList);
+      $categories = Category::get(['id', 'name']);
+      return response()->json($categories);
   }
 
   public function getLatestRonbuns()
@@ -38,27 +31,5 @@ class TopController extends Controller
                           ->get();
 
     return $latest_ronbuns;
-  }
-
-  public function getRonbun($id)
-  {
-    $ronbun = DB::table('ronbuns')
-                ->where('ronbuns.id', $id)
-                ->join('categories', 'ronbuns.category_id', '=', 'categories.id')
-                ->select('ronbuns.*', 'categories.name as category_name')
-                ->first();
-
-    return $ronbun;
-  }
-
-  public function getCategoryRonbunList($id)
-  {
-    $ronbunList = DB::table('ronbuns')
-                    ->where('ronbuns.category_id', $id)
-                    ->join('categories', 'ronbuns.category_id', '=', 'categories.id')
-                    ->select('ronbuns.*', 'categories.name as category_name')
-                    ->get();
-
-    return $ronbunList;
   }
 }

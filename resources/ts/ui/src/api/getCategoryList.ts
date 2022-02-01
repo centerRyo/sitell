@@ -9,7 +9,7 @@ export async function getCategoryList(): Promise<{
   error: any | null
   response: any | null
 }> {
-  const url = '/api/category/categoryList'
+  const url = '/api/top/category/categoryList'
 
   const result = await axios
     .get(url)
