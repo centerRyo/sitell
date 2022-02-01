@@ -24,7 +24,8 @@ export const DomFooter: React.FC<Props> = ({
           <Link to="/" className={styles.icon}>
             <LogoInverted />
           </Link>
-          <div className={styles.links}>
+          {/* <<<<<<<<<<<< 初期リリースに不必要なのでコメントアウト >>>>>>>>>>>>>>> */}
+          {/* <div className={styles.links}>
             <ul className={styles.items}>
               {linksLeft.map((link, index) => (
                 <li className={styles.item} key={index}>
@@ -39,13 +40,13 @@ export const DomFooter: React.FC<Props> = ({
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
         </div>
         <div className={styles.bottom}>
           <div className={styles.social}>
             <a href="https://twitter.com/xt_rynkd08" className={styles.social__item}><BsTwitter /></a>
             <a href="https://www.facebook.com/profile.php?id=100012703666212" className={styles.social__item}><BsFacebook /></a>
-            <a href="{/* sitell YoutubeチャンネルができたらURLを入れる */}" className={styles.social__item}><BsYoutube /></a>
+            <a href="https://www.youtube.com/channel/UC4pjinkdnREgrqSSiNf_mcw" className={styles.social__item}><BsYoutube /></a>
           </div>
           <p className={styles.copyright}>Copyrights©︎xtimmune. All Rights Reserved.</p>
         </div>

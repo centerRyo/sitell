@@ -63748,17 +63748,14 @@ const DomFooter = ({ linksLeft, linksRight, classNames }) => {
         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.root },
             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.container },
                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], { to: "/", className: styles.icon },
-                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_assets_LogoInverted__WEBPACK_IMPORTED_MODULE_3__["LogoInverted"], null)),
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.links },
-                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", { className: styles.items }, linksLeft.map((link, index) => (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", { className: styles.item, key: index }, link)))),
-                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", { className: styles.items }, linksRight.map((link, index) => (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", { className: styles.item, key: index }, link)))))),
+                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_assets_LogoInverted__WEBPACK_IMPORTED_MODULE_3__["LogoInverted"], null))),
             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.bottom },
                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.social },
                     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", { href: "https://twitter.com/xt_rynkd08", className: styles.social__item },
                         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_icons_bs__WEBPACK_IMPORTED_MODULE_1__["BsTwitter"], null)),
                     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", { href: "https://www.facebook.com/profile.php?id=100012703666212", className: styles.social__item },
                         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_icons_bs__WEBPACK_IMPORTED_MODULE_1__["BsFacebook"], null)),
-                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", { href: "{/* sitell Youtube\u30C1\u30E3\u30F3\u30CD\u30EB\u304C\u3067\u304D\u305F\u3089URL\u3092\u5165\u308C\u308B */}", className: styles.social__item },
+                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", { href: "https://www.youtube.com/channel/UC4pjinkdnREgrqSSiNf_mcw", className: styles.social__item },
                         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_icons_bs__WEBPACK_IMPORTED_MODULE_1__["BsYoutube"], null))),
                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", { className: styles.copyright }, "Copyrights\u00A9\uFE0Extimmune. All Rights Reserved.")))));
 };
@@ -63784,7 +63781,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const DupFooter = () => {
-    // 命名ダサい
+    // TODO: 命名ダサい
     const linksLeft = [
         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_1__["DupLink"], { type: _ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_1__["DupLinkTypes"].About }),
         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_1__["DupLink"], { type: _ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_1__["DupLinkTypes"].Company }),
@@ -64011,32 +64008,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DomHeader", function() { return DomHeader; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_icons_bs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-icons/bs */ "./node_modules/react-icons/bs/index.esm.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _assets_Logo__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/Logo */ "./resources/ts/ui/src/assets/Logo.tsx");
-/* harmony import */ var _ui_a_button_DupButton__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../ui-a-button/DupButton */ "./resources/ts/ui/src/presentation/ui-a-button/DupButton.tsx");
-/* harmony import */ var _dup_header_default_m_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./dup-header-default.m.scss */ "./resources/ts/ui/src/presentation/ui-o-header/dup-header-default.m.scss");
-/* harmony import */ var _dup_header_default_m_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_dup_header_default_m_scss__WEBPACK_IMPORTED_MODULE_5__);
-
-
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _assets_Logo__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/Logo */ "./resources/ts/ui/src/assets/Logo.tsx");
+/* harmony import */ var _dup_header_default_m_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./dup-header-default.m.scss */ "./resources/ts/ui/src/presentation/ui-o-header/dup-header-default.m.scss");
+/* harmony import */ var _dup_header_default_m_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_dup_header_default_m_scss__WEBPACK_IMPORTED_MODULE_3__);
 
 
 
 
 const DomHeader = ({ classNames }) => {
-    const styles = classNames || _dup_header_default_m_scss__WEBPACK_IMPORTED_MODULE_5___default.a;
+    const styles = classNames || _dup_header_default_m_scss__WEBPACK_IMPORTED_MODULE_3___default.a;
     return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", { className: styles.header },
         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.root },
-            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], { to: '/', className: styles.logo },
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_assets_Logo__WEBPACK_IMPORTED_MODULE_3__["Logo"], null)),
-            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.nav },
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.icon },
-                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_icons_bs__WEBPACK_IMPORTED_MODULE_1__["BsSearch"], null)),
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", { className: styles.lead },
-                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", { className: styles.button },
-                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_button_DupButton__WEBPACK_IMPORTED_MODULE_4__["DupButton"], { type: _ui_a_button_DupButton__WEBPACK_IMPORTED_MODULE_4__["DupButtonTypes"].Register })),
-                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", { className: styles.button },
-                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_button_DupButton__WEBPACK_IMPORTED_MODULE_4__["DupButton"], { type: _ui_a_button_DupButton__WEBPACK_IMPORTED_MODULE_4__["DupButtonTypes"].Login })))))));
+            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], { to: '/', className: styles.logo },
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_assets_Logo__WEBPACK_IMPORTED_MODULE_2__["Logo"], null)))));
 };
 
 
@@ -64467,17 +64452,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ui_a_label_DupLabelCategory__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../ui-a-label/DupLabelCategory */ "./resources/ts/ui/src/presentation/ui-a-label/DupLabelCategory.tsx");
 /* harmony import */ var _ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../ui-a-link/DupLink */ "./resources/ts/ui/src/presentation/ui-a-link/DupLink.tsx");
 /* harmony import */ var _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../ui-c-title/DupTitle */ "./resources/ts/ui/src/presentation/ui-c-title/DupTitle.tsx");
-/* harmony import */ var _ui_m_card_DomCard__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../ui-m-card/DomCard */ "./resources/ts/ui/src/presentation/ui-m-card/DomCard.tsx");
-/* harmony import */ var _ui_m_card_DomCardGrid__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../ui-m-card/DomCardGrid */ "./resources/ts/ui/src/presentation/ui-m-card/DomCardGrid.tsx");
-/* harmony import */ var _ui_m_skeleton_DomSkeletonCardGrid__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../ui-m-skeleton/DomSkeletonCardGrid */ "./resources/ts/ui/src/presentation/ui-m-skeleton/DomSkeletonCardGrid.tsx");
-/* harmony import */ var _ui_m_skeleton_DomSkeletonCategory__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../ui-m-skeleton/DomSkeletonCategory */ "./resources/ts/ui/src/presentation/ui-m-skeleton/DomSkeletonCategory.tsx");
-/* harmony import */ var _ui_m_slider_DomSlider__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../ui-m-slider/DomSlider */ "./resources/ts/ui/src/presentation/ui-m-slider/DomSlider.tsx");
-/* harmony import */ var _ui_o_footer_DupFooter__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../ui-o-footer/DupFooter */ "./resources/ts/ui/src/presentation/ui-o-footer/DupFooter.tsx");
-/* harmony import */ var _ui_o_group_DomGroupCategory__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../ui-o-group/DomGroupCategory */ "./resources/ts/ui/src/presentation/ui-o-group/DomGroupCategory.tsx");
-/* harmony import */ var _ui_o_group_DomGroupItems__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../ui-o-group/DomGroupItems */ "./resources/ts/ui/src/presentation/ui-o-group/DomGroupItems.tsx");
-/* harmony import */ var _ui_o_group_DupGroupItemsGrid__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../ui-o-group/DupGroupItemsGrid */ "./resources/ts/ui/src/presentation/ui-o-group/DupGroupItemsGrid.tsx");
-/* harmony import */ var _ui_o_header_DomHeader__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../ui-o-header/DomHeader */ "./resources/ts/ui/src/presentation/ui-o-header/DomHeader.tsx");
-/* harmony import */ var _DomPageTop__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./DomPageTop */ "./resources/ts/ui/src/presentation/ui-p-page/DomPageTop.tsx");
+/* harmony import */ var _ui_m_card_DomCardGrid__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../ui-m-card/DomCardGrid */ "./resources/ts/ui/src/presentation/ui-m-card/DomCardGrid.tsx");
+/* harmony import */ var _ui_m_skeleton_DomSkeletonCardGrid__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../ui-m-skeleton/DomSkeletonCardGrid */ "./resources/ts/ui/src/presentation/ui-m-skeleton/DomSkeletonCardGrid.tsx");
+/* harmony import */ var _ui_m_skeleton_DomSkeletonCategory__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../ui-m-skeleton/DomSkeletonCategory */ "./resources/ts/ui/src/presentation/ui-m-skeleton/DomSkeletonCategory.tsx");
+/* harmony import */ var _ui_m_slider_DomSlider__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../ui-m-slider/DomSlider */ "./resources/ts/ui/src/presentation/ui-m-slider/DomSlider.tsx");
+/* harmony import */ var _ui_o_footer_DupFooter__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../ui-o-footer/DupFooter */ "./resources/ts/ui/src/presentation/ui-o-footer/DupFooter.tsx");
+/* harmony import */ var _ui_o_group_DomGroupCategory__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../ui-o-group/DomGroupCategory */ "./resources/ts/ui/src/presentation/ui-o-group/DomGroupCategory.tsx");
+/* harmony import */ var _ui_o_group_DupGroupItemsGrid__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../ui-o-group/DupGroupItemsGrid */ "./resources/ts/ui/src/presentation/ui-o-group/DupGroupItemsGrid.tsx");
+/* harmony import */ var _ui_o_header_DomHeader__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../ui-o-header/DomHeader */ "./resources/ts/ui/src/presentation/ui-o-header/DomHeader.tsx");
+/* harmony import */ var _DomPageTop__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./DomPageTop */ "./resources/ts/ui/src/presentation/ui-p-page/DomPageTop.tsx");
 var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -64487,8 +64470,6 @@ var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _argume
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-
-
 
 
 
@@ -64526,49 +64507,97 @@ const DupPageTop = () => {
     }, []);
     // TODO: !loadingのところ何回も書かないといけないので直したい。。。
     const groups = [
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_group_DomGroupItems__WEBPACK_IMPORTED_MODULE_14__["DomGroupItems"], { title: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_6__["DupTitle"], { type: _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_6__["DupTitleTypes"].MasterPiece }) }, cards: [
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_card_DomCard__WEBPACK_IMPORTED_MODULE_7__["DomCard"], { id: 1, image: "https://www.gstatic.com/webp/gallery3/1.png", label: {
-                        render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_3__["DupLabelCard"], { text: "\u6570\u5B66" })
-                    }, text: "\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB" }),
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_card_DomCard__WEBPACK_IMPORTED_MODULE_7__["DomCard"], { id: 2, image: "https://www.gstatic.com/webp/gallery3/1.png", label: {
-                        render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_3__["DupLabelCard"], { text: "\u65B0\u578B\u30B3\u30ED\u30CA" })
-                    }, text: "\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB" }),
-            ], link: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_5__["DupLink"], { type: _ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_5__["DupLinkTypes"].More, href: "/masterpiece" }) } }),
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_group_DupGroupItemsGrid__WEBPACK_IMPORTED_MODULE_15__["DupGroupItemsGrid"], { title: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_6__["DupTitle"], { type: _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_6__["DupTitleTypes"].Weekly }) }, cards: [
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_card_DomCardGrid__WEBPACK_IMPORTED_MODULE_8__["DomCardGrid"], { id: 1, image: "https://www.gstatic.com/webp/gallery3/1.png", label: {
-                        render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_3__["DupLabelCard"], { text: "\u6570\u5B66" })
-                    }, text: "\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB" }),
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_card_DomCardGrid__WEBPACK_IMPORTED_MODULE_8__["DomCardGrid"], { id: 1, image: "https://www.gstatic.com/webp/gallery3/1.png", label: {
-                        render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_3__["DupLabelCard"], { text: "\u8FB2\u5B66\u30FB\u98DF\u54C1\u79D1\u5B66" })
-                    }, text: "\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB" }),
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_card_DomCardGrid__WEBPACK_IMPORTED_MODULE_8__["DomCardGrid"], { id: 1, image: "https://www.gstatic.com/webp/gallery3/1.png", label: {
-                        render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_3__["DupLabelCard"], { text: "\u6570\u5B66" })
-                    }, text: "\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB" }),
-            ], link: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_5__["DupLink"], { type: _ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_5__["DupLinkTypes"].More, href: "/rankings" }) } }),
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_group_DomGroupItems__WEBPACK_IMPORTED_MODULE_14__["DomGroupItems"], { title: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_6__["DupTitle"], { type: _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_6__["DupTitleTypes"].Monthly }) }, cards: [
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_card_DomCard__WEBPACK_IMPORTED_MODULE_7__["DomCard"], { id: 1, image: "https://www.gstatic.com/webp/gallery3/1.png", label: {
-                        render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_3__["DupLabelCard"], { text: "\u6570\u5B66" })
-                    }, text: "\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB" }),
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_card_DomCard__WEBPACK_IMPORTED_MODULE_7__["DomCard"], { id: 1, image: "https://tk.ismcdn.jp/mwimgs/b/f/1140/img_bf687219033dbe7e1576a59e1f14495a225863.jpg", label: {
-                        render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_3__["DupLabelCard"], { text: "\u8FB2\u5B66\u30FB\u98DF\u54C1\u79D1\u5B66" })
-                    }, text: "\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB" }),
-            ], link: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_5__["DupLink"], { type: _ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_5__["DupLinkTypes"].More, href: "/rankings" }) } }),
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_group_DupGroupItemsGrid__WEBPACK_IMPORTED_MODULE_15__["DupGroupItemsGrid"], { title: { render: () => !loading && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_6__["DupTitle"], { type: _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_6__["DupTitleTypes"].Latest }) }, cards: !loading
+        /* <<<<<<<<<<<< 初期リリースに不必要なのでコメントアウト >>>>>>>>>>>>>>> */
+        // <DomGroupItems
+        //   title={{ render: () => <DupTitle type={DupTitleTypes.MasterPiece} /> }}
+        //   cards={[
+        //     <DomCard
+        //       id={1}
+        //       image="https://www.gstatic.com/webp/gallery3/1.png"
+        //       label={{
+        //         render: () => <DupLabelCard text="数学" />
+        //       }}
+        //       text="サンプルタイトルサンプルタイトルサンプルタイトル"
+        //     />,
+        //     <DomCard
+        //       id={2}
+        //       image="https://www.gstatic.com/webp/gallery3/1.png"
+        //       label={{
+        //         render: () => <DupLabelCard text="新型コロナ" />
+        //       }}
+        //       text="サンプルタイトルサンプルタイトルサンプルタイトル"
+        //     />,
+        //   ]}
+        //   link={{ render: () => <DupLink type={DupLinkTypes.More} href="/masterpiece" /> }}
+        // />,
+        // <DupGroupItemsGrid
+        //   title={{ render: () => <DupTitle type={DupTitleTypes.Weekly} /> }}
+        //   cards={[
+        //     <DomCardGrid
+        //       id={1}
+        //       image="https://www.gstatic.com/webp/gallery3/1.png"
+        //       label={{
+        //         render: () => <DupLabelCard text="数学" />
+        //       }}
+        //       text="サンプルタイトルサンプルタイトルサンプルタイトル"
+        //     />,
+        //     <DomCardGrid
+        //       id={1}
+        //       image="https://www.gstatic.com/webp/gallery3/1.png"
+        //       label={{
+        //         render: () => <DupLabelCard text="農学・食品科学" />
+        //       }}
+        //       text="サンプルタイトルサンプルタイトルサンプルタイトル"
+        //     />,
+        //     <DomCardGrid
+        //       id={1}
+        //       image="https://www.gstatic.com/webp/gallery3/1.png"
+        //       label={{
+        //         render: () => <DupLabelCard text="数学" />
+        //       }}
+        //       text="サンプルタイトルサンプルタイトルサンプルタイトル"
+        //     />,
+        //   ]}
+        //   link={{render: () => <DupLink type={DupLinkTypes.More} href="/rankings" /> }}
+        // />,
+        // <DomGroupItems
+        //   title={{ render: () => <DupTitle type={DupTitleTypes.Monthly} /> }}
+        //   cards={[
+        //     <DomCard
+        //       id={1}
+        //       image="https://www.gstatic.com/webp/gallery3/1.png"
+        //       label={{
+        //         render: () => <DupLabelCard text="数学" />
+        //       }}
+        //       text="サンプルタイトルサンプルタイトルサンプルタイトル"
+        //     />,
+        //     <DomCard
+        //       id={1}
+        //       image="https://tk.ismcdn.jp/mwimgs/b/f/1140/img_bf687219033dbe7e1576a59e1f14495a225863.jpg"
+        //       label={{
+        //         render: () => <DupLabelCard text="農学・食品科学" />
+        //       }}
+        //       text="サンプルタイトルサンプル"
+        //     />,
+        //   ]}
+        //   link={{ render: () => <DupLink type={DupLinkTypes.More} href="/rankings" /> }}
+        // />,
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_group_DupGroupItemsGrid__WEBPACK_IMPORTED_MODULE_13__["DupGroupItemsGrid"], { title: { render: () => !loading && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_6__["DupTitle"], { type: _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_6__["DupTitleTypes"].Latest }) }, cards: !loading
                 ? latests.map(latest => {
-                    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_card_DomCardGrid__WEBPACK_IMPORTED_MODULE_8__["DomCardGrid"], { id: latest.id, image: latest.thumbnail, label: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_3__["DupLabelCard"], { text: latest.category_name }) }, text: latest.title });
+                    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_card_DomCardGrid__WEBPACK_IMPORTED_MODULE_7__["DomCardGrid"], { id: latest.id, image: latest.thumbnail, label: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_3__["DupLabelCard"], { text: latest.category_name }) }, text: latest.title });
                 })
                 : [1, 2, 3, 4].map(n => {
-                    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_skeleton_DomSkeletonCardGrid__WEBPACK_IMPORTED_MODULE_9__["DomSkeletonCardGrid"], null);
+                    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_skeleton_DomSkeletonCardGrid__WEBPACK_IMPORTED_MODULE_8__["DomSkeletonCardGrid"], null);
                 }), link: { render: () => !loading && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_5__["DupLink"], { type: _ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_5__["DupLinkTypes"].More, href: "latest" }) } }),
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_group_DomGroupCategory__WEBPACK_IMPORTED_MODULE_13__["DomGroupCategory"], { title: { render: () => !loading && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_6__["DupTitle"], { type: _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_6__["DupTitleTypes"].Categories }) }, categories: !loading
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_group_DomGroupCategory__WEBPACK_IMPORTED_MODULE_12__["DomGroupCategory"], { title: { render: () => !loading && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_6__["DupTitle"], { type: _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_6__["DupTitleTypes"].Categories }) }, categories: !loading
                 ? categories.map(category => {
                     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCategory__WEBPACK_IMPORTED_MODULE_4__["DupLabelCategory"], { category: category });
                 })
                 : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map(n => {
-                    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_skeleton_DomSkeletonCategory__WEBPACK_IMPORTED_MODULE_10__["DomSkeletonCategory"], null);
+                    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_skeleton_DomSkeletonCategory__WEBPACK_IMPORTED_MODULE_9__["DomSkeletonCategory"], null);
                 }) })
     ];
-    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_DomPageTop__WEBPACK_IMPORTED_MODULE_17__["DomPageTop"], { header: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_header_DomHeader__WEBPACK_IMPORTED_MODULE_16__["DomHeader"], null) }, topics: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_slider_DomSlider__WEBPACK_IMPORTED_MODULE_11__["DomSlider"], null) }, groups: groups, footer: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_footer_DupFooter__WEBPACK_IMPORTED_MODULE_12__["DupFooter"], null) } }));
+    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_DomPageTop__WEBPACK_IMPORTED_MODULE_15__["DomPageTop"], { header: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_header_DomHeader__WEBPACK_IMPORTED_MODULE_14__["DomHeader"], null) }, topics: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_slider_DomSlider__WEBPACK_IMPORTED_MODULE_10__["DomSlider"], null) }, groups: groups, footer: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_footer_DupFooter__WEBPACK_IMPORTED_MODULE_11__["DupFooter"], null) } }));
 };
 
 
