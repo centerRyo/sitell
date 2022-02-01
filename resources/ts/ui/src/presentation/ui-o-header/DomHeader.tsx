@@ -18,7 +18,8 @@ export const DomHeader: React.FC<Props> = ({ classNames }) => {
         <Link to='/' className={styles.logo}>
           <Logo />
         </Link>
-        <div className={styles.nav}>
+        {/* <<<<<<<<<<<< 初期リリースに不必要なのでコメントアウト >>>>>>>>>>>>>>> */}
+        {/* <div className={styles.nav}>
           <div className={styles.icon}>
             <BsSearch />
           </div>
@@ -30,7 +31,7 @@ export const DomHeader: React.FC<Props> = ({ classNames }) => {
               <DupButton type={DupButtonTypes.Login} />
             </li>
           </ul>
-        </div>
+        </div> */}
       </div>
     </header>
   )

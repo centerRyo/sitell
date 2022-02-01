@@ -40,80 +40,81 @@ export const DupPageTop: React.FC = () => {
 
   // TODO: !loadingのところ何回も書かないといけないので直したい。。。
   const groups = [
-    <DomGroupItems
-      title={{ render: () => <DupTitle type={DupTitleTypes.MasterPiece} /> }}
-      cards={[
-        <DomCard
-          id={1}
-          image="https://www.gstatic.com/webp/gallery3/1.png"
-          label={{
-            render: () => <DupLabelCard text="数学" />
-          }}
-          text="サンプルタイトルサンプルタイトルサンプルタイトル"
-        />,
-        <DomCard
-          id={2}
-          image="https://www.gstatic.com/webp/gallery3/1.png"
-          label={{
-            render: () => <DupLabelCard text="新型コロナ" />
-          }}
-          text="サンプルタイトルサンプルタイトルサンプルタイトル"
-        />,
-      ]}
-      link={{ render: () => <DupLink type={DupLinkTypes.More} href="/masterpiece" /> }}
-    />,
-    <DupGroupItemsGrid
-      title={{ render: () => <DupTitle type={DupTitleTypes.Weekly} /> }}
-      cards={[
-        <DomCardGrid
-          id={1}
-          image="https://www.gstatic.com/webp/gallery3/1.png"
-          label={{
-            render: () => <DupLabelCard text="数学" />
-          }}
-          text="サンプルタイトルサンプルタイトルサンプルタイトル"
-        />,
-        <DomCardGrid
-          id={1}
-          image="https://www.gstatic.com/webp/gallery3/1.png"
-          label={{
-            render: () => <DupLabelCard text="農学・食品科学" />
-          }}
-          text="サンプルタイトルサンプルタイトルサンプルタイトル"
-        />,
-        <DomCardGrid
-          id={1}
-          image="https://www.gstatic.com/webp/gallery3/1.png"
-          label={{
-            render: () => <DupLabelCard text="数学" />
-          }}
-          text="サンプルタイトルサンプルタイトルサンプルタイトル"
-        />,
-      ]}
-      link={{render: () => <DupLink type={DupLinkTypes.More} href="/rankings" /> }}
-    />,
-    <DomGroupItems
-      title={{ render: () => <DupTitle type={DupTitleTypes.Monthly} /> }}
-      cards={[
-        <DomCard
-          id={1}
-          image="https://www.gstatic.com/webp/gallery3/1.png"
-          label={{
-            render: () => <DupLabelCard text="数学" />
-          }}
-          text="サンプルタイトルサンプルタイトルサンプルタイトル"
-        />,
-        <DomCard
-          id={1}
-          image="https://tk.ismcdn.jp/mwimgs/b/f/1140/img_bf687219033dbe7e1576a59e1f14495a225863.jpg"
-          label={{
-            render: () => <DupLabelCard text="農学・食品科学" />
-          }}
-          text="サンプルタイトルサンプル"
-        />,
-      ]}
-      link={{ render: () => <DupLink type={DupLinkTypes.More} href="/rankings" /> }}
-    />,
+    /* <<<<<<<<<<<< 初期リリースに不必要なのでコメントアウト >>>>>>>>>>>>>>> */
+    // <DomGroupItems
+    //   title={{ render: () => <DupTitle type={DupTitleTypes.MasterPiece} /> }}
+    //   cards={[
+    //     <DomCard
+    //       id={1}
+    //       image="https://www.gstatic.com/webp/gallery3/1.png"
+    //       label={{
+    //         render: () => <DupLabelCard text="数学" />
+    //       }}
+    //       text="サンプルタイトルサンプルタイトルサンプルタイトル"
+    //     />,
+    //     <DomCard
+    //       id={2}
+    //       image="https://www.gstatic.com/webp/gallery3/1.png"
+    //       label={{
+    //         render: () => <DupLabelCard text="新型コロナ" />
+    //       }}
+    //       text="サンプルタイトルサンプルタイトルサンプルタイトル"
+    //     />,
+    //   ]}
+    //   link={{ render: () => <DupLink type={DupLinkTypes.More} href="/masterpiece" /> }}
+    // />,
+    // <DupGroupItemsGrid
+    //   title={{ render: () => <DupTitle type={DupTitleTypes.Weekly} /> }}
+    //   cards={[
+    //     <DomCardGrid
+    //       id={1}
+    //       image="https://www.gstatic.com/webp/gallery3/1.png"
+    //       label={{
+    //         render: () => <DupLabelCard text="数学" />
+    //       }}
+    //       text="サンプルタイトルサンプルタイトルサンプルタイトル"
+    //     />,
+    //     <DomCardGrid
+    //       id={1}
+    //       image="https://www.gstatic.com/webp/gallery3/1.png"
+    //       label={{
+    //         render: () => <DupLabelCard text="農学・食品科学" />
+    //       }}
+    //       text="サンプルタイトルサンプルタイトルサンプルタイトル"
+    //     />,
+    //     <DomCardGrid
+    //       id={1}
+    //       image="https://www.gstatic.com/webp/gallery3/1.png"
+    //       label={{
+    //         render: () => <DupLabelCard text="数学" />
+    //       }}
+    //       text="サンプルタイトルサンプルタイトルサンプルタイトル"
+    //     />,
+    //   ]}
+    //   link={{render: () => <DupLink type={DupLinkTypes.More} href="/rankings" /> }}
+    // />,
+    // <DomGroupItems
+    //   title={{ render: () => <DupTitle type={DupTitleTypes.Monthly} /> }}
+    //   cards={[
+    //     <DomCard
+    //       id={1}
+    //       image="https://www.gstatic.com/webp/gallery3/1.png"
+    //       label={{
+    //         render: () => <DupLabelCard text="数学" />
+    //       }}
+    //       text="サンプルタイトルサンプルタイトルサンプルタイトル"
+    //     />,
+    //     <DomCard
+    //       id={1}
+    //       image="https://tk.ismcdn.jp/mwimgs/b/f/1140/img_bf687219033dbe7e1576a59e1f14495a225863.jpg"
+    //       label={{
+    //         render: () => <DupLabelCard text="農学・食品科学" />
+    //       }}
+    //       text="サンプルタイトルサンプル"
+    //     />,
+    //   ]}
+    //   link={{ render: () => <DupLink type={DupLinkTypes.More} href="/rankings" /> }}
+    // />,
     <DupGroupItemsGrid
       title={{ render: () => !loading && <DupTitle type={DupTitleTypes.Latest} /> }}
       cards={!loading

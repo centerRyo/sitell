@@ -3,7 +3,7 @@ import { DupLink, DupLinkTypes } from '../ui-a-link/DupLink'
 import { DomFooter } from './DomFooter'
 
 export const DupFooter: React.FC = () => {
-  // 命名ダサい
+  // TODO: 命名ダサい
   const linksLeft = [
     <DupLink type={DupLinkTypes.About} />,
     <DupLink type={DupLinkTypes.Company} />,
