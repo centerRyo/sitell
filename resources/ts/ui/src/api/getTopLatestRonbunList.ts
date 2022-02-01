@@ -19,7 +19,7 @@ export async function getTopLatestRonbunList(): Promise<{
   error: any | null
   response: any | null
 }> {
-  const url = '/api/ronbun/ronbunList'
+  const url = '/api/top/latestList'
 
   const result = await axios
     .get(url)
