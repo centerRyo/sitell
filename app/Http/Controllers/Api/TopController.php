@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
 
-class RonbunController extends Controller
+class TopController extends Controller
 {
   public function index()
   {

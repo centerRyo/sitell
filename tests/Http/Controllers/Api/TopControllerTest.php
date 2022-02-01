@@ -3,11 +3,11 @@
 namespace Tests\Http\Controllers\Api;
 
 use App\Category;
-use App\Http\Controllers\Api\RonbunController;
+use App\Http\Controllers\Api\TopController;
 use App\Ronbun;
 use Tests\TestCase;
 
-class RonbunControllerTest extends TestCase
+class TopControllerTest extends TestCase
 {
   /** @test */
   public function 論文テーブルから更新日順で取得できる()
@@ -28,7 +28,7 @@ class RonbunControllerTest extends TestCase
       $abstract = 'テストテキスト3テストテキスト3テストテキスト3テストテキスト3',
     );
 
-    $ronbuns = (new RonbunController)->getLatestRonbuns();
+    $ronbuns = (new TopController)->getLatestRonbuns();
 
     $this->assertEquals('テストタイトル3', $ronbuns->first()->title);
   }
@@ -62,7 +62,7 @@ class RonbunControllerTest extends TestCase
       $abstract = 'テストテキスト5テストテキスト5テストテキスト5テストテキスト5',
     );
 
-    $ronbuns = (new RonbunController)->getLatestRonbuns();
+    $ronbuns = (new TopController)->getLatestRonbuns();
 
     $this->assertCount(4, $ronbuns);
   }
@@ -79,7 +79,7 @@ class RonbunControllerTest extends TestCase
     );
 
 
-    $ronbuns = (new RonbunController)->getLatestRonbuns();
+    $ronbuns = (new TopController)->getLatestRonbuns();
 
     $this->assertEquals('テストカテゴリー', $ronbuns->first()->category_name);
   }
@@ -101,7 +101,7 @@ class RonbunControllerTest extends TestCase
       $category_id = $category->id,
     );
 
-    $ronbun = (new RonbunController)->getRonbun($ronbun1->id);
+    $ronbun = (new TopController)->getRonbun($ronbun1->id);
 
     $this->assertEquals('テストタイトル1', $ronbun->title);
   }
@@ -129,7 +129,7 @@ class RonbunControllerTest extends TestCase
       $category_id = 1,
     );
 
-    $ronbunList = (new RonbunController)->getCategoryRonbunList($category->id);
+    $ronbunList = (new TopController)->getCategoryRonbunList($category->id);
 
     $this->assertEquals(2, $ronbunList->count());
   }
