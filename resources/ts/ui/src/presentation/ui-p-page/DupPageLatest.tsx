@@ -46,7 +46,7 @@ export const DupPageLatest: React.FC = () => {
   return (
     <DomPageItems
       header={{ render: () => <DomHeader /> }}
-      title={{ render: () => !loading && <DupTitle type={DupTitleTypes.Latest} />}}
+      title={{ render: () => !loading && <DupTitle type={DupTitleTypes.All} />}}
       contents={contents}
       footer={{ render: () => <DupFooter /> }}
     />

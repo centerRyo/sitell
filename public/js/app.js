@@ -63085,6 +63085,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const DupTitleTypes = {
+    All: 'all',
     MasterPiece: 'master-piece',
     Weekly: 'weekly',
     Monthly: 'monthly',
@@ -63096,6 +63097,11 @@ const DupTitleTypes = {
 const DupTitle = ({ type, text, }) => {
     // TODO: 実装がダサい。要リファクタリング
     const targets = [
+        {
+            type: DupTitleTypes.All,
+            text: 'すべての論文',
+            classNames: _dup_title_main_m_scss__WEBPACK_IMPORTED_MODULE_2___default.a,
+        },
         {
             type: DupTitleTypes.MasterPiece,
             text: '今読みたい論文',
@@ -64411,7 +64417,7 @@ const DupPageLatest = () => {
         : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map(n => {
             return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_skeleton_DomSkeletonCard__WEBPACK_IMPORTED_MODULE_5__["DomSkeletonCard"], null);
         });
-    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_DomPageItems__WEBPACK_IMPORTED_MODULE_8__["DomPageItems"], { header: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_header_DomHeader__WEBPACK_IMPORTED_MODULE_7__["DomHeader"], null) }, title: { render: () => !loading && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_3__["DupTitle"], { type: _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_3__["DupTitleTypes"].Latest }) }, contents: contents, footer: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_footer_DupFooter__WEBPACK_IMPORTED_MODULE_6__["DupFooter"], null) } }));
+    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_DomPageItems__WEBPACK_IMPORTED_MODULE_8__["DomPageItems"], { header: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_header_DomHeader__WEBPACK_IMPORTED_MODULE_7__["DomHeader"], null) }, title: { render: () => !loading && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_3__["DupTitle"], { type: _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_3__["DupTitleTypes"].All }) }, contents: contents, footer: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_footer_DupFooter__WEBPACK_IMPORTED_MODULE_6__["DupFooter"], null) } }));
 };
 
 
