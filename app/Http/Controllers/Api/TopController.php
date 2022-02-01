@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\DB;
 
 class TopController extends Controller
 {
-  public function index()
+  public function latest()
   {
     $ronbuns = $this->getLatestRonbuns();
 

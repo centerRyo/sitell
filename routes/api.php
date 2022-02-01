@@ -20,7 +20,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::group(['middleware' => ['api']], function() {
     Route::resource('category/categoryList', 'Api\CategoryController', ['except' => ['create', 'edit']]);
-    Route::get('ronbun/ronbunList', 'Api\TopController@index');
+    Route::get('/top/latestList', 'Api\TopController@latest');
     Route::post('ronbun/{id}', 'Api\TopController@show');
     Route::post('/category/{category_id}/ronbunList', 'Api\TopController@category');
 });

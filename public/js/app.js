@@ -61924,7 +61924,7 @@ var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _argume
 
 function getTopLatestRonbunList() {
     return __awaiter(this, void 0, void 0, function* () {
-        const url = '/api/ronbun/ronbunList';
+        const url = '/api/top/latestList';
         const result = yield axios__WEBPACK_IMPORTED_MODULE_0___default.a
             .get(url)
             .then((response) => {
