@@ -17,8 +17,9 @@ const App: React.FC = () => {
       <Switch>
         <Route exact path="/" component={DupPageTop} />
         <Route path="/latest" component={DupPageLatest} />
-        <Route path="/masterpiece" component={DupPageMasterpiece} />
-        <Route path="/rankings" component={DupPageRanking} />
+        {/* <<<<<<<<<<<< 初期リリースに不必要なのでコメントアウト >>>>>>>>>>>>>>> */}
+        {/* <Route path="/masterpiece" component={DupPageMasterpiece} />
+        <Route path="/rankings" component={DupPageRanking} /> */}
         <Route path="/category/:id" component={DupPageCategory} />
         <Route path="/item/:id" component={DupPageItem} />
         <Route component={DupErrorNotFound} />
