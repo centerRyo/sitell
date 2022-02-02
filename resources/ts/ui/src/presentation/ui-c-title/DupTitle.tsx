@@ -9,6 +9,7 @@ type Props = {
 }
 
 export const DupTitleTypes = {
+  All: 'all',
   MasterPiece: 'master-piece',
   Weekly: 'weekly',
   Monthly: 'monthly',
@@ -24,6 +25,11 @@ export const DupTitle: React.FC<Props> = ({
 }) => {
   // TODO: 実装がダサい。要リファクタリング
   const targets = [
+    {
+      type: DupTitleTypes.All,
+      text: 'すべての論文',
+      classNames: MainClassNames,
+    },
     {
       type: DupTitleTypes.MasterPiece,
       text: '今読みたい論文',

@@ -61856,6 +61856,47 @@ function getCategoryRonbunList(category_id) {
 
 /***/ }),
 
+/***/ "./resources/ts/ui/src/api/getLatestRonbunList.ts":
+/*!********************************************************!*\
+  !*** ./resources/ts/ui/src/api/getLatestRonbunList.ts ***!
+  \********************************************************/
+/*! exports provided: getLatestRonbunList */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getLatestRonbunList", function() { return getLatestRonbunList; });
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
+var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+
+function getLatestRonbunList() {
+    return __awaiter(this, void 0, void 0, function* () {
+        const url = '/api/latestList';
+        const result = yield axios__WEBPACK_IMPORTED_MODULE_0___default.a
+            .get(url)
+            .then((response) => {
+            const ret = response.data;
+            return { error: null, response: ret };
+        })
+            .catch(err => {
+            return { error: err, response: null };
+        });
+        return result;
+    });
+}
+
+
+/***/ }),
+
 /***/ "./resources/ts/ui/src/api/getRonbun.ts":
 /*!**********************************************!*\
   !*** ./resources/ts/ui/src/api/getRonbun.ts ***!
@@ -63044,6 +63085,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const DupTitleTypes = {
+    All: 'all',
     MasterPiece: 'master-piece',
     Weekly: 'weekly',
     Monthly: 'monthly',
@@ -63055,6 +63097,11 @@ const DupTitleTypes = {
 const DupTitle = ({ type, text, }) => {
     // TODO: 実装がダサい。要リファクタリング
     const targets = [
+        {
+            type: DupTitleTypes.All,
+            text: 'すべての論文',
+            classNames: _dup_title_main_m_scss__WEBPACK_IMPORTED_MODULE_2___default.a,
+        },
         {
             type: DupTitleTypes.MasterPiece,
             text: '今読みたい論文',
@@ -64321,12 +64368,25 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DupPageLatest", function() { return DupPageLatest; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../ui-a-label/DupLabelCard */ "./resources/ts/ui/src/presentation/ui-a-label/DupLabelCard.tsx");
-/* harmony import */ var _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../ui-c-title/DupTitle */ "./resources/ts/ui/src/presentation/ui-c-title/DupTitle.tsx");
-/* harmony import */ var _ui_m_card_DomCard__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../ui-m-card/DomCard */ "./resources/ts/ui/src/presentation/ui-m-card/DomCard.tsx");
-/* harmony import */ var _ui_o_footer_DupFooter__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../ui-o-footer/DupFooter */ "./resources/ts/ui/src/presentation/ui-o-footer/DupFooter.tsx");
-/* harmony import */ var _ui_o_header_DomHeader__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../ui-o-header/DomHeader */ "./resources/ts/ui/src/presentation/ui-o-header/DomHeader.tsx");
-/* harmony import */ var _DomPageItems__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./DomPageItems */ "./resources/ts/ui/src/presentation/ui-p-page/DomPageItems.tsx");
+/* harmony import */ var _api_getLatestRonbunList__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../api/getLatestRonbunList */ "./resources/ts/ui/src/api/getLatestRonbunList.ts");
+/* harmony import */ var _ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../ui-a-label/DupLabelCard */ "./resources/ts/ui/src/presentation/ui-a-label/DupLabelCard.tsx");
+/* harmony import */ var _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../ui-c-title/DupTitle */ "./resources/ts/ui/src/presentation/ui-c-title/DupTitle.tsx");
+/* harmony import */ var _ui_m_card_DomCard__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../ui-m-card/DomCard */ "./resources/ts/ui/src/presentation/ui-m-card/DomCard.tsx");
+/* harmony import */ var _ui_m_skeleton_DomSkeletonCard__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../ui-m-skeleton/DomSkeletonCard */ "./resources/ts/ui/src/presentation/ui-m-skeleton/DomSkeletonCard.tsx");
+/* harmony import */ var _ui_o_footer_DupFooter__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../ui-o-footer/DupFooter */ "./resources/ts/ui/src/presentation/ui-o-footer/DupFooter.tsx");
+/* harmony import */ var _ui_o_header_DomHeader__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../ui-o-header/DomHeader */ "./resources/ts/ui/src/presentation/ui-o-header/DomHeader.tsx");
+/* harmony import */ var _DomPageItems__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./DomPageItems */ "./resources/ts/ui/src/presentation/ui-p-page/DomPageItems.tsx");
+var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+
+
 
 
 
@@ -64335,15 +64395,29 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const DupPageLatest = () => {
-    const contents = [
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_card_DomCard__WEBPACK_IMPORTED_MODULE_3__["DomCard"], { id: 1, image: "https://www.gstatic.com/webp/gallery3/1.png", label: {
-                render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_1__["DupLabelCard"], { text: "\u6570\u5B66" })
-            }, text: "\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB" }),
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_card_DomCard__WEBPACK_IMPORTED_MODULE_3__["DomCard"], { id: 1, image: "https://www.gstatic.com/webp/gallery3/1.png", label: {
-                render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_1__["DupLabelCard"], { text: "\u8FB2\u5B66\u30FB\u98DF\u54C1\u79D1\u5B66" })
-            }, text: "\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB\u30B5\u30F3\u30D7\u30EB\u30BF\u30A4\u30C8\u30EB" }),
-    ];
-    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_DomPageItems__WEBPACK_IMPORTED_MODULE_6__["DomPageItems"], { header: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_header_DomHeader__WEBPACK_IMPORTED_MODULE_5__["DomHeader"], null) }, title: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_2__["DupTitle"], { type: _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_2__["DupTitleTypes"].Latest }) }, contents: contents, footer: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_footer_DupFooter__WEBPACK_IMPORTED_MODULE_4__["DupFooter"], null) } }));
+    const [items, setItems] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
+    const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
+    Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+        setLoading(true);
+        const f = () => __awaiter(void 0, void 0, void 0, function* () {
+            const ronbuns = yield Object(_api_getLatestRonbunList__WEBPACK_IMPORTED_MODULE_1__["getLatestRonbunList"])();
+            if (ronbuns.error === null && ronbuns.response !== null) {
+                setItems(ronbuns.response);
+                setLoading(false);
+            }
+        });
+        f().catch(err => console.log(err));
+    }, []);
+    const contents = !loading
+        ? items.map(item => {
+            return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_card_DomCard__WEBPACK_IMPORTED_MODULE_4__["DomCard"], { key: item.id, id: item.id, image: item.thumbnail, label: {
+                    render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_2__["DupLabelCard"], { text: item.category_name })
+                }, text: item.title }));
+        })
+        : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map(n => {
+            return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_m_skeleton_DomSkeletonCard__WEBPACK_IMPORTED_MODULE_5__["DomSkeletonCard"], null);
+        });
+    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_DomPageItems__WEBPACK_IMPORTED_MODULE_8__["DomPageItems"], { header: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_header_DomHeader__WEBPACK_IMPORTED_MODULE_7__["DomHeader"], null) }, title: { render: () => !loading && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_3__["DupTitle"], { type: _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_3__["DupTitleTypes"].All }) }, contents: contents, footer: { render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_o_footer_DupFooter__WEBPACK_IMPORTED_MODULE_6__["DupFooter"], null) } }));
 };
 
 

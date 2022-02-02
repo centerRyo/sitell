@@ -1,34 +1,52 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { getLatestRonbunList } from '../../api/getLatestRonbunList'
+import { ronbunResponse } from '../../api/getRonbun'
 import { DupLabelCard } from '../ui-a-label/DupLabelCard'
 import { DupTitle, DupTitleTypes } from '../ui-c-title/DupTitle'
 import { DomCard } from '../ui-m-card/DomCard'
+import { DomSkeletonCard } from '../ui-m-skeleton/DomSkeletonCard'
 import { DupFooter } from '../ui-o-footer/DupFooter'
 import { DomHeader } from '../ui-o-header/DomHeader'
 import { DomPageItems } from './DomPageItems'
 
 export const DupPageLatest: React.FC = () => {
-  const contents = [
-    <DomCard
-      id={1}
-      image="https://www.gstatic.com/webp/gallery3/1.png"
-      label={{
-        render: () => <DupLabelCard text="数学" />
-      }}
-      text="サンプルタイトルサンプルタイトルサンプルタイトル"
-    />,
-    <DomCard
-      id={1}
-      image="https://www.gstatic.com/webp/gallery3/1.png"
-      label={{
-        render: () => <DupLabelCard text="農学・食品科学" />
-      }}
-      text="サンプルタイトルサンプルタイトルサンプルタイトル"
-    />,
-  ]
+  const [items, setItems] = useState<Array<ronbunResponse>>([])
+  const [loading, setLoading] = useState(false)
+
+  useEffect(() => {
+    setLoading(true)
+    const f = async (): Promise<void> => {
+      const ronbuns = await getLatestRonbunList()
+      if (ronbuns.error === null && ronbuns.response !== null) {
+        setItems(ronbuns.response)
+        setLoading(false)
+      }
+    }
+    f().catch(err => console.log(err))
+  }, [])
+
+  const contents = !loading
+    ? items.map(item => {
+        return (
+          <DomCard
+            key={item.id}
+            id={item.id}
+            image={item.thumbnail}
+            label={{
+              render: () => <DupLabelCard text={item.category_name} />
+            }}
+            text={item.title}
+          />
+        )
+      })
+    : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map(n => {
+      return <DomSkeletonCard />
+    })
+
   return (
     <DomPageItems
       header={{ render: () => <DomHeader /> }}
-      title={{ render: () => <DupTitle type={DupTitleTypes.Latest} />}}
+      title={{ render: () => !loading && <DupTitle type={DupTitleTypes.All} />}}
       contents={contents}
       footer={{ render: () => <DupFooter /> }}
     />
