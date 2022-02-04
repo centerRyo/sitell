@@ -1,1 +1,18 @@
-body,html{background:#eee;width:100%;display:flex;flex-flow:column;min-height:100vh;font-size:16px;line-height:1.6;font-family:BlinkMacSystemFont,Hiragino Kaku Gothic ProN,Hiragino Sans,Meiryo,sans-serif,Segoe UI Emoji;letter-spacing:2px}*,body,html{box-sizing:border-box}
+html,
+body {
+  background: #eee;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: "BlinkMacSystemFont", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif, "Segoe UI Emoji";
+  letter-spacing: 2px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
