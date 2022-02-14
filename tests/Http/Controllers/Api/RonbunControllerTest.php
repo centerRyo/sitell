@@ -5,6 +5,7 @@ namespace Tests\Http\Controllers\Api;
 use App\Category;
 use App\Http\Controllers\Api\RonbunController;
 use App\Ronbun;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Tests\TestCase;
 
 class RonbunControllerTest extends TestCase
@@ -31,6 +32,24 @@ class RonbunControllerTest extends TestCase
     $this->assertEquals('テストタイトル1', $ronbun->title);
   }
 
+  /** @test */
+  public function 指定したIDの論文がなかったら404を返す()
+  {
+    $this->expectException(NotFoundHttpException::class);
+    $ronbun = $this->createRonbun(
+      $title = 'テストタイトル1',
+      $author = 'テスト著者1',
+      $abstract = 'テストテキスト1テストテキスト1テストテキスト1テストテキスト1',
+      $category_id = 1,
+    );
+
+    $not_exist_id = $ronbun->id + 100;
+
+    $ronbun = (new RonbunController)->getRonbun($not_exist_id);
+  }
+
+  // TODO: factoryを使ってやった方がいいかも
+  // 参考: https://qiita.com/nunulk/items/06370af1594a10faa749
   private function createRonbun($title, $author, $abstract, $category_id = 1)
   {
     return Ronbun::create([

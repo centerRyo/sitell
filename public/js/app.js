@@ -62988,16 +62988,19 @@ __webpack_require__.r(__webpack_exports__);
 swiper__WEBPACK_IMPORTED_MODULE_2__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_2__["Autoplay"], swiper__WEBPACK_IMPORTED_MODULE_2__["Pagination"]]);
 const DomSlider = ({ classNames }) => {
     const styles = classNames || _dup_slider_default_m_scss__WEBPACK_IMPORTED_MODULE_6___default.a;
-    const images = [
+    const links = [
         {
+            to: '/',
             src: '/img/topic_popular.png',
             alt: 'トピック_人気の要約',
         },
         {
+            to: '/',
             src: '/img/topic_latest.png',
             alt: 'トピック_最新の要約',
         },
         {
+            to: '/item/1',
             src: '/img/topic_recommended.png',
             alt: 'トピック_おすすめの要約',
         },
@@ -63010,9 +63013,9 @@ const DomSlider = ({ classNames }) => {
                 'clickable': true,
                 bulletClass: `swiper-pagination-bullet ${styles.bullet}`,
                 bulletActiveClass: `swiper-pagination-bullet-active ${styles.bulletActive}`
-            }, loop: true }, images.map((image, index) => (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(swiper_react__WEBPACK_IMPORTED_MODULE_3__["SwiperSlide"], { key: index },
-            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], { to: "/" },
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", { src: image.src, alt: image.alt }))))))));
+            }, loop: true }, links.map((link, index) => (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(swiper_react__WEBPACK_IMPORTED_MODULE_3__["SwiperSlide"], { key: index },
+            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], { to: link.to },
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", { src: link.src, alt: link.alt }))))))));
 };
 
 
@@ -63725,6 +63728,8 @@ var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _argume
 
 
 const DupPageItem = () => {
+    const history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useHistory"])();
+    const { id } = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"])();
     const [ronbun, setRonbun] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({
         id: 0,
         abstract: '',
@@ -63740,11 +63745,13 @@ const DupPageItem = () => {
         category_name: ''
     });
     const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
-    const { id } = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"])();
     Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
         setLoading(true);
         const f = () => __awaiter(void 0, void 0, void 0, function* () {
             const ronbun = yield Object(_api_getRonbun__WEBPACK_IMPORTED_MODULE_2__["getRonbun"])(Number(id));
+            if (ronbun.error) {
+                history.push('/404');
+            }
             if (ronbun.error === null && ronbun.response !== null) {
                 setRonbun(ronbun.response);
                 setLoading(false);

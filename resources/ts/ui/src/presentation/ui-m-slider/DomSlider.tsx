@@ -15,16 +15,19 @@ type Props = {
 export const DomSlider: React.FC<Props> = ({ classNames }) => {
   const styles = classNames || defaultClassNames
 
-  const images = [
+  const links = [
     {
+      to: '/',
       src: '/img/topic_popular.png',
       alt: 'トピック_人気の要約',
     },
     {
+      to: '/',
       src: '/img/topic_latest.png',
       alt: 'トピック_最新の要約',
     },
     {
+      to: '/item/1',
       src: '/img/topic_recommended.png',
       alt: 'トピック_おすすめの要約',
     },
@@ -46,10 +49,10 @@ export const DomSlider: React.FC<Props> = ({ classNames }) => {
         }}
         loop={true}
       >
-        {images.map((image, index) => (
+        {links.map((link, index) => (
           <SwiperSlide key={index}>
-            <Link to="/">
-              <img src={image.src} alt={image.alt} />
+            <Link to={link.to}>
+              <img src={link.src} alt={link.alt} />
             </Link>
           </SwiperSlide>
         ))}
