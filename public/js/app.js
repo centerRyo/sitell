@@ -63725,6 +63725,8 @@ var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _argume
 
 
 const DupPageItem = () => {
+    const history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useHistory"])();
+    const { id } = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"])();
     const [ronbun, setRonbun] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({
         id: 0,
         abstract: '',
@@ -63740,11 +63742,13 @@ const DupPageItem = () => {
         category_name: ''
     });
     const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
-    const { id } = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"])();
     Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
         setLoading(true);
         const f = () => __awaiter(void 0, void 0, void 0, function* () {
             const ronbun = yield Object(_api_getRonbun__WEBPACK_IMPORTED_MODULE_2__["getRonbun"])(Number(id));
+            if (ronbun.error) {
+                history.push('/404');
+            }
             if (ronbun.error === null && ronbun.response !== null) {
                 setRonbun(ronbun.response);
                 setLoading(false);
