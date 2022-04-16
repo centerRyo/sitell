@@ -1,4 +1,4 @@
-name Move trello card when pull request open
+name: Move trello card when pull request open
 
 on:
   pull_request:
