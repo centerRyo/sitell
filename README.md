@@ -1,74 +1,74 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+# 💁‍♂️sitell
+下記のリンクにて実際のサービスを閲覧できます。↓
+https://sitell.me/
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+<img width="1438" alt="スクリーンショット 2022-04-19 20 14 52" src="https://user-images.githubusercontent.com/42470564/163992311-ea7ca17a-6663-4b41-bac5-563de46360ed.png">
 
-## About Laravel
+<img width="295" alt="スクリーンショット 2022-04-19 20 14 30" src="https://user-images.githubusercontent.com/42470564/163992275-e9baa314-b578-4d3b-9d50-8a9b5ff612c6.png">
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<img width="299" alt="スクリーンショット 2022-04-19 20 14 09" src="https://user-images.githubusercontent.com/42470564/163992246-6d537263-369b-41d9-a6ce-c9df199363a3.png">
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+# このリポジトリについて
+論文要約サービスのsitellを管理するリポジトリになります。
+論文を読み慣れていない人にもその内容をわかりやすく伝えることでもっと1次情報にアクセスすることができます。
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+# 🧑‍💻開発
+## 使用技術
+<div style="display: flex;">
+<img src="https://user-images.githubusercontent.com/42470564/163999794-cf942a5e-fbb2-481f-b9e0-8b45c3d53a50.svg" width="80px;" style="padding: 20px;" />
+<img src="https://user-images.githubusercontent.com/42470564/164000431-61862191-21d6-4cd2-8757-cda55c62289c.svg" height="80px;" style="padding: 20px;" />
+<img src="https://user-images.githubusercontent.com/42470564/164000864-0f9e0a43-d1d0-4cee-baac-49e7bcdac9b9.png" height="80px;" style="padding: 20px;" />
+<img src="https://user-images.githubusercontent.com/42470564/164001403-caf4466b-93d3-4e93-871d-8d7e5d88a16c.svg" height="80px;" style="padding: 20px;" />
+</div>
 
-## Learning Laravel
+## ローカル環境構築手順
+### git clone
+このsitellのdocker環境を管理するリポジトリをcloneし、その配下にこのリポジトリをcloneしてください。
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+```
+$ git clone git@github.com:centerRyo/sitell-docker.git
+$ cd sitell-docker/
+$ git clone git@github.com:centerRyo/sitell.git
+```
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### docker-compose up -d
 
-## Laravel Sponsors
+```
+$ cd sitell/
+$ docker-compose up -d
+```
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+### composer install
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
-- [Appoly](https://www.appoly.co.uk)
-- [OP.GG](https://op.gg)
+```
+$ docker-compose exec app bash
+$ composer install
+```
 
-## Contributing
+### .env作成
+.env.exampleをコピーして.envを作成し、以下の値に変更する
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+```
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=db
+DB_DATABASE=sitell
+DB_USERNAME=root
+DB_PASSWORD=root
+```
 
-## Code of Conduct
+### app key作成
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+```
+$ php artisan key:generate
+```
 
-## Security Vulnerabilities
+### DBマイグレーション
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+```
+$ php artisan migrate
+```
+
+### アクセス
+
+http://localhost にアクセスする
