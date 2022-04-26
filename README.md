@@ -50,8 +50,8 @@ $ composer install
 
 ```
 DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=db
+DB_HOST=db
+DB_PORT=3306
 DB_DATABASE=sitell
 DB_USERNAME=root
 DB_PASSWORD=root
@@ -67,6 +67,18 @@ $ php artisan key:generate
 
 ```
 $ php artisan migrate
+```
+
+### npm install
+
+```
+$ npm install
+```
+
+### カテゴリーseed
+
+```
+$ php artisan command:createcategories
 ```
 
 ### アクセス
