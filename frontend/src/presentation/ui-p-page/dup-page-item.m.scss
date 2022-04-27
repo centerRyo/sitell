@@ -1,0 +1,227 @@
+@import '../../styles/app.scss';
+
+:local {
+  .header {}
+
+  .main {}
+
+  .head {
+    margin: vw(15, 300) auto;
+    max-width: 1194px;
+    padding: 0 vw(10, 300);
+
+    @include mq($breakpoint: sm) {
+      margin: vw(20, 561) auto;
+      padding: 0 vw(20, 561);
+    }
+
+    @include mq($breakpoint: md) {
+      margin: vw(30, 769) auto;
+      padding: 0 vw(30, 769);
+    }
+
+    @include mq($breakpoint: lg) {
+      margin: vw(50, 1194) auto;
+      padding: 0 vw(30, 1194);
+    }
+
+    @include mq($breakpoint: xl) {
+      margin: vw(60, 1350) auto;
+      padding: 0 vw(30, 1350);
+    }
+
+    @include mq($breakpoint: xxl) {
+      margin: vw(70, 1900) auto;
+      padding: 0 vw(30, 1900);
+    }
+  }
+
+  .title {
+    font-size: vw(16, 300);
+    font-weight: bold;
+    margin-top: vw(15, 300);
+
+    @include mq($breakpoint: sm) {
+      font-size: vw(20, 561);
+      margin-top: vw(20, 561);
+    }
+
+    @include mq($breakpoint: md) {
+      font-size: vw(24, 769);
+      margin-top: vw(25, 769);
+    }
+
+    @include mq($breakpoint: lg) {
+      font-size: vw(28, 1194);
+      margin-top: vw(30, 1194);
+    }
+
+    @include mq($breakpoint: xl) {
+      font-size: vw(28, 1351);
+      margin-top: vw(30, 1351);
+    }
+
+    @include mq($breakpoint: xxl) {
+      font-size: vw(28, 1900);
+      margin-top: vw(30, 1900);
+    }
+  }
+
+  .image {
+    margin: vw(30, 300) auto 0;
+    width: 80%;
+
+    @include mq($breakpoint: sm) {
+      margin: vw(30, 561) auto 0;
+    }
+
+    @include mq($breakpoint: md) {
+      margin: vw(35, 769) auto 0;
+    }
+
+    @include mq($breakpoint: lg) {
+      margin: vw(40, 1194) auto 0;
+      width: 50%;
+    }
+
+    @include mq($breakpoint: xl) {
+      margin: vw(40, 1350) auto 0;
+    }
+
+    @include mq($breakpoint: xxl) {
+      margin: vw(40, 1900) auto 0;
+    }
+  }
+
+  .image img {
+    width: 100%;
+  }
+
+  .table {
+    font-size: vw(14, 300);
+    margin: vw(20, 300) auto 0;
+    width: 80%;
+
+    @include mq($breakpoint: sm) {
+      font-size: vw(18, 561);
+      margin: vw(30, 561) auto 0;
+    }
+
+    @include mq($breakpoint: md) {
+      font-size: vw(20, 769);
+      margin: vw(35, 769) auto 0;
+    }
+
+    @include mq($breakpoint: lg) {
+      font-size: vw(24, 1194);
+      margin: vw(40, 1194) auto 0;
+    }
+
+    @include mq($breakpoint: xl) {
+      font-size: vw(24, 1350);
+      margin: vw(40, 1350) auto 0;
+    }
+
+    @include mq($breakpoint: xxl) {
+      font-size: vw(24, 1900);
+      margin: vw(40, 1900) auto 0;
+    }
+  }
+
+  .table th {
+    color: $color_main;
+    vertical-align: middle;
+    width: 30%;
+  }
+
+  .table th,
+  .table td {
+    padding: vw(3, 300);
+
+    @include mq($breakpoint: sm) {
+      padding: vw(5, 561);
+    }
+
+    @include mq($breakpoint: md) {
+      padding: vw(8, 769);
+    }
+
+    @include mq($breakpoint: lg) {
+      padding: vw(10, 1194);
+    }
+
+    @include mq($breakpoint: xl) {
+      padding: vw(10, 1350);
+
+    }
+    @include mq($breakpoint: xxl) {
+      padding: vw(10, 1900);
+    }
+  }
+
+  .content {
+    background: #fff;
+    max-width: 1194px;
+    margin: 0 auto;
+    padding: vw(30, 300) vw(10, 300);
+
+    @include mq($breakpoint: sm) {
+      padding: vw(40, 561) vw(20, 561);
+    }
+
+    @include mq($breakpoint: md) {
+      border-radius: vw(12, 769);
+      margin: 0 vw(30, 769) vw(30, 769);
+      padding: vw(50, 769) vw(25, 769);
+    }
+
+    @include mq($breakpoint: lg) {
+      border-radius: vw(12, 1194);
+      margin: 0 auto vw(50, 1194);
+      padding: vw(60, 1194) vw(30, 1194);
+    }
+
+    @include mq($breakpoint: xl) {
+      border-radius: vw(12, 1350);
+      margin: 0 auto vw(60, 1350);
+      padding: vw(60, 1350) vw(30, 1350);
+    }
+
+    @include mq($breakpoint: xxl) {
+      border-radius: vw(12, 1900);
+      margin: 0 auto vw(70, 1900);
+      padding: vw(60, 1900) vw(30, 1900);
+    }
+  }
+
+  .url {
+    margin-top: vw(60, 300);
+
+    @include mq($breakpoint: sm) {
+      margin-top: vw(70, 561);
+    }
+
+    @include mq($breakpoint: md) {
+      margin-top: vw(80, 769);
+    }
+
+    @include mq($breakpoint: lg) {
+      margin-top: vw(90, 1194);
+    }
+
+    @include mq($breakpoint: xl) {
+      margin-top: vw(90, 1350);
+    }
+
+    @include mq($breakpoint: xxl) {
+      margin-top: vw(90, 1900);
+    }
+
+    .url_link {
+      color: #4fb3de;
+      text-decoration: underline;
+    }
+  }
+
+  .footer {}
+}

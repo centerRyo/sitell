@@ -1,0 +1,44 @@
+@import '../../styles/app.scss';
+
+:local {
+  .root {
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+    @include mq($breakpoint: sm) {}
+
+    @include mq($breakpoint: md) {
+      border-radius: 5px;
+    }
+
+    @include mq($breakpoint: lg) {}
+  }
+
+  .text {
+    font-weight: bold;
+    font-size: 0.875rem;
+
+    @include mq($breakpoint: sm) {
+      font-size: 1rem;
+    }
+
+    @include mq($breakpoint: md) {}
+
+    @include mq($breakpoint: lg) {
+      font-size: 1.125rem;
+    }
+  }
+
+  .icon {
+    display: inline-block;
+  }
+
+  .icon svg {
+    width: 100%;
+    height: 100%;
+  }
+}

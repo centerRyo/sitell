@@ -1,0 +1,80 @@
+@import '../../styles/app.scss';
+@import './dup-card-default.m.scss';
+
+:local {
+  .root {
+    @extend .root;
+    flex-direction: row;
+  }
+
+  .image {
+    @extend .image;
+    margin-bottom: 0;
+    position: relative;
+    overflow: hidden;
+    padding-top: 0;
+    width: 30%;
+  }
+
+  .image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .wrapper {
+    margin-left: vw(10, 300);
+    width: 70%;
+
+    @include mq($breakpoint: sm) {
+      margin-left: vw(20, 561);
+    }
+
+    @include mq($breakpoint: md) {
+      margin-left: vw(15, 769);
+    }
+
+    @include mq($breakpoint: lg) {
+      margin-left: vw(20, 1194);
+    }
+
+    @include mq($breakpoint: xl) {
+      margin-left: vw(20, 1350);
+    }
+
+    @include mq($breakpoint: xxl) {
+      margin-left: vw(20, 1900);
+    }
+  }
+
+  .label {
+    margin-bottom: vw(5, 300);
+
+    @include mq($breakpoint: sm) {
+      margin-bottom: vw(10, 561);
+    }
+
+    @include mq($breakpoint: md) {
+      margin-bottom: vw(5, 769);
+    }
+
+    @include mq($breakpoint: lg) {
+      margin-bottom: vw(10, 1194);
+    }
+
+    @include mq($breakpoint: xl) {
+      margin-bottom: vw(10, 1350);
+    }
+
+    @include mq($breakpoint: xxl) {
+      margin-bottom: vw(10, 1900);
+    }
+  }
+
+  .text {
+    @extend .text;
+  }
+}

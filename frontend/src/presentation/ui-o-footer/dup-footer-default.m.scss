@@ -1,0 +1,254 @@
+@import '../../styles/app.scss';
+
+:local {
+  .footer {
+    background: linear-gradient($color_sub, $color_main);
+  }
+
+  .root {
+    box-sizing: border-box;
+    max-width: 1194px;
+    margin: 0 auto;
+    padding: vw(60, 300) vw(10, 300);
+
+    @include mq($breakpoint: sm) {
+      padding: vw(60, 561) vw(20, 561);
+    }
+
+    @include mq($breakpoint: md) {
+      padding: vw(100, 769) vw(30, 769) vw(60, 769);
+    }
+
+    @include mq($breakpoint: lg) {
+      padding: vw(100, 1194) vw(30, 1194) vw(60, 1194);
+    }
+  }
+
+  .container {
+    @include mq($breakpoint: md) {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-around;
+      margin-bottom: vw(100, 769);
+    }
+
+    @include mq($breakpoint: lg) {
+      margin-bottom: vw(100, 1194);
+    }
+
+    @include mq($breakpoint: xl) {
+      margin-bottom: vw(100, 1350);
+    }
+
+    @include mq($breakpoint: xxl) {
+      margin-bottom: vw(100, 1900);
+    }
+  }
+
+  .icon {
+    display: inline-block;
+    width: vw(95, 300);
+    height: auto;
+
+    @include mq($breakpoint: sm) {
+      width: vw(120, 561);
+    }
+
+    @include mq($breakpoint: md) {
+      width: vw(150, 769);
+    }
+
+    @include mq($breakpoint: lg) {
+      width: vw(200, 1194);
+    }
+
+    @include mq($breakpoint: xl) {
+      width: vw(200, 1350);
+    }
+
+    @include mq($breakpoint: xxl) {
+      width: vw(200, 1900);
+    }
+  }
+
+  .icon > svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .links {
+    display: flex;
+    justify-content: space-between;
+    margin: vw(60, 300) 0;
+
+    @include mq($breakpoint: sm) {
+      margin: vw(60, 561) 0;
+      justify-content: start;
+    }
+
+    @include mq($breakpoint: md) {
+      margin: 0;
+    }
+  }
+
+  .items {
+    display: flex;
+    flex-direction: column;
+
+    &:first-of-type {
+      @include mq($breakpoint: sm) {
+        margin-right: vw(100, 561);
+      }
+
+      @include mq($breakpoint: md) {
+        margin-right: vw(40, 769);
+      }
+
+      @include mq($breakpoint: lg) {
+        margin-right: vw(40, 1194);
+      }
+
+      @include mq($breakpoint: xl) {
+        margin-right: vw(40, 1350);
+      }
+
+      @include mq($breakpoint: xxl) {
+        margin-right: vw(40, 1900);
+      }
+    }
+  }
+
+  .item {
+    margin-bottom: vw(15, 300);
+
+    @include mq($breakpoint: sm) {
+      margin-bottom: vw(15, 561);
+    }
+
+    @include mq($breakpoint: md) {
+      margin-bottom: vw(15, 769);
+    }
+
+    @include mq($breakpoint: lg) {
+      margin-bottom: vw(15, 1194);
+    }
+
+    @include mq($breakpoint: xl) {
+      margin-bottom: vw(15, 1350);
+
+    }
+    @include mq($breakpoint: xxl) {
+      margin-bottom: vw(15, 1900);
+    }
+  }
+
+  .item:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .bottom {
+    @include mq($breakpoint: lg) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: vw(30, 300);
+
+    @include mq($breakpoint: sm) {
+      margin-bottom: vw(30, 561);
+    }
+
+    @include mq($breakpoint: md) {
+      margin-bottom: vw(30, 769);
+    }
+
+    @include mq($breakpoint: lg) {
+      margin-right: vw(60, 1194);
+      margin-bottom: 0;
+    }
+
+    @include mq($breakpoint: xl) {
+      margin-right: vw(60, 1350);
+    }
+
+    @include mq($breakpoint: xxl) {
+      margin-right: vw(60, 1900);
+    }
+
+    &__item {
+      color: #fff;
+      display: flex;
+      align-items: center;
+      margin-right: vw(15, 300);
+      width: auto;
+      height: auto;
+
+      @include mq($breakpoint: sm) {
+        margin-right: vw(25, 561);
+        width: vw(20, 561);
+        height: auto;
+      }
+
+      @include mq($breakpoint: md) {
+        margin-right: vw(30, 769);
+        width: vw(20, 769);
+      }
+
+      @include mq($breakpoint: lg) {
+        margin-right: vw(40, 1194);
+        width: vw(25, 1194);
+      }
+
+      @include mq($breakpoint: xl) {
+        margin-right: vw(40, 1350);
+        width: vw(25, 1350);
+      }
+
+      @include mq($breakpoint: xxl) {
+        margin-right: vw(40, 1900);
+        width: vw(25, 1900);
+      }
+
+      svg {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &__item:last-child {
+      margin: 0;
+    }
+  }
+
+  .copyright {
+    text-align: center;
+    color: #fff;
+    font-size: vw(10, 300);
+
+    @include mq($breakpoint: sm) {
+      font-size: vw(12, 561);
+    }
+
+    @include mq($breakpoint: md) {
+      font-size: vw(14, 769);
+    }
+
+    @include mq($breakpoint: lg) {
+      font-size: vw(16, 1194);
+    }
+
+    @include mq($breakpoint: xl) {
+      font-size: vw(16, 1350);
+    }
+
+    @include mq($breakpoint: xxl) {
+      font-size: vw(18, 1900);
+    }
+  }
+}

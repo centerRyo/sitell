@@ -1,0 +1,17 @@
+@import '../../styles/app.scss';
+@import './dup-badge-default.m.scss';
+
+:local {
+  .root {
+    @extend .root;
+  }
+
+  .number {
+    @extend .number;
+    background: #c9caca;
+  }
+
+  .ribbon {
+    @extend .ribbon;
+  }
+}

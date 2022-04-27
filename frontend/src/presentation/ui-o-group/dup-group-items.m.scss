@@ -1,0 +1,90 @@
+@import '../../styles/app.scss';
+
+:local {
+  .root {}
+
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: vw(20, 300);
+
+    @include mq($breakpoint: sm) {
+      margin-bottom: vw(25, 561);
+    }
+
+    @include mq($breakpoint: md) {
+      margin-bottom: vw(30, 769);
+    }
+
+    @include mq($breakpoint: lg) {
+      margin-bottom: vw(40, 1194);
+    }
+
+    @include mq($breakpoint: xl) {
+      margin-bottom: vw(40, 1350);
+    }
+
+    @include mq($breakpoint: xxl) {
+      margin-bottom: vw(40, 1900);
+    }
+  }
+
+  .cards {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: vw(20, 300);
+
+    @include mq($breakpoint: sm) {
+      margin-bottom: vw(25, 561);
+    }
+
+    @include mq($breakpoint: md) {
+      margin-bottom: vw(30, 769);
+    }
+
+    @include mq($breakpoint: lg) {
+      margin-bottom: vw(40, 1194);
+    }
+
+    @include mq($breakpoint: xl) {
+      margin-bottom: vw(40, 1350);
+    }
+
+    @include mq($breakpoint: xxl) {
+      margin-bottom: vw(40, 1900);
+    }
+  }
+
+  .card {
+    padding: vw(3, 300);
+    width: calc(100% / 2);
+
+    @include mq($breakpoint: sm) {
+      padding: vw(3.5, 561);
+    }
+
+    @include mq($breakpoint: md) {
+      padding: vw(5, 769);
+      width: calc(100% / 3);
+    }
+
+    @include mq($breakpoint: lg) {
+      padding: vw(7.5, 1194);
+    }
+
+    @include mq($breakpoint: xl) {
+      padding: vw(7.5, 1350);
+    }
+
+    @include mq($breakpoint: xxl) {
+      padding: vw(7.5, 1900);
+    }
+  }
+
+  .link {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
