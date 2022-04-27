@@ -1,0 +1,36 @@
+@import '../../styles/app.scss';
+
+:local {
+  .root {
+    margin: 0 auto;
+    max-width: 1194px;
+
+    @include mq($breakpoint: sm) {}
+
+    @include mq($breakpoint: md) {
+      padding: 0 vw(30, 769);
+    }
+
+    @include mq($breakpoint: lg) {
+      padding: 0 vw(30, 1194);
+    }
+
+    @include mq($breakpoint: xl) {
+      padding: 0 vw(30, 1350);
+    }
+
+    @include mq($breakpoint: xxl) {
+      padding: 0 vw(30, 1900);
+    }
+  }
+
+  .root img {
+    width: 100%;
+  }
+
+  .bullet {}
+
+  .bulletActive {
+    background: $color_sub;
+  }
+}

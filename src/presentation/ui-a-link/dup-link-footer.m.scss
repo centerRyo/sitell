@@ -1,0 +1,31 @@
+@import '../../styles/app.scss';
+@import './dup-link-default.m.scss';
+
+:local {
+  .root {
+    @extend .root;
+    color: #fff;
+    font-size: vw(12, 300);
+    font-weight: bold;
+
+    @include mq($breakpoint: sm) {
+      font-size: vw(14, 561);
+    }
+
+    @include mq($breakpoint: md) {
+      font-size: vw(16, 769);
+    }
+
+    @include mq($breakpoint: lg) {
+      font-size: vw(18, 1194);
+    }
+
+    @include mq($breakpoint: xl) {
+      font-size: vw(18, 1350);
+    }
+
+    @include mq($breakpoint: xxl) {
+      font-size: vw(20, 1900);
+    }
+  }
+}

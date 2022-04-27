@@ -1,0 +1,59 @@
+@import '../../styles/app.scss';
+@import './dup-label-default.m.scss';
+
+:local {
+  .root {
+    @extend .root;
+    background: $color_main;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: vw(3, 300);
+
+    @include mq($breakpoint: sm) {
+      padding: vw(3, 561) vw(5, 561);
+    }
+
+    @include mq($breakpoint: md) {
+      padding: vw(5, 769) vw(8, 769);
+    }
+
+    @include mq($breakpoint: lg) {
+      padding: vw(8, 1194) vw(10, 1194);
+    }
+
+    @include mq($breakpoint: xl) {
+      padding: vw(8, 1350) vw(10, 1350);
+    }
+
+    @include mq($breakpoint: xxl) {
+      padding: vw(8, 1900) vw(10, 1900);
+    }
+  }
+
+  .text {
+    @extend .text;
+    color: #fff;
+    font-size: vw(10, 300);
+    font-weight: bold;
+
+    @include mq($breakpoint: sm) {
+      font-size: vw(12, 561);
+    }
+
+    @include mq($breakpoint: md) {
+      font-size: vw(14, 769);
+    }
+
+    @include mq($breakpoint: lg) {
+      font-size: vw(16, 1194);
+    }
+
+    @include mq($breakpoint: xl) {
+      font-size: vw(16, 1350);
+    }
+
+    @include mq($breakpoint: xxl) {
+      font-size: vw(16, 1900);
+    }
+  }
+}

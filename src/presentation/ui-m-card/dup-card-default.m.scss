@@ -1,0 +1,162 @@
+@import '../../styles/app.scss';
+
+:local {
+  .root {
+    background: #fff;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: #333;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: vw(10, 300);
+    position: relative;
+
+    @include mq($breakpoint: sm) {
+      padding: vw(15, 561);
+    }
+
+    @include mq($breakpoint: md) {
+      padding: vw(10, 769);
+    }
+
+    @include mq($breakpoint: lg) {
+      padding: vw(20, 1194);
+    }
+
+    @include mq($breakpoint: xl) {
+      padding: vw(20, 1350);
+    }
+
+    @include mq($breakpoint: xxl) {
+      padding: vw(20, 1900);
+    }
+  }
+
+  .badge {
+    height: vw(25, 300);
+    width: vw(25, 300);
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @include mq($breakpoint: sm) {
+      height: vw(30, 561);
+      width: vw(30, 561);
+    }
+
+    @include mq($breakpoint: md) {
+      height: vw(30, 769);
+      width: vw(30, 769);
+    }
+
+    @include mq($breakpoint: lg) {
+      height: vw(35, 1194);
+      width: vw(35, 1194);
+    }
+
+    @include mq($breakpoint: xl) {
+      height: vw(35, 1350);
+      width: vw(35, 1350);
+    }
+
+    @include mq($breakpoint: xxl) {
+      height: vw(35, 1900);
+      width: vw(35, 1900);
+    }
+  }
+
+  .image {
+    margin-bottom: vw(10, 300);
+    position: relative;
+    overflow: hidden;
+    padding-top: 60%;
+    width: 100%;
+
+    @include mq($breakpoint: sm) {
+      margin-bottom: vw(12, 561);
+    }
+
+    @include mq($breakpoint: md) {
+      margin-bottom: vw(12, 769);
+    }
+
+    @include mq($breakpoint: lg) {
+      margin-bottom: vw(15, 1194);
+    }
+
+    @include mq($breakpoint: xl) {
+      margin-bottom: vw(15, 1350);
+    }
+
+    @include mq($breakpoint: xxl) {
+      margin-bottom: vw(15, 1900);
+    }
+  }
+
+  .image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .label {
+    margin-bottom: vw(5, 300);
+
+    @include mq($breakpoint: sm) {
+      margin-bottom: vw(6, 561);
+    }
+
+    @include mq($breakpoint: md) {
+      margin-bottom: vw(8, 769);
+    }
+
+    @include mq($breakpoint: lg) {
+      margin-bottom: vw(12, 1194);
+    }
+
+    @include mq($breakpoint: xl) {
+      margin-bottom: vw(12, 1350);
+    }
+
+    @include mq($breakpoint: xxl) {
+      margin-bottom: vw(12, 1900);
+    }
+  }
+
+  .text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    font-size: vw(12, 300);
+    font-weight: bold;
+    line-height: 1.6rem;
+    height: calc(1.6rem * 3);
+    overflow: hidden;
+
+    @include mq($breakpoint: sm) {
+      font-size: vw(14, 561);
+    }
+
+    @include mq($breakpoint: md) {
+      font-size: vw(16, 769);
+    }
+
+    @include mq($breakpoint: lg) {
+      font-size: vw(18, 1194);
+    }
+
+    @include mq($breakpoint: xl) {
+      font-size: vw(18, 1350);
+    }
+
+    @include mq($breakpoint: xxl) {
+      font-size: vw(18, 1900);
+    }
+  }
+}
