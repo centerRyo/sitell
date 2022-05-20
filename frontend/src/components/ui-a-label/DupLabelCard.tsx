@@ -1,16 +1,11 @@
-import React from 'react'
-import { DomLabel } from './DomLabel'
-import cardClassNames from './dup-label-card.m.scss'
+import React from 'react';
+import { DomLabel } from './DomLabel';
+import cardClassNames from './dup-label-card.m.scss';
 
 type Props = {
-  text: string,
-}
+  text: string | undefined;
+};
 
 export const DupLabelCard: React.FC<Props> = ({ text }) => {
-  return (
-    <DomLabel
-      text={text}
-      classNames={cardClassNames}
-    />
-  )
-}
+  return <DomLabel text={text} classNames={cardClassNames} />;
+};

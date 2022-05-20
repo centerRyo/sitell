@@ -1,12 +1,12 @@
-import React, { ReactNode } from 'react'
-import itemsClassNames from './dup-group-items.m.scss'
+import React, { ReactNode } from 'react';
+import itemsClassNames from './dup-group-items.m.scss';
 
 type Props = {
-  title: { render: () => ReactNode },
-  cards: Array<ReactNode>,
-  link: { render: () => ReactNode },
-  classNames?: string,
-}
+  title: { render: () => ReactNode };
+  cards: Array<ReactNode> | undefined;
+  link: { render: () => ReactNode };
+  classNames?: string;
+};
 
 export const DomGroupItems: React.FC<Props> = ({
   title,
@@ -14,23 +14,19 @@ export const DomGroupItems: React.FC<Props> = ({
   link,
   classNames,
 }) => {
-  const styles = classNames || itemsClassNames
+  const styles = classNames || itemsClassNames;
 
   return (
     <div className={styles.root}>
-      <div className={styles.title}>
-        {title.render()}
-      </div>
+      <div className={styles.title}>{title.render()}</div>
       <div className={styles.cards}>
-        {cards.map((card, index) => (
+        {cards?.map((card, index) => (
           <div key={index} className={styles.card}>
             {card}
           </div>
         ))}
       </div>
-      <div className={styles.link}>
-        {link.render()}
-      </div>
+      <div className={styles.link}>{link.render()}</div>
     </div>
-  )
-}
+  );
+};

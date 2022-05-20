@@ -1,17 +1,17 @@
-import React, { ReactNode } from 'react'
-import { ronbunResponse } from '../../api/getRonbun'
-import { DupParser } from '../ui-a-parser/DupParser'
-import { DomSkeletonItem } from '../ui-m-skeleton/DomSkeletonItem'
-import defaultClassNames from './dup-page-item.m.scss'
+import { RonbunResponse } from '../../hooks/useRonbun';
+import React, { ReactNode } from 'react';
+import { DupParser } from '../ui-a-parser/DupParser';
+import { DomSkeletonItem } from '../ui-m-skeleton/DomSkeletonItem';
+import defaultClassNames from './dup-page-item.m.scss';
 
 type Props = {
-  header: { render: () => ReactNode },
-  label: { render: () => ReactNode },
-  ronbun: ronbunResponse,
-  footer: { render: () => ReactNode },
-  loading: boolean,
-  classNames?: string,
-}
+  header: { render: () => ReactNode };
+  label: { render: () => ReactNode };
+  ronbun: RonbunResponse;
+  footer: { render: () => ReactNode };
+  loading: boolean;
+  classNames?: string;
+};
 
 export const DomPageItem: React.FC<Props> = ({
   header,
@@ -21,35 +21,29 @@ export const DomPageItem: React.FC<Props> = ({
   loading,
   classNames,
 }) => {
-  const styles = classNames || defaultClassNames
+  const styles = classNames || defaultClassNames;
 
   return (
     <>
-      <div className={styles.header}>
-        { header.render() }
-      </div>
+      <div className={styles.header}>{header.render()}</div>
       <div className={styles.main}>
-        { !loading ? (
+        {!loading ? (
           <>
             <section className={styles.head}>
-              <div className={styles.label}>
-                { label.render() }
-              </div>
-              <div className={styles.title}>
-                { ronbun.title }
-              </div>
+              <div className={styles.label}>{label.render()}</div>
+              <div className={styles.title}>{ronbun.title}</div>
               <div className={styles.image}>
-                <img src={ronbun.thumbnail} alt="" />
+                <img src={ronbun.thumbnail} alt='' />
               </div>
               <table className={styles.table}>
                 <tbody>
                   <tr>
                     <th>著者</th>
-                    <td>{ ronbun.author }</td>
+                    <td>{ronbun.author}</td>
                   </tr>
                   <tr>
                     <th>出版年</th>
-                    <td>{ ronbun.year }年</td>
+                    <td>{ronbun.year}年</td>
                   </tr>
                 </tbody>
               </table>
@@ -58,7 +52,9 @@ export const DomPageItem: React.FC<Props> = ({
               <DupParser dirtyHtml={ronbun.abstract} />
               <div className={styles.url}>
                 オリジナル論文は
-                <a href={ronbun.url} className={styles.url_link}>こちら</a>
+                <a href={ronbun.url} className={styles.url_link}>
+                  こちら
+                </a>
                 から
               </div>
             </section>
@@ -67,9 +63,7 @@ export const DomPageItem: React.FC<Props> = ({
           <DomSkeletonItem />
         )}
       </div>
-      <div className={styles.footer}>
-        { footer.render() }
-      </div>
+      <div className={styles.footer}>{footer.render()}</div>
     </>
-  )
-}
+  );
+};
