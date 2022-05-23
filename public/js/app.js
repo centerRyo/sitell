@@ -2073,7 +2073,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const DupPageTop = () => {
-    const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(false);
     const { data: latests, isLoading: latestLoading, error: latestError, } = Object(_hooks_top_useLatestRonbuns__WEBPACK_IMPORTED_MODULE_0__["useLatestRonbuns"])();
     const { data: categories, isLoading: categoriesLoading, error: categoriesError, } = Object(_hooks_top_useCategories__WEBPACK_IMPORTED_MODULE_15__["useCategories"])();
     // TODO: !loadingのところ何回も書かないといけないので直したい。。。

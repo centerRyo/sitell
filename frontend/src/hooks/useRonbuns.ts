@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { useQuery } from 'react-query';
-import { RonbunResponse } from './useRonbun';
+import { RonbunCardResponse } from './useRonbun';
 
 const getRonbuns = async () => {
   const url = '/api/latestList';
@@ -11,5 +11,5 @@ const getRonbuns = async () => {
 };
 
 export const useRonbuns = () => {
-  return useQuery<Array<RonbunResponse>>('ronbuns', getRonbuns);
+  return useQuery<Array<RonbunCardResponse>>('ronbuns', getRonbuns);
 };

@@ -16,6 +16,13 @@ export type RonbunResponse = {
   category_name: string;
 };
 
+export type RonbunCardResponse = {
+  id: number;
+  thumbnail: string;
+  title: string;
+  category_name: string;
+};
+
 const getRonbun = async (id: number) => {
   const url = `/api/ronbun/${id}`;
 
