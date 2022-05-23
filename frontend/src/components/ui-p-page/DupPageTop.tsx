@@ -18,8 +18,6 @@ import { DomPageTop } from './DomPageTop';
 import { useCategories } from '../../hooks/top/useCategories';
 
 export const DupPageTop: React.FC = () => {
-  const [loading, setLoading] = useState(false);
-
   const {
     data: latests,
     isLoading: latestLoading,

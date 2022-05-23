@@ -25,7 +25,7 @@ class TopController extends Controller
   {
     $latest_ronbuns = DB::table('ronbuns')
                           ->leftJoin('categories', 'ronbuns.category_id', '=', 'categories.id')
-                          ->select('ronbuns.*', 'categories.name as category_name')
+                          ->select('ronbuns.id', 'ronbuns.title', 'ronbuns.thumbnail', 'categories.name as category_name')
                           ->orderBy('ronbuns.updated_at', 'desc')
                           ->limit(4)
                           ->get();

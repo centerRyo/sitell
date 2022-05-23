@@ -2073,7 +2073,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const DupPageTop = () => {
-    const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(false);
     const { data: latests, isLoading: latestLoading, error: latestError, } = Object(_hooks_top_useLatestRonbuns__WEBPACK_IMPORTED_MODULE_0__["useLatestRonbuns"])();
     const { data: categories, isLoading: categoriesLoading, error: categoriesError, } = Object(_hooks_top_useCategories__WEBPACK_IMPORTED_MODULE_15__["useCategories"])();
     // TODO: !loadingのところ何回も書かないといけないので直したい。。。
@@ -2396,11 +2395,11 @@ var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _argume
 
 const getCategoryRonbuns = (category_id) => __awaiter(void 0, void 0, void 0, function* () {
     const url = `/api/category/${category_id}/ronbunList`;
-    const { data } = yield axios__WEBPACK_IMPORTED_MODULE_0___default.a.post(url, { category_id });
+    const { data } = yield axios__WEBPACK_IMPORTED_MODULE_0___default.a.get(url);
     return data;
 });
 const useCategoryRonbuns = (category_id) => {
-    return Object(react_query__WEBPACK_IMPORTED_MODULE_1__["useQuery"])(['category_ronbun', category_id], () => getCategoryRonbuns(category_id));
+    return Object(react_query__WEBPACK_IMPORTED_MODULE_1__["useQuery"])('category_ronbun', () => getCategoryRonbuns(category_id));
 };
 
 
@@ -2432,11 +2431,11 @@ var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _argume
 
 const getRonbun = (id) => __awaiter(void 0, void 0, void 0, function* () {
     const url = `/api/ronbun/${id}`;
-    const { data } = yield axios__WEBPACK_IMPORTED_MODULE_0___default.a.post(url, { id });
+    const { data } = yield axios__WEBPACK_IMPORTED_MODULE_0___default.a.get(url);
     return data;
 });
 const useRonbun = (id) => {
-    return Object(react_query__WEBPACK_IMPORTED_MODULE_1__["useQuery"])(['ronbun', id], () => getRonbun(id));
+    return Object(react_query__WEBPACK_IMPORTED_MODULE_1__["useQuery"])('ronbun', () => getRonbun(id));
 };
 
 

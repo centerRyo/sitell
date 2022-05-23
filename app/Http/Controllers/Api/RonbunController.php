@@ -24,7 +24,7 @@ class RonbunController extends Controller
     $ronbun = DB::table('ronbuns')
                 ->where('ronbuns.id', $id)
                 ->join('categories', 'ronbuns.category_id', '=', 'categories.id')
-                ->select('ronbuns.*', 'categories.name as category_name')
+                ->select('ronbuns.id', 'ronbuns.abstract', 'ronbuns.author', 'ronbuns.thumbnail', 'ronbuns.title', 'ronbuns.url', 'ronbuns.user_id', 'ronbuns.year', 'categories.name as category_name')
                 ->first();
 
     if (empty($ronbun)) {
