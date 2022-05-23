@@ -12,14 +12,13 @@ type CategoryRonbunCardResponse = {
 const getCategoryRonbuns = async (category_id: number) => {
   const url = `/api/category/${category_id}/ronbunList`;
 
-  const { data } = await axios.post(url, { category_id });
+  const { data } = await axios.get(url);
 
   return data;
 };
 
 export const useCategoryRonbuns = (category_id: number) => {
-  return useQuery<Array<CategoryRonbunCardResponse>>(
-    ['category_ronbun', category_id],
-    () => getCategoryRonbuns(category_id)
+  return useQuery<Array<CategoryRonbunCardResponse>>('category_ronbun', () =>
+    getCategoryRonbuns(category_id)
   );
 };

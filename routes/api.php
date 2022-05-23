@@ -28,6 +28,6 @@ Route::group(['middleware' => ['api']], function() {
   // 一覧
   Route::get('/latestList', 'Api\RonbunListController@index');
 
-  Route::post('/ronbun/{id}', 'Api\RonbunController@index');
-  Route::post('/category/{category_id}/ronbunList', 'Api\RonbunListController@category');
+  Route::get('/ronbun/{id}', 'Api\RonbunController@index');
+  Route::get('/category/{category_id}/ronbunList', 'Api\RonbunListController@category');
 });

@@ -26,11 +26,11 @@ export type RonbunCardResponse = {
 const getRonbun = async (id: number) => {
   const url = `/api/ronbun/${id}`;
 
-  const { data } = await axios.post(url, { id });
+  const { data } = await axios.get(url);
 
   return data;
 };
 
 export const useRonbun = (id: number) => {
-  return useQuery<RonbunResponse>(['ronbun', id], () => getRonbun(id));
+  return useQuery<RonbunResponse>('ronbun', () => getRonbun(id));
 };
