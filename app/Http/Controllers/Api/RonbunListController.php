@@ -37,7 +37,7 @@ class RonbunListController extends Controller
     $ronbunList = DB::table('ronbuns')
                     ->where('ronbuns.category_id', $id)
                     ->join('categories', 'ronbuns.category_id', '=', 'categories.id')
-                    ->select('ronbuns.id', 'ronbuns.title', 'ronbuns.thumbnail', 'categories.name as category_name')
+                    ->select('ronbuns.id', 'ronbuns.title', 'ronbuns.thumbnail', 'ronbuns.category_id', 'categories.name as category_name')
                     ->get();
 
       return $ronbunList;
