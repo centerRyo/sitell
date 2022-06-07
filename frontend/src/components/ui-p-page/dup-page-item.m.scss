@@ -1,10 +1,6 @@
 @import '../../styles/app.scss';
 
 :local {
-  .header {}
-
-  .main {}
-
   .head {
     margin: vw(15, 300) auto;
     max-width: 1194px;
@@ -152,7 +148,6 @@
 
     @include mq($breakpoint: xl) {
       padding: vw(10, 1350);
-
     }
     @include mq($breakpoint: xxl) {
       padding: vw(10, 1900);
@@ -222,6 +217,4 @@
       text-decoration: underline;
     }
   }
-
-  .footer {}
 }

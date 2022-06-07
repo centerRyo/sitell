@@ -36,7 +36,6 @@ export const DupPageCategory: React.FC = () => {
 
   return (
     <DomPageItems
-      header={{ render: () => <DomHeader /> }}
       title={{
         render: () =>
           !isLoading && (
@@ -47,7 +46,6 @@ export const DupPageCategory: React.FC = () => {
           ),
       }}
       contents={contents}
-      footer={{ render: () => <DupFooter /> }}
     />
   );
 };

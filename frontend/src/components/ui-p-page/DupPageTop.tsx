@@ -151,11 +151,6 @@ export const DupPageTop: React.FC = () => {
     />,
   ];
   return (
-    <DomPageTop
-      header={{ render: () => <DomHeader /> }}
-      topics={{ render: () => <DomSlider /> }}
-      groups={groups}
-      footer={{ render: () => <DupFooter /> }}
-    />
+    <DomPageTop topics={{ render: () => <DomSlider /> }} groups={groups} />
   );
 };
