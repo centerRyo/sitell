@@ -1,32 +1,28 @@
 import React, { ReactNode } from 'react';
+import { DomLayout } from '../ui-u-layout/DomLayout';
 import itemsClassNames from './dup-page-items.m.scss';
 
 type Props = {
-  header: { render: () => ReactNode };
   title: { render: () => ReactNode };
   topic?: string;
   tab?: { render: () => ReactNode };
   contents: Array<ReactNode> | undefined;
   pagination?: { render: () => ReactNode };
-  footer: { render: () => ReactNode };
   classNames?: string;
 };
 
 export const DomPageItems: React.FC<Props> = ({
-  header,
   title,
   topic,
   tab,
   contents,
   pagination,
-  footer,
   classNames,
 }) => {
   const styles = classNames || itemsClassNames;
 
   return (
-    <>
-      <div className={styles.header}>{header.render()}</div>
+    <DomLayout>
       <div className={styles.main}>
         <div className={styles.title}>{title.render()}</div>
         {topic && <div className={styles.topic}>{topic}</div>}
@@ -42,7 +38,6 @@ export const DomPageItems: React.FC<Props> = ({
           <div className={styles.pagination}>{pagination.render()}</div>
         )}
       </div>
-      <div className={styles.footer}>{footer.render()}</div>
-    </>
+    </DomLayout>
   );
 };

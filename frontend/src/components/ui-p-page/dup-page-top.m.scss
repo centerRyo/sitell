@@ -1,10 +1,6 @@
 @import '../../styles/app.scss';
 
 :local {
-  .header {}
-
-  .main {}
-
   .topics {
     background: $color_main;
     width: 100%;
@@ -64,6 +60,4 @@
       margin-top: vw(80, 1900);
     }
   }
-
-  .footer {}
 }

@@ -37,11 +37,9 @@ export const DupPageRanking: React.FC = () => {
 
   return (
     <DomPageItems
-      header={{ render: () => <DomHeader /> }}
       title={{ render: () => <DupTitle type={DupTitleTypes.Ranking} /> }}
       tab={{ render: () => <DupTab /> }}
       contents={contents}
-      footer={{ render: () => <DupFooter /> }}
     />
   );
 };
