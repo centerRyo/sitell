@@ -136,6 +136,109 @@ const LogoInverted = () => {
 
 /***/ }),
 
+/***/ "./frontend/src/components/ui-a-button/DomButton.tsx":
+/*!***********************************************************!*\
+  !*** ./frontend/src/components/ui-a-button/DomButton.tsx ***!
+  \***********************************************************/
+/*! exports provided: DomButton */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DomButton", function() { return DomButton; });
+/* harmony import */ var _theme_styleProps__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/theme/styleProps */ "./frontend/src/theme/styleProps.ts");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _dup_button_default_m_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./dup-button-default.m.scss */ "./frontend/src/components/ui-a-button/dup-button-default.m.scss");
+/* harmony import */ var _dup_button_default_m_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_dup_button_default_m_scss__WEBPACK_IMPORTED_MODULE_3__);
+var __rest = (undefined && undefined.__rest) || function (s, e) {
+    var t = {};
+    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+        t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                t[p[i]] = s[p[i]];
+        }
+    return t;
+};
+
+
+
+
+const buttonType = {
+    button: 'button',
+    submit: 'submit',
+    reset: 'reset',
+};
+const defaultProps = {
+    size: _theme_styleProps__WEBPACK_IMPORTED_MODULE_0__["sizeType"].sm,
+    type: buttonType.button,
+    color: _theme_styleProps__WEBPACK_IMPORTED_MODULE_0__["colorType"].main,
+    isLoading: false,
+};
+const cx = classnames__WEBPACK_IMPORTED_MODULE_1___default.a.bind(_dup_button_default_m_scss__WEBPACK_IMPORTED_MODULE_3___default.a);
+const DomButton = Object(react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"])((_a, ref) => {
+    var { size: _size, color, leftIcon, rightIcon, isLoading, isDisabled, type, className, children, onClick } = _a, rest = __rest(_a, ["size", "color", "leftIcon", "rightIcon", "isLoading", "isDisabled", "type", "className", "children", "onClick"]);
+    const size = _size;
+    const classNames = cx(...[
+        _dup_button_default_m_scss__WEBPACK_IMPORTED_MODULE_3___default.a.container,
+        _dup_button_default_m_scss__WEBPACK_IMPORTED_MODULE_3___default.a[`${size}`],
+        _dup_button_default_m_scss__WEBPACK_IMPORTED_MODULE_3___default.a[`${color}`],
+        className,
+    ].filter(Boolean), {
+        isLoading,
+        isDisabled,
+    });
+    const handleClick = Object(react__WEBPACK_IMPORTED_MODULE_2__["useCallback"])((event) => {
+        if (isLoading || isDisabled) {
+            event.preventDefault();
+            return;
+        }
+        onClick === null || onClick === void 0 ? void 0 : onClick(event);
+    }, [isLoading, isDisabled, onClick]);
+    return (react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("button", { className: classNames, type: type, onClick: handleClick, ref: ref },
+        leftIcon && (react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", { className: cx(_dup_button_default_m_scss__WEBPACK_IMPORTED_MODULE_3___default.a.icon, _dup_button_default_m_scss__WEBPACK_IMPORTED_MODULE_3___default.a.leftIcon) }, leftIcon)),
+        react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", { className: _dup_button_default_m_scss__WEBPACK_IMPORTED_MODULE_3___default.a.content }, isLoading ? react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null) : children),
+        rightIcon && (react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", { className: cx(_dup_button_default_m_scss__WEBPACK_IMPORTED_MODULE_3___default.a.icon, _dup_button_default_m_scss__WEBPACK_IMPORTED_MODULE_3___default.a.rightIcon) }, rightIcon))));
+});
+DomButton.defaultProps = defaultProps;
+
+
+/***/ }),
+
+/***/ "./frontend/src/components/ui-a-button/dup-button-default.m.scss":
+/*!***********************************************************************!*\
+  !*** ./frontend/src/components/ui-a-button/dup-button-default.m.scss ***!
+  \***********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader!../../../../node_modules/postcss-loader/src??ref--8-2!../../../../node_modules/sass-loader/dist/cjs.js??ref--8-3!./dup-button-default.m.scss */ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./frontend/src/components/ui-a-button/dup-button-default.m.scss");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./frontend/src/components/ui-a-label/DomLabel.tsx":
 /*!*********************************************************!*\
   !*** ./frontend/src/components/ui-a-label/DomLabel.tsx ***!
@@ -1606,22 +1709,36 @@ if(false) {}
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DomHeader", function() { return DomHeader; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _assets_Logo__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/Logo */ "./frontend/src/assets/Logo.tsx");
-/* harmony import */ var _dup_header_default_m_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./dup-header-default.m.scss */ "./frontend/src/components/ui-o-header/dup-header-default.m.scss");
-/* harmony import */ var _dup_header_default_m_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_dup_header_default_m_scss__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _theme_styleProps__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/theme/styleProps */ "./frontend/src/theme/styleProps.ts");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_icons_bs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-icons/bs */ "./node_modules/react-icons/bs/index.esm.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _assets_Logo__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/Logo */ "./frontend/src/assets/Logo.tsx");
+/* harmony import */ var _ui_a_button_DomButton__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../ui-a-button/DomButton */ "./frontend/src/components/ui-a-button/DomButton.tsx");
+/* harmony import */ var _dup_header_default_m_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./dup-header-default.m.scss */ "./frontend/src/components/ui-o-header/dup-header-default.m.scss");
+/* harmony import */ var _dup_header_default_m_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_dup_header_default_m_scss__WEBPACK_IMPORTED_MODULE_6__);
+
+
+
 
 
 
 
 const DomHeader = ({ classNames }) => {
-    const styles = classNames || _dup_header_default_m_scss__WEBPACK_IMPORTED_MODULE_3___default.a;
-    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", { className: styles.header },
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: styles.root },
-            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], { to: '/', className: styles.logo },
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_assets_Logo__WEBPACK_IMPORTED_MODULE_2__["Logo"], null)))));
+    const styles = classNames || _dup_header_default_m_scss__WEBPACK_IMPORTED_MODULE_6___default.a;
+    return (react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("header", { className: styles.header },
+        react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", { className: styles.root },
+            react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Link"], { to: '/', className: styles.logo },
+                react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_assets_Logo__WEBPACK_IMPORTED_MODULE_4__["Logo"], null)),
+            react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", { className: styles.nav },
+                react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", { className: styles.icon },
+                    react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_icons_bs__WEBPACK_IMPORTED_MODULE_2__["BsSearch"], null)),
+                react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", { className: styles.lead },
+                    react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", { className: styles.button },
+                        react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_ui_a_button_DomButton__WEBPACK_IMPORTED_MODULE_5__["DomButton"], { color: _theme_styleProps__WEBPACK_IMPORTED_MODULE_0__["colorType"].main, onClick: () => { } }, "\u65B0\u898F\u767B\u9332")),
+                    react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", { className: styles.button },
+                        react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_ui_a_button_DomButton__WEBPACK_IMPORTED_MODULE_5__["DomButton"], { color: _theme_styleProps__WEBPACK_IMPORTED_MODULE_0__["colorType"].sub, onClick: () => { } }, "\u30ED\u30B0\u30A4\u30F3")))))));
 };
 
 
@@ -2577,6 +2694,36 @@ react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./frontend/src/theme/styleProps.ts":
+/*!******************************************!*\
+  !*** ./frontend/src/theme/styleProps.ts ***!
+  \******************************************/
+/*! exports provided: sizeType, colorType */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "sizeType", function() { return sizeType; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "colorType", function() { return colorType; });
+/**
+ * コンポーネントのスタイル関連のPropsの型定義
+ */
+const sizeType = {
+    xs: 'xs',
+    sm: 'sm',
+    md: 'md',
+    lg: 'lg',
+    xl: 'xl',
+    xxl: 'xxl',
+};
+const colorType = {
+    main: 'main',
+    sub: 'sub',
+};
+
 
 /***/ }),
 
@@ -4770,6 +4917,36 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 	} else {}
 }());
 
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./frontend/src/components/ui-a-button/dup-button-default.m.scss":
+/*!**********************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/postcss-loader/src??ref--8-2!./node_modules/sass-loader/dist/cjs.js??ref--8-3!./frontend/src/components/ui-a-button/dup-button-default.m.scss ***!
+  \**********************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "@charset \"UTF-8\";\n/**\n * フォントサイズ・フォントファミリーを指定する\n**/\nhtml, body {\n  background: #eee;\n  box-sizing: border-box;\n  width: 100%;\n  display: flex;\n  flex-flow: column;\n  min-height: 100vh;\n  font-size: 16px;\n  line-height: 1.6;\n  font-family: \"BlinkMacSystemFont\", \"Hiragino Kaku Gothic ProN\", \"Hiragino Sans\", Meiryo, sans-serif, \"Segoe UI Emoji\";\n  letter-spacing: 2px;\n}\n\n* {\n  box-sizing: border-box;\n}\n\n._3XyFaYnO4Fuyu4gAEelKFj {\n  border-radius: 4px;\n  display: inline-flex;\n  justify-content: center;\n  align-items: center;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  font-weight: 700;\n  box-sizing: border-box;\n  height: 32px;\n  padding: 0 15px;\n  font-size: 0.75rem;\n}\n@media screen and (min-width: 769px) {\n  ._3XyFaYnO4Fuyu4gAEelKFj {\n    height: 40px;\n    padding: 0 30px;\n    font-size: 1rem;\n    border-radius: 5px;\n  }\n}\n@media screen and (min-width: 1350px) {\n  ._3XyFaYnO4Fuyu4gAEelKFj {\n    height: 42px;\n    padding: 0 40px;\n    font-size: 1.125rem;\n  }\n}\n._3XyFaYnO4Fuyu4gAEelKFj .bgJKr0r0fD9OCXgHcFgSq,\n._3XyFaYnO4Fuyu4gAEelKFj ._16JaCxrp2nxKKkhDuZ_GJj,\n._3XyFaYnO4Fuyu4gAEelKFj .kEM2DCg34heNUnV96Kx5a {\n  display: inherit;\n}\n._3XyFaYnO4Fuyu4gAEelKFj .bgJKr0r0fD9OCXgHcFgSq {\n  padding-top: 3px;\n}\n._3XyFaYnO4Fuyu4gAEelKFj ._1bm3CEp5JeMNDll53lFxXy {\n  font-size: 0.8125rem;\n  margin-top: 0;\n}\n@media screen and (min-width: 769px) {\n  ._3XyFaYnO4Fuyu4gAEelKFj ._1bm3CEp5JeMNDll53lFxXy {\n    font-size: 1.25rem;\n    margin-top: -1px;\n  }\n}\n@media screen and (min-width: 1350px) {\n  ._3XyFaYnO4Fuyu4gAEelKFj ._1bm3CEp5JeMNDll53lFxXy {\n    font-size: 1.375rem;\n    margin-top: 0;\n  }\n}\n._2oriBBsHAzLzCBQ1y62tgm {\n  height: 24px;\n  padding: 0 7px;\n  font-size: 0.6875rem;\n}\n._2oriBBsHAzLzCBQ1y62tgm .bgJKr0r0fD9OCXgHcFgSq {\n  padding-top: 1px;\n}\n._2oriBBsHAzLzCBQ1y62tgm ._1bm3CEp5JeMNDll53lFxXy {\n  font-size: 0.8125rem;\n  margin-top: 0;\n}\n._2oriBBsHAzLzCBQ1y62tgm ._16JaCxrp2nxKKkhDuZ_GJj {\n  margin-left: 0;\n  margin-right: 3px;\n}\n._2oriBBsHAzLzCBQ1y62tgm .kEM2DCg34heNUnV96Kx5a {\n  margin-left: 3px;\n  margin-right: 0;\n}\n._3E5URUO7aTUrS067tcukeo {\n  height: 40px;\n  padding: 0 15px;\n  font-size: 0.8125rem;\n}\n._3E5URUO7aTUrS067tcukeo ._1bm3CEp5JeMNDll53lFxXy {\n  font-size: 1.25rem;\n  margin-top: -1px;\n}\n._3E5URUO7aTUrS067tcukeo ._16JaCxrp2nxKKkhDuZ_GJj {\n  margin-left: -2px;\n  margin-right: 8px;\n}\n._3E5URUO7aTUrS067tcukeo .kEM2DCg34heNUnV96Kx5a {\n  margin-left: 4px;\n  margin-right: -4px;\n}\n._3Q4uAFyIe9sQ8726nrpOlq {\n  height: 42px;\n  padding: 0 52px;\n  font-size: 1rem;\n}\n._3Q4uAFyIe9sQ8726nrpOlq .bgJKr0r0fD9OCXgHcFgSq {\n  padding-top: 2px;\n}\n._3Q4uAFyIe9sQ8726nrpOlq ._1bm3CEp5JeMNDll53lFxXy {\n  font-size: 1.375rem;\n  margin-top: 0;\n}\n._3Q4uAFyIe9sQ8726nrpOlq ._16JaCxrp2nxKKkhDuZ_GJj {\n  margin-left: -6px;\n  margin-right: 12px;\n}\n._3Q4uAFyIe9sQ8726nrpOlq .kEM2DCg34heNUnV96Kx5a {\n  margin-left: 8px;\n  margin-right: -6px;\n}\n._3o59FWe0uzDTcHKdD25mGz {\n  color: #fff;\n  background: #29663e;\n  font-weight: 600;\n}\n._3o59FWe0uzDTcHKdD25mGz ._1bm3CEp5JeMNDll53lFxXy {\n  color: #fff;\n}\n._3LD5OZnTjkTAMSy1EBsFLE {\n  color: #fff;\n  background: #d0d927;\n  font-weight: 600;\n}\n._3LD5OZnTjkTAMSy1EBsFLE ._1bm3CEp5JeMNDll53lFxXy {\n  color: #fff;\n}", ""]);
+
+// exports
+exports.locals = {
+	"container": "_3XyFaYnO4Fuyu4gAEelKFj",
+	"content": "bgJKr0r0fD9OCXgHcFgSq",
+	"leftIcon": "_16JaCxrp2nxKKkhDuZ_GJj",
+	"rightIcon": "kEM2DCg34heNUnV96Kx5a",
+	"icon": "_1bm3CEp5JeMNDll53lFxXy",
+	"xs": "_2oriBBsHAzLzCBQ1y62tgm",
+	"md": "_3E5URUO7aTUrS067tcukeo",
+	"lg": "_3Q4uAFyIe9sQ8726nrpOlq",
+	"main": "_3o59FWe0uzDTcHKdD25mGz",
+	"sub": "_3LD5OZnTjkTAMSy1EBsFLE"
+};
 
 /***/ }),
 
