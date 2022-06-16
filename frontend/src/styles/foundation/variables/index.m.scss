@@ -1,0 +1,13 @@
+@forward '@/styles/foundation/variables/font.m';
+@use '@/styles/foundation/variables/color.m' as var;
+
+// color
+$colorFontBase: var.$v1_textColorMain;
+$colorBrandMain: var.$v1_brand_main;
+$colorBrandSub: var.$v1_brand_sub;
+$colorDefault: var.$v1_white;
+
+// background-color
+$bgColorBase: var.$v1_background;
+$bgColorMain: var.$v1_brand_main;
+$bgColorSub: var.$v1_brand_sub;

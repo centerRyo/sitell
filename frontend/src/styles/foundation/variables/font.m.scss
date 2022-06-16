@@ -1,0 +1,24 @@
+/**
+ * フォントサイズ・フォントファミリーを指定する
+**/
+
+@use '@/styles/foundation/functions.m' as fn;
+
+// font-family
+$fontFamilyBase: 'BlinkMacSystemFont', 'Hiragino Kaku Gothic ProN',
+  'Hiragino Sans', Meiryo, sans-serif, 'Segoe UI Emoji';
+
+// font-size
+$fontSizeBase: 16px;
+$fontSizeS: fn.px2rem(12);
+$fontSizeM: fn.px2rem(14);
+$fontSizeL: fn.px2rem(20);
+$fontSizeXL: fn.px2rem(24);
+$fontSizeXXL: fn.px2rem(30);
+$fontSize3L: fn.px2rem(36);
+
+// font-weight
+$fontWeightNormal: 400;
+$fontWeightBold: 600;
+$fontWeightBolder: 700;
+$fontWeightBase: $fontWeightNormal;
