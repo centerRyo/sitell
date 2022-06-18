@@ -1,44 +1,168 @@
+@use '@/styles/foundation/variables/index.m' as var;
+@use '@/styles/foundation/variables/color.m' as varColor;
+@use '@/styles/foundation/functions.m' as fn;
 @import '../../styles/app.scss';
 
 :local {
-  .root {
-    border-radius: 3px;
-    display: flex;
+  .container {
+    border-radius: 4px;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    width: 100%;
+    user-select: none;
+    font-weight: var.$fontWeightBolder;
+    box-sizing: border-box;
+    height: 32px;
+    padding: 0 15px;
+    font-size: fn.px2rem(12);
 
-    @include mq($breakpoint: sm) {}
+    @include mq($breakpoint: sm) {
+    }
 
     @include mq($breakpoint: md) {
+      height: 40px;
+      padding: 0 30px;
+      font-size: fn.px2rem(16);
       border-radius: 5px;
     }
 
-    @include mq($breakpoint: lg) {}
-  }
-
-  .text {
-    font-weight: bold;
-    font-size: 0.875rem;
-
-    @include mq($breakpoint: sm) {
-      font-size: 1rem;
-    }
-
-    @include mq($breakpoint: md) {}
-
     @include mq($breakpoint: lg) {
-      font-size: 1.125rem;
+    }
+
+    @include mq($breakpoint: xl) {
+      height: 42px;
+      padding: 0 40px;
+      font-size: fn.px2rem(18);
+    }
+
+    @include mq($breakpoint: xxl) {
+    }
+
+    .content,
+    .leftIcon,
+    .rightIcon {
+      display: inherit;
+    }
+
+    .content {
+      padding-top: 3px;
+    }
+
+    .icon {
+      font-size: fn.px2rem(13);
+      margin-top: 0;
+
+      @include mq($breakpoint: sm) {
+      }
+
+      @include mq($breakpoint: md) {
+        font-size: fn.px2rem(20);
+        margin-top: -1px;
+      }
+
+      @include mq($breakpoint: lg) {
+      }
+
+      @include mq($breakpoint: xl) {
+        font-size: fn.px2rem(22);
+        margin-top: 0;
+      }
+
+      @include mq($breakpoint: xxl) {
+      }
     }
   }
 
-  .icon {
-    display: inline-block;
+  // size
+  .xs {
+    height: 24px;
+    padding: 0 7px;
+    font-size: fn.px2rem(11);
+
+    .content {
+      padding-top: 1px;
+    }
+
+    .icon {
+      font-size: fn.px2rem(13);
+      margin-top: 0;
+    }
+
+    .leftIcon {
+      margin-left: 0;
+      margin-right: 3px;
+    }
+
+    .rightIcon {
+      margin-left: 3px;
+      margin-right: 0;
+    }
   }
 
-  .icon svg {
-    width: 100%;
-    height: 100%;
+  .md {
+    height: 40px;
+    padding: 0 15px;
+    font-size: fn.px2rem(13);
+
+    .icon {
+      font-size: fn.px2rem(20);
+      margin-top: -1px;
+    }
+
+    .leftIcon {
+      margin-left: -2px;
+      margin-right: 8px;
+    }
+
+    .rightIcon {
+      margin-left: 4px;
+      margin-right: -4px;
+    }
+  }
+
+  .lg {
+    height: 42px;
+    padding: 0 52px;
+    font-size: fn.px2rem(16);
+
+    .content {
+      padding-top: 2px;
+    }
+
+    .icon {
+      font-size: fn.px2rem(22);
+      margin-top: 0;
+    }
+
+    .leftIcon {
+      margin-left: -6px;
+      margin-right: 12px;
+    }
+
+    .rightIcon {
+      margin-left: 8px;
+      margin-right: -6px;
+    }
+  }
+
+  // color {
+  .main {
+    color: var.$colorDefault;
+    background: var.$bgColorMain;
+    font-weight: var.$fontWeightBold;
+
+    .icon {
+      color: var.$colorDefault;
+    }
+  }
+
+  .sub {
+    color: var.$colorDefault;
+    background: var.$bgColorSub;
+    font-weight: var.$fontWeightBold;
+
+    .icon {
+      color: var.$colorDefault;
+    }
   }
 }
