@@ -1,0 +1,72 @@
+:local {
+  .container,
+  .container:after {
+    border-radius: 50%;
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .container {
+    margin: 0 auto;
+    font-size: 10px;
+    position: relative;
+    text-indent: -9999rem;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation: spinner 1s infinite linear;
+    animation: spinner 1s infinite linear;
+  }
+
+  @-webkit-keyframes _2eKMyIqG8KQNz_38p4kOOv {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes _2eKMyIqG8KQNz_38p4kOOv {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+
+  .xs {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .sm {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .md {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .lg {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .xl {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .xxl {
+    width: 12rem;
+    height: 12rem;
+  }
+}

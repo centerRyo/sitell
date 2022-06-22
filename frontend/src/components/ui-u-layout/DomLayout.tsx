@@ -1,4 +1,5 @@
 import React, { FC, ReactNode } from 'react';
+import { DomSpinner } from '../ui-m-spinner/DomSpinner';
 import { DupFooter } from '../ui-o-footer/DupFooter';
 import { DomHeader } from '../ui-o-header/DomHeader';
 import styles from './dup-layout-default.module.scss';
@@ -15,6 +16,8 @@ export const DomLayout: FC<Props> = ({ children }) => {
       </div>
 
       <main className={styles.content}>{children}</main>
+
+      <DomSpinner thickness='0.8rem' />
 
       <div className={styles.footer}>
         <DupFooter />
