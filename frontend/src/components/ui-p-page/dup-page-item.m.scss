@@ -212,9 +212,13 @@
       margin-top: vw(90, 1900);
     }
 
-    .url_link {
+    .urlLink {
       color: #4fb3de;
       text-decoration: underline;
     }
+  }
+
+  .loading {
+    margin: 80px 0;
   }
 }
