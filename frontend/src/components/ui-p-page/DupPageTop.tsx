@@ -1,21 +1,17 @@
-import { useLatestRonbuns } from '../../hooks/top/useLatestRonbuns';
-import React, { useState } from 'react';
+import { useCategories } from '@/hooks/top/useCategories';
+import { useLatestRonbuns } from '@/hooks/top/useLatestRonbuns';
+import React from 'react';
 import { DupLabelCard } from '../ui-a-label/DupLabelCard';
 import { DupLabelCategory } from '../ui-a-label/DupLabelCategory';
 import { DupLink, DupLinkTypes } from '../ui-a-link/DupLink';
 import { DupTitle, DupTitleTypes } from '../ui-c-title/DupTitle';
-import { DomCard } from '../ui-m-card/DomCard';
 import { DomCardGrid } from '../ui-m-card/DomCardGrid';
 import { DomSkeletonCardGrid } from '../ui-m-skeleton/DomSkeletonCardGrid';
 import { DomSkeletonCategory } from '../ui-m-skeleton/DomSkeletonCategory';
 import { DomSlider } from '../ui-m-slider/DomSlider';
-import { DupFooter } from '../ui-o-footer/DupFooter';
 import { DomGroupCategory } from '../ui-o-group/DomGroupCategory';
-import { DomGroupItems } from '../ui-o-group/DomGroupItems';
 import { DupGroupItemsGrid } from '../ui-o-group/DupGroupItemsGrid';
-import { DomHeader } from '../ui-o-header/DomHeader';
 import { DomPageTop } from './DomPageTop';
-import { useCategories } from '../../hooks/top/useCategories';
 
 export const DupPageTop: React.FC = () => {
   const {

@@ -2186,21 +2186,21 @@ const DupPageLatest = () => {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DupPageTop", function() { return DupPageTop; });
-/* harmony import */ var _hooks_top_useLatestRonbuns__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../hooks/top/useLatestRonbuns */ "./frontend/src/hooks/top/useLatestRonbuns.ts");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../ui-a-label/DupLabelCard */ "./frontend/src/components/ui-a-label/DupLabelCard.tsx");
-/* harmony import */ var _ui_a_label_DupLabelCategory__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../ui-a-label/DupLabelCategory */ "./frontend/src/components/ui-a-label/DupLabelCategory.tsx");
-/* harmony import */ var _ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../ui-a-link/DupLink */ "./frontend/src/components/ui-a-link/DupLink.tsx");
-/* harmony import */ var _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../ui-c-title/DupTitle */ "./frontend/src/components/ui-c-title/DupTitle.tsx");
-/* harmony import */ var _ui_m_card_DomCardGrid__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../ui-m-card/DomCardGrid */ "./frontend/src/components/ui-m-card/DomCardGrid.tsx");
-/* harmony import */ var _ui_m_skeleton_DomSkeletonCardGrid__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../ui-m-skeleton/DomSkeletonCardGrid */ "./frontend/src/components/ui-m-skeleton/DomSkeletonCardGrid.tsx");
-/* harmony import */ var _ui_m_skeleton_DomSkeletonCategory__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../ui-m-skeleton/DomSkeletonCategory */ "./frontend/src/components/ui-m-skeleton/DomSkeletonCategory.tsx");
-/* harmony import */ var _ui_m_slider_DomSlider__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../ui-m-slider/DomSlider */ "./frontend/src/components/ui-m-slider/DomSlider.tsx");
-/* harmony import */ var _ui_o_group_DomGroupCategory__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../ui-o-group/DomGroupCategory */ "./frontend/src/components/ui-o-group/DomGroupCategory.tsx");
-/* harmony import */ var _ui_o_group_DupGroupItemsGrid__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../ui-o-group/DupGroupItemsGrid */ "./frontend/src/components/ui-o-group/DupGroupItemsGrid.tsx");
-/* harmony import */ var _DomPageTop__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./DomPageTop */ "./frontend/src/components/ui-p-page/DomPageTop.tsx");
-/* harmony import */ var _hooks_top_useCategories__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../hooks/top/useCategories */ "./frontend/src/hooks/top/useCategories.ts");
+/* harmony import */ var _hooks_top_useCategories__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/hooks/top/useCategories */ "./frontend/src/hooks/top/useCategories.ts");
+/* harmony import */ var _hooks_top_useLatestRonbuns__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/hooks/top/useLatestRonbuns */ "./frontend/src/hooks/top/useLatestRonbuns.ts");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../ui-a-label/DupLabelCard */ "./frontend/src/components/ui-a-label/DupLabelCard.tsx");
+/* harmony import */ var _ui_a_label_DupLabelCategory__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../ui-a-label/DupLabelCategory */ "./frontend/src/components/ui-a-label/DupLabelCategory.tsx");
+/* harmony import */ var _ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../ui-a-link/DupLink */ "./frontend/src/components/ui-a-link/DupLink.tsx");
+/* harmony import */ var _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../ui-c-title/DupTitle */ "./frontend/src/components/ui-c-title/DupTitle.tsx");
+/* harmony import */ var _ui_m_card_DomCardGrid__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../ui-m-card/DomCardGrid */ "./frontend/src/components/ui-m-card/DomCardGrid.tsx");
+/* harmony import */ var _ui_m_skeleton_DomSkeletonCardGrid__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../ui-m-skeleton/DomSkeletonCardGrid */ "./frontend/src/components/ui-m-skeleton/DomSkeletonCardGrid.tsx");
+/* harmony import */ var _ui_m_skeleton_DomSkeletonCategory__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../ui-m-skeleton/DomSkeletonCategory */ "./frontend/src/components/ui-m-skeleton/DomSkeletonCategory.tsx");
+/* harmony import */ var _ui_m_slider_DomSlider__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../ui-m-slider/DomSlider */ "./frontend/src/components/ui-m-slider/DomSlider.tsx");
+/* harmony import */ var _ui_o_group_DomGroupCategory__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../ui-o-group/DomGroupCategory */ "./frontend/src/components/ui-o-group/DomGroupCategory.tsx");
+/* harmony import */ var _ui_o_group_DupGroupItemsGrid__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../ui-o-group/DupGroupItemsGrid */ "./frontend/src/components/ui-o-group/DupGroupItemsGrid.tsx");
+/* harmony import */ var _DomPageTop__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./DomPageTop */ "./frontend/src/components/ui-p-page/DomPageTop.tsx");
 
 
 
@@ -2216,8 +2216,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const DupPageTop = () => {
-    const { data: latests, isLoading: latestLoading, error: latestError, } = Object(_hooks_top_useLatestRonbuns__WEBPACK_IMPORTED_MODULE_0__["useLatestRonbuns"])();
-    const { data: categories, isLoading: categoriesLoading, error: categoriesError, } = Object(_hooks_top_useCategories__WEBPACK_IMPORTED_MODULE_13__["useCategories"])();
+    const { data: latests, isLoading: latestLoading, error: latestError, } = Object(_hooks_top_useLatestRonbuns__WEBPACK_IMPORTED_MODULE_1__["useLatestRonbuns"])();
+    const { data: categories, isLoading: categoriesLoading, error: categoriesError, } = Object(_hooks_top_useCategories__WEBPACK_IMPORTED_MODULE_0__["useCategories"])();
     // TODO: !loadingのところ何回も書かないといけないので直したい。。。
     const groups = [
         /* <<<<<<<<<<<< 初期リリースに不必要なのでコメントアウト >>>>>>>>>>>>>>> */
@@ -2295,30 +2295,30 @@ const DupPageTop = () => {
         //   ]}
         //   link={{ render: () => <DupLink type={DupLinkTypes.More} href="/rankings" /> }}
         // />,
-        react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_ui_o_group_DupGroupItemsGrid__WEBPACK_IMPORTED_MODULE_11__["DupGroupItemsGrid"], { title: {
-                render: () => !latestLoading && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_5__["DupTitle"], { type: _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_5__["DupTitleTypes"].Latest }),
+        react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_ui_o_group_DupGroupItemsGrid__WEBPACK_IMPORTED_MODULE_12__["DupGroupItemsGrid"], { title: {
+                render: () => !latestLoading && react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_6__["DupTitle"], { type: _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_6__["DupTitleTypes"].Latest }),
             }, cards: !latestLoading
                 ? latests === null || latests === void 0 ? void 0 : latests.map((latest) => {
-                    return (react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_ui_m_card_DomCardGrid__WEBPACK_IMPORTED_MODULE_6__["DomCardGrid"], { id: latest.id, image: latest.thumbnail, label: {
-                            render: () => react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_2__["DupLabelCard"], { text: latest.category_name }),
+                    return (react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_ui_m_card_DomCardGrid__WEBPACK_IMPORTED_MODULE_7__["DomCardGrid"], { id: latest.id, image: latest.thumbnail, label: {
+                            render: () => react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_ui_a_label_DupLabelCard__WEBPACK_IMPORTED_MODULE_3__["DupLabelCard"], { text: latest.category_name }),
                         }, text: latest.title }));
                 })
                 : [1, 2, 3, 4].map((n) => {
-                    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_ui_m_skeleton_DomSkeletonCardGrid__WEBPACK_IMPORTED_MODULE_7__["DomSkeletonCardGrid"], null);
+                    return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_ui_m_skeleton_DomSkeletonCardGrid__WEBPACK_IMPORTED_MODULE_8__["DomSkeletonCardGrid"], null);
                 }), link: {
-                render: () => !latestLoading && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_4__["DupLink"], { type: _ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_4__["DupLinkTypes"].More, href: 'latest' }),
+                render: () => !latestLoading && react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_5__["DupLink"], { type: _ui_a_link_DupLink__WEBPACK_IMPORTED_MODULE_5__["DupLinkTypes"].More, href: 'latest' }),
             } }),
-        react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_ui_o_group_DomGroupCategory__WEBPACK_IMPORTED_MODULE_10__["DomGroupCategory"], { title: {
-                render: () => !categoriesLoading && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_5__["DupTitle"], { type: _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_5__["DupTitleTypes"].Categories }),
+        react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_ui_o_group_DomGroupCategory__WEBPACK_IMPORTED_MODULE_11__["DomGroupCategory"], { title: {
+                render: () => !categoriesLoading && react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_6__["DupTitle"], { type: _ui_c_title_DupTitle__WEBPACK_IMPORTED_MODULE_6__["DupTitleTypes"].Categories }),
             }, categories: !categoriesLoading
                 ? categories === null || categories === void 0 ? void 0 : categories.map((category) => {
-                    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_ui_a_label_DupLabelCategory__WEBPACK_IMPORTED_MODULE_3__["DupLabelCategory"], { category: category });
+                    return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_ui_a_label_DupLabelCategory__WEBPACK_IMPORTED_MODULE_4__["DupLabelCategory"], { category: category });
                 })
                 : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map((n) => {
-                    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_ui_m_skeleton_DomSkeletonCategory__WEBPACK_IMPORTED_MODULE_8__["DomSkeletonCategory"], null);
+                    return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_ui_m_skeleton_DomSkeletonCategory__WEBPACK_IMPORTED_MODULE_9__["DomSkeletonCategory"], null);
                 }) }),
     ];
-    return (react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_DomPageTop__WEBPACK_IMPORTED_MODULE_12__["DomPageTop"], { topics: { render: () => react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_ui_m_slider_DomSlider__WEBPACK_IMPORTED_MODULE_9__["DomSlider"], null) }, groups: groups }));
+    return (react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_DomPageTop__WEBPACK_IMPORTED_MODULE_13__["DomPageTop"], { topics: { render: () => react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_ui_m_slider_DomSlider__WEBPACK_IMPORTED_MODULE_10__["DomSlider"], null) }, groups: groups }));
 };
 
 
@@ -5135,7 +5135,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".G4XqotOaGg3OG6lEKI_U5 {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  -webkit-animation: _31KGaRzwrlsV4C-ueIkNsy 1.25s infinite;\n          animation: _31KGaRzwrlsV4C-ueIkNsy 1.25s infinite;\n}\n._1W0RgA6QdfWc9lHlmKEOp9 {\n  background: rgba(254, 254, 254, 0.2);\n  width: 50%;\n  height: 100%;\n  transform: skewX(-20deg);\n  box-shadow: 0 0 30px 30px rgba(255, 255, 255, 0.05);\n}\n@-webkit-keyframes xTrwr92nRq8Dws4Xbqn0N {\n  0% {\n    transform: translateX(-150%);\n  }\n  50% {\n    transform: translateX(-60%);\n  }\n  100% {\n    transform: translateX(150%);\n  }\n}\n@keyframes xTrwr92nRq8Dws4Xbqn0N {\n  0% {\n    transform: translateX(-150%);\n  }\n  50% {\n    transform: translateX(-60%);\n  }\n  100% {\n    transform: translateX(150%);\n  }\n}", ""]);
+exports.push([module.i, ".G4XqotOaGg3OG6lEKI_U5 {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  -webkit-animation: _31KGaRzwrlsV4C-ueIkNsy 1.25s infinite;\n          animation: _31KGaRzwrlsV4C-ueIkNsy 1.25s infinite;\n}\n._1W0RgA6QdfWc9lHlmKEOp9 {\n  background: rgba(254, 254, 254, 0.2);\n  width: 50%;\n  height: 100%;\n  transform: skewX(-20deg);\n  box-shadow: 0 0 30px 30px rgba(255, 255, 255, 0.05);\n}\n@-webkit-keyframes _31KGaRzwrlsV4C-ueIkNsy {\n  0% {\n    transform: translateX(-150%);\n  }\n  50% {\n    transform: translateX(-60%);\n  }\n  100% {\n    transform: translateX(150%);\n  }\n}\n@keyframes _31KGaRzwrlsV4C-ueIkNsy {\n  0% {\n    transform: translateX(-150%);\n  }\n  50% {\n    transform: translateX(-60%);\n  }\n  100% {\n    transform: translateX(150%);\n  }\n}", ""]);
 
 // exports
 exports.locals = {
