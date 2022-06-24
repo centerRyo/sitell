@@ -7,7 +7,7 @@
     height: 100%;
     animation: loading 1.25s infinite;
   }
-  
+
   .shimmer {
     background: rgba(254, 254, 254, 0.2);
     width: 50%;
@@ -17,9 +17,15 @@
   }
 
   // TODO: コンパイル後の名前にしないといけない。。。(loading)
-  @keyframes xTrwr92nRq8Dws4Xbqn0N {
-    0% { transform: translateX(-150%) }
-    50% { transform: translateX(-60%) }
-    100% { transform: translateX(150%) }
+  @keyframes _31KGaRzwrlsV4C-ueIkNsy {
+    0% {
+      transform: translateX(-150%);
+    }
+    50% {
+      transform: translateX(-60%);
+    }
+    100% {
+      transform: translateX(150%);
+    }
   }
 }
