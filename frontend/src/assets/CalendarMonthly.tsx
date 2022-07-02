@@ -22,3 +22,5 @@ export const CalendarMonthly: VFC<Props> = memo(({ color = '#fff' }) => (
     />
   </svg>
 ));
+
+CalendarMonthly.displayName = 'CalendarMonthly';
