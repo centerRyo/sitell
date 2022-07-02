@@ -29,3 +29,5 @@ export const Logo: VFC = memo(() => (
     </defs>
   </svg>
 ));
+
+Logo.displayName = 'Logo';

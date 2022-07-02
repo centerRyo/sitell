@@ -29,3 +29,5 @@ export const LogoInverted: VFC = memo(() => (
     </defs>
   </svg>
 ));
+
+LogoInverted.displayName = 'LogoInverted';

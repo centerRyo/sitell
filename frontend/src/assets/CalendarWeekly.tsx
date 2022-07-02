@@ -26,3 +26,5 @@ export const CalendarWeekly: VFC<Props> = memo(({ color = '#fff' }) => (
     />
   </svg>
 ));
+
+CalendarWeekly.displayName = 'CalendarWeekly';
